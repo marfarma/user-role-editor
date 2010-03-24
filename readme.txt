@@ -45,12 +45,12 @@ You are welcome! Help me with plugin translation, share with me new ideas about 
 
 == Changelog ==
 = 1.1 = 24.03.2010
-- Critical bug is fixed. If you click 'Reset' button before any changes to the role data saved (that is click Update button) at least one time, you met with all roles data lost problem. Backup data created automatically before the 1st role data update. If no update - no backup. Special checking for that was added.
-- German translation is added.
-- Spanish translation is added.
+* Critical bug is fixed. If you click 'Reset' button before any changes to the role data saved (that is click Update button) at least one time, you met with all roles data lost problem. Backup data created automatically before the 1st role data update. If no update - no backup. Special checking for that was added.
+* German translation is added.
+* Spanish translation is added.
 
 = 1.0 = 22.03.2010
-- 1st release.
+* 1st release.
 
 == Additional Documentation ==
 
