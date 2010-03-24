@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: User Role Editor v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-24 23:42+0600\n"
+"PO-Revision-Date: 2010-03-24 23:46+0600\n"
+"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ../ure-options.php:41
+msgid "Roles capabilities are restored from the backup data"
+msgstr "Rollenbefugnisse werden von der Sicherheitskopie wiederhergestellt"
+
+#: ../ure-options.php:46
+msgid "No backup data. It is created automatically before the first role data update."
+msgstr "Kein Backup-Daten. Es wird automatisch vor der ersten Rolle Aktualisierung von Daten erstellt."
+
+#: ../ure-options.php:121
+msgid "Backup record is created for the current role capabilities"
+msgstr "Sicherheitskopie der aktuellen Rollenbefugnisse wird erstellt"
+
+#: ../ure-options.php:138
+msgid "Role "
+msgstr "Rolle "
+
+#: ../ure-options.php:138
+msgid " is updated successfully"
+msgstr "ist erfolgreich aktualisiert worden"
+
+# @ ure
+#: ../ure-options.php:172
+msgid "About this Plugin:"
+msgstr "Über dieses Plugin:"
+
+# @ ure
+#: ../ure-options.php:173
+msgid "Author's website"
+msgstr "Webseite des Autors"
+
+# @ ure
+#: ../ure-options.php:174
+msgid "Plugin webpage"
+msgstr "Webseite des Plugins"
+
+# @ ure
+#: ../ure-options.php:175
+#: ../user-role-editor.php:103
+msgid "Changelog"
+msgstr "Änderungen"
+
+# @ ure
+#: ../ure-options.php:176
+msgid "FAQ"
+msgstr "FAQ"
+
+# @ ure
+#: ../ure-options.php:177
+msgid "Donate"
+msgstr "Spende"
+
+# @ ure
+#: ../ure-options.php:179
+msgid "Greetings:"
+msgstr "Grüße:"
+
+# @ ure
+#: ../ure-options.php:180
+msgid "It's me, the author"
+msgstr "Ich bin's, der Autor"
+
+#: ../ure-options.php:181
+msgid "For the help with German translation"
+msgstr "Für die Hilfe bei der Deutsch-Übersetzung"
+
+#: ../ure-options.php:182
+msgid "For the help with Spanish translation"
+msgstr "Für die Hilfe bei der spanischen Übersetzung"
+
+# @ ure
+#: ../ure-options.php:183
+msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
+msgstr "Möchten Sie hier Ihren Namen mit Link zu Ihrer Website sehen? Sehr gern! Für Ihre Hilfe bei der Übersetzung und neue Ideen sind wir dankbar."
+
+#: ../ure-options.php:194
+msgid ": Please confirm to continue"
+msgstr ": Zum Fortfahren bitte bestätigen"
+
+#: ../ure-options.php:210
+#, php-format
+msgid "Role \"%s\" update: please confirm to continue"
+msgstr "Aktualisierung der Rolle \"%s\": Zum Fortfahren bitte bestätigen"
+
+# @ ure
+#: ../ure-options.php:218
+msgid "Select Role and change its capabilities list"
+msgstr "Eine Rolle auswählen und ihre Befugnisse ändern"
+
+#: ../ure-options.php:222
+msgid "Select Role:"
+msgstr "Eine Rolle auswählen:"
+
+# @ ure
+#: ../ure-options.php:252
+msgid "Update"
+msgstr "Aktualisieren"
+
+# @ ure
+#: ../ure-options.php:252
+msgid "Save Changes"
+msgstr "Sichere Änderungen"
+
+# @ ure
+#: ../ure-options.php:253
+msgid "Cancel"
+msgstr "Abbrechen"
+
+# @ ure
+#: ../ure-options.php:253
+msgid "Cancel not saved changes"
+msgstr "Ungesicherte Änderungen verwerfen "
+
+# @ ure
+#: ../ure-options.php:254
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+# @ ure
+#: ../ure-options.php:254
+msgid "Return to default WordPress user role capabilities"
+msgstr "Auf Standardwerte zurücksetzen"
+
+#: ../user-role-editor.php:38
+msgid "User Role Editor requires WordPress 2.8 or newer."
+msgstr "User Role Editor benötigt Wordpress 2.8 oder neuer"
+
+#: ../user-role-editor.php:38
+msgid "Please update!"
+msgstr "Bitte aktualisieren!"
+
+# @ ure
+#: ../user-role-editor.php:63
+msgid "User Role Editor"
+msgstr "Benutzerrollen-Editor"
+
+# @ ure
+#: ../user-role-editor.php:93
+msgid "Settings"
+msgstr "Einstellungen"
+
