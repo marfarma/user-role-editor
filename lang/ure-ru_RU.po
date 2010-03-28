@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thank You Counter Button 1.0.02\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-24 23:42+0600\n"
+"POT-Creation-Date: 2010-03-28 21:37+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -13,109 +13,129 @@ msgstr ""
 "X-Poedit-Country: RUSSIAN FEDERATION\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../ure-options.php:41
+#: ../ure-options.php:15
+msgid "Editor"
+msgstr "Редактор"
+
+#: ../ure-options.php:16
+msgid "Author"
+msgstr "Автор"
+
+#: ../ure-options.php:17
+msgid "Contributor"
+msgstr "Ассистент"
+
+#: ../ure-options.php:18
+msgid "Subscriber"
+msgstr "Подписчик"
+
+#: ../ure-options.php:48
 msgid "Roles capabilities are restored from the backup data"
 msgstr "Роли восстановлены из резервной копии"
 
-#: ../ure-options.php:46
+#: ../ure-options.php:53
 msgid "No backup data. It is created automatically before the first role data update."
 msgstr "Нет резервной копии. Она создается автоматически перед первым изменением ролей."
 
-#: ../ure-options.php:121
+#: ../ure-options.php:128
 msgid "Backup record is created for the current role capabilities"
 msgstr "Для текущего распределения возможностей по ролям создана резервная копия"
 
-#: ../ure-options.php:138
-msgid "Role "
+#: ../ure-options.php:145
+msgid "Role"
 msgstr "Роль"
 
-#: ../ure-options.php:138
-msgid " is updated successfully"
+#: ../ure-options.php:145
+msgid "is updated successfully"
 msgstr "изменена успешно"
 
-#: ../ure-options.php:172
+#: ../ure-options.php:179
 msgid "About this Plugin:"
 msgstr "Об этом плагине"
 
-#: ../ure-options.php:173
+#: ../ure-options.php:180
 msgid "Author's website"
 msgstr "Вебсайт автора"
 
-#: ../ure-options.php:174
+#: ../ure-options.php:181
 msgid "Plugin webpage"
 msgstr "Страница плагина"
 
-#: ../ure-options.php:175
+#: ../ure-options.php:182
 #: ../user-role-editor.php:103
 msgid "Changelog"
 msgstr "Журнал изменений"
 
-#: ../ure-options.php:176
+#: ../ure-options.php:183
 msgid "FAQ"
 msgstr "Часто задаваемые вопросы"
 
-#: ../ure-options.php:177
+#: ../ure-options.php:184
 msgid "Donate"
 msgstr "Поддержать"
 
-#: ../ure-options.php:179
+#: ../ure-options.php:186
 msgid "Greetings:"
 msgstr "Приветствия"
 
-#: ../ure-options.php:180
+#: ../ure-options.php:187
 msgid "It's me, the author"
 msgstr "Это я, автор"
 
-#: ../ure-options.php:181
+#: ../ure-options.php:188
+msgid "For the help with French translation"
+msgstr "за помощь с французским переводом"
+
+#: ../ure-options.php:189
 msgid "For the help with German translation"
 msgstr "за помощь с немецким переводом"
 
-#: ../ure-options.php:182
+#: ../ure-options.php:190
 msgid "For the help with Spanish translation"
 msgstr "за помощь с испанским переводом"
 
-#: ../ure-options.php:183
+#: ../ure-options.php:191
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Желаете увидеть свое имя и ссылку на Ваш сайт здесь? Добро пожаловать! Ваша помощь с переводом и новые идеи приветствуются."
 
-#: ../ure-options.php:194
+#: ../ure-options.php:202
 msgid ": Please confirm to continue"
 msgstr ": Пожалуйста, подтвердите продолжение "
 
-#: ../ure-options.php:210
+#: ../ure-options.php:218
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Изменение роли \"%s\": пожалуйста, подтвердите продолжение "
 
-#: ../ure-options.php:218
+#: ../ure-options.php:226
 msgid "Select Role and change its capabilities list"
 msgstr "Выбери Роль и измени список разрешённых операций"
 
-#: ../ure-options.php:222
+#: ../ure-options.php:230
 msgid "Select Role:"
 msgstr "Выбери Роль:"
 
-#: ../ure-options.php:252
+#: ../ure-options.php:260
 msgid "Update"
 msgstr "Сохранить"
 
-#: ../ure-options.php:252
+#: ../ure-options.php:260
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: ../ure-options.php:253
+#: ../ure-options.php:261
 msgid "Cancel"
 msgstr "Отмена"
 
-#: ../ure-options.php:253
+#: ../ure-options.php:261
 msgid "Cancel not saved changes"
 msgstr "Отказ от сохранения изменений"
 
-#: ../ure-options.php:254
+#: ../ure-options.php:262
 msgid "Reset"
 msgstr "Сброс"
 
-#: ../ure-options.php:254
+#: ../ure-options.php:262
 msgid "Return to default WordPress user role capabilities"
 msgstr "Вернуться к исходному состоянию ролей WordPress"
 
@@ -140,9 +160,6 @@ msgstr "Установки"
 
 #~ msgid "Please confirm to continue role \""
 #~ msgstr "Пожалуйста подтвердите продолжение для роли"
-
-#~ msgid "Edit"
-#~ msgstr "Изменить"
 
 #~ msgid "Silence Is Golden Guard Plugin"
 #~ msgstr "Silence Is Golden Guard плагин"

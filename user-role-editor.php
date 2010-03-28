@@ -35,7 +35,7 @@ if (!function_exists("get_option")) {
 
 global $wp_version;
 
-$exit_msg = __('User Role Editor requires WordPress 2.8 or newer.').'<a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!').'</a>';
+$exit_msg = __('User Role Editor requires WordPress 2.8 or newer.', 'ure').'<a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!', 'ure').'</a>';
 
 if (version_compare($wp_version,"2.8","<"))
 {
@@ -90,7 +90,7 @@ function ure_init() {
 
 function ure_plugin_action_links($links, $file) {
     if ($file == plugin_basename(dirname(__FILE__).'/user-role-editor.php')){
-        $settings_link = "<a href='options-general.php?page=user-role-editor.php'>".__('Settings','ure')."</a>";
+        $settings_link = "<a href='users.php?page=user-role-editor.php'>".__('Settings','ure')."</a>";
         array_unshift( $links, $settings_link );
     }
     return $links;
@@ -107,8 +107,8 @@ function ure_plugin_row_meta($links, $file) {
 
 
 function ure_settings_menu() {
-	if ( function_exists('add_options_page') ) {
-    $ure_page = add_options_page('User Role Editor', 'User Role Editor', 9, basename(__FILE__), 'ure_optionsPage');
+	if ( function_exists('add_users_page') ) {
+    $ure_page = add_users_page('User Role Editor', 'User Role Editor', 9, basename(__FILE__), 'ure_optionsPage');
 		add_action( "admin_print_styles-$ure_page", 'ure_adminCssAction' );
 	}
 }
@@ -132,6 +132,7 @@ if (is_admin()) {
   add_filter('plugin_action_links', 'ure_plugin_action_links', 10, 2);
   add_filter('plugin_row_meta', 'ure_plugin_row_meta', 10, 2);
   add_action('admin_menu', 'ure_settings_menu');
+  
 }
 
 

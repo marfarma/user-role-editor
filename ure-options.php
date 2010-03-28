@@ -10,6 +10,13 @@ if (!defined('URE_PLUGIN_URL')) {
 
 $shinephpFavIcon = URE_PLUGIN_URL.'/images/vladimir.png';
 $mess = '';
+// for the translation purpose
+if (false) {
+  __('Editor', 'ure');
+  __('Author', 'ure');
+  __('Contributor', 'ure');
+  __('Subscriber', 'ure');
+}
 
 $option_name = $wpdb->prefix.'user_roles';
 
@@ -75,7 +82,7 @@ $roleSelectHTML = '<select id="user_role" name="user_role" onchange="ure_Actions
 foreach ($roles as $key=>$value) {
   $selected = ure_optionSelected($key, $currentRole);
   if ($key!='administrator') {
-    $roleSelectHTML .= '<option value="'.$key.'" '.$selected.'>'.$value['name'].'</option>';
+    $roleSelectHTML .= '<option value="'.$key.'" '.$selected.'>'.__($value['name'], 'ure').'</option>';
   }
 }
 $roleSelectHTML .= '</select>';
@@ -135,7 +142,7 @@ if (isset($_POST['action']) && $_POST['action']=='update' && isset($_POST['user_
     if ($mess) {
       $mess .= '<br/';
     }
-    $mess = __('Role ', 'ure').$roles[$currentRole]['name'].__(' is updated successfully', 'ure');
+    $mess = __('Role', 'ure').' <em>'.__($roles[$currentRole]['name'], 'ure').'</em> '.__('is updated successfully', 'ure');
   }
 }
 
@@ -162,7 +169,7 @@ function ure_displayBoxEnd() {
 ure_showMessage($mess);
 
 ?>
-  <form method="post" action="options-general.php?page=user-role-editor.php" onsubmit="return ure_onSubmit();">
+  <form method="post" action="users.php?page=user-role-editor.php" onsubmit="return ure_onSubmit();">
 <?php
     settings_fields('ure-quard-options');
 ?>
@@ -172,12 +179,15 @@ ure_showMessage($mess);
 									<?php ure_displayBoxStart(__('About this Plugin:', 'ure')); ?>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo $shinephpFavIcon; ?>);" target="_blank" href="http://www.shinephp.com/"><?php _e("Author's website", 'ure'); ?></a>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/user-role-editor-icon.png'; ?>" target="_blank" href="http://www.shinephp.com/user-role-editor-wordpress-plugin/"><?php _e('Plugin webpage', 'ure'); ?></a>
-											<a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/changelog-icon.png'; ?>);" target="_blank" href="http://www.shinephp.com/user-role-editor-wordpress-plugin/#changelog"><?php _e('Changelog', 'ure'); ?></a>
+											<a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/changelog-icon.png'; ?>)" target="_blank" href="http://www.shinephp.com/user-role-editor-wordpress-plugin/#changelog"><?php _e('Changelog', 'ure'); ?></a>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/faq-icon.png'; ?>)" target="_blank" href="http://www.shinephp.com/user-role-editor-wordpress-plugin/#faq"><?php _e('FAQ', 'ure'); ?></a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/donate-icon.png'; ?>)" target="_blank" href="http://www.shinephp.com/donate"><?php _e('Donate', 'ure'); ?></a>
 									<?php ure_displayBoxEnd(); ?>
 									<?php ure_displayBoxStart(__('Greetings:','ure')); ?>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo $shinephpFavIcon; ?>);" target="_blank" title="<?php _e("It's me, the author", 'ure'); ?>" href="http://www.shinephp.com/">Vladimir</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/whiler.png'; ?>)" target="_blank" title="<?php _e("For the help with French translation", 'ure'); ?>" href="http://blogs.wittwer.fr/whiler/">Whiler</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/peter.png'; ?>)" target="_blank" title="<?php _e("For the help with German translation", 'ure'); ?>" href="http://www.red-socks-reinbek.de">Peter</a>
+                      <a class="ure_rsb_link" target="_blank" title="<?php _e("For the help with Spanish translation", 'ure'); ?>" href="#">Dario</a>
 											<?php _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.', 'ure'); ?>
 									<?php ure_displayBoxEnd(); ?>
 						</div>
@@ -187,13 +197,13 @@ ure_showMessage($mess);
 <script language="javascript" type="text/javascript">
   function ure_Actions(action, value) {
     if (action=='cancel') {
-      document.location = '<?php echo URE_WP_ADMIN_URL; ?>/options-general.php?page=user-role-editor.php';
+      document.location = '<?php echo URE_WP_ADMIN_URL; ?>/users.php?page=user-role-editor.php';
     } else {
       if (action!='role-change' && !confirm(action +'<?php _e(': Please confirm to continue', 'ure'); ?>')) {
         return false;
       }
       if (action!='update') {
-        $url = '<?php echo URE_WP_ADMIN_URL; ?>/options-general.php?page=user-role-editor.php&action='+ action;
+        $url = '<?php echo URE_WP_ADMIN_URL; ?>/users.php?page=user-role-editor.php&action='+ action;
         if (value!='') {
           $url = $url +'&user_role='+ value;
         }
@@ -205,7 +215,7 @@ ure_showMessage($mess);
   }
 
   function ure_onSubmit() {
-    if (!confirm('<?php echo sprintf(__('Role "%s" update: please confirm to continue', 'ure'), $roles[$currentRole]['name']); ?>')) {
+    if (!confirm('<?php echo sprintf(__('Role "%s" update: please confirm to continue', 'ure'), __($roles[$currentRole]['name'], 'ure')); ?>')) {
       return false;
     }
   }
