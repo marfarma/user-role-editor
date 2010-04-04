@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: User Role Editor Plugin 1.0\n"
+"Project-Id-Version: User Role Editor Plugin 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-28 21:37+0600\n"
+"POT-Creation-Date: 2010-04-04 10:20+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: Whiler <webmaster@blogs.wittwer.fr>\n"
@@ -11,6 +11,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
+
+#: ../ure-lib.php:51
+msgid "Error is occur. Please check the log file."
+msgstr "L'erreur est produit. S'il vous plaît vérifier le fichier log."
+
+#: ../ure-lib.php:107
+msgid "Database operation error. Check log file."
+msgstr "Erreur d'opération de base de données. Vérifiez le fichier journal."
+
+#: ../ure-lib.php:129
+msgid "Roles capabilities are restored from the backup data"
+msgstr "Les capacités des rôles sont restaurées depuis les données de sauvegarde"
+
+#: ../ure-lib.php:131
+msgid "No backup data. It is created automatically before the first role data update."
+msgstr "Aucune donnée sauvegardée. La sauvegarde est automatique avant la première mise à jour des rôles."
+
+#: ../ure-lib.php:172
+msgid "Error: Role name must contain latin characters and digits only!"
+msgstr "Erreur: le nom de rôle doit contenir des caractères latins et chiffres seulement!"
+
+#: ../ure-lib.php:180
+msgid "Roles list reading error is encountered"
+msgstr "Rôles d'erreur est rencontrée liste de lecture"
+
+#: ../ure-lib.php:186
+msgid "Error is encountered during new role create operation"
+msgstr "Erreur est rencontrée lors de l'opération de création nouveau rôle"
+
+#: ../ure-lib.php:188
+#, php-format
+msgid "Role %s is created successfully"
+msgstr "Rôle %s est créé avec succès"
+
+#: ../ure-lib.php:272
+msgid "Error encountered during role delete operation"
+msgstr "Une erreur s'est produite lors de rôle operatio supprimer"
+
+#: ../ure-lib.php:274
+#, php-format
+msgid "Role %s is deleted successfully"
+msgstr "%s rôle est supprimé avec succès"
+
+#: ../ure-lib.php:292
+msgid "Error encountered during default role change operation"
+msgstr "Une erreur s'est produite pendant le fonctionnement par défaut changement rôle"
+
+#: ../ure-lib.php:298
+#, php-format
+msgid "Default role for new users is set to %s successfully"
+msgstr "Rôle par défaut pour les nouveaux utilisateurs est fixé à %s avec succès"
 
 #: ../ure-options.php:15
 msgid "Editor"
@@ -28,116 +79,161 @@ msgstr "Contributeur"
 msgid "Subscriber"
 msgstr "Abonné"
 
-#: ../ure-options.php:48
-msgid "Roles capabilities are restored from the backup data"
-msgstr "Les capacités des rôles sont restaurées depuis les données de sauvegarde"
-
-#: ../ure-options.php:53
-msgid "No backup data. It is created automatically before the first role data update."
-msgstr "Aucune donnée sauvegardée. La sauvegarde est automatique avant la première mise à jour des rôles."
-
-#: ../ure-options.php:128
+#: ../ure-options.php:112
 msgid "Backup record is created for the current role capabilities"
 msgstr "L'enregistrement de sauvegarde est créé pour les capacités du rôle actuel"
 
-#: ../ure-options.php:145
-#, fuzzy
+#: ../ure-options.php:121
 msgid "Role"
 msgstr "Rôle "
 
-#: ../ure-options.php:145
+#: ../ure-options.php:121
 msgid "is updated successfully"
 msgstr "a été correctement mis à jour"
 
-#: ../ure-options.php:179
+#: ../ure-options.php:165
 msgid "About this Plugin:"
 msgstr "A propos de cette extension&nbsp;:"
 
-#: ../ure-options.php:180
+#: ../ure-options.php:166
 msgid "Author's website"
 msgstr "Site Web de l'auteur"
 
-#: ../ure-options.php:181
+#: ../ure-options.php:167
 msgid "Plugin webpage"
 msgstr "Page Web de l'extension"
 
-#: ../ure-options.php:182
-#: ../user-role-editor.php:103
+#: ../ure-options.php:168
+#: ../user-role-editor.php:168
 msgid "Changelog"
 msgstr "Changelog"
 
-#: ../ure-options.php:183
+#: ../ure-options.php:169
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../ure-options.php:184
+#: ../ure-options.php:170
 msgid "Donate"
 msgstr "Faire un don"
 
-#: ../ure-options.php:186
+#: ../ure-options.php:172
 msgid "Greetings:"
 msgstr "Remerciements&nbsp;:"
 
-#: ../ure-options.php:187
+#: ../ure-options.php:173
 msgid "It's me, the author"
 msgstr "C'est moi, l'auteur"
 
-#: ../ure-options.php:188
+#: ../ure-options.php:174
 msgid "For the help with French translation"
 msgstr "Pour l'aide avec la traduction française"
 
-#: ../ure-options.php:189
+#: ../ure-options.php:175
 msgid "For the help with German translation"
 msgstr "Pour l'aide avec la traduction allemande"
 
-#: ../ure-options.php:190
+#: ../ure-options.php:176
 msgid "For the help with Spanish translation"
 msgstr "Pour l'aide avec la traduction espagnole"
 
-#: ../ure-options.php:191
+#: ../ure-options.php:177
+msgid "For the code to hide administrator role"
+msgstr "Pour le code pour cacher rôle d'administrateur"
+
+#: ../ure-options.php:178
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Vous souhaitez voir votre nom avec votre lien vers votre site Web ici ? Avec plaisir ! Votre aide avec la traduction ou de nouvelles idées seront très appréciées."
 
-#: ../ure-options.php:202
-msgid ": Please confirm to continue"
-msgstr ": Veuilllez confirmer pour continuer"
+#: ../ure-options.php:194
+msgid "Role Name can not be empty!"
+msgstr "Rôle Nom ne peut pas être vide"
 
-#: ../ure-options.php:218
+#: ../ure-options.php:198
+msgid "Role Name must contain latin characters and digits only!"
+msgstr "Rôle Nom doit contenir que des caractères latins et chiffres seulement!"
+
+#: ../ure-options.php:203
+#: ../ure-options.php:295
+msgid "Delete Role"
+msgstr "Supprimer rôle"
+
+#: ../ure-options.php:205
+msgid "Change Default Role"
+msgstr "Changer de rôle par défaut"
+
+#: ../ure-options.php:207
+#: ../ure-options.php:279
+msgid "Restore Roles from backup copy"
+msgstr "Rôles de restauration de la copie de sauvegarde"
+
+#: ../ure-options.php:209
+msgid "Please confirm to continue"
+msgstr "S'il vous plaît confirmer pour continuer"
+
+#: ../ure-options.php:234
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Mise à jour du Rôle \"%s\" : Veuillez confirmer pour continuer"
 
-#: ../ure-options.php:226
+#: ../ure-options.php:242
 msgid "Select Role and change its capabilities list"
 msgstr "Sélectionnez un Rôle et changez sa liste de capacités"
 
-#: ../ure-options.php:230
+#: ../ure-options.php:246
 msgid "Select Role:"
 msgstr "Sélectionnez un rôle&nbsp;:"
 
-#: ../ure-options.php:260
+#: ../ure-options.php:277
 msgid "Update"
 msgstr "Mettre à jour"
 
-#: ../ure-options.php:260
+#: ../ure-options.php:277
 msgid "Save Changes"
 msgstr "Enregistrer les modifications"
 
-#: ../ure-options.php:261
+#: ../ure-options.php:278
 msgid "Cancel"
 msgstr "Annuler"
 
-#: ../ure-options.php:261
+#: ../ure-options.php:278
 msgid "Cancel not saved changes"
 msgstr "Annuler les changements"
 
-#: ../ure-options.php:262
+#: ../ure-options.php:279
 msgid "Reset"
 msgstr "Réinitialiser"
 
-#: ../ure-options.php:262
-msgid "Return to default WordPress user role capabilities"
-msgstr "Remettre les capacités des utilisateurs par défaut de WordPress"
+#: ../ure-options.php:285
+msgid "Add New Role"
+msgstr "Ajouter un nouveau rôle"
+
+#: ../ure-options.php:290
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../ure-options.php:290
+msgid "Add New User Role"
+msgstr "Ajouter le rôle d'un nouvel utilisateur"
+
+#: ../ure-options.php:300
+msgid "Delete"
+msgstr "Effacer"
+
+#: ../ure-options.php:300
+msgid "Delete User Role"
+msgstr "Rôle de l'utilisateur Supprimer"
+
+#: ../ure-options.php:305
+msgid "Default Role for New User"
+msgstr "Rôle par défaut pour les nouveaux utilisateurs"
+
+#: ../ure-options.php:310
+msgid "Change"
+msgstr "Changement"
+
+#: ../ure-options.php:310
+msgid "Set as Default User Role"
+msgstr "Définir comme rôle d'utilisateur par défaut"
 
 #: ../user-role-editor.php:38
 msgid "User Role Editor requires WordPress 2.8 or newer."
@@ -151,7 +247,9 @@ msgstr "Veuillez mettre à jour&nbsp;!"
 msgid "User Role Editor"
 msgstr "Extension \"User Role Editor\""
 
-#: ../user-role-editor.php:93
+#: ../user-role-editor.php:158
 msgid "Settings"
 msgstr "Réglages"
 
+#~ msgid "Return to default WordPress user role capabilities"
+#~ msgstr "Remettre les capacités des utilisateurs par défaut de WordPress"

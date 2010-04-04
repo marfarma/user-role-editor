@@ -3,8 +3,8 @@ Contributors: ShinePHP
 Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
-Tested up to: 2.9.2
-Stable tag: 1.2
+Tested up to: 3.0
+Stable tag: 2.0
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
 
@@ -12,6 +12,8 @@ User Role Editor WordPress plugin makes the role capabilities changing easy. You
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
 Just turn on check boxes of capabilities you wish to add to the selected role and click "Update" button to save your changes. That's done. In case you made some unneccessary change you always have the "Reset" button to return to the default state of WordPress user roles.
+Add new roles and customize its capabilities according to your needs. Unnecessary self-made role can be deleted if there are no users whome such role is assigned.
+Role assigne every new created user by default can be changed.
 To read more about 'User Role Editor' visit this link http://www.shinephp.com/user-role-editor-wordpress-plugin/
 
 == Installation ==
@@ -30,13 +32,14 @@ Installation procedure:
 1. screenshot-1.png User Role Editor main form
 
 == Translations ==
-* German: [Peter](http://www.red-socks-reinbek.de)
 * French: [Whiler](http://blogs.wittwer.fr/whiler/)
+* German: [Peter](http://www.red-socks-reinbek.de)
 * Russian: [ShinePHP](http://shinephp.com)
 * Spanish: Dario
 
 Dear plugin User,
 if you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
+For version 2.0 I used online translators for some phrases in German, French and Spanish. If you have better translation, send it to me, please. You are welcome!
 
 == Special Thanks to ==
 * [Whiler](http://blogs.wittwer.fr/whiler/) for the help with French translation, ideas, source code contributions.
@@ -46,6 +49,12 @@ if you wish to help me with this plugin translation I very appreciate it. Please
 You are welcome! Help me with plugin translation, share with me new ideas about it further development and link to your site will appear here.
 
 == Changelog ==
+= 2.0 = 04.04.2010
+* Create New Role feature was added
+* Delete self-made not used role feature was added.  You can not delete any WordPress standard role.
+* Change default role for new user feature was added
+* Administator role and users with Administrator role permision were hidden from "Users" and "Edit User" page. This is done in case of delegation of add_user, edit_user or delete_user capabilities to some role.
+
 = 1.2 = 28.03.2010
 * User Role Editor plugin menu item is moved to the Users menu
 * Roles in the dropdown list are translated

@@ -48,7 +48,7 @@ function ure_logEvent($message, $showMessage = false) {
   fclose($fh);
 
   if ($showMessage) {
-    ure_showMessage('Error is occur. Please check the log file.');
+    ure_showMessage('Error! '.__('Error is occur. Please check the log file.', 'ure'));
   }
 }
 // end of ure_logEvent()
@@ -66,12 +66,246 @@ function ure_optionSelected($value, $etalon) {
 
 function ure_showMessage($message) {
 
-if ($message) {
-  echo '<div class="updated" style="margin:0;">'.$message.'</div><br style="clear: both;"/>';
-}
+  if ($message) {
+    if (strpos(strtolower($message), 'error')===false) {
+      $class = 'updated fade';
+    } else {
+      $class = 'error';
+    }
+    echo '<div class="'.$class.'" style="margin:0;">'.$message.'</div><br style="clear: both;"/>';
+  }
 
 }
 // end of ure_showMessage()
+
+
+function ure_getUserRoles() {
+  global $wpdb, $ure_OptionsTable;
+  
+  $option_name = $wpdb->prefix.'user_roles';
+  $getRolesQuery = "select option_id, option_value
+                      from $ure_OptionsTable
+                      where option_name='$option_name'
+                      limit 0, 1";
+  $record = $wpdb->get_results($getRolesQuery);
+  if ($wpdb->last_error) {
+    ure_logEvent($wpdb->last_error);
+    return;
+  }
+  $roles = unserialize($record[0]->option_value);
+
+  return $roles;
+}
+// end of getUserRoles()
+
+
+// restores User Roles from the backup record
+function restoreUserRoles() {
+
+  global $wpdb, $ure_OptionsTable;
+
+  $errorMessage = 'Error! '.__('Database operation error. Check log file.', 'ure');
+  $option_name = $wpdb->prefix.'user_roles';
+  $backup_option_name = $wpdb->prefix.'backup_user_roles';
+  $query = "select option_value
+              from $ure_OptionsTable
+              where option_name='$backup_option_name'
+              limit 0, 1";
+  $option_value = $wpdb->get_var($query);
+  if ($wpdb->last_error) {
+    ure_logEvent($wpdb->last_error, true);
+    return $errorMessage;
+  }
+  if ($option_value) {
+    $query = "update $ure_OptionsTable
+                    set option_value='$option_value'
+                    where option_name='$option_name'
+                    limit 1";
+    $record = $wpdb->query($query);
+    if ($wpdb->last_error) {
+        ure_logEvent($wpdb->last_error, true);
+        return $errorMessage;
+    }
+    $mess = __('Roles capabilities are restored from the backup data', 'ure');
+  } else {
+    $mess = __('No backup data. It is created automatically before the first role data update.', 'ure');
+  }
+  if (isset($_REQUEST['user_role'])) {
+    unset($_REQUEST['user_role']);
+  }
+
+  return $mess;
+}
+// end of restorUserRoles()
+
+
+// Save Roles to database
+function ure_saveRolesToDb($roles) {
+  global $wpdb, $ure_OptionsTable;
+
+  $option_name = $wpdb->prefix.'user_roles';
+  $serialized_roles = serialize($roles);
+  $query = "update $ure_OptionsTable
+                set option_value='$serialized_roles'
+                where option_name='$option_name'
+                limit 1";
+  $record = $wpdb->query($query);
+  if ($wpdb->last_error) {
+    ure_logEvent($wpdb->last_error, true);
+    return false;
+  }
+
+  return true;
+}
+// end of saveRolesToDb()
+
+
+// process new role create request
+function ure_newRoleCreate(&$currentRole) {
+
+  $mess = '';
+  $currentRole = '';
+  if (isset($_GET['user_role']) && $_GET['user_role']) {
+    $user_role = utf8_decode(urldecode($_GET['user_role']));
+    // sanitize user input for security
+    if (!preg_match('/^[A-Za-z_][A-Za-z0-9_]*/', $user_role)) {
+      return 'Error! '.__('Error: Role name must contain latin characters and digits only!', 'ure');;
+    }
+   
+    if ($user_role) {
+      $user_role = esc_html($user_role);
+      $user_role = mysql_real_escape_string($user_role);
+      $roles = ure_getUserRoles();
+      if (!$roles) {
+        return 'Error! '.__('Roles list reading error is encountered', 'ure');;
+      }
+      // add new role to the roles array
+      $currentRole = strtolower($user_role);
+      $result = add_role($currentRole, $user_role, array('read'=>1, 'level_0'=>1));
+      if (!isset($result) || !$result) {
+        $mess = 'Error! '.__('Error is encountered during new role create operation', 'ure');
+      } else {
+        $mess = sprintf(__('Role %s is created successfully', 'ure'), $user_role);
+      }
+    }
+  }
+  return $mess;
+}
+// end of newRoleCreate()
+
+
+// define roles which we could delete, e.g self-created and not used with any blog user
+function getRolesCanDelete($roles) {
+  global $wpdb;
+
+  $tableName = $wpdb->prefix.'usermeta';
+  $metaKey = $wpdb->prefix.'capabilities';
+  $defaultRole = get_option('default_role');
+  $standardRoles = array('administrator', 'editor', 'author', 'contributor', 'subscriber');
+  $rolesCanDelete = array();
+  foreach ($roles as $key=>$role) {
+    $canDelete = true;
+    // check if it is default role for new users
+    if ($key==$defaultRole) {
+      $canDelete = false;
+      continue;
+    }
+    // check if it is standard role
+    foreach ($standardRoles as $standardRole) {
+      if ($key==$standardRole) {
+        $canDelete = false;
+        break;
+      }
+    }
+    if (!$canDelete) {
+      continue;
+    }
+    // check if user with such role exists
+    $query = "SELECT meta_value
+                FROM $tableName
+                WHERE meta_key='$metaKey' AND meta_value like '%$key%'";
+    $rolesUsed = $wpdb->get_results($query);
+    if ($rolesUsed && count($rolesUsed>0)) {
+      foreach ($rolesUsed as $roleUsed) {
+        $roleName = unserialize($roleUsed->meta_value);
+        foreach ($roleName as $key1=>$value1) {
+          if ($key==$key1) {
+            $canDelete = false;
+            break;
+          }
+        }
+        if (!$canDelete) {
+          break;
+        }
+      }
+    }
+    if ($canDelete) {
+      $rolesCanDelete[$key] = $role['name'];
+    }
+  }
+
+  return $rolesCanDelete;
+}
+// end of getRolesCanDelete()
+
+
+function ure_deleteRole() {
+  global $wp_roles;
+
+  $mess = '';
+  if (isset($_GET['user_role']) && $_GET['user_role']) {
+    $role = $_GET['user_role'];
+    //$result = remove_role($_GET['user_role']);
+    // use this modified code from remove_role() directly as remove_role() returns nothing to check
+    if (!isset($wp_roles)) {
+      $wp_roles = new WP_Roles();
+    }
+    if (isset($wp_roles->roles[$role])) {
+      unset($wp_roles->role_objects[$role]);
+      unset($wp_roles->role_names[$role]);
+      unset($wp_roles->roles[$role]);
+      $result = update_option($wp_roles->role_key, $wp_roles->roles);
+    } else {
+      $result = false;
+    }
+    if (!isset($result) || !$result) {
+      $mess = 'Error! '.__('Error encountered during role delete operation', 'ure');
+    } else {
+      $mess = sprintf(__('Role %s is deleted successfully', 'ure'), $role);
+    }
+    unset($_REQUEST['user_role']);
+  }
+
+  return $mess;
+}
+// end of ure_deleteRole()
+
+
+function ure_changeDefaultRole() {
+  global $wp_roles;
+
+  $mess = '';
+  if (!isset($wp_roles)) {
+		$wp_roles = new WP_Roles();
+  }
+  if (isset($_GET['user_role']) && $_GET['user_role']) {
+    $errorMessage = 'Error! '.__('Error encountered during default role change operation', 'ure');
+    if (isset($wp_roles->role_objects[$_GET['user_role']])) {
+      $result = update_option('default_role', $_GET['user_role']);
+      if (!isset($result) || !$result) {
+        $mess = $errorMessage;
+      } else {
+        $mess = sprintf(__('Default role for new users is set to %s successfully', 'ure'), $wp_roles->role_names[$_GET['user_role']]);
+      }
+    } else {
+      $mess = $errorMessage;
+    }
+    unset($_REQUEST['user_role']);
+  }
+
+  return $mess;
+}
+// end of ure_changeDefaultRole()
 
 
 ?>

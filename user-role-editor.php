@@ -3,7 +3,7 @@
 Plugin Name: User Role Editor
 Plugin URI: http://www.shinephp.com/user-role-editor-wordpress-plugin/
 Description: It allows you to change any standard WordPress user roles (except administrator) capabilities list with a few clicks.
-Version: 1.2
+Version: 2.0
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: ure
@@ -79,11 +79,76 @@ function ure_install() {
 // end of ure_install()
 
 
+function ure_excludeAdminRole($roles) {
+
+  if ( isset( $roles['administrator'] ) && !current_user_can('level_10') ){
+		unset( $roles['administrator'] );
+	}
+
+  return $roles;
+
+}
+// end of excludeAdminRole()
+
+
+function ure_admin_jquery(){
+	global $pagenow;
+	if ( 'users.php' == $pagenow ){
+		wp_enqueue_script('jquery');
+	}
+}
+// end of ure_admin_jquery()
+
+
+function ure_admin_user_hide(){
+	if (!current_user_can('level_10')) {
+?>
+		<script type='text/javascript' >
+			jQuery(document).ready(function(){
+			  var admin_count;
+			  var total_count;
+			  
+			  // Grab Administrator Count
+			  jQuery("#list-filter > .subsubsub > li > a:contains(Administrator)").each(function(){
+			  	admin_count = jQuery(this).children('.count').text();
+				admin_count = admin_count.substring(1, admin_count.length - 1);
+			  });
+			  
+			  // Remove Administrator Filter
+			  jQuery("#list-filter > .subsubsub > li > a:contains(Administrator)").parent().remove();
+			  
+			  // Update All Filter Count
+			  jQuery("#list-filter > .subsubsub > li > a:contains(All)").each(function(){
+			  	total_count = jQuery(this).children('.count').text();
+				total_count = total_count.substring(1, total_count.length - 1) - admin_count;
+				jQuery(this).children('.count').text('('+total_count+')');
+			  });
+			  
+			  // Hide Administrator Table Rows
+			  jQuery("#users > tr .administrator").parent().parent().remove();
+			});
+		</script>
+<?php
+	}
+}
+// end of ure_admin_user_hide()
+
+
 function ure_init() {
 
   if(function_exists('register_setting')) {
     register_setting('ure-options', 'ure_option');
   }
+  // Exclude administrator role from edit list.
+  add_filter('editable_roles', 'ure_excludeAdminRole');
+  if (!current_user_can('level_10')) {
+    // Enqueue jQuery
+    add_action('admin_enqueue_scripts' , 'ure_admin_jquery' );
+    // Hide Administrator from list of users
+    add_action('admin_head' , 'ure_admin_user_hide');
+  }
+  
+
 }
 // end of ure_init()
 

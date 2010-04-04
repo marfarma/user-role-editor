@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Thank You Counter Button 1.0.02\n"
+"Project-Id-Version: User Role Editor v.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-28 21:37+0600\n"
+"POT-Creation-Date: 2010-04-04 10:20+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -12,6 +12,57 @@ msgstr ""
 "X-Poedit-Language: Russian\n"
 "X-Poedit-Country: RUSSIAN FEDERATION\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+#: ../ure-lib.php:51
+msgid "Error is occur. Please check the log file."
+msgstr "Произошла ошибка. Проверьте лог-файл."
+
+#: ../ure-lib.php:107
+msgid "Database operation error. Check log file."
+msgstr "Ошибка работы с базой данных. Проверьте лог-файл."
+
+#: ../ure-lib.php:129
+msgid "Roles capabilities are restored from the backup data"
+msgstr "Роли восстановлены из резервной копии"
+
+#: ../ure-lib.php:131
+msgid "No backup data. It is created automatically before the first role data update."
+msgstr "Нет резервной копии. Она создается автоматически перед первым изменением ролей."
+
+#: ../ure-lib.php:172
+msgid "Error: Role name must contain latin characters and digits only!"
+msgstr "Ошибка: должно содержать только латинские буквы и цифры"
+
+#: ../ure-lib.php:180
+msgid "Roles list reading error is encountered"
+msgstr "Ошибка чтения списка ролей!"
+
+#: ../ure-lib.php:186
+msgid "Error is encountered during new role create operation"
+msgstr "Произошла ошибка при создании новой роли"
+
+#: ../ure-lib.php:188
+#, php-format
+msgid "Role %s is created successfully"
+msgstr "Роль %s создана успешно"
+
+#: ../ure-lib.php:272
+msgid "Error encountered during role delete operation"
+msgstr "Произошла ошибка при удалении роли"
+
+#: ../ure-lib.php:274
+#, php-format
+msgid "Role %s is deleted successfully"
+msgstr "Роль %s удалена успешно"
+
+#: ../ure-lib.php:292
+msgid "Error encountered during default role change operation"
+msgstr "Произошла ошибка при изменении роли по-умолчанию"
+
+#: ../ure-lib.php:298
+#, php-format
+msgid "Default role for new users is set to %s successfully"
+msgstr "Роль по-умолчанию для новых пользователй изменена на %s успешно."
 
 #: ../ure-options.php:15
 msgid "Editor"
@@ -29,115 +80,161 @@ msgstr "Ассистент"
 msgid "Subscriber"
 msgstr "Подписчик"
 
-#: ../ure-options.php:48
-msgid "Roles capabilities are restored from the backup data"
-msgstr "Роли восстановлены из резервной копии"
-
-#: ../ure-options.php:53
-msgid "No backup data. It is created automatically before the first role data update."
-msgstr "Нет резервной копии. Она создается автоматически перед первым изменением ролей."
-
-#: ../ure-options.php:128
+#: ../ure-options.php:112
 msgid "Backup record is created for the current role capabilities"
 msgstr "Для текущего распределения возможностей по ролям создана резервная копия"
 
-#: ../ure-options.php:145
+#: ../ure-options.php:121
 msgid "Role"
 msgstr "Роль"
 
-#: ../ure-options.php:145
+#: ../ure-options.php:121
 msgid "is updated successfully"
 msgstr "изменена успешно"
 
-#: ../ure-options.php:179
+#: ../ure-options.php:165
 msgid "About this Plugin:"
 msgstr "Об этом плагине"
 
-#: ../ure-options.php:180
+#: ../ure-options.php:166
 msgid "Author's website"
 msgstr "Вебсайт автора"
 
-#: ../ure-options.php:181
+#: ../ure-options.php:167
 msgid "Plugin webpage"
 msgstr "Страница плагина"
 
-#: ../ure-options.php:182
-#: ../user-role-editor.php:103
+#: ../ure-options.php:168
+#: ../user-role-editor.php:168
 msgid "Changelog"
 msgstr "Журнал изменений"
 
-#: ../ure-options.php:183
+#: ../ure-options.php:169
 msgid "FAQ"
 msgstr "Часто задаваемые вопросы"
 
-#: ../ure-options.php:184
+#: ../ure-options.php:170
 msgid "Donate"
 msgstr "Поддержать"
 
-#: ../ure-options.php:186
+#: ../ure-options.php:172
 msgid "Greetings:"
 msgstr "Приветствия"
 
-#: ../ure-options.php:187
+#: ../ure-options.php:173
 msgid "It's me, the author"
 msgstr "Это я, автор"
 
-#: ../ure-options.php:188
+#: ../ure-options.php:174
 msgid "For the help with French translation"
 msgstr "за помощь с французским переводом"
 
-#: ../ure-options.php:189
+#: ../ure-options.php:175
 msgid "For the help with German translation"
 msgstr "за помощь с немецким переводом"
 
-#: ../ure-options.php:190
+#: ../ure-options.php:176
 msgid "For the help with Spanish translation"
 msgstr "за помощь с испанским переводом"
 
-#: ../ure-options.php:191
+#: ../ure-options.php:177
+msgid "For the code to hide administrator role"
+msgstr "За код, скрывающий роль администратора"
+
+#: ../ure-options.php:178
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Желаете увидеть свое имя и ссылку на Ваш сайт здесь? Добро пожаловать! Ваша помощь с переводом и новые идеи приветствуются."
 
-#: ../ure-options.php:202
-msgid ": Please confirm to continue"
-msgstr ": Пожалуйста, подтвердите продолжение "
+#: ../ure-options.php:194
+msgid "Role Name can not be empty!"
+msgstr "Наименование роли не может быть пустым!"
 
-#: ../ure-options.php:218
+#: ../ure-options.php:198
+msgid "Role Name must contain latin characters and digits only!"
+msgstr "Наименование роли должно содержать только латинские буквы и цифры."
+
+#: ../ure-options.php:203
+#: ../ure-options.php:295
+msgid "Delete Role"
+msgstr "Удалить Роль"
+
+#: ../ure-options.php:205
+msgid "Change Default Role"
+msgstr "Установить как роль по-умолчанию"
+
+#: ../ure-options.php:207
+#: ../ure-options.php:279
+msgid "Restore Roles from backup copy"
+msgstr "Восстановить Роли из резервной копии"
+
+#: ../ure-options.php:209
+msgid "Please confirm to continue"
+msgstr "Пожалуйста, подтвердите продолжение "
+
+#: ../ure-options.php:234
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Изменение роли \"%s\": пожалуйста, подтвердите продолжение "
 
-#: ../ure-options.php:226
+#: ../ure-options.php:242
 msgid "Select Role and change its capabilities list"
 msgstr "Выбери Роль и измени список разрешённых операций"
 
-#: ../ure-options.php:230
+#: ../ure-options.php:246
 msgid "Select Role:"
 msgstr "Выбери Роль:"
 
-#: ../ure-options.php:260
+#: ../ure-options.php:277
 msgid "Update"
 msgstr "Сохранить"
 
-#: ../ure-options.php:260
+#: ../ure-options.php:277
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: ../ure-options.php:261
+#: ../ure-options.php:278
 msgid "Cancel"
 msgstr "Отмена"
 
-#: ../ure-options.php:261
+#: ../ure-options.php:278
 msgid "Cancel not saved changes"
 msgstr "Отказ от сохранения изменений"
 
-#: ../ure-options.php:262
+#: ../ure-options.php:279
 msgid "Reset"
 msgstr "Сброс"
 
-#: ../ure-options.php:262
-msgid "Return to default WordPress user role capabilities"
-msgstr "Вернуться к исходному состоянию ролей WordPress"
+#: ../ure-options.php:285
+msgid "Add New Role"
+msgstr "Добавить новую Роль"
+
+#: ../ure-options.php:290
+msgid "Add"
+msgstr "Добавить"
+
+#: ../ure-options.php:290
+msgid "Add New User Role"
+msgstr "Добавить новую Роль пользователя"
+
+#: ../ure-options.php:300
+msgid "Delete"
+msgstr "Удалить"
+
+#: ../ure-options.php:300
+msgid "Delete User Role"
+msgstr "Удалить Роль пользователя"
+
+#: ../ure-options.php:305
+msgid "Default Role for New User"
+msgstr "Роль по-умолчанию"
+
+#: ../ure-options.php:310
+msgid "Change"
+msgstr "Изменить"
+
+#: ../ure-options.php:310
+msgid "Set as Default User Role"
+msgstr "Установить как роль по-умолчанию"
 
 #: ../user-role-editor.php:38
 msgid "User Role Editor requires WordPress 2.8 or newer."
@@ -151,9 +248,15 @@ msgstr "Пожалуйста, обновите!"
 msgid "User Role Editor"
 msgstr "Редактор ролей пользователей"
 
-#: ../user-role-editor.php:93
+#: ../user-role-editor.php:158
 msgid "Settings"
 msgstr "Установки"
+
+#~ msgid "Return to default WordPress user role capabilities"
+#~ msgstr "Вернуться к исходному состоянию ролей WordPress"
+
+#~ msgid "Role Name must be just a single word without special characters!"
+#~ msgstr "Наименование роли - одно слово без специальных символов! "
 
 #~ msgid "action"
 #~ msgstr "операции"
@@ -591,9 +694,6 @@ msgstr "Установки"
 
 #~ msgid "Unknown Post!"
 #~ msgstr "Неизвестная статья!"
-
-#~ msgid "Default"
-#~ msgstr "По-умолчанию"
 
 #~ msgid "Submit"
 #~ msgstr "Отправить"
