@@ -54,23 +54,27 @@ For version 2.0 I used online translators for some phrases in German, French and
 You are welcome! Help me with plugin translation, share with me new ideas about it further development and link to your site will appear here.
 
 == Changelog ==
-* 2.0 = 04.04.2010
+= 2.0 =
+* 04.04.2010
 * Create New Role feature was added
 * Delete self-made not used role feature was added.  You can not delete any WordPress standard role.
 * Change default role for new user feature was added
 * Administator role and users with Administrator role permision were hidden from "Users" and "Edit User" page. This is done in case of delegation of add_user, edit_user or delete_user capabilities to some role.
 
-= 1.2 = 28.03.2010
+= 1.2 =
+* 28.03.2010
 * User Role Editor plugin menu item is moved to the Users menu
 * Roles in the dropdown list are translated
 * French translation is added
 
-= 1.1 = 24.03.2010
+= 1.1 =
+* 24.03.2010
 * Critical bug is fixed. If you click 'Reset' button before any changes to the role data saved (that is click Update button) at least one time, you met with all roles data lost problem. Backup data created automatically before the 1st role data update. If no update - no backup. Special checking for that was added.
 * German translation is added.
 * Spanish translation is added.
 
-= 1.0 = 22.03.2010
+= 1.0 =
+* 22.03.2010
 * 1st release.
 
 == Additional Documentation ==
