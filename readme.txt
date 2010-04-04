@@ -64,7 +64,7 @@ User with 'edit_users' permission could still use URL request with special param
 * Create New Role feature was added
 * Delete self-made not used role feature was added.  You can not delete any WordPress standard role.
 * Change default role for new user feature was added
-* Administator role and users with Administrator role permision were hidden from "Users" and "Edit User" page. This is done in case of delegation of add_user, edit_user or delete_user capabilities to some role.
+* Administator role and users with Administrator role permission were hidden from "Users" and "Edit User" page. This is done in case of delegation of add_user, edit_user or delete_user capabilities to some role.
 
 = 1.2 =
 * 28.03.2010
