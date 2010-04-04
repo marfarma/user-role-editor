@@ -33,7 +33,8 @@ define('URE_ERROR', 'Error is encountered');
 global $wpdb, $ure_OptionsTable;
 
 $ure_OptionsTable = $wpdb->prefix .'options';
-
+// this array will be used to cash users checked for Administrator role
+$ure_userToEdit = array();
 
 function ure_logEvent($message, $showMessage = false) {
   include(ABSPATH .'wp-includes/version.php');
@@ -307,5 +308,30 @@ function ure_changeDefaultRole() {
 }
 // end of ure_changeDefaultRole()
 
+
+// returns true is user has Role "Administrator"
+function ure_is_admin($user_id) {
+  global $wpdb, $ure_userToEdit;
+
+  if (!isset($user_id) || !$user_id) {
+    return false;
+  }
+  
+  $tableName = $wpdb->prefix.'usermeta';
+  $metaKey = $wpdb->prefix.'capabilities';
+  $query = "SELECT count(*)
+                FROM $tableName
+                WHERE user_id=$user_id AND meta_key='$metaKey' AND meta_value like '%administrator%'";
+  $hasAdminRole = $wpdb->get_var($query);
+  if ($hasAdminRole>0) {
+    $result = true;
+  } else {
+    $result = false;
+  }
+  $ure_userToEdit[$user_id] = $result;
+
+  return $result;
+}
+// end of ure_is_admin()
 
 ?>

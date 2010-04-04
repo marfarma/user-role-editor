@@ -3,7 +3,7 @@
 Plugin Name: User Role Editor
 Plugin URI: http://www.shinephp.com/user-role-editor-wordpress-plugin/
 Description: It allows you to change any standard WordPress user roles (except administrator) capabilities list with a few clicks.
-Version: 2.0
+Version: 2.0.1
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: ure
@@ -81,7 +81,7 @@ function ure_install() {
 
 function ure_excludeAdminRole($roles) {
 
-  if ( isset( $roles['administrator'] ) && !current_user_can('level_10') ){
+  if (isset($roles['administrator'])){
 		unset( $roles['administrator'] );
 	}
 
@@ -93,7 +93,7 @@ function ure_excludeAdminRole($roles) {
 
 function ure_admin_jquery(){
 	global $pagenow;
-	if ( 'users.php' == $pagenow ){
+	if ('users.php'==$pagenow){
 		wp_enqueue_script('jquery');
 	}
 }
@@ -134,21 +134,65 @@ function ure_admin_user_hide(){
 // end of ure_admin_user_hide()
 
 
+// We have to vulnerable queries id users admin interfase which should be processed
+// 1st: http://blogdomain.com/wp-admin/user-edit.php?user_id=ID&wp_http_referer=%2Fwp-admin%2Fusers.php
+// 2nd: http://blogdomain.com/wp-admin/users.php?action=delete&user=ID&_wpnonce=ab34225a78
+// If put Administrator user ID into such request, user with lower capabilities (if he has 'edit_users')
+// can edit, delete admin record
+// This function removes 'edit_users' capability from current user capabilities
+// if request has admin user ID in it
+function ure_not_edit_admin($allcaps, $caps, $name) {
+
+  global $ure_userToEdit;
+
+  $userKeys = array('user_id', 'user');
+  foreach ($userKeys as $userKey) {
+    $accessDeny = false;
+    if (isset($_GET[$userKey])) {
+      $ure_UserId = $_GET[$userKey];
+      if ($ure_UserId==1) {  // built-in WordPress Admin
+        $accessDeny = true;
+      } else {
+        if (!isset($ure_userToEdit[$ure_UserId])) {
+          // check if user_id has Administrator role
+          $accessDeny = ure_is_admin($ure_UserId);
+        } else {
+          // user_id was checked already, get result from cash
+          $accessDeny = $ure_userToEdit[$ure_UserId];
+        }
+      }
+      if ($accessDeny) {
+        unset($allcaps['edit_users']);
+      }
+      break;
+    }
+  }
+
+	return $allcaps;
+}
+// end of ure_not_edit_admin()
+
+
 function ure_init() {
+
+  global $pagenow;
 
   if(function_exists('register_setting')) {
     register_setting('ure-options', 'ure_option');
   }
-  // Exclude administrator role from edit list.
-  add_filter('editable_roles', 'ure_excludeAdminRole');
+  // these filters and actions should prevent editing users with administrator role
+  // by other users with 'edit_users' capabilities
   if (!current_user_can('level_10')) {
+    // Exclude administrator role from edit list.
+    add_filter('editable_roles', 'ure_excludeAdminRole');
     // Enqueue jQuery
     add_action('admin_enqueue_scripts' , 'ure_admin_jquery' );
     // Hide Administrator from list of users
     add_action('admin_head' , 'ure_admin_user_hide');
+    // prohibit any actions with user who has Administrator role
+    add_filter('user_has_cap', 'ure_not_edit_admin', 10, 3);
   }
   
-
 }
 // end of ure_init()
 
