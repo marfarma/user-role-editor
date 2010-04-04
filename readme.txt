@@ -11,9 +11,9 @@ User Role Editor WordPress plugin makes the role capabilities changing easy. You
 == Description ==
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
-Just turn on check boxes of capabilities you wish to add to the selected role and click "Update" button to save your changes. That's done. In case you made some unneccessary change you always have the "Reset" button to return to the default state of WordPress user roles.
+Just turn on check boxes of capabilities you wish to add to the selected role and click "Update" button to save your changes. That's done. In case you made some unneccessary change you always have the "Reset" button to restore roles state from the automatically made backup copy.
 Add new roles and customize its capabilities according to your needs. Unnecessary self-made role can be deleted if there are no users whome such role is assigned.
-Role assigne every new created user by default can be changed.
+Role assigned every new created user by default can be changed too.
 To read more about 'User Role Editor' visit this link http://www.shinephp.com/user-role-editor-wordpress-plugin/
 
 == Installation ==
@@ -26,7 +26,12 @@ Installation procedure:
 4. Go to the "Settings"-"User Role Editor" menu item and change your WordPress standard roles capabilities according to your needs.
 
 == Frequently Asked Questions ==
-- coming soon with your help
+- Does it work with WordPress 3.0?
+Yes it does. I tested it with WordPress 3.0 Beta 1.
+- Does it work with WordPress MU?
+Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
+
+
 
 == Screenshots ==
 1. screenshot-1.png User Role Editor main form
@@ -49,7 +54,7 @@ For version 2.0 I used online translators for some phrases in German, French and
 You are welcome! Help me with plugin translation, share with me new ideas about it further development and link to your site will appear here.
 
 == Changelog ==
-= 2.0 = 04.04.2010
+* 2.0 = 04.04.2010
 * Create New Role feature was added
 * Delete self-made not used role feature was added.  You can not delete any WordPress standard role.
 * Change default role for new user feature was added
