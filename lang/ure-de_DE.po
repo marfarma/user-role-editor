@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: User Role Editor v. 2.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-04 10:20+0600\n"
-"PO-Revision-Date: 2010-04-04 10:21+0600\n"
-"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
+"Project-Id-Version: User Role Editor v. 2.0.1\n"
+"Report-Msgid-Bugs-To: Vladimir <vladimir@shinephp.com>\n"
+"POT-Creation-Date: 2010-04-10 17:25+0200\n"
+"PO-Revision-Date: 2010-04-10 17:25+0200\n"
+"Last-Translator: Peter <webmaster@red-socks-reinbek.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,18 +13,19 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
 "X-Poedit-Basepath: ../\n"
-"X-Textdomain-Support: yes\n"
+"X-Poedit-Bookmarks: \n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
 
 #: ../ure-lib.php:51
 msgid "Error is occur. Please check the log file."
-msgstr "Fehler auftreten. Bitte überprüfen Sie die Log-Datei."
+msgstr "Ein Fehler ist aufgetreten. Bitte überprüfen Sie die Log-Datei."
 
 #: ../ure-lib.php:107
 msgid "Database operation error. Check log file."
-msgstr "Datenbankbetriebsstörung. Überprüfen Sie Protokolldatei."
+msgstr "Datenbankfehler. Überprüfen Sie die Protokolldatei."
 
 #: ../ure-lib.php:129
 msgid "Roles capabilities are restored from the backup data"
@@ -32,42 +33,42 @@ msgstr "Rollenbefugnisse werden von der Sicherheitskopie wiederhergestellt"
 
 #: ../ure-lib.php:131
 msgid "No backup data. It is created automatically before the first role data update."
-msgstr "Kein Backup-Daten. Es wird automatisch vor der ersten Rolle Aktualisierung von Daten erstellt."
+msgstr "Keine Backup-Daten vorhanden. Es wird automatisch vor der ersten Aktualisierung von Rollen-Daten erstellt."
 
 #: ../ure-lib.php:172
 msgid "Error: Role name must contain latin characters and digits only!"
-msgstr "Fehler: Die Rolle Namen enthalten muss lateinischen Buchstaben und Ziffern nur!"
+msgstr "Fehler: Der Rollen-Name darf nur lateinische Buchstaben und Ziffern enthalten!"
 
 #: ../ure-lib.php:180
 msgid "Roles list reading error is encountered"
-msgstr "Rollen-Liste liest Fehler aufgetreten"
+msgstr "Fehler beim Lesen der Rollen-Liste aufgetreten"
 
 #: ../ure-lib.php:186
 msgid "Error is encountered during new role create operation"
-msgstr "Fehler ist während der neuen Rolle auftreten zu schaffen Betrieb"
+msgstr "Ein Fehler ist beim Erstellen der neuen Rolle aufgetreten"
 
 #: ../ure-lib.php:188
 #, php-format
 msgid "Role %s is created successfully"
-msgstr "Rolle %s wird erfolgreich verursacht"
+msgstr "Rolle %s wurde erfolgreich erstellt"
 
 #: ../ure-lib.php:272
 msgid "Error encountered during role delete operation"
-msgstr "Fehler, die während Rolle Löschvorgang"
+msgstr "Ein Fehler ist während des Löschvorgangs der Rolle aufgetreten"
 
 #: ../ure-lib.php:274
 #, php-format
 msgid "Role %s is deleted successfully"
-msgstr "Rolle %s wird erfolgreich gelöscht"
+msgstr "Rolle %s wurde erfolgreich gelöscht"
 
 #: ../ure-lib.php:292
 msgid "Error encountered during default role change operation"
-msgstr "Fehler, die während der Operation standardmäßig Rolle wechseln"
+msgstr "Ein Fehler ist während Änderung der Standard-Rolle aufgetreten"
 
 #: ../ure-lib.php:298
 #, php-format
 msgid "Default role for new users is set to %s successfully"
-msgstr "Default Rolle für neue Benutzer ist auf %s erfolgreich"
+msgstr "Standard-Rolle für neue Benutzer erfolgreich auf %s gesetzt"
 
 #: ../ure-options.php:15
 msgid "Editor"
@@ -87,7 +88,7 @@ msgstr "Abonnent"
 
 #: ../ure-options.php:112
 msgid "Backup record is created for the current role capabilities"
-msgstr "Sicherheitskopie der aktuellen Rollenbefugnisse wird erstellt"
+msgstr "Sicherheitskopie der aktuellen Rollenbefugnisse wurde erstellt"
 
 #: ../ure-options.php:121
 msgid "Role"
@@ -95,7 +96,7 @@ msgstr "Rolle "
 
 #: ../ure-options.php:121
 msgid "is updated successfully"
-msgstr "wird erfolgreich aktualisier"
+msgstr "wurde erfolgreich aktualisiert"
 
 #: ../ure-options.php:165
 msgid "About this Plugin:"
@@ -124,53 +125,53 @@ msgstr "Spende"
 
 #: ../ure-options.php:172
 msgid "Greetings:"
-msgstr "Grüße:"
+msgstr "Grüße von:"
 
 #: ../ure-options.php:173
 msgid "It's me, the author"
-msgstr "Ich bin's, der Autor"
+msgstr "Der Autor"
 
 #: ../ure-options.php:174
 msgid "For the help with French translation"
-msgstr "Für die Hilfe bei der Französisch-Übersetzung"
+msgstr "Hilfe bei der Übersetzung ins Französische"
 
 #: ../ure-options.php:175
 msgid "For the help with German translation"
-msgstr "Für die Hilfe bei der Deutsch-Übersetzung"
+msgstr "Hilfe bei der Übersetzung ins Deutsche"
 
 #: ../ure-options.php:176
 msgid "For the help with Spanish translation"
-msgstr "Für die Hilfe bei der Spanischen-Übersetzung"
+msgstr "Hilfe bei der Übersetzung ins Spanische"
 
 #: ../ure-options.php:177
 msgid "For the code to hide administrator role"
-msgstr "Für den Code zu verstecken Administrator-Rolle"
+msgstr "Code zum Verstecken der Administrator-Rolle"
 
 #: ../ure-options.php:178
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr "Möchten Sie hier Ihren Namen mit Link zu Ihrer Website sehen? Sehr gern! Für Ihre Hilfe bei der Übersetzung und neue Ideen sind wir dankbar."
+msgstr "Hier könnte auch Ihr Name mit einem Link zu Ihrer Webseite stehen! Helfen Sie uns bei der Übersetzung in andere Sprachen! Auch für Kritik und Anregungen sind wir dankbar."
 
 #: ../ure-options.php:194
 msgid "Role Name can not be empty!"
-msgstr "Rolle Name darf nicht leer sein!"
+msgstr "Rollenname darf nicht leer sein!"
 
 #: ../ure-options.php:198
 msgid "Role Name must contain latin characters and digits only!"
-msgstr "Rolle Name muss lateinischen Buchstaben und Ziffern nur!"
+msgstr "Der Rollename darf nur lateinische Buchstaben und Ziffern enthalten!"
 
 #: ../ure-options.php:203
 #: ../ure-options.php:295
 msgid "Delete Role"
-msgstr "Löschung-Rolle"
+msgstr "Löschen der Rolle"
 
 #: ../ure-options.php:205
 msgid "Change Default Role"
-msgstr "Change Default Role"
+msgstr "Ändern der Standard-Rolle"
 
 #: ../ure-options.php:207
 #: ../ure-options.php:279
 msgid "Restore Roles from backup copy"
-msgstr "Restore von Backup-Kopie Rollen"
+msgstr "Wiederherstellung der Rollen von der Sicherheitskopie"
 
 #: ../ure-options.php:209
 msgid "Please confirm to continue"
@@ -195,7 +196,7 @@ msgstr "Aktualisieren"
 
 #: ../ure-options.php:277
 msgid "Save Changes"
-msgstr "Sichere Änderungen"
+msgstr "Änderungen sichern"
 
 #: ../ure-options.php:278
 msgid "Cancel"
@@ -219,7 +220,7 @@ msgstr "Hinzufügen"
 
 #: ../ure-options.php:290
 msgid "Add New User Role"
-msgstr "Neuen Benutzer Rolle hinzufügen"
+msgstr "Neue Benutzer-Rolle hinzufügen"
 
 #: ../ure-options.php:300
 msgid "Delete"
@@ -227,23 +228,23 @@ msgstr "Löschen"
 
 #: ../ure-options.php:300
 msgid "Delete User Role"
-msgstr "Löschung-Benutzer-Rolle"
+msgstr "Löschen der Benutzer-Rolle"
 
 #: ../ure-options.php:305
 msgid "Default Role for New User"
-msgstr "Rückstellungs-Rolle für neuen Benutzer"
+msgstr "Standard-Rolle für neuen Benutzer"
 
 #: ../ure-options.php:310
 msgid "Change"
-msgstr "Änderung"
+msgstr "Ändern"
 
 #: ../ure-options.php:310
 msgid "Set as Default User Role"
-msgstr "Stellen Sie als Rückstellungs-Benutzer-Rolle ein"
+msgstr "Geänderte Standard-Benutzer-Rolle sichern"
 
 #: ../user-role-editor.php:38
 msgid "User Role Editor requires WordPress 2.8 or newer."
-msgstr "User Role Editor benötigt Wordpress 2.8 oder neuer"
+msgstr "User Role Editor benötigt Wordpress 2.8 oder aktueller"
 
 #: ../user-role-editor.php:38
 msgid "Please update!"
@@ -251,7 +252,7 @@ msgstr "Bitte aktualisieren!"
 
 #: ../user-role-editor.php:63
 msgid "User Role Editor"
-msgstr "Benutzerrollen-Editor"
+msgstr "User Role Editor"
 
 #: ../user-role-editor.php:158
 msgid "Settings"
