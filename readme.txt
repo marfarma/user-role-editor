@@ -52,8 +52,9 @@ For version 2.0 I used online translators for some phrases in German, French and
 * [Peter](http://www.red-socks-reinbek.de) - for the help with German translation.
 * Dario - for the help with the Spanish translation.
 * [Technolog.jp](http://technolog.jp/) - for the help with Japanese translation.
+* [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
-You are welcome! Help me with plugin translation, share with me new ideas about it further development and link to your site will appear here.
+You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
 == Changelog ==
 = 2.0.3 =
