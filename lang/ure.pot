@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-04 10:20+0600\n"
+"POT-Creation-Date: 2010-04-14 22:19+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -16,53 +16,53 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../ure-lib.php:51
+#: ../ure-lib.php:52
 msgid "Error is occur. Please check the log file."
 msgstr ""
 
-#: ../ure-lib.php:107
+#: ../ure-lib.php:108
 msgid "Database operation error. Check log file."
 msgstr ""
 
-#: ../ure-lib.php:129
+#: ../ure-lib.php:130
 msgid "Roles capabilities are restored from the backup data"
 msgstr ""
 
-#: ../ure-lib.php:131
+#: ../ure-lib.php:132
 msgid "No backup data. It is created automatically before the first role data update."
 msgstr ""
 
-#: ../ure-lib.php:172
+#: ../ure-lib.php:173
 msgid "Error: Role name must contain latin characters and digits only!"
 msgstr ""
 
-#: ../ure-lib.php:180
+#: ../ure-lib.php:181
 msgid "Roles list reading error is encountered"
 msgstr ""
 
-#: ../ure-lib.php:186
+#: ../ure-lib.php:187
 msgid "Error is encountered during new role create operation"
 msgstr ""
 
-#: ../ure-lib.php:188
+#: ../ure-lib.php:189
 #, php-format
 msgid "Role %s is created successfully"
 msgstr ""
 
-#: ../ure-lib.php:272
+#: ../ure-lib.php:273
 msgid "Error encountered during role delete operation"
 msgstr ""
 
-#: ../ure-lib.php:274
+#: ../ure-lib.php:275
 #, php-format
 msgid "Role %s is deleted successfully"
 msgstr ""
 
-#: ../ure-lib.php:292
+#: ../ure-lib.php:293
 msgid "Error encountered during default role change operation"
 msgstr ""
 
-#: ../ure-lib.php:298
+#: ../ure-lib.php:299
 #, php-format
 msgid "Default role for new users is set to %s successfully"
 msgstr ""
@@ -108,7 +108,7 @@ msgid "Plugin webpage"
 msgstr ""
 
 #: ../ure-options.php:168
-#: ../user-role-editor.php:168
+#: ../user-role-editor.php:212
 msgid "Changelog"
 msgstr ""
 
@@ -137,105 +137,109 @@ msgid "For the help with German translation"
 msgstr ""
 
 #: ../ure-options.php:176
-msgid "For the help with Spanish translation"
+msgid "For the help with Japanese translation"
 msgstr ""
 
 #: ../ure-options.php:177
-msgid "For the code to hide administrator role"
+msgid "For the help with Spanish translation"
 msgstr ""
 
 #: ../ure-options.php:178
+msgid "For the code to hide administrator role"
+msgstr ""
+
+#: ../ure-options.php:179
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr ""
 
-#: ../ure-options.php:194
+#: ../ure-options.php:195
 msgid "Role Name can not be empty!"
 msgstr ""
 
-#: ../ure-options.php:198
+#: ../ure-options.php:199
 msgid "Role Name must contain latin characters and digits only!"
 msgstr ""
 
-#: ../ure-options.php:203
-#: ../ure-options.php:295
+#: ../ure-options.php:204
+#: ../ure-options.php:296
 msgid "Delete Role"
 msgstr ""
 
-#: ../ure-options.php:205
+#: ../ure-options.php:206
 msgid "Change Default Role"
 msgstr ""
 
-#: ../ure-options.php:207
-#: ../ure-options.php:279
+#: ../ure-options.php:208
+#: ../ure-options.php:280
 msgid "Restore Roles from backup copy"
 msgstr ""
 
-#: ../ure-options.php:209
+#: ../ure-options.php:210
 msgid "Please confirm to continue"
 msgstr ""
 
-#: ../ure-options.php:234
+#: ../ure-options.php:235
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr ""
 
-#: ../ure-options.php:242
+#: ../ure-options.php:243
 msgid "Select Role and change its capabilities list"
 msgstr ""
 
-#: ../ure-options.php:246
+#: ../ure-options.php:247
 msgid "Select Role:"
 msgstr ""
 
-#: ../ure-options.php:277
+#: ../ure-options.php:278
 msgid "Update"
 msgstr ""
 
-#: ../ure-options.php:277
+#: ../ure-options.php:278
 msgid "Save Changes"
 msgstr ""
 
-#: ../ure-options.php:278
+#: ../ure-options.php:279
 msgid "Cancel"
 msgstr ""
 
-#: ../ure-options.php:278
+#: ../ure-options.php:279
 msgid "Cancel not saved changes"
 msgstr ""
 
-#: ../ure-options.php:279
+#: ../ure-options.php:280
 msgid "Reset"
 msgstr ""
 
-#: ../ure-options.php:285
+#: ../ure-options.php:286
 msgid "Add New Role"
 msgstr ""
 
-#: ../ure-options.php:290
+#: ../ure-options.php:291
 msgid "Add"
 msgstr ""
 
-#: ../ure-options.php:290
+#: ../ure-options.php:291
 msgid "Add New User Role"
 msgstr ""
 
-#: ../ure-options.php:300
+#: ../ure-options.php:301
 msgid "Delete"
 msgstr ""
 
-#: ../ure-options.php:300
+#: ../ure-options.php:301
 msgid "Delete User Role"
 msgstr ""
 
-#: ../ure-options.php:305
+#: ../ure-options.php:306
 msgid "Default Role for New User"
 msgstr ""
 
-#: ../ure-options.php:310
+#: ../ure-options.php:311
 msgid "Change"
 msgstr ""
 
-#: ../ure-options.php:310
+#: ../ure-options.php:311
 msgid "Set as Default User Role"
 msgstr ""
 
@@ -251,7 +255,7 @@ msgstr ""
 msgid "User Role Editor"
 msgstr ""
 
-#: ../user-role-editor.php:158
+#: ../user-role-editor.php:202
 msgid "Settings"
 msgstr ""
 
