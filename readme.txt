@@ -39,7 +39,7 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 == Translations ==
 * French: [Whiler](http://blogs.wittwer.fr/whiler/)
 * German: [Peter](http://www.red-socks-reinbek.de)
-* Japan: [Technolog.jp](http://technolog.jp/)
+* Japanese: [Technolog.jp](http://technolog.jp/)
 * Russian: [ShinePHP](http://shinephp.com)
 * Spanish: Dario
 
