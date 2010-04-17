@@ -3,7 +3,7 @@
 Plugin Name: User Role Editor
 Plugin URI: http://www.shinephp.com/user-role-editor-wordpress-plugin/
 Description: It allows you to change any standard WordPress user roles (except administrator) capabilities list with a few clicks.
-Version: 2.0.3
+Version: 2.1
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: ure
@@ -71,10 +71,9 @@ function ure_optionsPage() {
 
 // Install plugin
 function ure_install() {
-	
-  add_option('ure_auto_monitor', 0);
+	delete_option('ure_auto_monitor');
+  add_option('ure_caps_readable', 0);
 
-  ure_logEvent('URE Plugin is installed successfully.');
 }
 // end of ure_install()
 
@@ -174,12 +173,7 @@ function ure_not_edit_admin($allcaps, $caps, $name) {
 
 
 function ure_init() {
-
-  global $pagenow;
-
-  if(function_exists('register_setting')) {
-    register_setting('ure-options', 'ure_option');
-  }
+ 
   // these filters and actions should prevent editing users with administrator role
   // by other users with 'edit_users' capabilities
   if (!current_user_can('level_10')) {

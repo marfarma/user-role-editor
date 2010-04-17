@@ -10,15 +10,7 @@ if (!defined('URE_PLUGIN_URL')) {
 
 $shinephpFavIcon = URE_PLUGIN_URL.'/images/vladimir.png';
 $mess = '';
-// for the translation purpose
-if (false) {
-  __('Editor', 'ure');
-  __('Author', 'ure');
-  __('Contributor', 'ure');
-  __('Subscriber', 'ure');
-}
-
-
+$ure_caps_readable = get_option('ure_caps_readable');
 $option_name = $wpdb->prefix.'user_roles';
 
 if (isset($_GET['action'])) {
@@ -33,6 +25,13 @@ if (isset($_GET['action'])) {
     $mess = ure_deleteRole();
   } else if ($action=='default') {
     $mess = ure_changeDefaultRole();
+  } else if ($action=='capsreadable') {
+    if ($ure_caps_readable) {
+      $ure_caps_readable = 0;
+    } else {
+      $ure_caps_readable = 1;
+    }
+    update_option('ure_caps_readable', $ure_caps_readable);
   }
 }
 
@@ -157,7 +156,7 @@ ure_showMessage($mess);
 ?>
   <form method="post" action="users.php?page=user-role-editor.php" onsubmit="return ure_onSubmit();">
 <?php
-    settings_fields('ure-quard-options');
+    settings_fields('ure-options');
 ?>
 				<div id="poststuff" class="metabox-holder has-right-sidebar">
 					<div class="inner-sidebar" >
@@ -174,7 +173,7 @@ ure_showMessage($mess);
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/whiler.png'; ?>)" target="_blank" title="<?php _e("For the help with French translation", 'ure'); ?>" href="http://blogs.wittwer.fr/whiler/">Whiler</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/peter.png'; ?>)" target="_blank" title="<?php _e("For the help with German translation", 'ure'); ?>" href="http://www.red-socks-reinbek.de">Peter</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/technologjp.png'; ?>)" target="_blank" title="<?php _e("For the help with Japanese translation", 'ure'); ?>" href="http://technolog.jp/">Technolog.jp</a>
-                      <a class="ure_rsb_link" target="_blank" title="<?php _e("For the help with Spanish translation", 'ure'); ?>" href="#">Dario</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/dario.png'; ?>)" target="_blank" title="<?php _e("For the help with Spanish translation", 'ure'); ?>" href="http://www.darioferrer.com">Dario  Ferrer</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/fullthrottle.png'; ?>)" target="_blank" title="<?php _e("For the code to hide administrator role", 'ure'); ?>" href="http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen">FullThrottle</a>
 											<?php _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.', 'ure'); ?>
 									<?php ure_displayBoxEnd(); ?>
@@ -199,7 +198,7 @@ ure_showMessage($mess);
         alert('<?php _e('Role Name must contain latin characters and digits only!','ure');?>');
         return false;
       }
-    } else if (action!='role-change') {
+    } else if (action!='role-change' && action!='capsreadable') {
       if (action=='delete') {
         actionText = '<?php _e('Delete Role', 'ure'); ?>';
       } else if (action=='default') {
@@ -255,13 +254,21 @@ ure_showMessage($mess);
   $i = 0; $quantInCell = 0;
   while($i<$quant) {        
     $checked = '';
-    //$capability = $roles[$currentRole]['capabilities']; if (isset($capability[$fullCapabilities[$i]])) {
     if (isset($roles[$currentRole]['capabilities'][$fullCapabilities[$i]])) {
       $checked = 'checked="checked"';
     }
 ?>
-   <input type="checkbox" name="<?php echo $fullCapabilities[$i]; ?>" id="<?php echo $fullCapabilities[$i]; ?>" value="<?php echo $fullCapabilities[$i]; ?>" <?php echo $checked; ?>/> <?php echo $fullCapabilities[$i]; ?><br/>
+   <input type="checkbox" name="<?php echo $fullCapabilities[$i]; ?>" id="<?php echo $fullCapabilities[$i]; ?>" value="<?php echo $fullCapabilities[$i]; ?>" <?php echo $checked; ?>/>
 <?php
+  if ($ure_caps_readable) {
+?>
+   <label for="<?php echo $fullCapabilities[$i]; ?>" title="<?php echo $fullCapabilities[$i]; ?>" ><?php _e(ure_ConvertCapsToReadable($fullCapabilities[$i]),'ure'); ?></label><br/>
+<?php
+  } else {
+?>
+   <label for="<?php echo $fullCapabilities[$i]; ?>" title="<?php _e(ure_ConvertCapsToReadable($fullCapabilities[$i]),'ure'); ?>" ><?php echo $fullCapabilities[$i]; ?></label><br/>
+<?php
+  }
    $i++; $quantInCell++;
    if ($quantInCell>=$quantInColumn) {
      $quantInCell = 0;
@@ -274,14 +281,32 @@ ure_showMessage($mess);
           </tr>
       </table>
 <hr/>
-      <div class="fli submit" style="padding-top: 0px;">
+
+    <div class="submit" style="padding-top: 0px;">
+      <div style="float:left; padding-bottom: 10px;">
           <input type="submit" name="submit" value="<?php _e('Update', 'ure'); ?>" title="<?php _e('Save Changes', 'ure'); ?>" />
           <input type="button" name="cancel" value="<?php _e('Cancel', 'ure') ?>" title="<?php _e('Cancel not saved changes','ure');?>" onclick="ure_Actions('cancel');"/>
           <input type="button" name="default" value="<?php _e('Reset', 'ure') ?>" title="<?php _e('Restore Roles from backup copy','ure');?>" onclick="ure_Actions('reset');"/>
       </div>
+      <div style="float: right; margin-right: 10px;">
+<?php
+  if ($ure_caps_readable) {
+    $checked = 'checked="checked"';
+  } else {
+    $checked = '';
+  }
+?>
+  <input type="checkbox" name="ure_caps_readable" id="ure_caps_readable" value="1" <?php echo $checked; ?> onclick="ure_Actions('capsreadable');"/>
+  <label for="ure_caps_readable"><?php _e('Show capabilities in human readable form', 'ure');?></label>
+      </div>
+    </div>
 <?php
   ure_displayBoxEnd();
-  $boxStyle = 'width: 240px; min-width:240px;';
+?>
+		</div>
+    <div style="clear:both;"></div>
+<?php
+  $boxStyle = 'width: 300px; min-width:240px;';
   $marginLeft = 'margin-left: 10px; ';
   ure_displayBoxStart(__('Add New Role', 'ure'), $boxStyle); ?>
 <div style="margin-left: 5px; margin-right: 5px; width: 90%; text-align: center;">
@@ -314,8 +339,6 @@ ure_showMessage($mess);
     ure_displayBoxEnd();
 ?>
 
-						</div>
-					</div>
 				</div>
     </form>
 

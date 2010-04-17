@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor Plugin 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-14 22:19+0600\n"
+"POT-Creation-Date: 2010-04-17 16:46+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: Whiler <webmaster@blogs.wittwer.fr>\n"
@@ -63,179 +63,399 @@ msgstr "Une erreur s'est produite pendant le fonctionnement par défaut changeme
 msgid "Default role for new users is set to %s successfully"
 msgstr "Rôle par défaut pour les nouveaux utilisateurs est fixé à %s avec succès"
 
-#: ../ure-options.php:15
+#: ../ure-lib.php:353
 msgid "Editor"
 msgstr "Editeur"
 
-#: ../ure-options.php:16
+#: ../ure-lib.php:354
 msgid "Author"
 msgstr "Auteur"
 
-#: ../ure-options.php:17
+#: ../ure-lib.php:355
 msgid "Contributor"
 msgstr "Contributeur"
 
-#: ../ure-options.php:18
+#: ../ure-lib.php:356
 msgid "Subscriber"
 msgstr "Abonné"
 
-#: ../ure-options.php:112
+#: ../ure-lib.php:358
+msgid "Switch themes"
+msgstr ""
+
+#: ../ure-lib.php:359
+msgid "Edit themes"
+msgstr ""
+
+#: ../ure-lib.php:360
+msgid "Activate plugins"
+msgstr ""
+
+#: ../ure-lib.php:361
+msgid "Edit plugins"
+msgstr ""
+
+#: ../ure-lib.php:362
+msgid "Edit users"
+msgstr ""
+
+#: ../ure-lib.php:363
+msgid "Edit files"
+msgstr ""
+
+#: ../ure-lib.php:364
+msgid "Manage options"
+msgstr ""
+
+#: ../ure-lib.php:365
+msgid "Moderate comments"
+msgstr ""
+
+#: ../ure-lib.php:366
+msgid "Manage categories"
+msgstr ""
+
+#: ../ure-lib.php:367
+msgid "Manage links"
+msgstr ""
+
+#: ../ure-lib.php:368
+msgid "Upload files"
+msgstr ""
+
+#: ../ure-lib.php:369
+msgid "Import"
+msgstr ""
+
+#: ../ure-lib.php:370
+msgid "Unfiltered html"
+msgstr ""
+
+#: ../ure-lib.php:371
+msgid "Edit posts"
+msgstr ""
+
+#: ../ure-lib.php:372
+msgid "Edit others posts"
+msgstr ""
+
+#: ../ure-lib.php:373
+msgid "Edit published posts"
+msgstr ""
+
+#: ../ure-lib.php:374
+msgid "Publish posts"
+msgstr ""
+
+#: ../ure-lib.php:375
+msgid "Edit pages"
+msgstr ""
+
+#: ../ure-lib.php:376
+msgid "Read"
+msgstr ""
+
+#: ../ure-lib.php:377
+msgid "Level 10"
+msgstr ""
+
+#: ../ure-lib.php:378
+msgid "Level 9"
+msgstr ""
+
+#: ../ure-lib.php:379
+msgid "Level 8"
+msgstr ""
+
+#: ../ure-lib.php:380
+msgid "Level 7"
+msgstr ""
+
+#: ../ure-lib.php:381
+msgid "Level 6"
+msgstr ""
+
+#: ../ure-lib.php:382
+msgid "Level 5"
+msgstr ""
+
+#: ../ure-lib.php:383
+msgid "Level 4"
+msgstr ""
+
+#: ../ure-lib.php:384
+msgid "Level 3"
+msgstr ""
+
+#: ../ure-lib.php:385
+msgid "Level 2"
+msgstr ""
+
+#: ../ure-lib.php:386
+msgid "Level 1"
+msgstr ""
+
+#: ../ure-lib.php:387
+msgid "Level 0"
+msgstr ""
+
+#: ../ure-lib.php:388
+msgid "Edit others pages"
+msgstr ""
+
+#: ../ure-lib.php:389
+msgid "Edit published pages"
+msgstr ""
+
+#: ../ure-lib.php:390
+msgid "Publish pages"
+msgstr ""
+
+#: ../ure-lib.php:391
+msgid "Delete pages"
+msgstr ""
+
+#: ../ure-lib.php:392
+msgid "Delete others pages"
+msgstr ""
+
+#: ../ure-lib.php:393
+msgid "Delete published pages"
+msgstr ""
+
+#: ../ure-lib.php:394
+msgid "Delete posts"
+msgstr ""
+
+#: ../ure-lib.php:395
+msgid "Delete others posts"
+msgstr ""
+
+#: ../ure-lib.php:396
+msgid "Delete published posts"
+msgstr ""
+
+#: ../ure-lib.php:397
+msgid "Delete private posts"
+msgstr ""
+
+#: ../ure-lib.php:398
+msgid "Edit private posts"
+msgstr ""
+
+#: ../ure-lib.php:399
+msgid "Read private posts"
+msgstr ""
+
+#: ../ure-lib.php:400
+msgid "Delete private pages"
+msgstr ""
+
+#: ../ure-lib.php:401
+msgid "Edit private pages"
+msgstr ""
+
+#: ../ure-lib.php:402
+msgid "Read private pages"
+msgstr ""
+
+#: ../ure-lib.php:403
+msgid "Delete users"
+msgstr ""
+
+#: ../ure-lib.php:404
+msgid "Create users"
+msgstr ""
+
+#: ../ure-lib.php:405
+msgid "Unfiltered upload"
+msgstr ""
+
+#: ../ure-lib.php:406
+msgid "Edit dashboard"
+msgstr ""
+
+#: ../ure-lib.php:407
+msgid "Update plugins"
+msgstr ""
+
+#: ../ure-lib.php:408
+msgid "Delete plugins"
+msgstr ""
+
+#: ../ure-lib.php:409
+msgid "Install plugins"
+msgstr ""
+
+#: ../ure-lib.php:410
+msgid "Update themes"
+msgstr ""
+
+#: ../ure-lib.php:411
+msgid "Install themes"
+msgstr ""
+
+#: ../ure-options.php:111
 msgid "Backup record is created for the current role capabilities"
 msgstr "L'enregistrement de sauvegarde est créé pour les capacités du rôle actuel"
 
-#: ../ure-options.php:121
+#: ../ure-options.php:120
 msgid "Role"
 msgstr "Rôle "
 
-#: ../ure-options.php:121
+#: ../ure-options.php:120
 msgid "is updated successfully"
 msgstr "a été correctement mis à jour"
 
-#: ../ure-options.php:165
+#: ../ure-options.php:164
 msgid "About this Plugin:"
 msgstr "A propos de cette extension&nbsp;:"
 
-#: ../ure-options.php:166
+#: ../ure-options.php:165
 msgid "Author's website"
 msgstr "Site Web de l'auteur"
 
-#: ../ure-options.php:167
+#: ../ure-options.php:166
 msgid "Plugin webpage"
 msgstr "Page Web de l'extension"
 
-#: ../ure-options.php:168
-#: ../user-role-editor.php:212
+#: ../ure-options.php:167
+#: ../user-role-editor.php:206
 msgid "Changelog"
 msgstr "Changelog"
 
-#: ../ure-options.php:169
+#: ../ure-options.php:168
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../ure-options.php:170
+#: ../ure-options.php:169
 msgid "Donate"
 msgstr "Faire un don"
 
-#: ../ure-options.php:172
+#: ../ure-options.php:171
 msgid "Greetings:"
 msgstr "Remerciements&nbsp;:"
 
-#: ../ure-options.php:173
+#: ../ure-options.php:172
 msgid "It's me, the author"
 msgstr "C'est moi, l'auteur"
 
-#: ../ure-options.php:174
+#: ../ure-options.php:173
 msgid "For the help with French translation"
 msgstr "Pour l'aide avec la traduction française"
 
-#: ../ure-options.php:175
+#: ../ure-options.php:174
 msgid "For the help with German translation"
 msgstr "Pour l'aide avec la traduction allemande"
 
-#: ../ure-options.php:176
+#: ../ure-options.php:175
 msgid "For the help with Japanese translation"
 msgstr "Pour l'aide avec la traduction japonais"
 
-#: ../ure-options.php:177
+#: ../ure-options.php:176
 msgid "For the help with Spanish translation"
 msgstr "Pour l'aide avec la traduction espagnole"
 
-#: ../ure-options.php:178
+#: ../ure-options.php:177
 msgid "For the code to hide administrator role"
 msgstr "Pour le code pour cacher rôle d'administrateur"
 
-#: ../ure-options.php:179
+#: ../ure-options.php:178
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Vous souhaitez voir votre nom avec votre lien vers votre site Web ici ? Avec plaisir ! Votre aide avec la traduction ou de nouvelles idées seront très appréciées."
 
-#: ../ure-options.php:195
+#: ../ure-options.php:194
 msgid "Role Name can not be empty!"
 msgstr "Rôle Nom ne peut pas être vide"
 
-#: ../ure-options.php:199
+#: ../ure-options.php:198
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "Rôle Nom doit contenir que des caractères latins et chiffres seulement!"
 
-#: ../ure-options.php:204
-#: ../ure-options.php:296
+#: ../ure-options.php:203
+#: ../ure-options.php:321
 msgid "Delete Role"
 msgstr "Supprimer rôle"
 
-#: ../ure-options.php:206
+#: ../ure-options.php:205
 msgid "Change Default Role"
 msgstr "Changer de rôle par défaut"
 
-#: ../ure-options.php:208
-#: ../ure-options.php:280
+#: ../ure-options.php:207
+#: ../ure-options.php:289
 msgid "Restore Roles from backup copy"
 msgstr "Rôles de restauration de la copie de sauvegarde"
 
-#: ../ure-options.php:210
+#: ../ure-options.php:209
 msgid "Please confirm to continue"
 msgstr "S'il vous plaît confirmer pour continuer"
 
-#: ../ure-options.php:235
+#: ../ure-options.php:234
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Mise à jour du Rôle \"%s\" : Veuillez confirmer pour continuer"
 
-#: ../ure-options.php:243
+#: ../ure-options.php:242
 msgid "Select Role and change its capabilities list"
 msgstr "Sélectionnez un Rôle et changez sa liste de capacités"
 
-#: ../ure-options.php:247
+#: ../ure-options.php:246
 msgid "Select Role:"
 msgstr "Sélectionnez un rôle&nbsp;:"
 
-#: ../ure-options.php:278
+#: ../ure-options.php:287
 msgid "Update"
 msgstr "Mettre à jour"
 
-#: ../ure-options.php:278
+#: ../ure-options.php:287
 msgid "Save Changes"
 msgstr "Enregistrer les modifications"
 
-#: ../ure-options.php:279
+#: ../ure-options.php:288
 msgid "Cancel"
 msgstr "Annuler"
 
-#: ../ure-options.php:279
+#: ../ure-options.php:288
 msgid "Cancel not saved changes"
 msgstr "Annuler les changements"
 
-#: ../ure-options.php:280
+#: ../ure-options.php:289
 msgid "Reset"
 msgstr "Réinitialiser"
 
-#: ../ure-options.php:286
+#: ../ure-options.php:300
+msgid "Show capabilities in human readable form"
+msgstr ""
+
+#: ../ure-options.php:311
 msgid "Add New Role"
 msgstr "Ajouter un nouveau rôle"
 
-#: ../ure-options.php:291
+#: ../ure-options.php:316
 msgid "Add"
 msgstr "Ajouter"
 
-#: ../ure-options.php:291
+#: ../ure-options.php:316
 msgid "Add New User Role"
 msgstr "Ajouter le rôle d'un nouvel utilisateur"
 
-#: ../ure-options.php:301
+#: ../ure-options.php:326
 msgid "Delete"
 msgstr "Effacer"
 
-#: ../ure-options.php:301
+#: ../ure-options.php:326
 msgid "Delete User Role"
 msgstr "Rôle de l'utilisateur Supprimer"
 
-#: ../ure-options.php:306
+#: ../ure-options.php:331
 msgid "Default Role for New User"
 msgstr "Rôle par défaut pour les nouveaux utilisateurs"
 
-#: ../ure-options.php:311
+#: ../ure-options.php:336
 msgid "Change"
 msgstr "Changement"
 
-#: ../ure-options.php:311
+#: ../ure-options.php:336
 msgid "Set as Default User Role"
 msgstr "Définir comme rôle d'utilisateur par défaut"
 
@@ -251,7 +471,7 @@ msgstr "Veuillez mettre à jour&nbsp;!"
 msgid "User Role Editor"
 msgstr "Extension \"User Role Editor\""
 
-#: ../user-role-editor.php:202
+#: ../user-role-editor.php:196
 msgid "Settings"
 msgstr "Réglages"
 

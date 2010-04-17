@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
 Tested up to: 3.0
-Stable tag: 2.0.3
+Stable tag: 2.1
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
 
@@ -15,6 +15,18 @@ Just turn on check boxes of capabilities you wish to add to the selected role an
 Add new roles and customize its capabilities according to your needs. Unnecessary self-made role can be deleted if there are no users whome such role is assigned.
 Role assigned every new created user by default can be changed too.
 To read more about 'User Role Editor' visit this link http://www.shinephp.com/user-role-editor-wordpress-plugin/
+
+= Translations =
+* French: [Whiler](http://blogs.wittwer.fr/whiler/)
+* German: [Peter](http://www.red-socks-reinbek.de)
+* Japanese: [Technolog.jp](http://technolog.jp/)
+* Russian: [Vladimir Garagulya](http://shinephp.com)
+* Spanish: [Dario Ferrer](http://www.darioferrer.com)
+
+Dear plugin User!
+If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
+If you have better translation for some phrases, send it to me and it will be taken into consideration. You are welcome!
+
 
 == Installation ==
 
@@ -36,27 +48,23 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 == Screenshots ==
 1. screenshot-1.png User Role Editor main form
 
-== Translations ==
-* French: [Whiler](http://blogs.wittwer.fr/whiler/)
-* German: [Peter](http://www.red-socks-reinbek.de)
-* Japanese: [Technolog.jp](http://technolog.jp/)
-* Russian: [ShinePHP](http://shinephp.com)
-* Spanish: Dario
-
-Dear plugin User,
-if you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
-For version 2.0 I used online translators for some phrases in German, French and Spanish. If you have better translation, send it to me, please. You are welcome!
 
 == Special Thanks to ==
 * [Whiler](http://blogs.wittwer.fr/whiler/) for the help with French translation, ideas, source code contributions.
 * [Peter](http://www.red-socks-reinbek.de) - for the help with German translation.
-* Dario - for the help with the Spanish translation.
+* [Dario Ferrer](http://www.darioferrer.com) - for the help with the Spanish translation.
 * [Technolog.jp](http://technolog.jp/) - for the help with Japanese translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
 == Changelog ==
+= 2.1 =
+* 17.04.2010
+* Two ways of capabilities names presentation are available for the user choice: standard WordPress name like 'edit_pages' and mouse pointer hint 'Edit pages', and vice versa - human readable form 'Edit pages' with mouse hint for WP standard name 'edit-pages'. Human readable form will be available in translated variant after correspondent translation file will be updated.
+* Form layout changed slightly to fit more long phrases in other languages
+* Russian, Spanish translations are updated.
+
 = 2.0.3 =
 * 14.04.2010
 * Japanese translation is added. Thanks to [Technolog.jp](http://technolog.jp/).

@@ -334,4 +334,84 @@ function ure_is_admin($user_id) {
 }
 // end of ure_is_admin()
 
+
+function ure_ConvertCapsToReadable($capsName) {
+
+  $capsName = str_replace('_', ' ', $capsName);
+  $capsName = ucfirst($capsName);
+
+  return $capsName;
+}
+// ure_ConvertCapsToReadable
+
+
+function ure_TranslationData() {
+
+// for the translation purpose
+  if (false) {
+// Standard WordPress roles
+    __('Editor', 'ure');
+    __('Author', 'ure');
+    __('Contributor', 'ure');
+    __('Subscriber', 'ure');
+// Standard WordPress capabilities
+    __('Switch themes', 'ure');
+    __('Edit themes', 'ure');
+    __('Activate plugins', 'ure');
+    __('Edit plugins', 'ure');
+    __('Edit users', 'ure');
+    __('Edit files', 'ure');
+    __('Manage options', 'ure');
+    __('Moderate comments', 'ure');
+    __('Manage categories', 'ure');
+    __('Manage links', 'ure');
+    __('Upload files', 'ure');
+    __('Import', 'ure');
+    __('Unfiltered html', 'ure');
+    __('Edit posts', 'ure');
+    __('Edit others posts', 'ure');
+    __('Edit published posts', 'ure');
+    __('Publish posts', 'ure');
+    __('Edit pages', 'ure');
+    __('Read', 'ure');
+    __('Level 10', 'ure');
+    __('Level 9', 'ure');
+    __('Level 8', 'ure');
+    __('Level 7', 'ure');
+    __('Level 6', 'ure');
+    __('Level 5', 'ure');
+    __('Level 4', 'ure');
+    __('Level 3', 'ure');
+    __('Level 2', 'ure');
+    __('Level 1', 'ure');
+    __('Level 0', 'ure');
+    __('Edit others pages', 'ure');
+    __('Edit published pages', 'ure');
+    __('Publish pages', 'ure');
+    __('Delete pages', 'ure');
+    __('Delete others pages', 'ure');
+    __('Delete published pages', 'ure');
+    __('Delete posts', 'ure');
+    __('Delete others posts', 'ure');
+    __('Delete published posts', 'ure');
+    __('Delete private posts', 'ure');
+    __('Edit private posts', 'ure');
+    __('Read private posts', 'ure');
+    __('Delete private pages', 'ure');
+    __('Edit private pages', 'ure');
+    __('Read private pages', 'ure');
+    __('Delete users', 'ure');
+    __('Create users', 'ure');
+    __('Unfiltered upload', 'ure');
+    __('Edit dashboard', 'ure');
+    __('Update plugins', 'ure');
+    __('Delete plugins', 'ure');
+    __('Install plugins', 'ure');
+    __('Update themes', 'ure');
+    __('Install themes', 'ure');
+
+  }
+}
+// end of ure_TranslationData()
+
 ?>
