@@ -170,6 +170,7 @@ ure_showMessage($mess);
 									<?php ure_displayBoxEnd(); ?>
 									<?php ure_displayBoxStart(__('Greetings:','ure')); ?>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo $shinephpFavIcon; ?>);" target="_blank" title="<?php _e("It's me, the author", 'ure'); ?>" href="http://www.shinephp.com/">Vladimir</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/marsis.png'; ?>)" target="_blank" title="<?php _e("For the help with Belorussian translation", 'ure'); ?>" href="http://pc.de">Marsis G.</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/whiler.png'; ?>)" target="_blank" title="<?php _e("For the help with French translation", 'ure'); ?>" href="http://blogs.wittwer.fr/whiler/">Whiler</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/peter.png'; ?>)" target="_blank" title="<?php _e("For the help with German translation", 'ure'); ?>" href="http://www.red-socks-reinbek.de">Peter</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/technologjp.png'; ?>)" target="_blank" title="<?php _e("For the help with Japanese translation", 'ure'); ?>" href="http://technolog.jp/">Technolog.jp</a>
@@ -306,10 +307,10 @@ ure_showMessage($mess);
 		</div>
     <div style="clear:both;"></div>
 <?php
-  $boxStyle = 'width: 300px; min-width:240px;';
+  $boxStyle = 'width: 330px; min-width:240px;';
   $marginLeft = 'margin-left: 10px; ';
   ure_displayBoxStart(__('Add New Role', 'ure'), $boxStyle); ?>
-<div style="margin-left: 5px; margin-right: 5px; width: 90%; text-align: center;">
+<div class="ure-bottom-box-input">
   <input type="text" name="new_user_role" id="new_user_role" size="25"/>
 </div>
 <div class="submit" style="margin-left: 0; margin-right: 0; margin-bottom: 0; padding: 0; width: 100%; text-align: center;">
@@ -319,7 +320,7 @@ ure_showMessage($mess);
   ure_displayBoxEnd();
   if ($roleDeleteHTML) {
     ure_displayBoxStart(__('Delete Role', 'ure'), $marginLeft.$boxStyle); ?>
-<div style="margin-left: 5px; margin-right: 5px; width: 90%; text-align: center;">
+<div class="ure-bottom-box-input">
   <?php echo $roleDeleteHTML; ?>
 </div>
 <div class="submit" style="margin-left: 0; margin-right: 0; margin-bottom: 0; padding: 0; width: 100%; text-align: center;">
@@ -329,7 +330,7 @@ ure_showMessage($mess);
     ure_displayBoxEnd();
   }
     ure_displayBoxStart(__('Default Role for New User', 'ure'), $marginLeft.$boxStyle); ?>
-<div style="margin-left: 5px; margin-right: 5px; width: 90%; text-align: center;">
+<div class="ure-bottom-box-input">
   <?php echo $roleDefaultHTML; ?>
 </div>
 <div class="submit" style="margin-left: 0; margin-right: 0; margin-bottom: 0; padding: 0; width: 100%; text-align: center;">

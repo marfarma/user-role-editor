@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
 Tested up to: 3.0
-Stable tag: 2.1
+Stable tag: 2.1.1
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
 
@@ -17,6 +17,7 @@ Role assigned every new created user by default can be changed too.
 To read more about 'User Role Editor' visit this link http://www.shinephp.com/user-role-editor-wordpress-plugin/
 
 = Translations =
+* Belorussian: [Marsis G.](http://pc.de)
 * French: [Whiler](http://blogs.wittwer.fr/whiler/)
 * German: [Peter](http://www.red-socks-reinbek.de)
 * Japanese: [Technolog.jp](http://technolog.jp/)
@@ -50,15 +51,22 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 
 
 == Special Thanks to ==
-* [Whiler](http://blogs.wittwer.fr/whiler/) for the help with French translation, ideas, source code contributions.
+* [Whiler](http://blogs.wittwer.fr/whiler/) for the help with French translation and useful ideas.
 * [Peter](http://www.red-socks-reinbek.de) - for the help with German translation.
 * [Dario Ferrer](http://www.darioferrer.com) - for the help with the Spanish translation.
 * [Technolog.jp](http://technolog.jp/) - for the help with Japanese translation.
+* [Marsis G.](http://pc.de/) for the help with Belorussian translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
 == Changelog ==
+= 2.1.1 =
+* 19.04.2010
+* Form layout changed slightly to fit more long phrases in other languages
+* Belorussian translation is added. Thanks to [Marsis G.](http://pc.de/).
+* French, Japan, Russian, Spanish translations are updated.
+
 = 2.1 =
 * 17.04.2010
 * Two ways of capabilities names presentation are available for the user choice: standard WordPress name like 'edit_pages' and mouse pointer hint 'Edit pages', and vice versa - human readable form 'Edit pages' with mouse hint for WP standard name 'edit-pages'. Human readable form will be available in translated variant after correspondent translation file will be updated.

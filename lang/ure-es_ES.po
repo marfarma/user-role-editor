@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor v. 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-17 16:46+0600\n"
+"POT-Creation-Date: 2010-04-19 21:32+0600\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
+"Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,524 +15,510 @@ msgstr ""
 "X-Poedit-Country: RUSSIAN FEDERATION\n"
 "X-Poedit-SearchPath-0: user-role-editor\n"
 
-#: ../ure-lib.php:52
+#: user-role-editor/ure-lib.php:52
 msgid "Error is occur. Please check the log file."
 msgstr "Un error ha ocurrido. Por favor revisa el archivo de registros."
 
-#: ../ure-lib.php:108
+#: user-role-editor/ure-lib.php:108
 msgid "Database operation error. Check log file."
 msgstr "Operación errónea de la base de datos. Revisar el archivo de registros."
 
-#: ../ure-lib.php:130
+#: user-role-editor/ure-lib.php:130
 msgid "Roles capabilities are restored from the backup data"
-msgstr "Las capacidades del rol han sido restauradas desde los datos de respaldo"
+msgstr "Los privilegios de este rol han sido restaurados desde los datos de respaldo"
 
-#: ../ure-lib.php:132
+#: user-role-editor/ure-lib.php:132
 msgid "No backup data. It is created automatically before the first role data update."
 msgstr "Ningunos datos de reserva. Se crea automáticamente antes de la primera actualización de los datos del papel."
 
-#: ../ure-lib.php:173
+#: user-role-editor/ure-lib.php:173
 msgid "Error: Role name must contain latin characters and digits only!"
 msgstr "Error: el nombre del Rol sólo debe contener caracteres latinos y dígitos."
 
-#: ../ure-lib.php:181
+#: user-role-editor/ure-lib.php:181
 msgid "Roles list reading error is encountered"
 msgstr "Error encontrado en la lectura de lista de roles"
 
-#: ../ure-lib.php:187
+#: user-role-editor/ure-lib.php:187
 msgid "Error is encountered during new role create operation"
 msgstr "Error encontrado durante la creación de un nuevo Rol"
 
-#: ../ure-lib.php:189
+#: user-role-editor/ure-lib.php:189
 #, php-format
 msgid "Role %s is created successfully"
 msgstr "Rol %s se ha creado exitosamente"
 
-#: ../ure-lib.php:273
+#: user-role-editor/ure-lib.php:273
 msgid "Error encountered during role delete operation"
 msgstr "Error encontrado durante la eliminación del Rol"
 
-#: ../ure-lib.php:275
+#: user-role-editor/ure-lib.php:275
 #, php-format
 msgid "Role %s is deleted successfully"
 msgstr "Rol %s se ha eliminado exitosamente"
 
-#: ../ure-lib.php:293
+#: user-role-editor/ure-lib.php:293
 msgid "Error encountered during default role change operation"
 msgstr "Error encontrado durante el cambio de Rol predeterminado"
 
-#: ../ure-lib.php:299
+#: user-role-editor/ure-lib.php:299
 #, php-format
 msgid "Default role for new users is set to %s successfully"
 msgstr "El Rol predeterminado para nuevos usuarios se ha configurado exitosamente para %s"
 
-#: ../ure-lib.php:353
+#: user-role-editor/ure-lib.php:353
 msgid "Editor"
 msgstr "Editor"
 
-#: ../ure-lib.php:354
+#: user-role-editor/ure-lib.php:354
 msgid "Author"
 msgstr "Autor"
 
-#: ../ure-lib.php:355
+#: user-role-editor/ure-lib.php:355
 msgid "Contributor"
 msgstr "Colaborador"
 
-#: ../ure-lib.php:356
+#: user-role-editor/ure-lib.php:356
 msgid "Subscriber"
 msgstr "Suscriptor"
 
-#: ../ure-lib.php:358
+#: user-role-editor/ure-lib.php:358
 msgid "Switch themes"
-msgstr ""
+msgstr "Cambiar plantillas"
 
-#: ../ure-lib.php:359
+#: user-role-editor/ure-lib.php:359
 msgid "Edit themes"
-msgstr ""
+msgstr "Editar plantillas"
 
-#: ../ure-lib.php:360
+#: user-role-editor/ure-lib.php:360
 msgid "Activate plugins"
-msgstr ""
+msgstr "Activar plugins"
 
-#: ../ure-lib.php:361
+#: user-role-editor/ure-lib.php:361
 msgid "Edit plugins"
-msgstr ""
+msgstr "Editar plugins"
 
-#: ../ure-lib.php:362
+#: user-role-editor/ure-lib.php:362
 msgid "Edit users"
-msgstr ""
+msgstr "Editar usuarios"
 
-#: ../ure-lib.php:363
+#: user-role-editor/ure-lib.php:363
 msgid "Edit files"
-msgstr ""
+msgstr "Editar archivos"
 
-#: ../ure-lib.php:364
+#: user-role-editor/ure-lib.php:364
 msgid "Manage options"
-msgstr ""
+msgstr "Administrar opciones"
 
-#: ../ure-lib.php:365
+#: user-role-editor/ure-lib.php:365
 msgid "Moderate comments"
-msgstr ""
+msgstr "Moderar comentarios"
 
-#: ../ure-lib.php:366
+#: user-role-editor/ure-lib.php:366
 msgid "Manage categories"
-msgstr ""
+msgstr "Administrar categorías"
 
-#: ../ure-lib.php:367
+#: user-role-editor/ure-lib.php:367
 msgid "Manage links"
-msgstr ""
+msgstr "Administrar enlaces"
 
-#: ../ure-lib.php:368
+#: user-role-editor/ure-lib.php:368
 msgid "Upload files"
-msgstr ""
+msgstr "Subir archivos"
 
-#: ../ure-lib.php:369
+#: user-role-editor/ure-lib.php:369
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
-#: ../ure-lib.php:370
+#: user-role-editor/ure-lib.php:370
 msgid "Unfiltered html"
-msgstr ""
+msgstr "Omitir filtrado de HTML"
 
-#: ../ure-lib.php:371
+#: user-role-editor/ure-lib.php:371
 msgid "Edit posts"
-msgstr ""
+msgstr "Editar entradas"
 
-#: ../ure-lib.php:372
+#: user-role-editor/ure-lib.php:372
 msgid "Edit others posts"
-msgstr ""
+msgstr "Editar entradas de otros"
 
-#: ../ure-lib.php:373
+#: user-role-editor/ure-lib.php:373
 msgid "Edit published posts"
-msgstr ""
+msgstr "Editar entradas publicadas"
 
-#: ../ure-lib.php:374
+#: user-role-editor/ure-lib.php:374
 msgid "Publish posts"
-msgstr ""
+msgstr "Publicar entradas"
 
-#: ../ure-lib.php:375
+#: user-role-editor/ure-lib.php:375
 msgid "Edit pages"
-msgstr ""
+msgstr "Editar páginas"
 
-#: ../ure-lib.php:376
+#: user-role-editor/ure-lib.php:376
 msgid "Read"
-msgstr ""
+msgstr "Leer"
 
-#: ../ure-lib.php:377
+#: user-role-editor/ure-lib.php:377
 msgid "Level 10"
-msgstr ""
+msgstr "Nivel 10"
 
-#: ../ure-lib.php:378
+#: user-role-editor/ure-lib.php:378
 msgid "Level 9"
-msgstr ""
+msgstr "Nivel 9"
 
-#: ../ure-lib.php:379
+#: user-role-editor/ure-lib.php:379
 msgid "Level 8"
-msgstr ""
+msgstr "Nivel 8"
 
-#: ../ure-lib.php:380
+#: user-role-editor/ure-lib.php:380
 msgid "Level 7"
-msgstr ""
+msgstr "Nivel 7"
 
-#: ../ure-lib.php:381
+#: user-role-editor/ure-lib.php:381
 msgid "Level 6"
-msgstr ""
+msgstr "Nivel 6"
 
-#: ../ure-lib.php:382
+#: user-role-editor/ure-lib.php:382
 msgid "Level 5"
-msgstr ""
+msgstr "Nivel 5"
 
-#: ../ure-lib.php:383
+#: user-role-editor/ure-lib.php:383
 msgid "Level 4"
-msgstr ""
+msgstr "Nivel 4"
 
-#: ../ure-lib.php:384
+#: user-role-editor/ure-lib.php:384
 msgid "Level 3"
-msgstr ""
+msgstr "Nivel 3"
 
-#: ../ure-lib.php:385
+#: user-role-editor/ure-lib.php:385
 msgid "Level 2"
-msgstr ""
+msgstr "Nivel 2"
 
-#: ../ure-lib.php:386
+#: user-role-editor/ure-lib.php:386
 msgid "Level 1"
-msgstr ""
+msgstr "Nivel 1"
 
-#: ../ure-lib.php:387
+#: user-role-editor/ure-lib.php:387
 msgid "Level 0"
-msgstr ""
+msgstr "Nivel 0"
 
-#: ../ure-lib.php:388
+#: user-role-editor/ure-lib.php:388
 msgid "Edit others pages"
-msgstr ""
+msgstr "Editar páginas de otros"
 
-#: ../ure-lib.php:389
+#: user-role-editor/ure-lib.php:389
 msgid "Edit published pages"
-msgstr ""
+msgstr "Editar páginas publicadas"
 
-#: ../ure-lib.php:390
+#: user-role-editor/ure-lib.php:390
 msgid "Publish pages"
-msgstr ""
+msgstr "Publicar páginas"
 
-#: ../ure-lib.php:391
+#: user-role-editor/ure-lib.php:391
 msgid "Delete pages"
-msgstr ""
+msgstr "Eliminar páginas"
 
-#: ../ure-lib.php:392
+#: user-role-editor/ure-lib.php:392
 msgid "Delete others pages"
-msgstr ""
+msgstr "Eliminar páginas de otros"
 
-#: ../ure-lib.php:393
+#: user-role-editor/ure-lib.php:393
 msgid "Delete published pages"
-msgstr ""
+msgstr "Eliminar páginas publicadas"
 
-#: ../ure-lib.php:394
+#: user-role-editor/ure-lib.php:394
 msgid "Delete posts"
-msgstr ""
+msgstr "Eliminar entradas"
 
-#: ../ure-lib.php:395
+#: user-role-editor/ure-lib.php:395
 msgid "Delete others posts"
-msgstr ""
+msgstr "Eliminar entradas de otros"
 
-#: ../ure-lib.php:396
+#: user-role-editor/ure-lib.php:396
 msgid "Delete published posts"
-msgstr ""
+msgstr "Eliminar entradas publicadas"
 
-#: ../ure-lib.php:397
+#: user-role-editor/ure-lib.php:397
 msgid "Delete private posts"
-msgstr ""
+msgstr "Eliminar entradas privadas"
 
-#: ../ure-lib.php:398
+#: user-role-editor/ure-lib.php:398
 msgid "Edit private posts"
-msgstr ""
+msgstr "Editar entradas privadas"
 
-#: ../ure-lib.php:399
+#: user-role-editor/ure-lib.php:399
 msgid "Read private posts"
-msgstr ""
+msgstr "Leer entradas privadas"
 
-#: ../ure-lib.php:400
+#: user-role-editor/ure-lib.php:400
 msgid "Delete private pages"
-msgstr ""
+msgstr "Eliminar páginas privadas"
 
-#: ../ure-lib.php:401
+#: user-role-editor/ure-lib.php:401
 msgid "Edit private pages"
-msgstr ""
+msgstr "Editar páginas privadas"
 
-#: ../ure-lib.php:402
+#: user-role-editor/ure-lib.php:402
 msgid "Read private pages"
-msgstr ""
+msgstr "Leer páginas privadas"
 
-#: ../ure-lib.php:403
+#: user-role-editor/ure-lib.php:403
 msgid "Delete users"
-msgstr ""
+msgstr "Eliminar usuarios"
 
-#: ../ure-lib.php:404
+#: user-role-editor/ure-lib.php:404
 msgid "Create users"
-msgstr ""
+msgstr "Crear usuarios"
 
-#: ../ure-lib.php:405
+#: user-role-editor/ure-lib.php:405
 msgid "Unfiltered upload"
-msgstr ""
+msgstr "Omitir filtrado de subidas"
 
-#: ../ure-lib.php:406
+#: user-role-editor/ure-lib.php:406
 msgid "Edit dashboard"
-msgstr ""
+msgstr "Editar escritorio"
 
-#: ../ure-lib.php:407
+#: user-role-editor/ure-lib.php:407
 msgid "Update plugins"
-msgstr ""
+msgstr "Actualizar plugins"
 
-#: ../ure-lib.php:408
+#: user-role-editor/ure-lib.php:408
 msgid "Delete plugins"
-msgstr ""
+msgstr "Eliminar plugins"
 
-#: ../ure-lib.php:409
+#: user-role-editor/ure-lib.php:409
 msgid "Install plugins"
-msgstr ""
+msgstr "Instalar plugins"
 
-#: ../ure-lib.php:410
+#: user-role-editor/ure-lib.php:410
 msgid "Update themes"
-msgstr ""
+msgstr "Actualizar plantillas"
 
-#: ../ure-lib.php:411
+#: user-role-editor/ure-lib.php:411
 msgid "Install themes"
-msgstr ""
+msgstr "Instalar plantillas"
 
-#: ../ure-options.php:111
+#: user-role-editor/ure-options.php:111
 msgid "Backup record is created for the current role capabilities"
-msgstr "Ha sido creada una grabación de respaldo para este Rol y sus capacidades"
+msgstr "Ha sido creada una grabación de respaldo para este Rol y sus privilegios"
 
-#: ../ure-options.php:120
+#: user-role-editor/ure-options.php:120
 msgid "Role"
 msgstr "Rol"
 
-#: ../ure-options.php:120
+#: user-role-editor/ure-options.php:120
 msgid "is updated successfully"
 msgstr "se ha actualizado exitosamente"
 
-#: ../ure-options.php:164
+#: user-role-editor/ure-options.php:164
 msgid "About this Plugin:"
 msgstr "Acerca de este plugin:"
 
-#: ../ure-options.php:165
+#: user-role-editor/ure-options.php:165
 msgid "Author's website"
 msgstr "Sitio web del autor"
 
-#: ../ure-options.php:166
+#: user-role-editor/ure-options.php:166
 msgid "Plugin webpage"
 msgstr "Página web del plugin"
 
-#: ../ure-options.php:167
-#: ../user-role-editor.php:206
+#: user-role-editor/ure-options.php:167
+#: user-role-editor/user-role-editor.php:206
 msgid "Changelog"
 msgstr "Registro de cambios"
 
-#: ../ure-options.php:168
+#: user-role-editor/ure-options.php:168
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../ure-options.php:169
+#: user-role-editor/ure-options.php:169
 msgid "Donate"
 msgstr "Donar"
 
-#: ../ure-options.php:171
+#: user-role-editor/ure-options.php:171
 msgid "Greetings:"
 msgstr "Agradecimientos:"
 
-#: ../ure-options.php:172
+#: user-role-editor/ure-options.php:172
 msgid "It's me, the author"
 msgstr "Soy yo, el autor"
 
-#: ../ure-options.php:173
+#: user-role-editor/ure-options.php:173
+msgid "For the help with Belorussian translation"
+msgstr "Por la ayuda con la traducción al belarús"
+
+#: user-role-editor/ure-options.php:174
 msgid "For the help with French translation"
-msgstr "Para la ayuda con la traducción al Francés"
+msgstr "Por la ayuda con la traducción al Francés"
 
-#: ../ure-options.php:174
+#: user-role-editor/ure-options.php:175
 msgid "For the help with German translation"
-msgstr "Para la ayuda con la traducción al alemán"
+msgstr "Por la ayuda con la traducción al alemán"
 
-#: ../ure-options.php:175
+#: user-role-editor/ure-options.php:176
 msgid "For the help with Japanese translation"
-msgstr "Para la ayuda con la traducción al Japonés"
+msgstr "Por la ayuda con la traducción al Japonés"
 
-#: ../ure-options.php:176
+#: user-role-editor/ure-options.php:177
 msgid "For the help with Spanish translation"
-msgstr "Para la ayuda con la traducción al Español"
+msgstr "Por la ayuda con la traducción al Español"
 
-#: ../ure-options.php:177
+#: user-role-editor/ure-options.php:178
 msgid "For the code to hide administrator role"
-msgstr "Para el código que oculta el Rol de Administrador"
+msgstr "Por el código que oculta el Rol de Administrador"
 
-#: ../ure-options.php:178
+#: user-role-editor/ure-options.php:179
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "¿Deseas ver tu nombre enlazado a tu sitio web aquí? ¡Eres bienvenido! Tu ayuda en la traducción y nuevas ideas son bien apreciadas."
 
-#: ../ure-options.php:194
+#: user-role-editor/ure-options.php:195
 msgid "Role Name can not be empty!"
 msgstr "¡El nombre del Rol no puede estar vacío!"
 
-#: ../ure-options.php:198
+#: user-role-editor/ure-options.php:199
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "El nombre del Rol sólo debe contener caracteres latinos y dígitos."
 
-#: ../ure-options.php:203
-#: ../ure-options.php:321
+#: user-role-editor/ure-options.php:204
+#: user-role-editor/ure-options.php:322
 msgid "Delete Role"
 msgstr "Elimian Rol"
 
-#: ../ure-options.php:205
+#: user-role-editor/ure-options.php:206
 msgid "Change Default Role"
 msgstr "Cambiar el Rol predeterminado"
 
-#: ../ure-options.php:207
-#: ../ure-options.php:289
+#: user-role-editor/ure-options.php:208
+#: user-role-editor/ure-options.php:290
 msgid "Restore Roles from backup copy"
 msgstr "Restaurar Roles desde la copia de respaldo"
 
-#: ../ure-options.php:209
+#: user-role-editor/ure-options.php:210
 msgid "Please confirm to continue"
 msgstr "Por favor confirma para continuar"
 
-#: ../ure-options.php:234
+#: user-role-editor/ure-options.php:235
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Actualizar Rol \"%s\": Por favor confirma para actualizar"
 
-#: ../ure-options.php:242
+#: user-role-editor/ure-options.php:243
 msgid "Select Role and change its capabilities list"
-msgstr "Selecciona el Rol para cambiar su lista de capacidades"
+msgstr "Selecciona el Rol para cambiar su lista de privilegios"
 
-#: ../ure-options.php:246
+#: user-role-editor/ure-options.php:247
 msgid "Select Role:"
 msgstr "Selecciona el Rol:"
 
-#: ../ure-options.php:287
+#: user-role-editor/ure-options.php:288
 msgid "Update"
 msgstr "Actualizar"
 
-#: ../ure-options.php:287
+#: user-role-editor/ure-options.php:288
 msgid "Save Changes"
 msgstr "Guardar Cambios"
 
-#: ../ure-options.php:288
+#: user-role-editor/ure-options.php:289
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../ure-options.php:288
+#: user-role-editor/ure-options.php:289
 msgid "Cancel not saved changes"
 msgstr "Cancelar cambios no guardados"
 
-#: ../ure-options.php:289
+#: user-role-editor/ure-options.php:290
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: ../ure-options.php:300
+#: user-role-editor/ure-options.php:301
 msgid "Show capabilities in human readable form"
-msgstr ""
+msgstr "Mostrar privilegios de forma legible"
 
-#: ../ure-options.php:311
+#: user-role-editor/ure-options.php:312
 msgid "Add New Role"
 msgstr "Agregar nuevo Rol"
 
-#: ../ure-options.php:316
+#: user-role-editor/ure-options.php:317
 msgid "Add"
 msgstr "Agregar"
 
-#: ../ure-options.php:316
+#: user-role-editor/ure-options.php:317
 msgid "Add New User Role"
 msgstr "Agregar nuevo Rol de Usuario"
 
-#: ../ure-options.php:326
+#: user-role-editor/ure-options.php:327
 msgid "Delete"
 msgstr "Eliminar"
 
-#: ../ure-options.php:326
+#: user-role-editor/ure-options.php:327
 msgid "Delete User Role"
 msgstr "Eliminar Rol de Usuario"
 
-#: ../ure-options.php:331
+#: user-role-editor/ure-options.php:332
 msgid "Default Role for New User"
 msgstr "Rol predeterminado para Nuevo Usuario"
 
-#: ../ure-options.php:336
+#: user-role-editor/ure-options.php:337
 msgid "Change"
 msgstr "Cambiar"
 
-#: ../ure-options.php:336
+#: user-role-editor/ure-options.php:337
 msgid "Set as Default User Role"
 msgstr "Asignar como Rol predeterminado de Usuario"
 
-#: ../user-role-editor.php:38
+#: user-role-editor/user-role-editor.php:38
 msgid "User Role Editor requires WordPress 2.8 or newer."
 msgstr "User Role Editor requiere Wordpress 2.8 o más actualizado"
 
-#: ../user-role-editor.php:38
+#: user-role-editor/user-role-editor.php:38
 msgid "Please update!"
 msgstr "¡Por favor actualiza!"
 
-#: ../user-role-editor.php:63
+#: user-role-editor/user-role-editor.php:63
 msgid "User Role Editor"
 msgstr "User Role Editor"
 
-#: ../user-role-editor.php:196
+#: user-role-editor/user-role-editor.php:196
 msgid "Settings"
 msgstr "Opciones"
 
 #~ msgid "Return to default WordPress user role capabilities"
 #~ msgstr ""
 #~ "Retornar las capacidades de rol de usuario predeterminadas de Wordpress"
-
 #~ msgid "action"
 #~ msgstr "операции"
-
 #~ msgid "Please confirm to continue role \""
 #~ msgstr "Пожалуйста подтвердите продолжение для роли"
-
 #~ msgid "Silence Is Golden Guard Plugin"
 #~ msgstr "Silence Is Golden Guard плагин"
-
 #~ msgid "file open error"
 #~ msgstr "ошибка открытия файла"
-
 #~ msgid "file read error"
 #~ msgstr "ошибка чтения файла"
-
 #~ msgid "file close error"
 #~ msgstr "ошибка при закрытии файла"
-
 #~ msgid "file backup copy error"
 #~ msgstr "ошибка при создании резервной копии файла"
-
 #~ msgid "file permissions change error"
 #~ msgstr "ошибка при изменении прав на файл"
-
 #~ msgid "file write error"
 #~ msgstr "ошибка записи в файл"
-
 #~ msgid "is modified"
 #~ msgstr "изменен"
-
 #~ msgid "file create error"
 #~ msgstr "ошибка создания файла"
-
 #~ msgid "permissions change error"
 #~ msgstr "ошибка при изменении прав"
-
 #~ msgid "file is created"
 #~ msgstr "файл создан"
-
 #~ msgid "\"Silence is Golden\" Scan is finished: "
 #~ msgstr "\"Silence is Golden\" сканирование завершено: "
-
 #~ msgid "Does not create index.php file in the checked folders"
 #~ msgstr "Не создавать index.php файл в отмеченных каталогах"
-
 #~ msgid "Exclude Folders for index.php"
 #~ msgstr "Исключить Каталоги для index.php"
-
 #~ msgid "Modify Apache .htaccess"
 #~ msgstr "Изменить Apache .htaccess"
-
 #~ msgid ""
 #~ "Modify Apache .htaccess file in the site root folder. Add \"Options -"
 #~ "Indexes\" line to prevent directory listing by Apache Web server.\n"
@@ -548,377 +534,263 @@ msgstr "Opciones"
 #~ "запроашивается адрес URL, соответствующий каталогу, и в этом каталоге "
 #~ "отстутсвует файл типа DirectoryIndex (т.е. index.html или index.php), "
 #~ "тогда Web сервер вернёт отформатированный листин этого каталога."
-
 #~ msgid "Check folders state automatically with specified period"
 #~ msgstr "Проверять состояние каталогов автоматически с заданным периодом"
-
 #~ msgid "Auto Monitor"
 #~ msgstr "Авто Мониторинг"
-
 #~ msgid "Scan Now"
 #~ msgstr "Сканировать Сейчас"
-
 #~ msgid "Scan and Fix directories listing related problems Now"
 #~ msgstr ""
 #~ "Сканировать и Исправлять проблемы, связанные с листингом содержимого "
 #~ "каталогов"
-
 #~ msgid ""
 #~ "Every time a new visitor clicks the \"Thank you\" button, one point is "
 #~ "added to the total \"thanks\" counter for this post."
 #~ msgstr ""
 #~ "Каждый раз, когда новый посетитель щелкает по кнопке \"Спасибо\", единица "
 #~ "добавляется к счетчику благодарностей для данной статьи."
-
 #~ msgid "Thank You Counter Button Plugin"
 #~ msgstr "Установки для плагина: Кнопка подсчета благодарностей"
-
 #~ msgid "Statistics"
 #~ msgstr "Статистика"
-
 #~ msgid "You left &ldquo;Thanks&rdquo; already for this post"
 #~ msgstr "Вы уже оставили благодарность за эту статью"
-
 #~ msgid "Click to left &ldquo;Thanks&rdquo; for this post"
 #~ msgstr "Щелкните мышью, чтобы оставить благодарность за эту статью"
-
 #~ msgid "View statistics details for \"%s\""
 #~ msgstr "Просмотр детализированной статистики для \"%s\""
-
 #~ msgid "Hide these shortcuts"
 #~ msgstr "Скрыть ссылки доступа к установкам и статистике плагина"
-
 #~ msgid "Do you really want to hide these shortcuts?"
 #~ msgstr "Вы действительно хотите скрыть эти ссылки?"
-
 #~ msgid "Thank You"
 #~ msgstr "Спасибо"
-
 #~ msgid "Additional Documentation"
 #~ msgstr "Дополнительная документация"
-
 #~ msgid "operation is prohibited"
 #~ msgstr "операция запрещена"
-
 #~ msgid "Default Settings are restored"
 #~ msgstr "Установки по-умолчанию восстановлены"
-
 #~ msgid "All Thanks Counters are cleared"
 #~ msgstr "Все счётчики благодраностей обнулены"
-
 #~ msgid "Additional documentation"
 #~ msgstr "Дополнительная документация"
-
 #~ msgid ""
 #~ "for the help with Spanish translation, ideas and new versions testing"
 #~ msgstr "за помощь с испанским переводом, идеи и тестирование новых версий"
-
 #~ msgid "for the excelent JQuery color picker"
 #~ msgstr "за отличный JQuery-плагин для работы с цветовой палитрой"
-
 #~ msgid ""
 #~ "for the help with French translation, ideas, source code contributions "
 #~ "and new versions testing"
 #~ msgstr ""
 #~ "за помощь с французским переводом, идеи, вклад в разработку и "
 #~ "тестирование новых версий"
-
 #~ msgid "for setting page layout idea and html markup examples"
 #~ msgstr "за идею по компоновке экрана с опциями и примеры HTML разметки"
-
 #~ msgid "for the form input slider code"
 #~ msgstr "за код слайдера для текстового поля input HTML формы"
-
 #~ msgid "for the cute online button image generator"
 #~ msgstr "за прекрасный онлайновый генератор изображений кнопок"
-
 #~ msgid ""
 #~ "All settings for TYCB plugin will be return to the default values, "
 #~ "Continue?"
 #~ msgstr ""
 #~ "Всем установкам для TYCB плагина будут возвращены значения по-умолчанию, "
 #~ "Продолжить?"
-
 #~ msgid ""
 #~ "All thanks counters for all posts will be set to 0,\\n all thanks click "
 #~ "history will be cleared, Continue?"
 #~ msgstr ""
 #~ "Все счетчики благодарностей для всех статей будут обнулены,\\n вся "
 #~ "история кликов по кнопкам благодарности будет обнулена, Продолжить?"
-
 #~ msgid "Display"
 #~ msgstr "Отображение"
-
 #~ msgid "Display button at Pages"
 #~ msgstr "Отображать на Страницах"
-
 #~ msgid "Display button at Home page, Categories/Tags archive pages"
 #~ msgstr "Отображать на Домашней странице, архивах категорий/тэгов"
-
 #~ msgid "Do not show button for selected categories"
 #~ msgstr "Не отображать кнопку для отмеченных категорий"
-
 #~ msgid "Position in the Post text"
 #~ msgstr "Расположение в статье"
-
 #~ msgid "Before"
 #~ msgstr "До"
-
 #~ msgid "At first page of multipaged posts only"
 #~ msgstr "Только на первой странице многостраничных статей "
-
 #~ msgid "After"
 #~ msgstr "После"
-
 #~ msgid "At last page of multipaged posts only"
 #~ msgstr "Только на последней странице многостраничных статей"
-
 #~ msgid "Shortcode [thankyou]"
 #~ msgstr "Аббревиатура [thankyou]"
-
 #~ msgid "Manual"
 #~ msgstr "Вручную"
-
 #~ msgid "Button Caption"
 #~ msgstr "Надпись на кнопке"
-
 #~ msgid "Button Styling"
 #~ msgstr "Стиль для Кнопки"
-
 #~ msgid "Add style to the div:"
 #~ msgstr "Cтиль для div"
-
 #~ msgid "e.g.,"
 #~ msgstr ", например, "
-
 #~ msgid "to the Caption font:"
 #~ msgstr "для шрифта:"
-
 #~ msgid "font color: "
 #~ msgstr "цвет шрифта:"
-
 #~ msgid "Size"
 #~ msgstr "Размер"
-
 #~ msgid "Normal"
 #~ msgstr "Нормальный"
-
 #~ msgid "Compact"
 #~ msgstr "Компактный размер"
-
 #~ msgid "Form and Color"
 #~ msgstr "Форма и Цвет"
-
 #~ msgid "Custom button image URL"
 #~ msgstr "URL изображения собственной кнопки"
-
 #~ msgid "Width, px"
 #~ msgstr "Ширина, px"
-
 #~ msgid "Height, px"
 #~ msgstr "Высота, px"
-
 #~ msgid "Misc"
 #~ msgstr "Разное"
-
 #~ msgid "Check IP-address"
 #~ msgstr "Контролировать IP-адрес"
-
 #~ msgid "Only one Thanks for post for one IP-address limit"
 #~ msgstr "Только одно Спасибо на статью с одного IP-адреса"
-
 #~ msgid "Time limit:"
 #~ msgstr "Ограничение по времени:"
-
 #~ msgid "Forever"
 #~ msgstr "Навсегда"
-
 #~ msgid "Only for this period"
 #~ msgstr "Только на данный промежуток"
-
 #~ msgid "seconds"
 #~ msgstr "секунд"
-
 #~ msgid "Display settings shortcuts"
 #~ msgstr "Вывод служебных ссылок"
-
 #~ msgid "Add shortcuts next to the buttons for settings quick access"
 #~ msgstr ""
 #~ "Отобразить служебные ссылки справа от кнопок для быстрого доступа к "
 #~ "разделу настроек"
-
 #~ msgid "Return to Defaults"
 #~ msgstr "Вернуть значения по-умолчанию"
-
 #~ msgid "Restore the default values for all settings"
 #~ msgstr "Восстановить значения по-умолчанию для всех установок"
-
 #~ msgid "Reset Counters"
 #~ msgstr "Обнулить Счетчики"
-
 #~ msgid "Reset all thanks counters for the all posts"
 #~ msgstr "Сбросить все счетчики благодарностей для всех статей"
-
 #~ msgid "Button DIV Style Preview"
 #~ msgstr "Стиль для раздела Кнопки"
-
 #~ msgid "Post Title"
 #~ msgstr "Заголовок статьи"
-
 #~ msgid "None"
 #~ msgstr "Нет"
-
 #~ msgid "Back to main statistics"
 #~ msgstr "Вернуться к основной статистике"
-
 #~ msgid "Not available"
 #~ msgstr "Не доступен"
-
 #~ msgid "Details for &ldquo;%s&rdquo;"
 #~ msgstr "Подробности для &ldquo;%s&rdquo;"
-
 #~ msgid "Post Id"
 #~ msgstr "Id статьи"
-
 #~ msgid "Thanks Quant"
 #~ msgstr "Количество благодарностей"
-
 #~ msgid "View Post"
 #~ msgstr "Просмотр статьи"
-
 #~ msgid "View \"%s\""
 #~ msgstr "Просмотр \"%s\""
-
 #~ msgid "Reset this post counter"
 #~ msgstr "Обнулить счетчик для этой статьи"
-
 #~ msgid ""
 #~ "You are about to reset this post '%s' thanks counter. Click 'Cancel' to "
 #~ "do nothing, 'OK' to reset it."
 #~ msgstr ""
 #~ "Вы собираетесь обнулить счетчик этой статьи '%s'.\n"
 #~ " Используйте 'Отмена' чтобы отказаться, 'OK' чтобы произвести обнуление."
-
 #~ msgid "Reset Counter"
 #~ msgstr "Обнулить Счетчик"
-
 #~ msgid "Displaying %s&#8211;%s of %s"
 #~ msgstr "Вывод %s&#8211;%s из %s"
-
 #~ msgid "IP address"
 #~ msgstr "IP-адрес"
-
 #~ msgid "Last Thank Date"
 #~ msgstr "Дата последней благодарности"
-
 #~ msgid "Look up IP country"
 #~ msgstr "Найти страну по IP адресу"
-
 #~ msgid "Show all post dates"
 #~ msgstr "Показать статьи за все даты"
-
 #~ msgid "Show Posts without Thanks"
 #~ msgstr "Показать статьи без благодарностей"
-
 #~ msgid "Rows per page: "
 #~ msgstr "Строк на страницу:"
-
 #~ msgid "Refresh"
 #~ msgstr "Обновить"
-
 #~ msgid "descending"
 #~ msgstr "убывающем"
-
 #~ msgid "Ascending order"
 #~ msgstr "Возрастающий порядок"
-
 #~ msgid "ascending"
 #~ msgstr "возрастающем"
-
 #~ msgid "Descending order"
 #~ msgstr "Убывающий порядок"
-
 #~ msgid "Click to sort in %s order"
 #~ msgstr "Щелкни для сортировки в %s порядке"
-
 #~ msgid "View details"
 #~ msgstr "Просмотр деталей"
-
 #~ msgid ""
 #~ "You are about to reset this post '%s' thanks counter.\n"
 #~ " Click 'Cancel' to do nothing, 'OK' to reset it."
 #~ msgstr ""
 #~ "Вы собираетесь обнулить счетчик этой статьи '%s'.\n"
 #~ " Используйте 'Отмена' чтобы отказаться, 'OK' чтобы произвести обнуление."
-
 #~ msgid "No posts with thanks found"
 #~ msgstr "Статьи c благодарностями не найдены"
-
 #~ msgid "the latest or the most thanked post titles with total thanks quant"
 #~ msgstr ""
 #~ "Отблагдаренные пооследними статьи с общим количеством благодарностей или "
 #~ "статьи с наибольшим количеством благодарностей"
-
 #~ msgid "Thanks Stat"
 #~ msgstr "Статистика благодарностей"
-
 #~ msgid "Total quant of thanks: "
 #~ msgstr "Общее количество благодарностей:"
-
 #~ msgid "Title:"
 #~ msgstr "Заголовок статьи"
-
 #~ msgid "Number of posts to show:"
 #~ msgstr "Количество статей для показа:"
-
 #~ msgid "What posts to show:"
 #~ msgstr "Какие статьи показывать:"
-
 #~ msgid "Latest thanked"
 #~ msgstr "Последние благодарности"
-
 #~ msgid "Most thanked"
 #~ msgstr "Максимум благодарностей"
-
 #~ msgid "Total quant of thanks"
 #~ msgstr "Общее количество благодарностей:"
-
 #~ msgid "Display total quant of thanks"
 #~ msgstr "Показать общее количество благодарностей"
-
 #~ msgid "Check Full Statistics"
 #~ msgstr "Просмотр полной статистики"
-
 #~ msgid "Plugin author home page"
 #~ msgstr "Сайт автора плагина"
-
 #~ msgid "No thanks yet"
 #~ msgstr "Пока благодарностей нет"
-
 #~ msgid "Posts number to show:"
 #~ msgstr "Количество статей для показа:"
-
 #~ msgid "Display Full Statistics link"
 #~ msgstr "Просмотр полной статистики"
-
 #~ msgid "Display plugin author link"
 #~ msgstr "Показать ссылку на сайт автора плагина"
-
 #~ msgid "Latest Thanks"
 #~ msgstr "Последние благодарности"
-
 #~ msgid "Most Thanked"
 #~ msgstr "Максимум благодарностей"
-
 #~ msgid "Unknown Post!"
 #~ msgstr "Неизвестная статья!"
-
 #~ msgid "Submit"
 #~ msgstr "Отправить"
-
 #~ msgid "Show total quant of thanks"
 #~ msgstr "Показать общее количество благодарностей"
-
 #~ msgid ""
 #~ "This plugin installs the Thank You Counter Button for each of your blog "
 #~ "post.\n"
@@ -928,40 +800,30 @@ msgstr "Opciones"
 #~ "Вашего блога.\n"
 #~ "                Стиль и расположение кнопки могут быть адаптированы к "
 #~ "стилю вашего блога."
-
 #~ msgid ""
 #~ "To exclude Thank You button from particular post use shortcode "
 #~ "[nothankyou] there"
 #~ msgstr ""
 #~ "Чтобы не показывать кнопку Спасибо для конкректной статьи, вставьте в ее "
 #~ "текст код [notthankyou]"
-
 #~ msgid "(at most 15)"
 #~ msgstr "(до 15)"
-
 #~ msgid "Before and After"
 #~ msgstr "До и После"
-
 #~ msgid "Filter"
 #~ msgstr "Фильтр"
-
 #~ msgid "Position"
 #~ msgstr "Расположение"
-
 #~ msgid "Add style to the Thank You button's div, e.g.,"
 #~ msgstr "Добавить стиль в раздел div кнопки Спасибо"
-
 #~ msgid "Color"
 #~ msgstr "Цвет"
-
 #~ msgid "Blue"
 #~ msgstr "Синий"
-
 #~ msgid "Green"
 #~ msgstr "Зеленый"
-
 #~ msgid "Grey"
 #~ msgstr "Серый"
-
 #~ msgid "Black"
 #~ msgstr "Черный"
+
