@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor v.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-19 21:35+0600\n"
+"POT-Creation-Date: 2010-04-26 20:48+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -361,109 +361,113 @@ msgid "For the help with Japanese translation"
 msgstr "за помощь с японским переводом"
 
 #: ../ure-options.php:177
+msgid "For the help with Polish translation"
+msgstr "за помощь с польским переводом"
+
+#: ../ure-options.php:178
 msgid "For the help with Spanish translation"
 msgstr "за помощь с испанским переводом"
 
-#: ../ure-options.php:178
+#: ../ure-options.php:179
 msgid "For the code to hide administrator role"
 msgstr "За код, скрывающий роль администратора"
 
-#: ../ure-options.php:179
+#: ../ure-options.php:180
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Желаете увидеть свое имя и ссылку на Ваш сайт здесь? Добро пожаловать! Ваша помощь с переводом и новые идеи приветствуются."
 
-#: ../ure-options.php:195
+#: ../ure-options.php:196
 msgid "Role Name can not be empty!"
 msgstr "Наименование роли не может быть пустым!"
 
-#: ../ure-options.php:199
+#: ../ure-options.php:200
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "Наименование роли должно содержать только латинские буквы и цифры."
 
-#: ../ure-options.php:204
-#: ../ure-options.php:322
+#: ../ure-options.php:205
+#: ../ure-options.php:323
 msgid "Delete Role"
 msgstr "Удалить Роль"
 
-#: ../ure-options.php:206
+#: ../ure-options.php:207
 msgid "Change Default Role"
 msgstr "Установить как роль по-умолчанию"
 
-#: ../ure-options.php:208
-#: ../ure-options.php:290
+#: ../ure-options.php:209
+#: ../ure-options.php:291
 msgid "Restore Roles from backup copy"
 msgstr "Восстановить Роли из резервной копии"
 
-#: ../ure-options.php:210
+#: ../ure-options.php:211
 msgid "Please confirm to continue"
 msgstr "Пожалуйста, подтвердите продолжение "
 
-#: ../ure-options.php:235
+#: ../ure-options.php:236
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Изменение роли \"%s\": пожалуйста, подтвердите продолжение "
 
-#: ../ure-options.php:243
+#: ../ure-options.php:244
 msgid "Select Role and change its capabilities list"
 msgstr "Выбери Роль и измени список разрешённых операций"
 
-#: ../ure-options.php:247
+#: ../ure-options.php:248
 msgid "Select Role:"
 msgstr "Выбери Роль:"
 
-#: ../ure-options.php:288
+#: ../ure-options.php:289
 msgid "Update"
 msgstr "Сохранить"
 
-#: ../ure-options.php:288
+#: ../ure-options.php:289
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: ../ure-options.php:289
+#: ../ure-options.php:290
 msgid "Cancel"
 msgstr "Отмена"
 
-#: ../ure-options.php:289
+#: ../ure-options.php:290
 msgid "Cancel not saved changes"
 msgstr "Отказ от сохранения изменений"
 
-#: ../ure-options.php:290
+#: ../ure-options.php:291
 msgid "Reset"
 msgstr "Сброс"
 
-#: ../ure-options.php:301
+#: ../ure-options.php:302
 msgid "Show capabilities in human readable form"
 msgstr "Показ возможностей в читабельной форме"
 
-#: ../ure-options.php:312
+#: ../ure-options.php:313
 msgid "Add New Role"
 msgstr "Добавить новую Роль"
 
-#: ../ure-options.php:317
+#: ../ure-options.php:318
 msgid "Add"
 msgstr "Добавить"
 
-#: ../ure-options.php:317
+#: ../ure-options.php:318
 msgid "Add New User Role"
 msgstr "Добавить новую Роль пользователя"
 
-#: ../ure-options.php:327
+#: ../ure-options.php:328
 msgid "Delete"
 msgstr "Удалить"
 
-#: ../ure-options.php:327
+#: ../ure-options.php:328
 msgid "Delete User Role"
 msgstr "Удалить Роль пользователя"
 
-#: ../ure-options.php:332
+#: ../ure-options.php:333
 msgid "Default Role for New User"
 msgstr "Роль по-умолчанию"
 
-#: ../ure-options.php:337
+#: ../ure-options.php:338
 msgid "Change"
 msgstr "Изменить"
 
-#: ../ure-options.php:337
+#: ../ure-options.php:338
 msgid "Set as Default User Role"
 msgstr "Установить как роль по-умолчанию"
 

@@ -1,328 +1,332 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: User Role Editor Plugin 2.0\n"
+"Project-Id-Version: User Role Editor 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-19 21:28+0600\n"
+"POT-Creation-Date: 2010-04-26 20:47+0600\n"
 "PO-Revision-Date: \n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
-"Language-Team: Whiler <webmaster@blogs.wittwer.fr>\n"
+"Language-Team: Daywalker <dol_kryku@interia.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SearchPath-0: ..\n"
 
 #: ../ure-lib.php:52
 msgid "Error is occur. Please check the log file."
-msgstr "Une erreur s'est produite. Vérifiez le fichier journal."
+msgstr "Napotkano błąd. Sprawdz logi"
 
 #: ../ure-lib.php:108
 msgid "Database operation error. Check log file."
-msgstr "Erreur d'opération de base de données. Vérifiez le fichier journal."
+msgstr "Błąd bazy danych. Sprawdz logi."
 
 #: ../ure-lib.php:130
 msgid "Roles capabilities are restored from the backup data"
-msgstr "Les capacités des rôles sont restaurées depuis les données de sauvegarde"
+msgstr "Przywrócono uprawnienia z kopii zapasowej."
 
 #: ../ure-lib.php:132
 msgid "No backup data. It is created automatically before the first role data update."
-msgstr "Aucune donnée sauvegardée. La sauvegarde est automatique avant la première mise à jour des rôles."
+msgstr "Brak kopii zapasowej. Zostanie ona utworzona automatycznie przed pierwszą uktualizacją uprawnień."
 
 #: ../ure-lib.php:173
 msgid "Error: Role name must contain latin characters and digits only!"
-msgstr "Erreur : le nom de rôle doit seulement contenir des caractères latins et chiffres !"
+msgstr "Błąd: Nazwa grupy może zawierać tylko litery i cyfry"
 
 #: ../ure-lib.php:181
 msgid "Roles list reading error is encountered"
-msgstr "Erreur lors de la lecture des rôles"
+msgstr "Błąd wczytywania grup"
 
 #: ../ure-lib.php:187
 msgid "Error is encountered during new role create operation"
-msgstr "Une erreur s'est produite lors de la création du nouveau rôle"
+msgstr "Napotkano błąd podczas tworzenia nowej gruupy."
 
 #: ../ure-lib.php:189
 #, php-format
 msgid "Role %s is created successfully"
-msgstr "Rôle %s a été créé avec succès"
+msgstr "Grupa %s zastała utworzona "
 
 #: ../ure-lib.php:273
 msgid "Error encountered during role delete operation"
-msgstr "Une erreur s'est produite lors de la suppression du rôle"
+msgstr "NApotkano błąd podczas usuwania grupy"
 
 #: ../ure-lib.php:275
 #, php-format
 msgid "Role %s is deleted successfully"
-msgstr "Rôle %s supprimé avec succès"
+msgstr "Grupa %s została usunięta"
 
 #: ../ure-lib.php:293
 msgid "Error encountered during default role change operation"
-msgstr "Une erreur s'est produite pendant le changement du rôle par défaut"
+msgstr "Bład podczas zmiany domyślnej grupy"
 
 #: ../ure-lib.php:299
 #, php-format
 msgid "Default role for new users is set to %s successfully"
-msgstr "Rôle par défaut pour les nouveaux utilisateurs fixé à %s avec succès"
+msgstr "Domyślna grupa dla nowych użytkowników została zmieniona na %s"
 
 #: ../ure-lib.php:353
 msgid "Editor"
-msgstr "Editeur"
+msgstr "Redaktor"
 
 #: ../ure-lib.php:354
 msgid "Author"
-msgstr "Auteur"
+msgstr "Autor"
 
 #: ../ure-lib.php:355
 msgid "Contributor"
-msgstr "Contributeur"
+msgstr "Współtwórca"
 
 #: ../ure-lib.php:356
 msgid "Subscriber"
-msgstr "Abonné"
+msgstr "Subskrybent"
 
 #: ../ure-lib.php:358
 msgid "Switch themes"
-msgstr "Changer de thème"
+msgstr "Zmieniać motywy"
 
 #: ../ure-lib.php:359
 msgid "Edit themes"
-msgstr "Editer les thèmes"
+msgstr "Edytować motywy"
 
 #: ../ure-lib.php:360
 msgid "Activate plugins"
-msgstr "Activer les extensions"
+msgstr "Aktywować wtyczki"
 
 #: ../ure-lib.php:361
 msgid "Edit plugins"
-msgstr "Editer les extensions"
+msgstr "Edytować wtyczki"
 
 #: ../ure-lib.php:362
 msgid "Edit users"
-msgstr "Editer les utilisateurs"
+msgstr "Edytować użytkowników"
 
 #: ../ure-lib.php:363
 msgid "Edit files"
-msgstr "Editer les fichiers"
+msgstr "Edytować pliki"
 
 #: ../ure-lib.php:364
 msgid "Manage options"
-msgstr "Gérer les options"
+msgstr "Zarządzać opcjami"
 
 #: ../ure-lib.php:365
 msgid "Moderate comments"
-msgstr "Modérer les commentaires"
+msgstr "Edytować komentarze"
 
 #: ../ure-lib.php:366
 msgid "Manage categories"
-msgstr "Gérer les catégories"
+msgstr "Zarządzać kategoriami"
 
 #: ../ure-lib.php:367
 msgid "Manage links"
-msgstr "Gérer les liens"
+msgstr "Zarządzać linkami"
 
 #: ../ure-lib.php:368
 msgid "Upload files"
-msgstr "Transmettre des fichiers"
+msgstr "Wysyłać załączniki"
 
 #: ../ure-lib.php:369
 msgid "Import"
-msgstr "Importer"
+msgstr "Import"
 
 #: ../ure-lib.php:370
 msgid "Unfiltered html"
-msgstr "HTML non filtré"
+msgstr "Niefiltrowany html"
 
 #: ../ure-lib.php:371
 msgid "Edit posts"
-msgstr "Editer les articles"
+msgstr "Edytować posty"
 
 #: ../ure-lib.php:372
 msgid "Edit others posts"
-msgstr "Editer les articles des autres"
+msgstr "Edytować cudze wpisy"
 
 #: ../ure-lib.php:373
 msgid "Edit published posts"
-msgstr "Editer les articles publiés"
+msgstr "Edytować opublikowane wpisy"
 
 #: ../ure-lib.php:374
 msgid "Publish posts"
-msgstr "Editer les articles"
+msgstr "Publikować wpisy"
 
 #: ../ure-lib.php:375
 msgid "Edit pages"
-msgstr "Editer les pages"
+msgstr "Edytować strony"
 
 #: ../ure-lib.php:376
 msgid "Read"
-msgstr "Lire"
+msgstr "Czytać"
 
 #: ../ure-lib.php:377
 msgid "Level 10"
-msgstr "Niveau 10"
+msgstr "Level 10"
 
 #: ../ure-lib.php:378
 msgid "Level 9"
-msgstr "Niveau 9"
+msgstr "Level 9"
 
 #: ../ure-lib.php:379
 msgid "Level 8"
-msgstr "Niveau 8"
+msgstr "Level 8"
 
 #: ../ure-lib.php:380
 msgid "Level 7"
-msgstr "Niveau 7"
+msgstr "Level 7"
 
 #: ../ure-lib.php:381
 msgid "Level 6"
-msgstr "Niveau 6"
+msgstr "Level 6"
 
 #: ../ure-lib.php:382
 msgid "Level 5"
-msgstr "Niveau 5"
+msgstr "Level 5"
 
 #: ../ure-lib.php:383
 msgid "Level 4"
-msgstr "Niveau 4"
+msgstr "Level 4"
 
 #: ../ure-lib.php:384
 msgid "Level 3"
-msgstr "Niveau 3"
+msgstr "Level 3"
 
 #: ../ure-lib.php:385
 msgid "Level 2"
-msgstr "Niveau 2"
+msgstr "Level 2"
 
 #: ../ure-lib.php:386
 msgid "Level 1"
-msgstr "Niveau 1"
+msgstr "Level 1"
 
 #: ../ure-lib.php:387
 msgid "Level 0"
-msgstr "Niveau 0"
+msgstr "Level 0"
 
 #: ../ure-lib.php:388
 msgid "Edit others pages"
-msgstr "Editer les pages des autres"
+msgstr "Edytować cudze strony"
 
 #: ../ure-lib.php:389
 msgid "Edit published pages"
-msgstr "Editer les pages publiées"
+msgstr "Edytować opublikowane strony"
 
 #: ../ure-lib.php:390
 msgid "Publish pages"
-msgstr "Publier des pages"
+msgstr "Publikować strony"
 
 #: ../ure-lib.php:391
 msgid "Delete pages"
-msgstr "Supprimer des pages"
+msgstr "Usuwac strony"
 
 #: ../ure-lib.php:392
 msgid "Delete others pages"
-msgstr "Supprimer des pages des autres"
+msgstr "Usuwać cudze strony"
 
 #: ../ure-lib.php:393
 msgid "Delete published pages"
-msgstr "Supprimer des pages publiées"
+msgstr "Usuwać opublikowane strony"
 
 #: ../ure-lib.php:394
 msgid "Delete posts"
-msgstr "Supprimer des articles"
+msgstr "Usuwać posty"
 
 #: ../ure-lib.php:395
 msgid "Delete others posts"
-msgstr "Supprimer des articles des autres"
+msgstr "Usuwać cudze posty"
 
 #: ../ure-lib.php:396
 msgid "Delete published posts"
-msgstr "Supprimer des articles publiés"
+msgstr "Usuwać opublikowane posty"
 
 #: ../ure-lib.php:397
 msgid "Delete private posts"
-msgstr "Supprimer des articles privés"
+msgstr "Usuwać prywatne wpisy"
 
 #: ../ure-lib.php:398
 msgid "Edit private posts"
-msgstr "Editer des articles privés"
+msgstr "Edytować prywatne wpisy"
 
 #: ../ure-lib.php:399
 msgid "Read private posts"
-msgstr "Lire des articles privés"
+msgstr "Czytac prywatne wpisy"
 
 #: ../ure-lib.php:400
 msgid "Delete private pages"
-msgstr "Supprimer des pages privées"
+msgstr "Usuwać prywatne strony"
 
 #: ../ure-lib.php:401
 msgid "Edit private pages"
-msgstr "Editer des pages privées"
+msgstr "Edytować prywatne strony"
 
 #: ../ure-lib.php:402
 msgid "Read private pages"
-msgstr "Lire des pages privées"
+msgstr "Odczytywać prywatne strony"
 
 #: ../ure-lib.php:403
 msgid "Delete users"
-msgstr "Supprimer des utilisateurs"
+msgstr "Usuwanie użytkowników"
 
 #: ../ure-lib.php:404
 msgid "Create users"
-msgstr "Créer des utilisateurs"
+msgstr "Teorzyc użytkowników"
 
 #: ../ure-lib.php:405
 msgid "Unfiltered upload"
-msgstr "Transmissions non filtrées"
+msgstr "Niefiltrowany upload"
 
 #: ../ure-lib.php:406
 msgid "Edit dashboard"
-msgstr "Editer le tableau de bord"
+msgstr "Edycja kokpitu"
 
 #: ../ure-lib.php:407
 msgid "Update plugins"
-msgstr "Mettre à jour les extensions"
+msgstr "Aktualizacja wtyczek"
 
 #: ../ure-lib.php:408
 msgid "Delete plugins"
-msgstr "Supprimer des extensions"
+msgstr "Usuwanie wtyczek"
 
 #: ../ure-lib.php:409
 msgid "Install plugins"
-msgstr "Installer des extensions"
+msgstr "Instalacja wtyczek"
 
 #: ../ure-lib.php:410
 msgid "Update themes"
-msgstr "Mettre à jour les thèmes"
+msgstr "Aktualizacja motywów"
 
 #: ../ure-lib.php:411
 msgid "Install themes"
-msgstr "Installer des thèmes"
+msgstr "Instalacja motywów"
 
 #: ../ure-options.php:111
 msgid "Backup record is created for the current role capabilities"
-msgstr "L'enregistrement de sauvegarde a été créé pour les capacités du rôle actuel"
+msgstr "Kopia zapasowa dla tej grupy została utworzona"
 
 #: ../ure-options.php:120
 msgid "Role"
-msgstr "Rôle "
+msgstr "Grupa"
 
 #: ../ure-options.php:120
 msgid "is updated successfully"
-msgstr "a été correctement mis à jour"
+msgstr "została zaaktualizowana"
 
 #: ../ure-options.php:164
 msgid "About this Plugin:"
-msgstr "A propos de cette extension&nbsp;:"
+msgstr "O wtyczce:"
 
 #: ../ure-options.php:165
 msgid "Author's website"
-msgstr "Site Web de l'auteur"
+msgstr "Strona domowa autora"
 
 #: ../ure-options.php:166
 msgid "Plugin webpage"
-msgstr "Page Web de l'extension"
+msgstr "Strona domowa wtyczki"
 
 #: ../ure-options.php:167
 #: ../user-role-editor.php:206
 msgid "Changelog"
-msgstr "Changelog"
+msgstr "Lista zmian"
 
 #: ../ure-options.php:168
 msgid "FAQ"
@@ -330,155 +334,156 @@ msgstr "FAQ"
 
 #: ../ure-options.php:169
 msgid "Donate"
-msgstr "Faire un don"
+msgstr "Dotuj"
 
 #: ../ure-options.php:171
 msgid "Greetings:"
-msgstr "Remerciements&nbsp;:"
+msgstr "Podziękowania:"
 
 #: ../ure-options.php:172
 msgid "It's me, the author"
-msgstr "C'est moi, l'auteur"
+msgstr "To ja, autor"
 
 #: ../ure-options.php:173
 msgid "For the help with Belorussian translation"
-msgstr "Pour l'aide avec la traduction biélorusse"
+msgstr "Za tłumacznie Białoruskie"
 
 #: ../ure-options.php:174
 msgid "For the help with French translation"
-msgstr "Pour l'aide avec la traduction française"
+msgstr "Za tłumacznie Francuskie"
 
 #: ../ure-options.php:175
 msgid "For the help with German translation"
-msgstr "Pour l'aide avec la traduction allemande"
+msgstr "Za tłumacznie Niemieckie"
 
 #: ../ure-options.php:176
 msgid "For the help with Japanese translation"
-msgstr "Pour l'aide avec la traduction japonaise"
+msgstr "Za tłumacznie Japońskie"
 
 #: ../ure-options.php:177
-msgid "For the help with Spanish translation"
-msgstr "Pour l'aide avec la traduction polonais"
+msgid "For the help with Polish translation"
+msgstr "Za tłumacznie Polski"
 
 #: ../ure-options.php:178
-msgid "For the code to hide administrator role"
-msgstr "Pour le code qui cache le rôle d'administrateur"
+msgid "For the help with Spanish translation"
+msgstr "Za tłumacznie Hiszpańskie"
 
 #: ../ure-options.php:179
+msgid "For the code to hide administrator role"
+msgstr "Za zakodowanie \"ukrycia grupy administracji\""
+
+#: ../ure-options.php:180
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr "Vous souhaitez voir votre nom avec votre lien vers votre site Web ici ? Avec plaisir ! Votre aide avec la traduction ou de nouvelles idées seront très appréciées."
+msgstr "Chcesz by twoje imie się tutaj znalazło? Zapraszamy! Możesz pomóc nam tworzyć tłumaczyc i ulepszać wtyczkę!"
 
-#: ../ure-options.php:195
+#: ../ure-options.php:196
 msgid "Role Name can not be empty!"
-msgstr "Le nom du Rôle ne peut pas être vide"
+msgstr "Grupa: Nazwa nie może pozostac pusta!"
 
-#: ../ure-options.php:199
+#: ../ure-options.php:200
 msgid "Role Name must contain latin characters and digits only!"
-msgstr "Le nom du Rôle doit uniquement contenir que des caractères latins et des chiffres !"
+msgstr "Grupa: Może zawierać tylko litery i liczby!"
 
-#: ../ure-options.php:204
-#: ../ure-options.php:322
+#: ../ure-options.php:205
+#: ../ure-options.php:323
 msgid "Delete Role"
-msgstr "Supprimer le rôle"
+msgstr "Usuń role"
 
-#: ../ure-options.php:206
+#: ../ure-options.php:207
 msgid "Change Default Role"
-msgstr "Changer le rôle par défaut"
+msgstr "Zmień domyślną grupe"
 
-#: ../ure-options.php:208
-#: ../ure-options.php:290
+#: ../ure-options.php:209
+#: ../ure-options.php:291
 msgid "Restore Roles from backup copy"
-msgstr "Restaurer les Rôles à partir de la copie de sauvegarde"
+msgstr "Przywróc grupe z kopii zapasowej"
 
-#: ../ure-options.php:210
+#: ../ure-options.php:211
 msgid "Please confirm to continue"
-msgstr "Confirmez pour continuer"
+msgstr "Potwierdź by kontynuować"
 
-#: ../ure-options.php:235
+#: ../ure-options.php:236
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
-msgstr "Mise à jour du Rôle \"%s\" : Veuillez confirmer pour continuer"
+msgstr "Aktualizacja grupy \"%s\" potwierdź by kontynuować"
 
-#: ../ure-options.php:243
+#: ../ure-options.php:244
 msgid "Select Role and change its capabilities list"
-msgstr "Sélectionnez un Rôle et changez sa liste de capacités"
+msgstr "Wybierz grupe by edytować uprawnienia"
 
-#: ../ure-options.php:247
+#: ../ure-options.php:248
 msgid "Select Role:"
-msgstr "Sélectionnez un rôle&nbsp;:"
+msgstr "Wybierz grupe:"
 
-#: ../ure-options.php:288
+#: ../ure-options.php:289
 msgid "Update"
-msgstr "Mettre à jour"
+msgstr "Aktualizuj"
 
-#: ../ure-options.php:288
+#: ../ure-options.php:289
 msgid "Save Changes"
-msgstr "Enregistrer les modifications"
-
-#: ../ure-options.php:289
-msgid "Cancel"
-msgstr "Annuler"
-
-#: ../ure-options.php:289
-msgid "Cancel not saved changes"
-msgstr "Annuler les changements"
+msgstr "Zapisz zmiany"
 
 #: ../ure-options.php:290
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: ../ure-options.php:290
+msgid "Cancel not saved changes"
+msgstr "Anuluj niezpisane zmiany"
+
+#: ../ure-options.php:291
 msgid "Reset"
-msgstr "Réinitialiser"
+msgstr "Resetuj"
 
-#: ../ure-options.php:301
+#: ../ure-options.php:302
 msgid "Show capabilities in human readable form"
-msgstr "Afficher les capacités en langage humain"
+msgstr "Pokaż uprawnienia w łatwiej do przeczytania formie"
 
-#: ../ure-options.php:312
+#: ../ure-options.php:313
 msgid "Add New Role"
-msgstr "Ajouter un nouveau rôle"
+msgstr "Dodaj nową role"
 
-#: ../ure-options.php:317
+#: ../ure-options.php:318
 msgid "Add"
-msgstr "Ajouter"
+msgstr "Dodaj"
 
-#: ../ure-options.php:317
+#: ../ure-options.php:318
 msgid "Add New User Role"
-msgstr "Ajouter un nouveau rôle utilisateur"
+msgstr "Dodaj nową grupe"
 
-#: ../ure-options.php:327
+#: ../ure-options.php:328
 msgid "Delete"
-msgstr "Effacer"
+msgstr "Usuń"
 
-#: ../ure-options.php:327
+#: ../ure-options.php:328
 msgid "Delete User Role"
-msgstr "Supprimer un rôle utilisateur"
+msgstr "Usuń grupe"
 
-#: ../ure-options.php:332
+#: ../ure-options.php:333
 msgid "Default Role for New User"
-msgstr "Rôle par défaut pour les nouveaux utilisateurs"
+msgstr "Domyślna grupa dla nowych użytkowników"
 
-#: ../ure-options.php:337
+#: ../ure-options.php:338
 msgid "Change"
-msgstr "Modifier"
+msgstr "Zmień"
 
-#: ../ure-options.php:337
+#: ../ure-options.php:338
 msgid "Set as Default User Role"
-msgstr "Définir comme rôle d'utilisateur par défaut"
+msgstr "Ustaw jako domyślną grupe"
 
 #: ../user-role-editor.php:38
 msgid "User Role Editor requires WordPress 2.8 or newer."
-msgstr "User Role Editor nécessite WordPress 2.8 ou plus récent.."
+msgstr "Uprawnienia grup wymagają WordPress'a w wersji 2.8 bądz nowszej."
 
 #: ../user-role-editor.php:38
 msgid "Please update!"
-msgstr "Veuillez mettre à jour&nbsp;!"
+msgstr "Prosze zaaktualizować wtyczke!"
 
 #: ../user-role-editor.php:63
 msgid "User Role Editor"
-msgstr "Extension \"User Role Editor\""
+msgstr "Uprawnienia grup"
 
 #: ../user-role-editor.php:196
 msgid "Settings"
-msgstr "Réglages"
-
-#~ msgid "Return to default WordPress user role capabilities"
-#~ msgstr "Remettre les capacités des utilisateurs par défaut de WordPress"
+msgstr "Ustawnienia"
 
