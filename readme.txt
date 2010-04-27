@@ -65,7 +65,7 @@ You are welcome! Help me with plugin translation, share with me new ideas about 
 == Changelog ==
 = 2.1.3 =
 * 27.04.2010
-* Japan translation is updated.
+* Japanese translation is updated.
 
 = 2.1.2 =
 * 26.04.2010
@@ -75,7 +75,7 @@ You are welcome! Help me with plugin translation, share with me new ideas about 
 * 19.04.2010
 * Form layout changed slightly to fit more long phrases in other languages
 * Belorussian translation is added. Thanks to [Marsis G.](http://pc.de/).
-* French, Japan, Russian, Spanish translations are updated.
+* French, Japanese, Russian, Spanish translations are updated.
 
 = 2.1 =
 * 17.04.2010
