@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: User Role Editor v. 2.0.3\n"
+"Project-Id-Version: User Role Editor v. 2.1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-26 20:47+0600\n"
-"PO-Revision-Date: 2010-04-26 20:47+0600\n"
+"POT-Creation-Date: 2010-04-27 20:32+0600\n"
+"PO-Revision-Date: 2010-04-27 20:33+0600\n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -348,28 +348,27 @@ msgstr "作成者"
 
 #: ure-options.php:173
 msgid "For the help with Belorussian translation"
-msgstr ""
+msgstr "ベラルーシ語翻訳"
 
 #: ure-options.php:174
 msgid "For the help with French translation"
-msgstr "フランス語訳協力者"
+msgstr "フランス語翻訳"
 
 #: ure-options.php:175
 msgid "For the help with German translation"
-msgstr "ドイツ語訳協力者"
+msgstr "ドイツ語翻訳"
 
 #: ure-options.php:176
 msgid "For the help with Japanese translation"
-msgstr "日本語訳協力者"
+msgstr "日本語翻訳"
 
 #: ure-options.php:177
-#, fuzzy
 msgid "For the help with Polish translation"
-msgstr "スペイン語訳協力者"
+msgstr "ポーランド語翻訳"
 
 #: ure-options.php:178
 msgid "For the help with Spanish translation"
-msgstr "スペイン語訳協力者"
+msgstr "スペイン語翻訳"
 
 #: ure-options.php:179
 msgid "For the code to hide administrator role"
