@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor v. 2.1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-27 20:32+0600\n"
-"PO-Revision-Date: 2010-04-27 20:33+0600\n"
+"POT-Creation-Date: 2010-05-08 08:15+0600\n"
+"PO-Revision-Date: 2010-05-08 08:16+0600\n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -359,117 +359,121 @@ msgid "For the help with German translation"
 msgstr "ドイツ語翻訳"
 
 #: ure-options.php:176
+msgid "For the help with Italian translation"
+msgstr ""
+
+#: ure-options.php:177
 msgid "For the help with Japanese translation"
 msgstr "日本語翻訳"
 
-#: ure-options.php:177
+#: ure-options.php:178
 msgid "For the help with Polish translation"
 msgstr "ポーランド語翻訳"
 
-#: ure-options.php:178
+#: ure-options.php:179
 msgid "For the help with Spanish translation"
 msgstr "スペイン語翻訳"
 
-#: ure-options.php:179
+#: ure-options.php:180
 msgid "For the code to hide administrator role"
 msgstr "管理者ロールを非表示にする方法"
 
-#: ure-options.php:180
+#: ure-options.php:181
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "<hr />あなたの名前を表示し、サイトへのリンクを張りますか？翻訳のお手伝いおよび新しいアイディアのご提供に感謝致します。"
 
-#: ure-options.php:196
+#: ure-options.php:197
 msgid "Role Name can not be empty!"
 msgstr "ロール名を入力してください！"
 
-#: ure-options.php:200
+#: ure-options.php:201
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "ロール名には半角英数字のみを入力してください！"
 
-#: ure-options.php:205
-#: ure-options.php:323
+#: ure-options.php:206
+#: ure-options.php:324
 msgid "Delete Role"
 msgstr "ロール削除"
 
-#: ure-options.php:207
+#: ure-options.php:208
 msgid "Change Default Role"
 msgstr "デフォルトロールの変更"
 
-#: ure-options.php:209
-#: ure-options.php:291
+#: ure-options.php:210
+#: ure-options.php:292
 msgid "Restore Roles from backup copy"
 msgstr "バックアップからロールを読み込む"
 
-#: ure-options.php:211
+#: ure-options.php:212
 msgid "Please confirm to continue"
 msgstr "更新してもよろしいですか？"
 
-#: ure-options.php:236
+#: ure-options.php:237
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "\"%s\"の権限を更新してもよろしいですか？"
 
-#: ure-options.php:244
+#: ure-options.php:245
 msgid "Select Role and change its capabilities list"
 msgstr "ロールを選択し、権限を変更してください。"
 
-#: ure-options.php:248
+#: ure-options.php:249
 msgid "Select Role:"
 msgstr "ロール選択："
 
-#: ure-options.php:289
+#: ure-options.php:290
 msgid "Update"
 msgstr "保存"
 
-#: ure-options.php:289
+#: ure-options.php:290
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: ure-options.php:290
+#: ure-options.php:291
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: ure-options.php:290
+#: ure-options.php:291
 msgid "Cancel not saved changes"
 msgstr "変更を保存せずにキャンセルする。"
 
-#: ure-options.php:291
+#: ure-options.php:292
 msgid "Reset"
 msgstr "リセット"
 
-#: ure-options.php:302
+#: ure-options.php:303
 msgid "Show capabilities in human readable form"
 msgstr "各権限を概説で表示する"
 
-#: ure-options.php:313
+#: ure-options.php:314
 msgid "Add New Role"
 msgstr "新規ロールの追加"
 
-#: ure-options.php:318
+#: ure-options.php:319
 msgid "Add"
 msgstr "追加"
 
-#: ure-options.php:318
+#: ure-options.php:319
 msgid "Add New User Role"
 msgstr "新規ロールの追加"
 
-#: ure-options.php:328
+#: ure-options.php:329
 msgid "Delete"
 msgstr "削除"
 
-#: ure-options.php:328
+#: ure-options.php:329
 msgid "Delete User Role"
 msgstr "ロール削除"
 
-#: ure-options.php:333
+#: ure-options.php:334
 msgid "Default Role for New User"
 msgstr "新規ユーザのデフォルトロール"
 
-#: ure-options.php:338
+#: ure-options.php:339
 msgid "Change"
 msgstr "変更"
 
-#: ure-options.php:338
+#: ure-options.php:339
 msgid "Set as Default User Role"
 msgstr "デフォルトロールとして設定"
 

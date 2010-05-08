@@ -354,7 +354,7 @@ msgstr "Pour l'aide avec la traduction allemande"
 
 #: ../ure-options.php:176
 msgid "For the help with Japanese translation"
-msgstr "Pour l'aide avec la traduction japonaise"
+msgstr "Pour l'aide avec la traduction italien"
 
 #: ../ure-options.php:177
 msgid "For the help with Spanish translation"

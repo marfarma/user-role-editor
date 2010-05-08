@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor v. 2.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-26 20:45+0600\n"
-"PO-Revision-Date: 2010-04-26 20:46+0600\n"
+"POT-Creation-Date: 2010-05-08 08:13+0600\n"
+"PO-Revision-Date: 2010-05-08 08:14+0600\n"
 "Last-Translator: vladimir <vladimir@shinephp.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -359,117 +359,121 @@ msgid "For the help with German translation"
 msgstr "Hilfe bei der Übersetzung ins Deutsche"
 
 #: ure-options.php:176
+msgid "For the help with Italian translation"
+msgstr "Hilfe bei der Übersetzung ins Italienisch"
+
+#: ure-options.php:177
 msgid "For the help with Japanese translation"
 msgstr "Hilfe bei der Übersetzung ins Japanisch"
 
-#: ure-options.php:177
+#: ure-options.php:178
 msgid "For the help with Polish translation"
 msgstr "Hilfe bei der Übersetzung ins Politur"
 
-#: ure-options.php:178
+#: ure-options.php:179
 msgid "For the help with Spanish translation"
 msgstr "Hilfe bei der Übersetzung ins Spanische"
 
-#: ure-options.php:179
+#: ure-options.php:180
 msgid "For the code to hide administrator role"
 msgstr "Code zum Verstecken der Administrator-Rolle"
 
-#: ure-options.php:180
+#: ure-options.php:181
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Hier könnte auch Ihr Name mit einem Link zu Ihrer Webseite stehen! Helfen Sie uns bei der Übersetzung in andere Sprachen! Auch für Kritik und Anregungen sind wir dankbar."
 
-#: ure-options.php:196
+#: ure-options.php:197
 msgid "Role Name can not be empty!"
 msgstr "Rollenname darf nicht leer sein!"
 
-#: ure-options.php:200
+#: ure-options.php:201
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "Der Rollename darf nur lateinische Buchstaben und Ziffern enthalten!"
 
-#: ure-options.php:205
-#: ure-options.php:323
+#: ure-options.php:206
+#: ure-options.php:324
 msgid "Delete Role"
 msgstr "Löschen der Rolle"
 
-#: ure-options.php:207
+#: ure-options.php:208
 msgid "Change Default Role"
 msgstr "Ändern der Standard-Rolle"
 
-#: ure-options.php:209
-#: ure-options.php:291
+#: ure-options.php:210
+#: ure-options.php:292
 msgid "Restore Roles from backup copy"
 msgstr "Wiederherstellung der Rollen von der Sicherheitskopie"
 
-#: ure-options.php:211
+#: ure-options.php:212
 msgid "Please confirm to continue"
 msgstr "Bestätigen Sie bitte, um fortzufahren"
 
-#: ure-options.php:236
+#: ure-options.php:237
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Aktualisierung der Rolle \"%s\": Zum Fortfahren bitte bestätigen"
 
-#: ure-options.php:244
+#: ure-options.php:245
 msgid "Select Role and change its capabilities list"
 msgstr "Eine Rolle auswählen und ihre Befugnisse ändern"
 
-#: ure-options.php:248
+#: ure-options.php:249
 msgid "Select Role:"
 msgstr "Eine Rolle auswählen:"
 
-#: ure-options.php:289
+#: ure-options.php:290
 msgid "Update"
 msgstr "Aktualisieren"
 
-#: ure-options.php:289
+#: ure-options.php:290
 msgid "Save Changes"
 msgstr "Änderungen sichern"
 
-#: ure-options.php:290
+#: ure-options.php:291
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: ure-options.php:290
+#: ure-options.php:291
 msgid "Cancel not saved changes"
 msgstr "Ungesicherte Änderungen verwerfen "
 
-#: ure-options.php:291
+#: ure-options.php:292
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: ure-options.php:302
+#: ure-options.php:303
 msgid "Show capabilities in human readable form"
 msgstr ""
 
-#: ure-options.php:313
+#: ure-options.php:314
 msgid "Add New Role"
 msgstr "Neue Rolle hinzufügen"
 
-#: ure-options.php:318
+#: ure-options.php:319
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: ure-options.php:318
+#: ure-options.php:319
 msgid "Add New User Role"
 msgstr "Neue Benutzer-Rolle hinzufügen"
 
-#: ure-options.php:328
+#: ure-options.php:329
 msgid "Delete"
 msgstr "Löschen"
 
-#: ure-options.php:328
+#: ure-options.php:329
 msgid "Delete User Role"
 msgstr "Löschen der Benutzer-Rolle"
 
-#: ure-options.php:333
+#: ure-options.php:334
 msgid "Default Role for New User"
 msgstr "Standard-Rolle für neuen Benutzer"
 
-#: ure-options.php:338
+#: ure-options.php:339
 msgid "Change"
 msgstr "Ändern"
 
-#: ure-options.php:338
+#: ure-options.php:339
 msgid "Set as Default User Role"
 msgstr "Geänderte Standard-Benutzer-Rolle sichern"
 
