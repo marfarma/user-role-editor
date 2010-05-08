@@ -67,7 +67,7 @@ You are welcome! Help me with plugin translation, share with me new ideas about 
 == Changelog ==
 = 2.1.4 =
 * 08.05.2010
-* Italian translation is updated.
+* Italian translation is added.
 * Minor javascript bug (undefined parameter value was sent to the server) is fixed.
 
 = 2.1.3 =
