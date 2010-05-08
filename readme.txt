@@ -65,6 +65,11 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
 == Changelog ==
+= 2.1.4 =
+* 08.05.2010
+* Italian translation is updated.
+* Minor javascript bug (undefined parameter value was sent to the server) is fixed.
+
 = 2.1.3 =
 * 27.04.2010
 * Japanese translation is updated.
