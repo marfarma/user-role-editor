@@ -14,7 +14,7 @@ $ure_siteURL = get_option( 'siteurl' );
 
 // Pre-2.6 compatibility
 if ( !defined( 'WP_CONTENT_URL' ) )
-      define( 'WP_CONTENT_URL', $thanks_siteURL . '/wp-content' );
+      define( 'WP_CONTENT_URL', $ure_siteURL . '/wp-content' );
 if ( ! defined( 'WP_CONTENT_DIR' ) )
       define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
 if ( ! defined( 'WP_PLUGIN_URL' ) )
