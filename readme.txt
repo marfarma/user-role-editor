@@ -61,11 +61,16 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 * [Technolog.jp](http://technolog.jp/) - for the help with Japanese translation.
 * [Marsis G.](http://pc.de/) for the help with Belorussian translation.
 * [TagSite](http://www.tagsite.eu) for the help with Polish translation.
+* [István](http://www.blacksnail.hu) for the help with Hungarian translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
 == Changelog ==
+= 2.1.5 =
+* 18.06.2010
+* Hungarian translation is added.
+
 = 2.1.4 =
 * 08.05.2010
 * Italian translation is added.
