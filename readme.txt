@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
 Tested up to: 3.0
-Stable tag: 2.1.4
+Stable tag: 2.1.5
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
 
@@ -20,6 +20,7 @@ To read more about 'User Role Editor' visit this link http://www.shinephp.com/us
 * Belorussian: [Marsis G.](http://pc.de)
 * French: [Whiler](http://blogs.wittwer.fr/whiler/)
 * German: [Peter](http://www.red-socks-reinbek.de)
+* Hungarian: [István](http://www.blacksnail.hu)
 * Italian: [Talksina](http://www.iadkiller.org)
 * Japanese: [Technolog.jp](http://technolog.jp/)
 * Polish: [TagSite](http://www.tagsite.eu)
