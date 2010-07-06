@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
 Tested up to: 3.0
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
 
@@ -19,6 +19,7 @@ To read more about 'User Role Editor' visit this link http://www.shinephp.com/us
 = Translations =
 * Belorussian: [Marsis G.](http://pc.de)
 * French: [Whiler](http://blogs.wittwer.fr/whiler/)
+* Dutch: [Rémi Bruggeman](http://www.remisan.be)
 * German: [Peter](http://www.red-socks-reinbek.de)
 * Hungarian: [István](http://www.blacksnail.hu)
 * Italian: [Talksina](http://www.iadkiller.org)
@@ -62,11 +63,16 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 * [Marsis G.](http://pc.de/) for the help with Belorussian translation.
 * [TagSite](http://www.tagsite.eu) for the help with Polish translation.
 * [István](http://www.blacksnail.hu) for the help with Hungarian translation.
+* [Rémi Bruggeman](http://www.remisan.be) for the help with Dutch translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
 == Changelog ==
+= 2.1.6 =
+* 06.07.2010
+* Dutch translation is added.
+
 = 2.1.5 =
 * 18.06.2010
 * Hungarian translation is added.
