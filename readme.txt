@@ -75,7 +75,6 @@ You are welcome! Help me with plugin translation, share with me new ideas about 
 * 07.07.2010
 * Chinese translation is added.
 
-== Changelog ==
 = 2.1.6 =
 * 06.07.2010
 * Dutch translation is added.
