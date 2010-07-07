@@ -4,7 +4,7 @@ Donatie link:
 Tags:
 Vereist minstens: 2.8
 getest tot en met: 3.0
-Stabiele Tag: 2.1.5
+Stabiele Tag: 2.1.7
 
 De "User Role Editor" WordPress Plugin maakt het aanpassen van de rol mogelijkheden gemakkelijk. U kunt met enkele klikken elke standaard WordPress gebruikersrol (uitgenomen de Administrator rol) aanpassen.
 
