@@ -70,7 +70,7 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
-== Changelog ==
+== Changelog == 
 = 2.1.7 =
 * 07.07.2010
 * Chinese translation is added.
