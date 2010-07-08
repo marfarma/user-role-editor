@@ -67,7 +67,7 @@ msgstr "白俄罗斯语版本贡献者"
 
 #: ../ure-options.php:174
 msgid "For the help with Chinese translation"
-msgstr "For the help with Chinese translation"
+msgstr "简体中文版本贡献者"
 
 #: ../ure-options.php:175
 msgid "For the help with Dutch translation"
