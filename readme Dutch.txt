@@ -26,7 +26,7 @@ Om meer te lezen over de "User Role Editor", bezoek de volgende link: http://www
 * Pools: [TagSite](http://www.tagsite.eu)
 * Russisch: [Vladimir Garagulya](http://shinephp.com)
 * Spaans: [Dario Ferrer](http://www.darioferrer.com)
-* Nederlands: [Rï¿½mi Bruggeman](http://www.remisan.be)
+* Nederlands: [RŽmi Bruggeman](http://www.remisan.be)
 
 Beste Plugin gebruiker!
 Ik zou het ten stelligste waarderen moest u me willen helpen bij het vertalen van deze plugin. Stuurt u alstublieft uw taal .po en .mo bestanden naar vladimir[AT TEKEN]shinephp.com. Vergeet a.u.b. niet om uw een link naar uw website ook mee te sturen. Dan kan ik de link toevoegen aan de dankbetuigingen voor te vertalingshulp op shinephp.com, in de plugin instellingen pagina en in het LEESMIJ.txt bestand.
@@ -36,7 +36,7 @@ Dank voor uw hulp!
 
 == INSTALLATIE ==
 De installatie procedure:
-1. Deactiveer de plugin indien u een vorige versie geï¿½nstalleerd heeft.
+1. Deactiveer de plugin indien u een vorige versie ge•nstalleerd heeft.
 2. pak het "user-role-editor.x.x.x.zip" archief uit in de "/wp-content/plugin/user-role-editor" folder.
 3. Activeer de "User Role Editor" plugin via het "Plugins" menu in het Wordpress Admin Menu.
 4. Ga naar het instellingenmenu van de "User Role Editor" en pas uw Wordpress rollen mogelijkheden aan waar nodig.
@@ -51,7 +51,7 @@ Jawel, het is getest met WPMU Versie 2.9.2
 1. Schermafbeelding-1.png "User Role Editor" Hoofd Formulier
 
 == Speciale Dankbetuigingen naar ==
-* [Whiler](http://blogs.wittwer.fr/whiler/) Voor het vertalen naar het Frans en enkele nuttige ideeï¿½n.
+* [Whiler](http://blogs.wittwer.fr/whiler/) Voor het vertalen naar het Frans en enkele nuttige idee‘n.
 * [Peter](http://www.red-socks-reinbek.de) - Voor het vertalen naar het Duits.
 * [Dario Ferrer](http://www.darioferrer.com) - Voor het vertalen naar het Spaans.
 * [Talksina](http://www.iadkiller.org) - Voor het vertalen naar het Italiaans.
@@ -59,15 +59,19 @@ Jawel, het is getest met WPMU Versie 2.9.2
 * [Marsis G.](http://pc.de/) Voor het vertalen naar het Belorussisch.
 * [TagSite](http://www.tagsite.eu) Voor het vertalen naar het Pools.
 * [IstvÃ¡n](http://www.blacksnail.hu) Voor het vertalen naar het Honghaars.
-* [Rï¿½mi Bruggeman](http://www.remisan.be) voor het vertalen naar het Nederlands en een nuttig idee.
+* [RŽmi Bruggeman](http://www.remisan.be) voor het vertalen naar het Nederlands en een nuttig idee.
+* [Yackytsu](http://www.jackytsu.com) Voor het overtaken naar het Chinees.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - Voor de code om de Administrator rol te verbergen in de Admin Backend.
 
 
-U wordt van harte uitgenodigd om te helpen bij het vertalen van de plugin en het delen van nieuwe ideeï¿½n voor de toekomstige ontwikkeling ervan. Een link naar uw site zal hier ook verschijnen.
+U wordt van harte uitgenodigd om te helpen bij het vertalen van de plugin en het delen van nieuwe idee‘n voor de toekomstige ontwikkeling ervan. Een link naar uw site zal hier ook verschijnen.
 
-== Changelog ==
+== Changelog == 
+= 2.1.7 =
+* 07.07.2010
+* Chinese vertaling toegevoegd.
+
 = 2.1.6 =
-* 06.07.2010
 * Date TBA
 * Nederlandse vertaling toegevoegd.
 
@@ -129,13 +133,13 @@ Het is onmogelijk om een standaard WordPress rol te verwijderen.
 
 = 1.1 =
 * 24.03.2010
-* Kritieke fout verbeterd. Wanneer u op de "herstel" knop klikt voordat u minstens ï¿½ï¿½ns de aanpassingen aan de rol heeft opgeslaan (Dat is klikken op de Vernieuwen knop), zult u een data verlies probleem hebben op alle rollen. Herstelkopie data wordt automatisch aangemaakt voor de ï¿½ï¿½rste data vernieuwing. Indien geen update - Geen reservekopie. Speciale check voor dit was toegevoegd.
+* Kritieke fout verbeterd. Wanneer u op de "herstel" knop klikt voordat u minstens ŽŽns de aanpassingen aan de rol heeft opgeslaan (Dat is klikken op de Vernieuwen knop), zult u een data verlies probleem hebben op alle rollen. Herstelkopie data wordt automatisch aangemaakt voor de ŽŽrste data vernieuwing. Indien geen update - Geen reservekopie. Speciale check voor dit was toegevoegd.
 * Duitse vertaling toegevoegd.
 * Spaanse vertaling toegevoegd.
 
 = 1.0 =
 * 22.03.2010
-* ï¿½ï¿½rste release.
+* ŽŽrste release.
 
 == Additionele documentatie ==
 
