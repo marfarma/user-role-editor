@@ -76,6 +76,7 @@ You are welcome! Help me with plugin translation, share with me new ideas about 
 = 2.1.8 =
 * 16.08.2010
 * Compatibility issue with other plugins (like Flash Album Gallery), which use capabilities names with spaces inside (non valid JavaScript identifier), is fixed.
+* Missed translation slots are added for some new WordPress 3.0 capabilities. Translators (former and new) are welcome to update correspondent language files.
 * Brasilian Portuguese translation is added.
 
 = 2.1.7 =
