@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-07 21:01+0700\n"
-"PO-Revision-Date: 2010-07-07 21:01+0700\n"
+"POT-Creation-Date: 2010-08-16 21:08+0700\n"
+"PO-Revision-Date: 2010-08-16 21:09+0700\n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: shinephp.com <vladimir@shinephp.com>\n"
 "MIME-Version: 1.0\n"
@@ -18,191 +18,195 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: ure-options.php:111
+#: ure-options.php:112
 msgid "Backup record is created for the current role capabilities"
 msgstr "A biztonsági mentés elkészült a jelenlegi szerpkörhöz tartozó beállításokról"
 
-#: ure-options.php:120
+#: ure-options.php:121
 msgid "Role"
 msgstr "Szerepkör"
 
-#: ure-options.php:120
+#: ure-options.php:121
 msgid "is updated successfully"
 msgstr "sikeresen frissítve"
 
-#: ure-options.php:164
+#: ure-options.php:165
 msgid "About this Plugin:"
 msgstr "A Pluginról:"
 
-#: ure-options.php:165
+#: ure-options.php:166
 msgid "Author's website"
 msgstr "A készítő weblapja"
 
-#: ure-options.php:166
+#: ure-options.php:167
 msgid "Plugin webpage"
 msgstr "A plugin weblapja"
 
-#: ure-options.php:167
+#: ure-options.php:168
 #: user-role-editor.php:206
 msgid "Changelog"
 msgstr "Changelog"
 
-#: ure-options.php:168
+#: ure-options.php:169
 msgid "FAQ"
 msgstr "GYIK"
 
-#: ure-options.php:169
+#: ure-options.php:170
 msgid "Donate"
 msgstr "Adakozz"
 
-#: ure-options.php:171
+#: ure-options.php:172
 msgid "Greetings:"
 msgstr "Üdvözlet:"
 
-#: ure-options.php:172
+#: ure-options.php:173
 msgid "It's me, the author"
 msgstr "A készítő"
 
-#: ure-options.php:173
+#: ure-options.php:174
 msgid "For the help with Belorussian translation"
 msgstr "A Belorusz fordításért"
 
-#: ure-options.php:174
+#: ure-options.php:175
+msgid "For the help with Brasilian translation"
+msgstr ""
+
+#: ure-options.php:176
 msgid "For the help with Chinese translation"
 msgstr "A Chinese fordításért"
 
-#: ure-options.php:175
+#: ure-options.php:177
 msgid "For the help with Dutch translation"
 msgstr "A Dutch fordításért"
 
-#: ure-options.php:176
+#: ure-options.php:178
 msgid "For the help with French translation"
 msgstr "A francia fordításért"
 
-#: ure-options.php:177
+#: ure-options.php:179
 msgid "For the help with German translation"
 msgstr "A német fordításért"
 
-#: ure-options.php:178
+#: ure-options.php:180
 msgid "For the help with Hungarian translation"
 msgstr "A magyar fordításért"
 
-#: ure-options.php:179
+#: ure-options.php:181
 msgid "For the help with Italian translation"
 msgstr "Az olasz fordításért"
 
-#: ure-options.php:180
+#: ure-options.php:182
 msgid "For the help with Japanese translation"
 msgstr "A japán fordításért"
 
-#: ure-options.php:181
+#: ure-options.php:183
 msgid "For the help with Polish translation"
 msgstr "A lenygel fordításért"
 
-#: ure-options.php:182
+#: ure-options.php:184
 msgid "For the help with Spanish translation"
 msgstr "A spanyol fordításért"
 
-#: ure-options.php:183
+#: ure-options.php:185
 msgid "For the code to hide administrator role"
 msgstr "Az adminisztrátori szerepkör elrejtésére szolgáló kódért"
 
-#: ure-options.php:184
+#: ure-options.php:186
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "Szeretnéd itt látni a neved egy hivatkozással a weblapodra? Megoldható! Így háláljuk meg a fordításban nyújtott segítséged, és új ötleteidet."
 
-#: ure-options.php:200
+#: ure-options.php:202
 msgid "Role Name can not be empty!"
 msgstr "A szerepkör neve nem lehet üres!"
 
-#: ure-options.php:204
+#: ure-options.php:206
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "A szerepkör neve csak a latin ABC betűit és számokat tartalmazhat!"
 
-#: ure-options.php:209
-#: ure-options.php:327
+#: ure-options.php:211
+#: ure-options.php:330
 msgid "Delete Role"
 msgstr "Szerepkör törlése"
 
-#: ure-options.php:211
+#: ure-options.php:213
 msgid "Change Default Role"
 msgstr "Alapértelmezett szerepkör megváltoztatása"
 
-#: ure-options.php:213
-#: ure-options.php:295
+#: ure-options.php:215
+#: ure-options.php:298
 msgid "Restore Roles from backup copy"
 msgstr "Szerepkör visszaállítása biztonsági mentésből"
 
-#: ure-options.php:215
+#: ure-options.php:217
 msgid "Please confirm to continue"
 msgstr "A folytatás előtt, kérem hagyja jóva a műveletet"
 
-#: ure-options.php:240
+#: ure-options.php:242
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Szerepkör frissítése \"%s\": kérem hagyja jóvá a folytatáshoz"
 
-#: ure-options.php:248
+#: ure-options.php:250
 msgid "Select Role and change its capabilities list"
 msgstr "Szerepkör kiválasztása és lehetőségek módosítása"
 
-#: ure-options.php:252
+#: ure-options.php:254
 msgid "Select Role:"
 msgstr "Szerepkör kiválasztása:"
 
-#: ure-options.php:293
+#: ure-options.php:296
 msgid "Update"
 msgstr "Frissítés"
 
-#: ure-options.php:293
+#: ure-options.php:296
 msgid "Save Changes"
 msgstr "Beálltások mentése"
 
-#: ure-options.php:294
+#: ure-options.php:297
 msgid "Cancel"
 msgstr "Mégsem"
 
-#: ure-options.php:294
+#: ure-options.php:297
 msgid "Cancel not saved changes"
 msgstr "A nem mentett beállítások elvetése"
 
-#: ure-options.php:295
+#: ure-options.php:298
 msgid "Reset"
 msgstr "Reset"
 
-#: ure-options.php:306
+#: ure-options.php:309
 msgid "Show capabilities in human readable form"
 msgstr "Mutasd a beállításokat emberi olvasható formában"
 
-#: ure-options.php:317
+#: ure-options.php:320
 msgid "Add New Role"
 msgstr "Új szerepkör"
 
-#: ure-options.php:322
+#: ure-options.php:325
 msgid "Add"
 msgstr "Hozzáad"
 
-#: ure-options.php:322
+#: ure-options.php:325
 msgid "Add New User Role"
 msgstr "Új felhasználói szerepkör hozzáadása"
 
-#: ure-options.php:332
+#: ure-options.php:335
 msgid "Delete"
 msgstr "Törlés"
 
-#: ure-options.php:332
+#: ure-options.php:335
 msgid "Delete User Role"
 msgstr "Felhasználói szerepkör törlése"
 
-#: ure-options.php:337
+#: ure-options.php:340
 msgid "Default Role for New User"
 msgstr "Új felhasználó alapértelmezett szerepköre"
 
-#: ure-options.php:342
+#: ure-options.php:345
 msgid "Change"
 msgstr "Változtat"
 
-#: ure-options.php:342
+#: ure-options.php:345
 msgid "Set as Default User Role"
 msgstr "Alapértelmezett szerepkörként beállít"
 
@@ -504,4 +508,36 @@ msgstr "Sablonok frissítése"
 #: ure-lib.php:411
 msgid "Install themes"
 msgstr "Sablonok telepítése"
+
+#: ure-lib.php:412
+msgid "Update core"
+msgstr ""
+
+#: ure-lib.php:413
+msgid "List users"
+msgstr ""
+
+#: ure-lib.php:414
+msgid "Remove users"
+msgstr ""
+
+#: ure-lib.php:415
+msgid "Add users"
+msgstr ""
+
+#: ure-lib.php:416
+msgid "Promote users"
+msgstr ""
+
+#: ure-lib.php:417
+msgid "Edit theme options"
+msgstr ""
+
+#: ure-lib.php:418
+msgid "Delete themes"
+msgstr ""
+
+#: ure-lib.php:419
+msgid "Export"
+msgstr ""
 

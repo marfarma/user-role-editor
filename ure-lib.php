@@ -28,7 +28,7 @@ define('URE_PLUGIN_URL', WP_PLUGIN_URL.'/'.$urePluginDirName);
 define('URE_PLUGIN_DIR', WP_PLUGIN_DIR.'/'.$urePluginDirName);
 define('URE_WP_ADMIN_URL', $ure_siteURL.'/wp-admin');
 define('URE_ERROR', 'Error is encountered');
-
+define('URE_SPACE_REPLACER', '_URE-SR_');
 
 global $wpdb, $ure_OptionsTable;
 
@@ -409,7 +409,14 @@ function ure_TranslationData() {
     __('Install plugins', 'ure');
     __('Update themes', 'ure');
     __('Install themes', 'ure');
-
+    __('Update core', 'ure');
+    __('List users', 'ure');
+    __('Remove users', 'ure');
+    __('Add users', 'ure');
+    __('Promote users', 'ure');
+    __('Edit theme options', 'ure');
+    __('Delete themes', 'ure');
+    __('Export', 'ure');
   }
 }
 // end of ure_TranslationData()

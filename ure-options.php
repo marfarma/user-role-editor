@@ -81,7 +81,8 @@ if (isset($_POST['action']) && $_POST['action']=='update' && isset($_POST['user_
   $currentRole = $_POST['user_role'];
   $capabilityToSave = array();
   foreach($roles['administrator']['capabilities'] as $availableCapability=>$value) {
-    if (isset($_POST[$availableCapability])) {
+    $cap_id = str_replace(' ', URE_SPACE_REPLACER, $availableCapability);
+    if (isset($_POST[$cap_id])) {
       $capabilityToSave[$availableCapability] = 1;
     }
   }
@@ -171,6 +172,7 @@ ure_showMessage($mess);
 									<?php ure_displayBoxStart(__('Greetings:','ure')); ?>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo $shinephpFavIcon; ?>);" target="_blank" title="<?php _e("It's me, the author", 'ure'); ?>" href="http://www.shinephp.com/">Vladimir</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/marsis.png'; ?>)" target="_blank" title="<?php _e("For the help with Belorussian translation", 'ure'); ?>" href="http://pc.de">Marsis G.</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/rafael.png'; ?>)" target="_blank" title="<?php _e("For the help with Brasilian translation", 'ure'); ?>" href="http://www.arquiteturailustrada.com.br/">Rafael Galdencio</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/jackytsu.png'; ?>)" target="_blank" title="<?php _e("For the help with Chinese translation", 'ure'); ?>" href="http://www.jackytsu.com">Jackytsu</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/remi.png'; ?>)" target="_blank" title="<?php _e("For the help with Dutch translation", 'ure'); ?>" href="http://www.remisan.be">Rémi Bruggeman</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/whiler.png'; ?>)" target="_blank" title="<?php _e("For the help with French translation", 'ure'); ?>" href="http://blogs.wittwer.fr/whiler/">Whiler</a>
@@ -263,16 +265,17 @@ ure_showMessage($mess);
     if (isset($roles[$currentRole]['capabilities'][$fullCapabilities[$i]])) {
       $checked = 'checked="checked"';
     }
+    $cap_id = str_replace(' ', URE_SPACE_REPLACER, $fullCapabilities[$i]);
 ?>
-   <input type="checkbox" name="<?php echo $fullCapabilities[$i]; ?>" id="<?php echo $fullCapabilities[$i]; ?>" value="<?php echo $fullCapabilities[$i]; ?>" <?php echo $checked; ?>/>
+   <input type="checkbox" name="<?php echo $cap_id; ?>" id="<?php echo $cap_id; ?>" value="<?php echo $fullCapabilities[$i]; ?>" <?php echo $checked; ?>/>
 <?php
   if ($ure_caps_readable) {
 ?>
-   <label for="<?php echo $fullCapabilities[$i]; ?>" title="<?php echo $fullCapabilities[$i]; ?>" ><?php _e(ure_ConvertCapsToReadable($fullCapabilities[$i]),'ure'); ?></label><br/>
+   <label for="<?php echo $cap_id; ?>" title="<?php echo $fullCapabilities[$i]; ?>" ><?php _e(ure_ConvertCapsToReadable($fullCapabilities[$i]),'ure'); ?></label><br/>
 <?php
   } else {
 ?>
-   <label for="<?php echo $fullCapabilities[$i]; ?>" title="<?php _e(ure_ConvertCapsToReadable($fullCapabilities[$i]),'ure'); ?>" ><?php echo $fullCapabilities[$i]; ?></label><br/>
+   <label for="<?php echo $cap_id; ?>" title="<?php _e(ure_ConvertCapsToReadable($fullCapabilities[$i]),'ure'); ?>" ><?php echo $fullCapabilities[$i]; ?></label><br/>
 <?php
   }
    $i++; $quantInCell++;

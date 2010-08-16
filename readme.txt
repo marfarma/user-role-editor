@@ -3,8 +3,8 @@ Contributors: ShinePHP
 Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
-Tested up to: 3.0
-Stable tag: 2.1.7
+Tested up to: 3.0.1
+Stable tag: 2.1.8
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
 
@@ -18,6 +18,7 @@ To read more about 'User Role Editor' visit this link http://www.shinephp.com/us
 
 = Translations =
 * Belorussian: [Marsis G.](http://pc.de)
+* Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br/)
 * Chinese: [Yackytsu](http://www.jackytsu.com)
 * Dutch: [Rémi Bruggeman](http://www.remisan.be)
 * French: [Whiler](http://blogs.wittwer.fr/whiler/)
@@ -66,11 +67,17 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 * [István](http://www.blacksnail.hu) for the help with Hungarian translation.
 * [Rémi Bruggeman](http://www.remisan.be) for the help with Dutch translation.
 * [Yackytsu](http://www.jackytsu.com) for the help with Chinese translation.
+* [Rafael Galdencio](http://www.arquiteturailustrada.com.br/) for the help with Brasilian Portuguese translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
 
-== Changelog == 
+== Changelog ==
+= 2.1.8 =
+* 16.08.2010
+* Compatibility issue with other plugins (like Flash Album Gallery), which use capabilities names with spaces inside (non valid JavaScript identifier), is fixed.
+* Brasilian Portuguese translation is added.
+
 = 2.1.7 =
 * 07.07.2010
 * Chinese translation is added.
