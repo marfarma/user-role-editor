@@ -6,7 +6,7 @@ Requires at least: 2.8.
 Tested up to: 3.0.1
 Stable tag: 2.1.8
 
-User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
+User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
 == Description ==
 
@@ -15,24 +15,6 @@ Just turn on check boxes of capabilities you wish to add to the selected role an
 Add new roles and customize its capabilities according to your needs. Unnecessary self-made role can be deleted if there are no users whome such role is assigned.
 Role assigned every new created user by default can be changed too.
 To read more about 'User Role Editor' visit this link http://www.shinephp.com/user-role-editor-wordpress-plugin/
-
-= Translations =
-* Belorussian: [Marsis G.](http://pc.de)
-* Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br/)
-* Chinese: [Yackytsu](http://www.jackytsu.com)
-* Dutch: [Rémi Bruggeman](http://www.remisan.be)
-* French: [Whiler](http://blogs.wittwer.fr/whiler/)
-* German: [Peter](http://www.red-socks-reinbek.de)
-* Hungarian: [István](http://www.blacksnail.hu)
-* Italian: [Talksina](http://www.iadkiller.org)
-* Japanese: [Technolog.jp](http://technolog.jp/)
-* Polish: [TagSite](http://www.tagsite.eu)
-* Russian: [Vladimir Garagulya](http://shinephp.com)
-* Spanish: [Dario Ferrer](http://www.darioferrer.com)
-
-Dear plugin User!
-If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
-If you have better translation for some phrases, send it to me and it will be taken into consideration. You are welcome!
 
 
 == Installation ==
@@ -49,7 +31,6 @@ Installation procedure:
 Yes it does. I tested it with WordPress 3.0 Beta 1.
 - Does it work with WordPress MU?
 Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
-
 
 
 == Screenshots ==
@@ -70,7 +51,25 @@ Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
 * [Rafael Galdencio](http://www.arquiteturailustrada.com.br/) for the help with Brasilian Portuguese translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
-You are welcome! Help me with plugin translation, share with me new ideas about its further development and link to your site will appear here.
+= Translations =
+* Belorussian: [Marsis G.](http://pc.de)
+* Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br/)
+* Chinese: [Yackytsu](http://www.jackytsu.com)
+* Dutch: [Rémi Bruggeman](http://www.remisan.be)
+* French: [Whiler](http://blogs.wittwer.fr/whiler/)
+* German: [Peter](http://www.red-socks-reinbek.de)
+* Hungarian: [István](http://www.blacksnail.hu)
+* Italian: [Talksina](http://www.iadkiller.org)
+* Japanese: [Technolog.jp](http://technolog.jp/)
+* Polish: [TagSite](http://www.tagsite.eu)
+* Russian: [Vladimir Garagulya](http://shinephp.com)
+* Spanish: [Dario Ferrer](http://www.darioferrer.com)
+
+Dear plugin User!
+If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
+If you have better translation for some phrases, send it to me and it will be taken into consideration. You are welcome!
+Share with me new ideas about plugin further development and link to your site will appear here.
+
 
 == Changelog ==
 = 2.1.8 =
