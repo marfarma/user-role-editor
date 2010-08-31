@@ -14,7 +14,7 @@ User Role Editor WordPress plugin makes the role capabilities changing easy. You
 Just turn on check boxes of capabilities you wish to add to the selected role and click "Update" button to save your changes. That's done. In case you made some unneccessary change you always have the "Reset" button to restore roles state from the automatically made backup copy.
 Add new roles and customize its capabilities according to your needs. Unnecessary self-made role can be deleted if there are no users whome such role is assigned.
 Role assigned every new created user by default can be changed too.
-To read more about 'User Role Editor' visit this link http://www.shinephp.com/user-role-editor-wordpress-plugin/
+To read more about 'User Role Editor' visit this link at <a href="http://www.shinephp.com/user-role-editor-wordpress-plugin/" rel="nofollow">shinephp.com</a>
 
 
 == Installation ==
