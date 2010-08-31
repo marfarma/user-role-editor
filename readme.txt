@@ -1,5 +1,5 @@
 === User Role Editor ===
-Contributors: ShinePHP
+Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
