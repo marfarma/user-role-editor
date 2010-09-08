@@ -27,10 +27,9 @@ Installation procedure:
 4. Go to the "Settings"-"User Role Editor" menu item and change your WordPress standard roles capabilities according to your needs.
 
 == Frequently Asked Questions ==
-- Does it work with WordPress 3.0?
-Yes it does. I tested it with WordPress 3.0 Beta 1.
-- Does it work with WordPress MU?
-Yes, it works with WordPress MU. I tested it with WPMU version 2.9.2.
+- Does it work with WordPress 3.0 in multi-site environment?
+Yes, it works with WordPress 3.0 multi-site. Current version works for every blog from your multi-site network as for locally installed blog.
+Network feature, something like super-admin global role editor will be added in the nearest release.
 
 
 == Screenshots ==
