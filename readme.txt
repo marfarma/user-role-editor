@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 2.8.
 Tested up to: 3.0.1
-Stable tag: 2.1.8
+Stable tag: 2.1.9
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -48,18 +48,20 @@ Network feature, something like super-admin global role editor will be added in 
 * [Rémi Bruggeman](http://www.remisan.be) for the help with Dutch translation.
 * [Yackytsu](http://www.jackytsu.com) for the help with Chinese translation.
 * [Rafael Galdencio](http://www.arquiteturailustrada.com.br/) for the help with Brasilian Portuguese translation.
+* [Good Life](http://good-life.ir) for the help with Persian translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 = Translations =
 * Belorussian: [Marsis G.](http://pc.de)
-* Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br/)
+* Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br)
 * Chinese: [Yackytsu](http://www.jackytsu.com)
 * Dutch: [Rémi Bruggeman](http://www.remisan.be)
-* French: [Whiler](http://blogs.wittwer.fr/whiler/)
+* French: [Whiler](http://blogs.wittwer.fr/whiler)
 * German: [Peter](http://www.red-socks-reinbek.de)
 * Hungarian: [István](http://www.blacksnail.hu)
 * Italian: [Talksina](http://www.iadkiller.org)
-* Japanese: [Technolog.jp](http://technolog.jp/)
+* Japanese: [Technolog.jp](http://technolog.jp)
+* Persian: [Good Life](http://good-life.ir)
 * Polish: [TagSite](http://www.tagsite.eu)
 * Russian: [Vladimir Garagulya](http://shinephp.com)
 * Spanish: [Dario Ferrer](http://www.darioferrer.com)
@@ -71,6 +73,10 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 2.1.9 =
+* 17.09.2010
+* Persian translation is added.
+
 = 2.1.8 =
 * 16.08.2010
 * Compatibility issue with other plugins (like Flash Album Gallery), which use capabilities names with spaces inside (non valid JavaScript identifier), is fixed.

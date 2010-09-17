@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-16 21:13+0700\n"
+"POT-Creation-Date: 2010-09-17 21:43+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: 南宫小骏 <jackytsu@vip.qq.com>\n"
@@ -98,113 +98,117 @@ msgid "For the help with Japanese translation"
 msgstr "日语版本贡献者"
 
 #: ../ure-options.php:183
+msgid "For the help with Persian translation"
+msgstr ""
+
+#: ../ure-options.php:184
 msgid "For the help with Polish translation"
 msgstr "波兰语版本贡献者"
 
-#: ../ure-options.php:184
+#: ../ure-options.php:185
 msgid "For the help with Spanish translation"
 msgstr "西班牙语贡献者"
 
-#: ../ure-options.php:185
+#: ../ure-options.php:186
 msgid "For the code to hide administrator role"
 msgstr "隐藏站点管理员角色功能的代码贡献者"
 
-#: ../ure-options.php:186
+#: ../ure-options.php:187
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "想在这儿看到你的名字和站点链接吗？非常欢迎！凡是提供语言翻译或是新点子的行为我都会非常感激。"
 
-#: ../ure-options.php:202
+#: ../ure-options.php:203
 msgid "Role Name can not be empty!"
 msgstr "角色名称不能为空！"
 
-#: ../ure-options.php:206
+#: ../ure-options.php:207
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "角色名称只能由英文字母或数字组成！"
 
-#: ../ure-options.php:211
-#: ../ure-options.php:330
+#: ../ure-options.php:212
+#: ../ure-options.php:331
 msgid "Delete Role"
 msgstr "删除角色"
 
-#: ../ure-options.php:213
+#: ../ure-options.php:214
 msgid "Change Default Role"
 msgstr "修改默认角色"
 
-#: ../ure-options.php:215
-#: ../ure-options.php:298
+#: ../ure-options.php:216
+#: ../ure-options.php:299
 msgid "Restore Roles from backup copy"
 msgstr "从备份中恢复角色"
 
-#: ../ure-options.php:217
+#: ../ure-options.php:218
 msgid "Please confirm to continue"
 msgstr "请确认继续"
 
-#: ../ure-options.php:242
+#: ../ure-options.php:243
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "更新角色 \"%s\" : 请确认继续"
 
-#: ../ure-options.php:250
+#: ../ure-options.php:251
 msgid "Select Role and change its capabilities list"
 msgstr "选择一个角色并修改它的权限"
 
-#: ../ure-options.php:254
+#: ../ure-options.php:255
 msgid "Select Role:"
 msgstr "选择角色："
 
-#: ../ure-options.php:296
+#: ../ure-options.php:297
 msgid "Update"
 msgstr "更新"
 
-#: ../ure-options.php:296
+#: ../ure-options.php:297
 msgid "Save Changes"
 msgstr "保存更改"
 
-#: ../ure-options.php:297
+#: ../ure-options.php:298
 msgid "Cancel"
 msgstr "取消"
 
-#: ../ure-options.php:297
+#: ../ure-options.php:298
 msgid "Cancel not saved changes"
 msgstr "不保存所做的更改"
 
-#: ../ure-options.php:298
+#: ../ure-options.php:299
 msgid "Reset"
 msgstr "重置"
 
-#: ../ure-options.php:309
+#: ../ure-options.php:310
 msgid "Show capabilities in human readable form"
 msgstr "以易懂的方式显示权限列表"
 
-#: ../ure-options.php:320
+#: ../ure-options.php:321
 msgid "Add New Role"
 msgstr "添加角色"
 
-#: ../ure-options.php:325
+#: ../ure-options.php:326
 msgid "Add"
 msgstr "添加"
 
-#: ../ure-options.php:325
+#: ../ure-options.php:326
 msgid "Add New User Role"
 msgstr "添加新的用户角色"
 
-#: ../ure-options.php:335
+#: ../ure-options.php:336
 msgid "Delete"
 msgstr "删除"
 
-#: ../ure-options.php:335
+#: ../ure-options.php:336
 msgid "Delete User Role"
 msgstr "删除用户角色"
 
-#: ../ure-options.php:340
+#: ../ure-options.php:341
 msgid "Default Role for New User"
 msgstr "新用户的默认角色"
 
-#: ../ure-options.php:345
+#: ../ure-options.php:346
 msgid "Change"
 msgstr "更改"
 
-#: ../ure-options.php:345
+#: ../ure-options.php:346
 msgid "Set as Default User Role"
 msgstr "设置为默认用户角色"
 
