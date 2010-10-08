@@ -126,7 +126,7 @@ $rolesCanDelete = getRolesCanDelete($roles);
 if ($rolesCanDelete && count($rolesCanDelete)>0) {
   $roleDeleteHTML = '<select id="del_user_role" name="del_user_role" width="200" style="width: 200px">';
   foreach ($rolesCanDelete as $key=>$value) {
-    $roleDeleteHTML .= '<option value="'.$key.'" '.$selected.'>'.__($value, 'ure').'</option>';
+    $roleDeleteHTML .= '<option value="'.$key.'">'.__($value, 'ure').'</option>';
   }
   $roleDeleteHTML .= '</select>';
 } else {
@@ -168,8 +168,11 @@ ure_showMessage($mess);
 											<a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/changelog-icon.png'; ?>)" target="_blank" href="http://www.shinephp.com/user-role-editor-wordpress-plugin/#changelog"><?php _e('Changelog', 'ure'); ?></a>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/faq-icon.png'; ?>)" target="_blank" href="http://www.shinephp.com/user-role-editor-wordpress-plugin/#faq"><?php _e('FAQ', 'ure'); ?></a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/donate-icon.png'; ?>)" target="_blank" href="http://www.shinephp.com/donate"><?php _e('Donate', 'ure'); ?></a>
-									<?php ure_displayBoxEnd(); ?>
-									<?php ure_displayBoxStart(__('Greetings:','ure')); ?>
+									<?php ure_displayBoxEnd();
+  ure_displayBoxStart(__('More plugins from','ure').' <a href="http://www.shinephp.com" title="ShinePHP.com">ShinePHP.com</a>');
+  ure_shinephpNews();
+  ure_displayBoxEnd();
+	ure_displayBoxStart(__('Greetings:','ure')); ?>
 											<a class="ure_rsb_link" style="background-image:url(<?php echo $shinephpFavIcon; ?>);" target="_blank" title="<?php _e("It's me, the author", 'ure'); ?>" href="http://www.shinephp.com/">Vladimir</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/marsis.png'; ?>)" target="_blank" title="<?php _e("For the help with Belorussian translation", 'ure'); ?>" href="http://pc.de">Marsis G.</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/rafael.png'; ?>)" target="_blank" title="<?php _e("For the help with Brasilian translation", 'ure'); ?>" href="http://www.arquiteturailustrada.com.br/">Rafael Galdencio</a>
@@ -179,12 +182,13 @@ ure_showMessage($mess);
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/peter.png'; ?>)" target="_blank" title="<?php _e("For the help with German translation", 'ure'); ?>" href="http://www.red-socks-reinbek.de">Peter</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/blacksnail.png'; ?>)" target="_blank" title="<?php _e("For the help with Hungarian translation", 'ure'); ?>" href="http://www.blacksnail.hu">István</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/talksina.png'; ?>)" target="_blank" title="<?php _e("For the help with Italian translation", 'ure'); ?>" href="http://www.iadkiller.org">Talksina</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/alessandro.png'; ?>);" target="_blank" title="<?php _e("For the help with Italian translation",'pgc');?>" href="http://technodin.org">Alessandro Mariani</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/technologjp.png'; ?>)" target="_blank" title="<?php _e("For the help with Japanese translation", 'ure'); ?>" href="http://technolog.jp">Technolog.jp</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/good-life.png'; ?>)" target="_blank" title="<?php _e("For the help with Persian translation", 'ure'); ?>" href="http://good-life.ir">Good Life</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/tagsite.png'; ?>)" target="_blank" title="<?php _e("For the help with Polish translation", 'ure'); ?>" href="http://www.tagsite.eu">TagSite</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/dario.png'; ?>)" target="_blank" title="<?php _e("For the help with Spanish translation", 'ure'); ?>" href="http://www.darioferrer.com">Dario  Ferrer</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/fullthrottle.png'; ?>)" target="_blank" title="<?php _e("For the code to hide administrator role", 'ure'); ?>" href="http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen">FullThrottle</a>
-											<?php _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.', 'ure'); echo $urePluginDirName; ?>
+											<?php _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.', 'ure'); ?>
 									<?php ure_displayBoxEnd(); ?>
 						</div>
 					</div>
@@ -314,10 +318,9 @@ ure_showMessage($mess);
   ure_displayBoxEnd();
 ?>
 		</div>
-    <div style="clear:both;"></div>
+
 <?php
-  $boxStyle = 'width: 330px; min-width:240px;';
-  $marginLeft = 'margin-left: 10px; ';
+  $boxStyle = 'width: 330px; min-width:240px;margin-right: 10px;';
   ure_displayBoxStart(__('Add New Role', 'ure'), $boxStyle); ?>
 <div class="ure-bottom-box-input">
   <input type="text" name="new_user_role" id="new_user_role" size="25"/>
@@ -327,8 +330,17 @@ ure_showMessage($mess);
 </div>
 <?php
   ure_displayBoxEnd();
+  ure_displayBoxStart(__('Default Role for New User', 'ure'), $boxStyle); ?>
+<div class="ure-bottom-box-input">
+  <?php echo $roleDefaultHTML; ?>
+</div>
+<div class="submit" style="margin-left: 0; margin-right: 0; margin-bottom: 0; padding: 0; width: 100%; text-align: center;">
+  <input type="button" name="default" value="<?php _e('Change', 'ure') ?>" title="<?php _e('Set as Default User Role','ure');?>" onclick="ure_Actions('default');" />
+</div>
+<?php
+    ure_displayBoxEnd();
   if ($roleDeleteHTML) {
-    ure_displayBoxStart(__('Delete Role', 'ure'), $marginLeft.$boxStyle); ?>
+    ure_displayBoxStart(__('Delete Role', 'ure'), $boxStyle); ?>
 <div class="ure-bottom-box-input">
   <?php echo $roleDeleteHTML; ?>
 </div>
@@ -338,15 +350,7 @@ ure_showMessage($mess);
 <?php
     ure_displayBoxEnd();
   }
-    ure_displayBoxStart(__('Default Role for New User', 'ure'), $marginLeft.$boxStyle); ?>
-<div class="ure-bottom-box-input">
-  <?php echo $roleDefaultHTML; ?>
-</div>
-<div class="submit" style="margin-left: 0; margin-right: 0; margin-bottom: 0; padding: 0; width: 100%; text-align: center;">
-  <input type="button" name="default" value="<?php _e('Change', 'ure') ?>" title="<?php _e('Set as Default User Role','ure');?>" onclick="ure_Actions('default');" />
-</div>
-<?php
-    ure_displayBoxEnd();
+
 ?>
 
 				</div>

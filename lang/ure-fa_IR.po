@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-17 21:37+0700\n"
+"POT-Creation-Date: 2010-10-08 22:44+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: Hady Ghahramanizady <hady1364@gmail.com>\n"
@@ -54,163 +54,168 @@ msgid "Donate"
 msgstr "یاری رسانی"
 
 #: ../ure-options.php:172
+msgid "More plugins from"
+msgstr ""
+
+#: ../ure-options.php:175
 msgid "Greetings:"
 msgstr "تشکر از:"
 
-#: ../ure-options.php:173
+#: ../ure-options.php:176
 msgid "It's me, the author"
 msgstr "منم، نویسنده!"
 
-#: ../ure-options.php:174
+#: ../ure-options.php:177
 msgid "For the help with Belorussian translation"
 msgstr "برای ترجمه به زبان بلاروسی"
 
-#: ../ure-options.php:175
+#: ../ure-options.php:178
 msgid "For the help with Brasilian translation"
 msgstr "برای ترجمه به زبان برزیلی"
 
-#: ../ure-options.php:176
+#: ../ure-options.php:179
 msgid "For the help with Chinese translation"
 msgstr "برای ترجمه به زبان چینی"
 
-#: ../ure-options.php:177
+#: ../ure-options.php:180
 msgid "For the help with Dutch translation"
 msgstr "برای ترجمه به زبان هلندی"
 
-#: ../ure-options.php:178
+#: ../ure-options.php:181
 msgid "For the help with French translation"
 msgstr "برای ترجمه به زبان فرانسوی"
 
-#: ../ure-options.php:179
+#: ../ure-options.php:182
 msgid "For the help with German translation"
 msgstr "برای ترجمه به زبان آلمانی"
 
-#: ../ure-options.php:180
+#: ../ure-options.php:183
 msgid "For the help with Hungarian translation"
 msgstr "برای ترجمه به زبان مجارستانی"
 
-#: ../ure-options.php:181
+#: ../ure-options.php:184
+#: ../ure-options.php:185
 msgid "For the help with Italian translation"
 msgstr "برای ترجمه به زبان ایتالیایی"
 
-#: ../ure-options.php:182
+#: ../ure-options.php:186
 msgid "For the help with Japanese translation"
 msgstr "برای ترجمه به زبان ژاپنی"
 
-#: ../ure-options.php:183
+#: ../ure-options.php:187
 msgid "For the help with Persian translation"
 msgstr "برای ترجمه به زبان فارسی"
 
-#: ../ure-options.php:184
+#: ../ure-options.php:188
 msgid "For the help with Polish translation"
 msgstr "برای ترجمه به زبان لهستانی"
 
-#: ../ure-options.php:185
+#: ../ure-options.php:189
 msgid "For the help with Spanish translation"
 msgstr "برای ترجمه به زبان اسپانیایی"
 
-#: ../ure-options.php:186
+#: ../ure-options.php:190
 msgid "For the code to hide administrator role"
 msgstr "برای کد مخفی کنندۀ نقش مدیر"
 
-#: ../ure-options.php:187
+#: ../ure-options.php:191
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "میخوایین اسم و لینک سایتتون رو اینجا ببینید؟ در ترجمه و ایده دهی کمک کنید"
 
-#: ../ure-options.php:203
+#: ../ure-options.php:207
 msgid "Role Name can not be empty!"
 msgstr "نام نقش نمی تواند خالی باشد"
 
-#: ../ure-options.php:207
+#: ../ure-options.php:211
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "نام نقش باید فقط شامل کاراکترهای لاتین و اعداد باشد"
 
-#: ../ure-options.php:212
-#: ../ure-options.php:331
+#: ../ure-options.php:216
+#: ../ure-options.php:343
 msgid "Delete Role"
 msgstr "حذف نقش"
 
-#: ../ure-options.php:214
+#: ../ure-options.php:218
 msgid "Change Default Role"
 msgstr "تغییر نقش پیش فرض"
 
-#: ../ure-options.php:216
-#: ../ure-options.php:299
+#: ../ure-options.php:220
+#: ../ure-options.php:303
 msgid "Restore Roles from backup copy"
 msgstr "بازیابی نقش ها از نسخۀ پشتیبان"
 
-#: ../ure-options.php:218
+#: ../ure-options.php:222
 msgid "Please confirm to continue"
 msgstr "برای ادامه دادن تأیید کنید"
 
-#: ../ure-options.php:243
+#: ../ure-options.php:247
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "برای تأیید کلیک کنید  \"%s\" بروز رسانی نقش  "
 
-#: ../ure-options.php:251
+#: ../ure-options.php:255
 msgid "Select Role and change its capabilities list"
 msgstr "نقشی را انتخاب کنید و دسترسیهایش را درلیست زیر تغییر دهید"
 
-#: ../ure-options.php:255
+#: ../ure-options.php:259
 msgid "Select Role:"
 msgstr "انتخاب نقش:"
 
-#: ../ure-options.php:297
+#: ../ure-options.php:301
 msgid "Update"
 msgstr "بروزرسانی"
 
-#: ../ure-options.php:297
+#: ../ure-options.php:301
 msgid "Save Changes"
 msgstr "ذخیرۀ تغییرات"
 
-#: ../ure-options.php:298
+#: ../ure-options.php:302
 msgid "Cancel"
 msgstr "لغو"
 
-#: ../ure-options.php:298
+#: ../ure-options.php:302
 msgid "Cancel not saved changes"
 msgstr "لغو تغییرات اعمال نشده"
 
-#: ../ure-options.php:299
+#: ../ure-options.php:303
 msgid "Reset"
 msgstr "تنظیم مجدد"
 
-#: ../ure-options.php:310
+#: ../ure-options.php:314
 msgid "Show capabilities in human readable form"
 msgstr "نمایش دسترسیها به فرم قابل درک"
 
-#: ../ure-options.php:321
+#: ../ure-options.php:324
 msgid "Add New Role"
 msgstr "اضافه کردن نقش جدید"
 
-#: ../ure-options.php:326
+#: ../ure-options.php:329
 msgid "Add"
 msgstr "اضافه"
 
-#: ../ure-options.php:326
+#: ../ure-options.php:329
 msgid "Add New User Role"
 msgstr "اضافه کردن نقش کاربری جدید"
 
-#: ../ure-options.php:336
-msgid "Delete"
-msgstr "حذف"
-
-#: ../ure-options.php:336
-msgid "Delete User Role"
-msgstr "حذف نقش کاربری"
-
-#: ../ure-options.php:341
+#: ../ure-options.php:333
 msgid "Default Role for New User"
 msgstr "نقش پیش فرض برای کاربر جدید"
 
-#: ../ure-options.php:346
+#: ../ure-options.php:338
 msgid "Change"
 msgstr "تغییر"
 
-#: ../ure-options.php:346
+#: ../ure-options.php:338
 msgid "Set as Default User Role"
 msgstr "تنظیم به عنوان نقش پیش فرض کاربر"
+
+#: ../ure-options.php:348
+msgid "Delete"
+msgstr "حذف"
+
+#: ../ure-options.php:348
+msgid "Delete User Role"
+msgstr "حذف نقش کاربری"
 
 #: ../user-role-editor.php:38
 msgid "User Role Editor requires WordPress 2.8 or newer."
@@ -542,4 +547,13 @@ msgstr "حذف پوسته ها"
 #: ../ure-lib.php:419
 msgid "Export"
 msgstr "برون ریزی"
+
+#: ../ure-lib.php:440
+#: ../ure-lib.php:455
+msgid "No items found."
+msgstr ""
+
+#: ../ure-lib.php:443
+msgid "Recent Posts:"
+msgstr ""
 

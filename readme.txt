@@ -2,9 +2,9 @@
 Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
-Requires at least: 2.8.
+Requires at least: 3.0
 Tested up to: 3.0.1
-Stable tag: 2.1.10
+Stable tag: 2.2
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -21,6 +21,7 @@ To read more about 'User Role Editor' visit this link at <a href="http://www.shi
 
 Installation procedure:
 
+Attention! Starting from version 2.2 plugin works with WordPress 3.0 and higher only. For earlier WordPress versions use plugin version 2.1.10 from http://downloads.wordpress.org/plugin/user-role-editor.2.1.10.zip
 1. Deactivate plugin if you have the previous version installed.
 2. Extract "user-role-editor.x.x.x.zip" archive content to the "/wp-content/plugins/user-role-editor" directory.
 3. Activate "User Role Editor" plugin via 'Plugins' menu in WordPress admin menu. 
@@ -40,7 +41,7 @@ Network feature, something like super-admin global role editor will be added in 
 * [Whiler](http://blogs.wittwer.fr/whiler/) for the help with French translation and useful ideas.
 * [Peter](http://www.red-socks-reinbek.de) - for the help with German translation.
 * [Dario Ferrer](http://www.darioferrer.com) - for the help with the Spanish translation.
-* [Talksina](http://www.iadkiller.org) - for the help with Italian translation.
+* [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org) - for the help with Italian translation.
 * [Technolog.jp](http://technolog.jp/) - for the help with Japanese translation.
 * [Marsis G.](http://pc.de/) for the help with Belorussian translation.
 * [TagSite](http://www.tagsite.eu) for the help with Polish translation.
@@ -59,7 +60,7 @@ Network feature, something like super-admin global role editor will be added in 
 * French: [Whiler](http://blogs.wittwer.fr/whiler)
 * German: [Peter](http://www.red-socks-reinbek.de)
 * Hungarian: [István](http://www.blacksnail.hu)
-* Italian: [Talksina](http://www.iadkiller.org)
+* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org)
 * Japanese: [Technolog.jp](http://technolog.jp)
 * Persian: [Good Life](http://good-life.ir)
 * Polish: [TagSite](http://www.tagsite.eu)
@@ -73,6 +74,11 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 2.2 =
+* 08.10.2010
+* Technical update for WordPress 3.0 full compatibility. Staff deprecated since WordPress v.3.0 is excluded. If you use earlier WordPress versions, do not update URE plugin to v.2.2 or higher.
+* Italian translation update. Thanks to [Alessandro Mariani](http://technodin.org).
+
 = 2.1.10 =
 * 21.09.2010
 * German translation is updated. Thanks to [Peter](http://www.red-socks-reinbek.de).

@@ -3,7 +3,7 @@
 Plugin Name: User Role Editor
 Plugin URI: http://www.shinephp.com/user-role-editor-wordpress-plugin/
 Description: It allows you to change any standard WordPress user roles (except administrator) capabilities list with a few clicks.
-Version: 2.1.10
+Version: 2.2
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: ure
@@ -35,9 +35,9 @@ if (!function_exists("get_option")) {
 
 global $wp_version;
 
-$exit_msg = __('User Role Editor requires WordPress 2.8 or newer.', 'ure').'<a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!', 'ure').'</a>';
+$exit_msg = __('User Role Editor requires WordPress 3.0 or newer.', 'ure').'<a href="http://codex.wordpress.org/Upgrading_WordPress">'.__('Please update!', 'ure').'</a>';
 
-if (version_compare($wp_version,"2.8","<"))
+if (version_compare($wp_version,"3.0","<"))
 {
 	return ($exit_msg);
 }
@@ -211,7 +211,7 @@ function ure_plugin_row_meta($links, $file) {
 
 function ure_settings_menu() {
 	if ( function_exists('add_users_page') ) {
-    $ure_page = add_users_page('User Role Editor', 'User Role Editor', 9, basename(__FILE__), 'ure_optionsPage');
+    $ure_page = add_users_page('User Role Editor', 'User Role Editor', 'create_users', basename(__FILE__), 'ure_optionsPage');
 		add_action( "admin_print_styles-$ure_page", 'ure_adminCssAction' );
 	}
 }

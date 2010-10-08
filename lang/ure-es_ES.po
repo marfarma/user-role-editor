@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor v. 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-17 21:37+0700\n"
+"POT-Creation-Date: 2010-10-08 22:43+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -53,163 +53,168 @@ msgid "Donate"
 msgstr "Donar"
 
 #: user-role-editor/ure-options.php:172
+msgid "More plugins from"
+msgstr ""
+
+#: user-role-editor/ure-options.php:175
 msgid "Greetings:"
 msgstr "Agradecimientos:"
 
-#: user-role-editor/ure-options.php:173
+#: user-role-editor/ure-options.php:176
 msgid "It's me, the author"
 msgstr "Soy yo, el autor"
 
-#: user-role-editor/ure-options.php:174
+#: user-role-editor/ure-options.php:177
 msgid "For the help with Belorussian translation"
 msgstr "Por la ayuda con la traducción al belarús"
 
-#: user-role-editor/ure-options.php:175
+#: user-role-editor/ure-options.php:178
 msgid "For the help with Brasilian translation"
 msgstr ""
 
-#: user-role-editor/ure-options.php:176
+#: user-role-editor/ure-options.php:179
 msgid "For the help with Chinese translation"
 msgstr "Por la ayuda con la traducción al Chinese"
 
-#: user-role-editor/ure-options.php:177
+#: user-role-editor/ure-options.php:180
 msgid "For the help with Dutch translation"
 msgstr "Por la ayuda con la traducción al Dutch"
 
-#: user-role-editor/ure-options.php:178
+#: user-role-editor/ure-options.php:181
 msgid "For the help with French translation"
 msgstr "Por la ayuda con la traducción al Francés"
 
-#: user-role-editor/ure-options.php:179
+#: user-role-editor/ure-options.php:182
 msgid "For the help with German translation"
 msgstr "Por la ayuda con la traducción al alemán"
 
-#: user-role-editor/ure-options.php:180
+#: user-role-editor/ure-options.php:183
 msgid "For the help with Hungarian translation"
 msgstr "Por la ayuda con la traducción al Hungarian"
 
-#: user-role-editor/ure-options.php:181
+#: user-role-editor/ure-options.php:184
+#: user-role-editor/ure-options.php:185
 msgid "For the help with Italian translation"
 msgstr "Por la ayuda con la traducción al italiano"
 
-#: user-role-editor/ure-options.php:182
+#: user-role-editor/ure-options.php:186
 msgid "For the help with Japanese translation"
 msgstr "Por la ayuda con la traducción al Japonés"
 
-#: user-role-editor/ure-options.php:183
+#: user-role-editor/ure-options.php:187
 msgid "For the help with Persian translation"
 msgstr ""
 
-#: user-role-editor/ure-options.php:184
+#: user-role-editor/ure-options.php:188
 msgid "For the help with Polish translation"
 msgstr "Por la ayuda con la traducción al Pulir"
 
-#: user-role-editor/ure-options.php:185
+#: user-role-editor/ure-options.php:189
 msgid "For the help with Spanish translation"
 msgstr "Por la ayuda con la traducción al Español"
 
-#: user-role-editor/ure-options.php:186
+#: user-role-editor/ure-options.php:190
 msgid "For the code to hide administrator role"
 msgstr "Por el código que oculta el Rol de Administrador"
 
-#: user-role-editor/ure-options.php:187
+#: user-role-editor/ure-options.php:191
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "¿Deseas ver tu nombre enlazado a tu sitio web aquí? ¡Eres bienvenido! Tu ayuda en la traducción y nuevas ideas son bien apreciadas."
 
-#: user-role-editor/ure-options.php:203
+#: user-role-editor/ure-options.php:207
 msgid "Role Name can not be empty!"
 msgstr "¡El nombre del Rol no puede estar vacío!"
 
-#: user-role-editor/ure-options.php:207
+#: user-role-editor/ure-options.php:211
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "El nombre del Rol sólo debe contener caracteres latinos y dígitos."
 
-#: user-role-editor/ure-options.php:212
-#: user-role-editor/ure-options.php:331
+#: user-role-editor/ure-options.php:216
+#: user-role-editor/ure-options.php:343
 msgid "Delete Role"
 msgstr "Elimian Rol"
 
-#: user-role-editor/ure-options.php:214
+#: user-role-editor/ure-options.php:218
 msgid "Change Default Role"
 msgstr "Cambiar el Rol predeterminado"
 
-#: user-role-editor/ure-options.php:216
-#: user-role-editor/ure-options.php:299
+#: user-role-editor/ure-options.php:220
+#: user-role-editor/ure-options.php:303
 msgid "Restore Roles from backup copy"
 msgstr "Restaurar Roles desde la copia de respaldo"
 
-#: user-role-editor/ure-options.php:218
+#: user-role-editor/ure-options.php:222
 msgid "Please confirm to continue"
 msgstr "Por favor confirma para continuar"
 
-#: user-role-editor/ure-options.php:243
+#: user-role-editor/ure-options.php:247
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "Actualizar Rol \"%s\": Por favor confirma para actualizar"
 
-#: user-role-editor/ure-options.php:251
+#: user-role-editor/ure-options.php:255
 msgid "Select Role and change its capabilities list"
 msgstr "Selecciona el Rol para cambiar su lista de privilegios"
 
-#: user-role-editor/ure-options.php:255
+#: user-role-editor/ure-options.php:259
 msgid "Select Role:"
 msgstr "Selecciona el Rol:"
 
-#: user-role-editor/ure-options.php:297
+#: user-role-editor/ure-options.php:301
 msgid "Update"
 msgstr "Actualizar"
 
-#: user-role-editor/ure-options.php:297
+#: user-role-editor/ure-options.php:301
 msgid "Save Changes"
 msgstr "Guardar Cambios"
 
-#: user-role-editor/ure-options.php:298
+#: user-role-editor/ure-options.php:302
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: user-role-editor/ure-options.php:298
+#: user-role-editor/ure-options.php:302
 msgid "Cancel not saved changes"
 msgstr "Cancelar cambios no guardados"
 
-#: user-role-editor/ure-options.php:299
+#: user-role-editor/ure-options.php:303
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: user-role-editor/ure-options.php:310
+#: user-role-editor/ure-options.php:314
 msgid "Show capabilities in human readable form"
 msgstr "Mostrar privilegios de forma legible"
 
-#: user-role-editor/ure-options.php:321
+#: user-role-editor/ure-options.php:324
 msgid "Add New Role"
 msgstr "Agregar nuevo Rol"
 
-#: user-role-editor/ure-options.php:326
+#: user-role-editor/ure-options.php:329
 msgid "Add"
 msgstr "Agregar"
 
-#: user-role-editor/ure-options.php:326
+#: user-role-editor/ure-options.php:329
 msgid "Add New User Role"
 msgstr "Agregar nuevo Rol de Usuario"
 
-#: user-role-editor/ure-options.php:336
-msgid "Delete"
-msgstr "Eliminar"
-
-#: user-role-editor/ure-options.php:336
-msgid "Delete User Role"
-msgstr "Eliminar Rol de Usuario"
-
-#: user-role-editor/ure-options.php:341
+#: user-role-editor/ure-options.php:333
 msgid "Default Role for New User"
 msgstr "Rol predeterminado para Nuevo Usuario"
 
-#: user-role-editor/ure-options.php:346
+#: user-role-editor/ure-options.php:338
 msgid "Change"
 msgstr "Cambiar"
 
-#: user-role-editor/ure-options.php:346
+#: user-role-editor/ure-options.php:338
 msgid "Set as Default User Role"
 msgstr "Asignar como Rol predeterminado de Usuario"
+
+#: user-role-editor/ure-options.php:348
+msgid "Delete"
+msgstr "Eliminar"
+
+#: user-role-editor/ure-options.php:348
+msgid "Delete User Role"
+msgstr "Eliminar Rol de Usuario"
 
 #: user-role-editor/user-role-editor.php:38
 msgid "User Role Editor requires WordPress 2.8 or newer."
@@ -540,6 +545,15 @@ msgstr ""
 
 #: user-role-editor/ure-lib.php:419
 msgid "Export"
+msgstr ""
+
+#: user-role-editor/ure-lib.php:440
+#: user-role-editor/ure-lib.php:455
+msgid "No items found."
+msgstr ""
+
+#: user-role-editor/ure-lib.php:443
+msgid "Recent Posts:"
 msgstr ""
 
 #~ msgid "Return to default WordPress user role capabilities"
