@@ -76,7 +76,7 @@ Share with me new ideas about plugin further development and link to your site w
 == Changelog ==
 = 2.2.1 =
 * 09.10.2010
-* Critical bug "Fatal error: Class 'SimplePie' not found in /" is fixed. This is a required update as URE plugin Settings page did not opened in previose version if you have not some of other my plugins installed :).
+* Critical bug "Fatal error: Class 'SimplePie' not found in /" is fixed. This is a required update as URE plugin Settings page did not opened in previous version if you have not some of other my plugins installed :).
 
 = 2.2 =
 * 08.10.2010
