@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
 Tested up to: 3.0.1
-Stable tag: 2.2
+Stable tag: 2.2.1
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -74,6 +74,10 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 2.2.1 =
+* 09.10.2010
+* Critical bug "Fatal error: Class 'SimplePie' not found in /" is fixed. This is a required update as URE plugin Settings page did not opened in previose version if you have not some of other my plugins installed :).
+
 = 2.2 =
 * 08.10.2010
 * Technical update for WordPress 3.0 full compatibility. Staff deprecated since WordPress v.3.0 is excluded. If you use earlier WordPress versions, do not update URE plugin to v.2.2 or higher.

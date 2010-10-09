@@ -10,6 +10,8 @@ if (!defined("WPLANG")) {
   die;  // Silence is golden, direct call is prohibited
 }
 
+require_once(ABSPATH.WPINC.'/class-simplepie.php');
+
 $ure_siteURL = get_option( 'siteurl' );
 
 // Pre-2.6 compatibility
