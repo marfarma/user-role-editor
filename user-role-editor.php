@@ -3,7 +3,7 @@
 Plugin Name: User Role Editor
 Plugin URI: http://www.shinephp.com/user-role-editor-wordpress-plugin/
 Description: It allows you to change any standard WordPress user roles (except administrator) capabilities list with a few clicks.
-Version: 2.2.1
+Version: 2.2.2
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: ure
@@ -52,7 +52,7 @@ function ure_optionsPage() {
   
   global $wpdb, $ure_OptionsTable;
 
-  if (!current_user_can('activate_plugins')) {
+  if (!current_user_can('edit_users')) {
     die('action is forbidden');
   }
   
@@ -100,7 +100,7 @@ function ure_admin_jquery(){
 
 
 function ure_admin_user_hide(){
-	if (!current_user_can('level_10')) {
+	if (!current_user_can('edit_users')) {
 ?>
 		<script type='text/javascript' >
 			jQuery(document).ready(function(){
@@ -176,7 +176,7 @@ function ure_init() {
  
   // these filters and actions should prevent editing users with administrator role
   // by other users with 'edit_users' capabilities
-  if (!current_user_can('level_10')) {
+  if (!current_user_can('edit_users')) {
     // Exclude administrator role from edit list.
     add_filter('editable_roles', 'ure_excludeAdminRole');
     // Enqueue jQuery
@@ -211,7 +211,7 @@ function ure_plugin_row_meta($links, $file) {
 
 function ure_settings_menu() {
 	if ( function_exists('add_users_page') ) {
-    $ure_page = add_users_page('User Role Editor', 'User Role Editor', 'create_users', basename(__FILE__), 'ure_optionsPage');
+    $ure_page = add_users_page('User Role Editor', 'User Role Editor', 'edit_users', basename(__FILE__), 'ure_optionsPage');
 		add_action( "admin_print_styles-$ure_page", 'ure_adminCssAction' );
 	}
 }

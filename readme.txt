@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
 Tested up to: 3.0.1
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -50,6 +50,7 @@ Network feature, something like super-admin global role editor will be added in 
 * [Yackytsu](http://www.jackytsu.com) for the help with Chinese translation.
 * [Rafael Galdencio](http://www.arquiteturailustrada.com.br/) for the help with Brasilian Portuguese translation.
 * [Good Life](http://good-life.ir) for the help with Persian translation.
+* [Sadri Ercan](http://www.faydaliweb.com) for the help with Turkish translation.
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 = Translations =
@@ -66,6 +67,7 @@ Network feature, something like super-admin global role editor will be added in 
 * Polish: [TagSite](http://www.tagsite.eu)
 * Russian: [Vladimir Garagulya](http://shinephp.com)
 * Spanish: [Dario Ferrer](http://www.darioferrer.com)
+* Turkish: [Sadri Ercan](http://www.faydaliweb.com)
 
 Dear plugin User!
 If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
@@ -74,6 +76,11 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 2.2.2 =
+* 07.11.2010
+* URE plugin Settings page was anavailable for some installations in multi-site environment. It is fixed by changing 'add_users' capability for administrator access to the 'edit_users'.
+* Turkish translation is added.
+
 = 2.2.1 =
 * 09.10.2010
 * Critical bug "Fatal error: Class 'SimplePie' not found in /" is fixed. This is a required update as URE plugin Settings page did not opened in previous version if you have not some of other my plugins installed :).
