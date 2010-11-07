@@ -78,7 +78,7 @@ Share with me new ideas about plugin further development and link to your site w
 == Changelog ==
 = 2.2.2 =
 * 07.11.2010
-* URE plugin Settings page was anavailable for some installations in multi-site environment. It is fixed by changing 'add_users' capability for administrator access to the 'edit_users'.
+* URE plugin Settings page was unavailable for some installations in multi-site environment. It is fixed by changing 'add_users' capability for administrator access to the 'edit_users'.
 * Turkish translation is added.
 
 = 2.2.1 =
