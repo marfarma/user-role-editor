@@ -30,7 +30,7 @@ Attention! Starting from version 2.2 plugin works with WordPress 3.0 and higher 
 == Frequently Asked Questions ==
 - Does it work with WordPress 3.1 in multi-site environment?
 Yes, it works with WordPress 3.1 multi-site. By default plugin works for every blog from your multi-site network as for locally installed blog.
-To update selected role globally for the Network you should turn on the "Apply to All Network" checkbox.
+To update selected role globally for the Network you should turn on the "Apply to All Sites" checkbox.
 
 
 == Screenshots ==
