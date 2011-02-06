@@ -35,6 +35,7 @@ To update selected role globally for the Network you should turn on the "Apply t
 
 == Screenshots ==
 1. screenshot-1.png User Role Editor main form
+1. screenshot-2.png User Role Editor main form under multi-site environment
 
 
 == Special Thanks to ==
