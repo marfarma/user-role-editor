@@ -65,6 +65,7 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+
 = 3.0.1 =
 * 27.02.2011
 * Spanish translation is updated. Thanks to [Dario Ferrer](http://www.darioferrer.com). Other language translation wait for update too. You are welcome :).
