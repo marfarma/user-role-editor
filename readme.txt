@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 3.0.1
+Stable tag: 3.0.2
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -50,12 +50,13 @@ To update selected role globally for the Network you should turn on the "Apply t
 * French: [Whiler](http://blogs.wittwer.fr/whiler)
 * German: [Peter](http://www.red-socks-reinbek.de)
 * Hungarian: [István](http://www.blacksnail.hu)
-* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org)
+* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org), [Tristano Ajmone ](http://www.zenfactor.org)
 * Japanese: [Technolog.jp](http://technolog.jp)
 * Persian: [Good Life](http://good-life.ir)
 * Polish: [TagSite](http://www.tagsite.eu)
 * Russian: [Vladimir Garagulya](http://shinephp.com)
 * Spanish: [Dario Ferrer](http://www.darioferrer.com)
+* Swedish: [Christer Dahlbacka](www.startlinks.eu)
 * Turkish: [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com)
 
 Dear plugin User!
@@ -65,6 +66,12 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+
+= 3.0.2 =
+* 11.04.2011
+* Swedish translation is added.
+* Alternative Italian translation is added. Rename ure-it_IT_1.* files to ure-it_IT.* if wish to try it.
+* ShinePHP.com RSS feed is excluded from plugin settings page. Use this link http://feeds.feedburner.com/shinephp with your favorite RSS reader if you wish to read it.
 
 = 3.0.1 =
 * 27.02.2011
