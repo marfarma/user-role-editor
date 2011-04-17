@@ -536,4 +536,49 @@ function ure_TranslationData() {
 // end of ure_TranslationData()
 
 
+function ure_ArrayUnique($myArray) {
+    if(!is_array($myArray))
+           return $myArray;
+
+    foreach ($myArray as &$myvalue){
+        $myvalue=serialize($myvalue);
+    }
+
+    $myArray=array_unique($myArray);
+
+    foreach ($myArray as &$myvalue){
+        $myvalue=unserialize($myvalue);
+    }
+
+    return $myArray;
+
+} 
+// end of ure_ArrayUnique()
+
+
+// sort 2 dimensional array by column of its sub-array
+class ure_TableSorter {
+  protected $column;
+  
+  function __construct($column) {
+    $this->column = $column;
+  }
+  
+  function sort($table) {
+    usort($table, array($this, 'compare'));
+    
+    return $table;
+  }
+  
+  function compare($a, $b) {
+    if ($a[$this->column] == $b[$this->column]) {
+      return 0;
+    }
+    
+    return ($a[$this->column] < $b[$this->column]) ? -1 : 1;
+  }
+}
+// enf of ure_CapsSorter()
+
+
 ?>

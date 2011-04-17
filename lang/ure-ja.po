@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-07 16:39+0700\n"
-"PO-Revision-Date: 2010-11-07 16:39+0700\n"
+"POT-Creation-Date: 2011-04-17 09:46+0700\n"
+"PO-Revision-Date: 2011-04-17 09:46+0700\n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,224 +18,235 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: ure-options.php:112
-msgid "Backup record is created for the current role capabilities"
-msgstr "現在のロール権限によってバックアップレコードが作成されました。"
-
-#: ure-options.php:121
+#: ure-options.php:119
 msgid "Role"
 msgstr "ロール"
 
-#: ure-options.php:121
+#: ure-options.php:119
 msgid "is updated successfully"
 msgstr "正常に更新されました。"
 
-#: ure-options.php:165
+#: ure-options.php:163
 msgid "About this Plugin:"
 msgstr "本プラグインについて："
 
-#: ure-options.php:166
+#: ure-options.php:164
 msgid "Author's website"
 msgstr "作成者サイト"
 
-#: ure-options.php:167
+#: ure-options.php:165
 msgid "Plugin webpage"
 msgstr "プラグインサイト"
 
-#: ure-options.php:168
-#: user-role-editor.php:206
+#: ure-options.php:166
+#: user-role-editor.php:232
 msgid "Changelog"
 msgstr "変更ログ"
 
-#: ure-options.php:169
+#: ure-options.php:167
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ure-options.php:170
+#: ure-options.php:168
 msgid "Donate"
 msgstr "寄付"
 
-#: ure-options.php:172
-msgid "More plugins from"
-msgstr ""
-
-#: ure-options.php:175
+#: ure-options.php:170
 msgid "Greetings:"
 msgstr "ごあいさつ："
 
-#: ure-options.php:176
+#: ure-options.php:171
 msgid "It's me, the author"
 msgstr "作成者"
 
-#: ure-options.php:177
+#: ure-options.php:172
 msgid "For the help with Belorussian translation"
 msgstr "ベラルーシ語翻訳"
 
-#: ure-options.php:178
+#: ure-options.php:173
 msgid "For the help with Brasilian translation"
 msgstr ""
 
-#: ure-options.php:179
+#: ure-options.php:174
 msgid "For the help with Chinese translation"
 msgstr ""
 
-#: ure-options.php:180
+#: ure-options.php:175
 msgid "For the help with Dutch translation"
 msgstr ""
 
-#: ure-options.php:181
+#: ure-options.php:176
+msgid "For the help with Finnish translation"
+msgstr ""
+
+#: ure-options.php:177
 msgid "For the help with French translation"
 msgstr "フランス語翻訳"
 
-#: ure-options.php:182
+#: ure-options.php:178
 msgid "For the help with German translation"
 msgstr "ドイツ語翻訳"
 
-#: ure-options.php:183
+#: ure-options.php:179
 msgid "For the help with Hungarian translation"
 msgstr ""
 
-#: ure-options.php:184
-#: ure-options.php:185
+#: ure-options.php:180
+#: ure-options.php:181
+#: ure-options.php:182
 msgid "For the help with Italian translation"
 msgstr ""
 
-#: ure-options.php:186
+#: ure-options.php:183
 msgid "For the help with Japanese translation"
 msgstr "日本語翻訳"
 
-#: ure-options.php:187
+#: ure-options.php:184
 msgid "For the help with Persian translation"
 msgstr ""
 
-#: ure-options.php:188
+#: ure-options.php:185
 msgid "For the help with Polish translation"
 msgstr "ポーランド語翻訳"
 
-#: ure-options.php:189
+#: ure-options.php:186
 msgid "For the help with Spanish translation"
 msgstr "スペイン語翻訳"
 
-#: ure-options.php:190
+#: ure-options.php:187
+msgid "For the help with Swedish translation"
+msgstr ""
+
+#: ure-options.php:188
+#: ure-options.php:189
 msgid "For the help with Turkish translation"
 msgstr ""
 
-#: ure-options.php:191
+#: ure-options.php:190
 msgid "For the code to hide administrator role"
 msgstr "管理者ロールを非表示にする方法"
 
-#: ure-options.php:192
+#: ure-options.php:191
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr "<hr />あなたの名前を表示し、サイトへのリンクを張りますか？翻訳のお手伝いおよび新しいアイディアのご提供に感謝致します。"
 
-#: ure-options.php:208
+#: ure-options.php:223
 msgid "Role Name can not be empty!"
 msgstr "ロール名を入力してください！"
 
-#: ure-options.php:212
+#: ure-options.php:227
 msgid "Role Name must contain latin characters and digits only!"
 msgstr "ロール名には半角英数字のみを入力してください！"
 
-#: ure-options.php:217
-#: ure-options.php:344
+#: ure-options.php:232
+#: ure-options.php:375
 msgid "Delete Role"
 msgstr "ロール削除"
 
-#: ure-options.php:219
+#: ure-options.php:234
 msgid "Change Default Role"
 msgstr "デフォルトロールの変更"
 
-#: ure-options.php:221
-#: ure-options.php:304
+#: ure-options.php:236
+#: ure-options.php:346
 msgid "Restore Roles from backup copy"
 msgstr "バックアップからロールを読み込む"
 
-#: ure-options.php:223
+#: ure-options.php:238
 msgid "Please confirm to continue"
 msgstr "更新してもよろしいですか？"
 
-#: ure-options.php:248
+#: ure-options.php:263
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "\"%s\"の権限を更新してもよろしいですか？"
 
-#: ure-options.php:256
+#: ure-options.php:271
 msgid "Select Role and change its capabilities list"
 msgstr "ロールを選択し、権限を変更してください。"
 
-#: ure-options.php:260
+#: ure-options.php:273
 msgid "Select Role:"
 msgstr "ロール選択："
 
-#: ure-options.php:302
-msgid "Update"
-msgstr "保存"
-
-#: ure-options.php:302
-msgid "Save Changes"
-msgstr "変更を保存"
-
-#: ure-options.php:303
-msgid "Cancel"
-msgstr "キャンセル"
-
-#: ure-options.php:303
-msgid "Cancel not saved changes"
-msgstr "変更を保存せずにキャンセルする。"
-
-#: ure-options.php:304
-msgid "Reset"
-msgstr "リセット"
-
-#: ure-options.php:315
+#: ure-options.php:282
 msgid "Show capabilities in human readable form"
 msgstr "各権限を概説で表示する"
 
-#: ure-options.php:325
+#: ure-options.php:286
+msgid "If checked, then apply action to ALL sites of this Network"
+msgstr ""
+
+#: ure-options.php:296
+msgid "Apply to All Sites"
+msgstr ""
+
+#: ure-options.php:342
+msgid "Update"
+msgstr "保存"
+
+#: ure-options.php:342
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: ure-options.php:343
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: ure-options.php:343
+msgid "Cancel not saved changes"
+msgstr "変更を保存せずにキャンセルする。"
+
+#: ure-options.php:346
+msgid "Reset"
+msgstr "リセット"
+
+#: ure-options.php:356
 msgid "Add New Role"
 msgstr "新規ロールの追加"
 
-#: ure-options.php:330
+#: ure-options.php:361
 msgid "Add"
 msgstr "追加"
 
-#: ure-options.php:330
+#: ure-options.php:361
 msgid "Add New User Role"
 msgstr "新規ロールの追加"
 
-#: ure-options.php:334
+#: ure-options.php:365
 msgid "Default Role for New User"
 msgstr "新規ユーザのデフォルトロール"
 
-#: ure-options.php:339
+#: ure-options.php:370
 msgid "Change"
 msgstr "変更"
 
-#: ure-options.php:339
+#: ure-options.php:370
 msgid "Set as Default User Role"
 msgstr "デフォルトロールとして設定"
 
-#: ure-options.php:349
+#: ure-options.php:380
 msgid "Delete"
 msgstr "削除"
 
-#: ure-options.php:349
+#: ure-options.php:380
 msgid "Delete User Role"
 msgstr "ロール削除"
 
-#: user-role-editor.php:38
+#: user-role-editor.php:37
 msgid "User Role Editor requires WordPress 3.0 or newer."
 msgstr "User Role Editor はWordpress 3.0 以上の環境を必要とします。"
 
-#: user-role-editor.php:38
+#: user-role-editor.php:37
 msgid "Please update!"
 msgstr "アップデートしてください！"
 
-#: user-role-editor.php:63
+#: user-role-editor.php:72
+#: user-role-editor.php:246
 msgid "User Role Editor"
 msgstr "User Role Editor"
 
-#: user-role-editor.php:196
+#: user-role-editor.php:222
 msgid "Settings"
 msgstr "設定"
 
@@ -243,323 +254,318 @@ msgstr "設定"
 msgid "Error is occur. Please check the log file."
 msgstr "エラーが発生しました。ログファイルを確認してください。"
 
-#: ure-lib.php:110
+#: ure-lib.php:168
 msgid "Database operation error. Check log file."
 msgstr "データベースエラーが発生しました。ログファイルを確認してください。"
 
-#: ure-lib.php:132
+#: ure-lib.php:191
 msgid "Roles capabilities are restored from the backup data"
 msgstr "バックアップデータよりロール権限が読み込まれました。"
 
-#: ure-lib.php:134
+#: ure-lib.php:193
 msgid "No backup data. It is created automatically before the first role data update."
 msgstr "バックアップデータが存在しません。最初にロールデータが更新する前に自動生成されます。"
 
-#: ure-lib.php:175
+#: ure-lib.php:232
+msgid "Backup record is created for the current role capabilities"
+msgstr "現在のロール権限によってバックアップレコードが作成されました。"
+
+#: ure-lib.php:313
 msgid "Error: Role name must contain latin characters and digits only!"
 msgstr "エラー：ロール名には半角英数字のみご入力ください！"
 
-#: ure-lib.php:183
+#: ure-lib.php:321
 msgid "Roles list reading error is encountered"
 msgstr "ロールリストの読込中にエラーが発生しました。"
 
-#: ure-lib.php:189
+#: ure-lib.php:327
 msgid "Error is encountered during new role create operation"
 msgstr "新規ロール作成の際にエラーが発生しました。"
 
-#: ure-lib.php:191
+#: ure-lib.php:329
 #, php-format
 msgid "Role %s is created successfully"
 msgstr "%sが正常に作成されました。"
 
-#: ure-lib.php:275
+#: ure-lib.php:413
 msgid "Error encountered during role delete operation"
 msgstr "ロール削除の際にエラーが発生しました。"
 
-#: ure-lib.php:277
+#: ure-lib.php:415
 #, php-format
 msgid "Role %s is deleted successfully"
 msgstr "%sが正常に削除されました。"
 
-#: ure-lib.php:295
+#: ure-lib.php:433
 msgid "Error encountered during default role change operation"
 msgstr "デフォルトロール変更の際にエラーが発生しました。"
 
-#: ure-lib.php:301
+#: ure-lib.php:439
 #, php-format
 msgid "Default role for new users is set to %s successfully"
 msgstr "新規ユーザのデフォルトロールが%sに設定されました。"
 
-#: ure-lib.php:355
+#: ure-lib.php:467
 msgid "Editor"
 msgstr "編集者"
 
-#: ure-lib.php:356
+#: ure-lib.php:468
 msgid "Author"
 msgstr "投稿者"
 
-#: ure-lib.php:357
+#: ure-lib.php:469
 msgid "Contributor"
 msgstr "寄稿者"
 
-#: ure-lib.php:358
+#: ure-lib.php:470
 msgid "Subscriber"
 msgstr "購読者"
 
-#: ure-lib.php:360
+#: ure-lib.php:472
 msgid "Switch themes"
 msgstr "テーマの切替"
 
-#: ure-lib.php:361
+#: ure-lib.php:473
 msgid "Edit themes"
 msgstr "テーマの編集"
 
-#: ure-lib.php:362
+#: ure-lib.php:474
 msgid "Activate plugins"
 msgstr "プラグインの有効化"
 
-#: ure-lib.php:363
+#: ure-lib.php:475
 msgid "Edit plugins"
 msgstr "プラグインの編集"
 
-#: ure-lib.php:364
+#: ure-lib.php:476
 msgid "Edit users"
 msgstr "ユーザの編集"
 
-#: ure-lib.php:365
+#: ure-lib.php:477
 msgid "Edit files"
 msgstr "ファイルの編集"
 
-#: ure-lib.php:366
+#: ure-lib.php:478
 msgid "Manage options"
 msgstr "オプション管理"
 
-#: ure-lib.php:367
+#: ure-lib.php:479
 msgid "Moderate comments"
 msgstr "コメントの変更"
 
-#: ure-lib.php:368
+#: ure-lib.php:480
 msgid "Manage categories"
 msgstr "カテゴリの管理"
 
-#: ure-lib.php:369
+#: ure-lib.php:481
 msgid "Manage links"
 msgstr "リンクの管理"
 
-#: ure-lib.php:370
+#: ure-lib.php:482
 msgid "Upload files"
 msgstr "ファイルのアップロード"
 
-#: ure-lib.php:371
+#: ure-lib.php:483
 msgid "Import"
 msgstr "インポート"
 
-#: ure-lib.php:372
+#: ure-lib.php:484
 msgid "Unfiltered html"
 msgstr "フィルタなしのHTML"
 
-#: ure-lib.php:373
+#: ure-lib.php:485
 msgid "Edit posts"
 msgstr "投稿の編集"
 
-#: ure-lib.php:374
+#: ure-lib.php:486
 msgid "Edit others posts"
 msgstr "他者投稿の編集"
 
-#: ure-lib.php:375
+#: ure-lib.php:487
 msgid "Edit published posts"
 msgstr "公開済み投稿の編集"
 
-#: ure-lib.php:376
+#: ure-lib.php:488
 msgid "Publish posts"
 msgstr "投稿の公開"
 
-#: ure-lib.php:377
+#: ure-lib.php:489
 msgid "Edit pages"
 msgstr "ページの編集"
 
-#: ure-lib.php:378
+#: ure-lib.php:490
 msgid "Read"
 msgstr "参照"
 
-#: ure-lib.php:379
+#: ure-lib.php:491
 msgid "Level 10"
 msgstr "レベル10"
 
-#: ure-lib.php:380
+#: ure-lib.php:492
 msgid "Level 9"
 msgstr "レベル9"
 
-#: ure-lib.php:381
+#: ure-lib.php:493
 msgid "Level 8"
 msgstr "レベル8"
 
-#: ure-lib.php:382
+#: ure-lib.php:494
 msgid "Level 7"
 msgstr "レベル7"
 
-#: ure-lib.php:383
+#: ure-lib.php:495
 msgid "Level 6"
 msgstr "レベル6"
 
-#: ure-lib.php:384
+#: ure-lib.php:496
 msgid "Level 5"
 msgstr "レベル5"
 
-#: ure-lib.php:385
+#: ure-lib.php:497
 msgid "Level 4"
 msgstr "レベル4"
 
-#: ure-lib.php:386
+#: ure-lib.php:498
 msgid "Level 3"
 msgstr "レベル3"
 
-#: ure-lib.php:387
+#: ure-lib.php:499
 msgid "Level 2"
 msgstr "レベル2"
 
-#: ure-lib.php:388
+#: ure-lib.php:500
 msgid "Level 1"
 msgstr "レベル1"
 
-#: ure-lib.php:389
+#: ure-lib.php:501
 msgid "Level 0"
 msgstr "レベル0"
 
-#: ure-lib.php:390
+#: ure-lib.php:502
 msgid "Edit others pages"
 msgstr "他者ページの編集"
 
-#: ure-lib.php:391
+#: ure-lib.php:503
 msgid "Edit published pages"
 msgstr "公開済みページの編集"
 
-#: ure-lib.php:392
+#: ure-lib.php:504
 msgid "Publish pages"
 msgstr "ページの公開"
 
-#: ure-lib.php:393
+#: ure-lib.php:505
 msgid "Delete pages"
 msgstr "ページの削除"
 
-#: ure-lib.php:394
+#: ure-lib.php:506
 msgid "Delete others pages"
 msgstr "他者ページの削除"
 
-#: ure-lib.php:395
+#: ure-lib.php:507
 msgid "Delete published pages"
 msgstr "公開済みページの削除"
 
-#: ure-lib.php:396
+#: ure-lib.php:508
 msgid "Delete posts"
 msgstr "投稿の削除"
 
-#: ure-lib.php:397
+#: ure-lib.php:509
 msgid "Delete others posts"
 msgstr "他者投稿の削除"
 
-#: ure-lib.php:398
+#: ure-lib.php:510
 msgid "Delete published posts"
 msgstr "公開済み投稿の削除"
 
-#: ure-lib.php:399
+#: ure-lib.php:511
 msgid "Delete private posts"
 msgstr "プライベート投稿の削除"
 
-#: ure-lib.php:400
+#: ure-lib.php:512
 msgid "Edit private posts"
 msgstr "プライベート投稿の編集"
 
-#: ure-lib.php:401
+#: ure-lib.php:513
 msgid "Read private posts"
 msgstr "プライベート投稿の参照"
 
-#: ure-lib.php:402
+#: ure-lib.php:514
 msgid "Delete private pages"
 msgstr "プライベートページの削除"
 
-#: ure-lib.php:403
+#: ure-lib.php:515
 msgid "Edit private pages"
 msgstr "プライベートページの編集"
 
-#: ure-lib.php:404
+#: ure-lib.php:516
 msgid "Read private pages"
 msgstr "プライベートページの参照"
 
-#: ure-lib.php:405
+#: ure-lib.php:517
 msgid "Delete users"
 msgstr "ユーザの削除"
 
-#: ure-lib.php:406
+#: ure-lib.php:518
 msgid "Create users"
 msgstr "ユーザ作成"
 
-#: ure-lib.php:407
+#: ure-lib.php:519
 msgid "Unfiltered upload"
 msgstr "フィルタなしのアップロード"
 
-#: ure-lib.php:408
+#: ure-lib.php:520
 msgid "Edit dashboard"
 msgstr "ダッシュボードの編集"
 
-#: ure-lib.php:409
+#: ure-lib.php:521
 msgid "Update plugins"
 msgstr "プラグインのアップデート"
 
-#: ure-lib.php:410
+#: ure-lib.php:522
 msgid "Delete plugins"
 msgstr "プラグインの削除"
 
-#: ure-lib.php:411
+#: ure-lib.php:523
 msgid "Install plugins"
 msgstr "プラグインのインストール"
 
-#: ure-lib.php:412
+#: ure-lib.php:524
 msgid "Update themes"
 msgstr "テーマのアップデート"
 
-#: ure-lib.php:413
+#: ure-lib.php:525
 msgid "Install themes"
 msgstr "テーマのインストール"
 
-#: ure-lib.php:414
+#: ure-lib.php:526
 msgid "Update core"
 msgstr ""
 
-#: ure-lib.php:415
+#: ure-lib.php:527
 msgid "List users"
 msgstr ""
 
-#: ure-lib.php:416
+#: ure-lib.php:528
 msgid "Remove users"
 msgstr ""
 
-#: ure-lib.php:417
+#: ure-lib.php:529
 msgid "Add users"
 msgstr ""
 
-#: ure-lib.php:418
+#: ure-lib.php:530
 msgid "Promote users"
 msgstr ""
 
-#: ure-lib.php:419
+#: ure-lib.php:531
 msgid "Edit theme options"
 msgstr ""
 
-#: ure-lib.php:420
+#: ure-lib.php:532
 msgid "Delete themes"
 msgstr ""
 
-#: ure-lib.php:421
+#: ure-lib.php:533
 msgid "Export"
-msgstr ""
-
-#: ure-lib.php:442
-#: ure-lib.php:457
-msgid "No items found."
-msgstr ""
-
-#: ure-lib.php:445
-msgid "Recent Posts:"
 msgstr ""
 

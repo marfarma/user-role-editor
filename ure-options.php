@@ -80,20 +80,33 @@ $roleDefaultHTML .= '</select>';
 $fullCapabilities = array();
 foreach($ure_roles as $role) {
     foreach ($role['capabilities'] as $key=>$value) {
-        $fullCapabilities[] = $key;
+      $cap = array();
+      $cap['inner'] = $key;
+      $cap['human'] = __(ure_ConvertCapsToReadable($key),'ure');
+      $fullCapabilities[] = $cap;
     }
 }
-$fullCapabilities = array_unique($fullCapabilities);
-asort($fullCapabilities);
+
+
+$fullCapabilities = ure_ArrayUnique($fullCapabilities);
+
+if ($ure_caps_readable) {
+  $column = 'human';  // sort by human readable form
+} else {
+  $column = 'inner';  // sort by inner capability name
+}
+$sorter = new ure_TableSorter($column); 
+$fullCapabilities = $sorter->sort($fullCapabilities);
+
 
 // save role changes to database block
 if (isset($_POST['action']) && $_POST['action']=='update' && isset($_POST['user_role'])) {
   $ure_currentRole = $_POST['user_role'];
   $ure_capabilitiesToSave = array();
   foreach($fullCapabilities as $availableCapability) {
-    $cap_id = str_replace(' ', URE_SPACE_REPLACER, $availableCapability);
+    $cap_id = str_replace(' ', URE_SPACE_REPLACER, $availableCapability['inner']);
     if (isset($_POST[$cap_id])) {
-      $ure_capabilitiesToSave[$availableCapability] = 1;
+      $ure_capabilitiesToSave[$availableCapability['inner']] = 1;
     }
   }
   if (count($ure_capabilitiesToSave)>0) {
@@ -160,6 +173,7 @@ ure_showMessage($mess);
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/rafael.png'; ?>)" target="_blank" title="<?php _e("For the help with Brasilian translation", 'ure'); ?>" href="http://www.arquiteturailustrada.com.br/">Rafael Galdencio</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/jackytsu.png'; ?>)" target="_blank" title="<?php _e("For the help with Chinese translation", 'ure'); ?>" href="http://www.jackytsu.com">Jackytsu</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/remi.png'; ?>)" target="_blank" title="<?php _e("For the help with Dutch translation", 'ure'); ?>" href="http://www.remisan.be">Rémi Bruggeman</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/lauri.png'; ?>)" target="_blank" title="<?php _e("For the help with Finnish translation", 'ure'); ?>" href="http://www.viidakkorumpu.fi">Lauri Merisaari</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/whiler.png'; ?>)" target="_blank" title="<?php _e("For the help with French translation", 'ure'); ?>" href="http://blogs.wittwer.fr/whiler/">Whiler</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/peter.png'; ?>)" target="_blank" title="<?php _e("For the help with German translation", 'ure'); ?>" href="http://www.red-socks-reinbek.de">Peter</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/blacksnail.png'; ?>)" target="_blank" title="<?php _e("For the help with Hungarian translation", 'ure'); ?>" href="http://www.blacksnail.hu">István</a>
@@ -294,20 +308,20 @@ if (is_multisite()) {
   $quantInCell = 0;
   foreach( $fullCapabilities as $capability) {
     $checked = '';
-    if (isset($ure_roles[$ure_currentRole]['capabilities'][$capability])) {
+    if (isset($ure_roles[$ure_currentRole]['capabilities'][$capability['inner']])) {
       $checked = 'checked="checked"';
     }
-    $cap_id = str_replace(' ', URE_SPACE_REPLACER, $capability);
+    $cap_id = str_replace(' ', URE_SPACE_REPLACER, $capability['inner']);
 ?>
-   <input type="checkbox" name="<?php echo $cap_id; ?>" id="<?php echo $cap_id; ?>" value="<?php echo $capability; ?>" <?php echo $checked; ?>/>
+   <input type="checkbox" name="<?php echo $cap_id; ?>" id="<?php echo $cap_id; ?>" value="<?php echo $capability['inner']; ?>" <?php echo $checked; ?>/>
 <?php
   if ($ure_caps_readable) {
 ?>
-   <label for="<?php echo $cap_id; ?>" title="<?php echo $capability; ?>" ><?php _e(ure_ConvertCapsToReadable($capability),'ure'); ?></label><br/>
+   <label for="<?php echo $cap_id; ?>" title="<?php echo $capability['inner']; ?>" ><?php echo $capability['human']; ?></label><br/>
 <?php
   } else {
 ?>
-   <label for="<?php echo $cap_id; ?>" title="<?php _e(ure_ConvertCapsToReadable($capability),'ure'); ?>" ><?php echo $capability; ?></label><br/>
+   <label for="<?php echo $cap_id; ?>" title="<?php echo $capability['human']; ?>" ><?php echo $capability['inner']; ?></label><br/>
 <?php
   }
    $quantInCell++;
