@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 3.0.3
+Stable tag: 3.0.4
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -67,8 +67,12 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 3.0.4 =
+* 18.04.2011
+* minor update: PHP4 compatibility issue in code was discovered and fixed. PHP5 users could skip it. PHP4 users should think about update to PHP5, as WordPress 3.2 (planned to July 2011) will not provide PHP4 compatibility more.
+
 = 3.0.3 =
-* 16.04.2011
+* 17.04.2011
 * Capabilities in human readable form are sorted by alphabet (usefull for translated form) now, not by inner capability name.
 * Finnish translation is added.
 

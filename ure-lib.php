@@ -537,17 +537,18 @@ function ure_TranslationData() {
 
 
 function ure_ArrayUnique($myArray) {
-    if(!is_array($myArray))
-           return $myArray;
-
-    foreach ($myArray as &$myvalue){
-        $myvalue=serialize($myvalue);
+    if (!is_array($myArray)) {
+      return $myArray;
+    }
+    
+    foreach ($myArray as $key=>$value) {
+      $myArray[$key] = serialize($value);
     }
 
-    $myArray=array_unique($myArray);
+    $myArray = array_unique($myArray);
 
-    foreach ($myArray as &$myvalue){
-        $myvalue=unserialize($myvalue);
+    foreach ($myArray as $key=>$value) {
+      $myArray[$key] = unserialize($value);
     }
 
     return $myArray;
