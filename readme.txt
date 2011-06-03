@@ -54,7 +54,7 @@ To update selected role globally for the Network you should turn on the "Apply t
 * French: [Whiler](http://blogs.wittwer.fr/whiler) - needs update
 * German: [Peter](http://www.red-socks-reinbek.de) - needs update
 * Hungarian: [István](http://www.blacksnail.hu) - needs update
-* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org), [Tristano Ajmone ](http://www.zenfactor.org) - needs update
+* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org), [Tristano Ajmone ](http://www.zenfactor.org), [Umberto Sartori](http://venezialog.net)
 * Japanese: [Technolog.jp](http://technolog.jp) - needs update
 * Persian: [Good Life](http://good-life.ir) - needs update
 * Polish: [TagSite](http://www.tagsite.eu) - needs update

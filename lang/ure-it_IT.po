@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: User Role Editor 2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-03 22:34+0700\n"
-"PO-Revision-Date: 2011-06-03 22:35+0700\n"
-"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
+"PO-Revision-Date: 2011-06-03 18:52+0100\n"
+"Last-Translator: Umberto Sartori <Venetian@ombra.net>\n"
 "Language-Team: w3b.it <web@w3b.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,15 +20,13 @@ msgstr ""
 
 # @ ure
 #: ../ure-role-edit.php:84
-#, fuzzy
 msgid " Name can not be empty!"
-msgstr "Il nome di un ruolo non può essere vuoto!"
+msgstr "Il nome non può essere vuoto!"
 
 # @ ure
 #: ../ure-role-edit.php:88
-#, fuzzy
 msgid " Name must contain latin characters and digits only!"
-msgstr "Il nome di un ruolo può contenere numeri e caratteri latini!"
+msgstr "Il nome deve contenere solo numeri e caratteri latini!"
 
 # @ ure
 #: ../ure-role-edit.php:93
@@ -49,7 +47,7 @@ msgstr "Ripristina ruoli da una copia di backup"
 
 #: ../ure-role-edit.php:99
 msgid "Warning! Be careful - removing critical capability could crash some plugin or other custom code"
-msgstr ""
+msgstr "Attenzione! rimuovere permessi critici potrebbe causare malfunzionamenti in alcuni plugin o in altro codice personalizzato"
 
 # @ ure
 #: ../ure-role-edit.php:101
@@ -76,12 +74,12 @@ msgstr "Seleziona ruolo:"
 #: ../ure-role-edit.php:153
 #: ../ure-user-edit.php:80
 msgid "Show capabilities in human readable form"
-msgstr "Mostra permessi in formato leggibile per un uomo"
+msgstr "Mostra permessi in forma leggibile per un uomo"
 
 # @ default
 #: ../ure-role-edit.php:157
 msgid "If checked, then apply action to ALL sites of this Network"
-msgstr "Se selezionato, applica l'impostazione a tutti i siti di questo Network"
+msgstr "Se selezionato, applica l'impostazione a TUTTI i siti di questo Network"
 
 # @ ure
 #: ../ure-role-edit.php:167
@@ -131,12 +129,12 @@ msgstr "Aggiungi"
 # @ ure
 #: ../ure-role-edit.php:232
 msgid "Add New User Role"
-msgstr "Aggiungi nuovo ruolo utente"
+msgstr "Aggiungi nuovo ruolo Utente"
 
 # @ ure
 #: ../ure-role-edit.php:236
 msgid "Default Role for New User"
-msgstr "Ruolo predefinito per un nuovo utente"
+msgstr "Ruolo predefinito per un nuovo Utente"
 
 # @ ure
 #: ../ure-role-edit.php:241
@@ -146,7 +144,7 @@ msgstr "Cambia"
 # @ ure
 #: ../ure-role-edit.php:241
 msgid "Set as Default User Role"
-msgstr "Imposta come ruolo predefinito"
+msgstr "Imposta come ruolo Utente predefinito"
 
 # @ ure
 #: ../ure-role-edit.php:251
@@ -156,48 +154,45 @@ msgstr "Elimina"
 # @ ure
 #: ../ure-role-edit.php:251
 msgid "Delete User Role"
-msgstr "Elimina ruolo utente"
+msgstr "Elimina ruolo Utente"
 
 # @ ure
 #: ../ure-role-edit.php:256
 #: ../ure-role-edit.php:261
-#, fuzzy
 msgid "Add New Capability"
-msgstr "Aggiungi nuovo ruolo"
+msgstr "Aggiungi nuovo permesso"
 
 #: ../ure-role-edit.php:266
 msgid "Remove Capability"
-msgstr ""
+msgstr "Rimuovi il permesso"
 
 # @ ure
 #: ../ure-role-edit.php:271
-#, fuzzy
 msgid "Remove"
-msgstr "Rimuovere utenti"
+msgstr "Rimuovi"
 
 #: ../ure-role-edit.php:271
 msgid "Remove User Capability"
-msgstr ""
+msgstr "Rimuovi il permesso Utente"
 
 # @ ure
 #: ../ure-user-edit.php:61
-#, fuzzy, php-format
+#, php-format
 msgid "User \"%s\" update: please confirm to continue"
-msgstr "Aggiornamento del ruolo %s : conferma per continuare"
+msgstr "Aggiornamento dell'Utente %s : conferma per continuare"
 
 #: ../ure-user-edit.php:68
 msgid "Change capabilities for user"
-msgstr ""
+msgstr "Cambia i permessi per l'Utente"
 
 # @ ure
 #: ../ure-user-edit.php:71
-#, fuzzy
 msgid "Role:"
-msgstr "Ruolo"
+msgstr "Ruolo: "
 
 #: ../ure-user-edit.php:84
 msgid "Add capabilities to this user:"
-msgstr ""
+msgstr "Aggiungi permessi a questo Utente: "
 
 # @ ure
 #: ../ure-options.php:128
@@ -211,13 +206,12 @@ msgstr "è stato aggiornato con successo"
 
 #: ../ure-options.php:137
 msgid "User"
-msgstr ""
+msgstr "Utente"
 
 # @ ure
 #: ../ure-options.php:137
-#, fuzzy
 msgid "capabilities are updated successfully"
-msgstr "è stato aggiornato con successo"
+msgstr "i permessi sono stati aggiornati"
 
 # @ ure
 #: ../ure-options.php:166
@@ -227,18 +221,18 @@ msgstr "Info su questo plugin:"
 # @ ure
 #: ../ure-options.php:167
 msgid "Author's website"
-msgstr "Sito web dell'autore"
+msgstr "Sito Web dell'Autore"
 
 # @ ure
 #: ../ure-options.php:168
 msgid "Plugin webpage"
-msgstr "Pagina web del plugin"
+msgstr "Pagina Web del plugin"
 
 # @ ure
 #: ../ure-options.php:169
 #: ../user-role-editor.php:191
 msgid "Changelog"
-msgstr "Changelog"
+msgstr "Cambia log"
 
 # @ ure
 #: ../ure-options.php:170
@@ -342,7 +336,7 @@ msgstr "Per l'aiuto con la traduzione in turco"
 # @ ure
 #: ../ure-options.php:193
 msgid "For the code to hide administrator role"
-msgstr "Per il codice per nascondere il ruolo di amministratore"
+msgstr "Per il codice che nasconde il ruolo di amministratore"
 
 # @ ure
 #: ../ure-options.php:194
@@ -362,17 +356,16 @@ msgstr "Per favore aggiorna!"
 
 # @ ure
 #: ../user-role-editor.php:43
-#, fuzzy
 msgid "User Role Editor requires PHP 5.0 or newer."
-msgstr "User Role Editor richiede WordPress 3.0 o superiori."
+msgstr "User Role Editor richiede PHP 5.0  o superiori."
 
 #: ../user-role-editor.php:68
 msgid "Only"
-msgstr ""
+msgstr "Solo"
 
 #: ../user-role-editor.php:68
 msgid "is allowed to use"
-msgstr ""
+msgstr "ha il permesso di usare"
 
 # @ ure
 # @ default
@@ -388,7 +381,7 @@ msgstr "Impostazioni"
 
 #: ../user-role-editor.php:230
 msgid "Capabilities"
-msgstr ""
+msgstr "Permessi"
 
 # @ ure
 #: ../ure-lib.php:46
@@ -403,7 +396,7 @@ msgstr "Errore del database. Controllare il log."
 # @ ure
 #: ../ure-lib.php:187
 msgid "Roles capabilities are restored from the backup data"
-msgstr "I permessi dei ruoli sono state recuperate dal backup."
+msgstr "I permessi dei ruoli sono stati recuperati dal backup."
 
 # @ ure
 #: ../ure-lib.php:189
@@ -422,9 +415,9 @@ msgstr "Errore: il nome del ruolo deve contenere solo numeri e caratteri latini!
 
 # @ ure
 #: ../ure-lib.php:318
-#, fuzzy, php-format
+#, php-format
 msgid "Role %s exists already"
-msgstr "Il ruolo %s è stato creato con successo."
+msgstr "Il ruolo %s esiste già"
 
 # @ ure
 #: ../ure-lib.php:324
@@ -440,7 +433,7 @@ msgstr "Il ruolo %s è stato creato con successo."
 # @ ure
 #: ../ure-lib.php:410
 msgid "Error encountered during role delete operation"
-msgstr "Si è verificato un errore nella cancellazione del ruolo."
+msgstr "Si è verificato un errore nella cancellazione del ruolo"
 
 # @ ure
 #: ../ure-lib.php:412
@@ -502,7 +495,7 @@ msgstr "Modificare plugins"
 # @ ure
 #: ../ure-lib.php:473
 msgid "Edit users"
-msgstr "Modificare utenti"
+msgstr "Modificare Utenti"
 
 # @ ure
 #: ../ure-lib.php:474
@@ -517,7 +510,7 @@ msgstr "Gestire le opzioni"
 # @ ure
 #: ../ure-lib.php:476
 msgid "Moderate comments"
-msgstr "Moderare commenti"
+msgstr "Moderare i commenti"
 
 # @ ure
 #: ../ure-lib.php:477
@@ -552,7 +545,7 @@ msgstr "Modificare articoli"
 # @ ure
 #: ../ure-lib.php:483
 msgid "Edit others posts"
-msgstr "Modificare articoli di altri utenti"
+msgstr "Modificare articoli di altri Utenti"
 
 # @ ure
 #: ../ure-lib.php:484
@@ -562,7 +555,7 @@ msgstr "Modificare articoli pubblicati"
 # @ ure
 #: ../ure-lib.php:485
 msgid "Publish posts"
-msgstr "Pubblicare post"
+msgstr "Pubblicare articolo"
 
 # @ ure
 #: ../ure-lib.php:486
@@ -632,7 +625,7 @@ msgstr "Livello 0"
 # @ ure
 #: ../ure-lib.php:499
 msgid "Edit others pages"
-msgstr "Modificare pagine di altri utenti"
+msgstr "Modificare pagine di altri Utenti"
 
 # @ ure
 #: ../ure-lib.php:500
@@ -652,7 +645,7 @@ msgstr "Cancellare pagine"
 # @ ure
 #: ../ure-lib.php:503
 msgid "Delete others pages"
-msgstr "Cancellare pagine di altri utenti"
+msgstr "Cancellare pagine di altri Utenti"
 
 # @ ure
 #: ../ure-lib.php:504
@@ -662,32 +655,32 @@ msgstr "Cancellare pagine pubblicate"
 # @ ure
 #: ../ure-lib.php:505
 msgid "Delete posts"
-msgstr "Cancellare articoli"
+msgstr "Cancellare messaggi"
 
 # @ ure
 #: ../ure-lib.php:506
 msgid "Delete others posts"
-msgstr "Cancellare articoli di altri utenti"
+msgstr "Cancellare messaggi di altri Utenti"
 
 # @ ure
 #: ../ure-lib.php:507
 msgid "Delete published posts"
-msgstr "Cancellare articoli pubblicati"
+msgstr "Cancellare messaggi pubblicati"
 
 # @ ure
 #: ../ure-lib.php:508
 msgid "Delete private posts"
-msgstr "Cancellare articoli privati"
+msgstr "Cancellare messaggi privati"
 
 # @ ure
 #: ../ure-lib.php:509
 msgid "Edit private posts"
-msgstr "Modificare articoli privati"
+msgstr "Modificare messaggii privati"
 
 # @ ure
 #: ../ure-lib.php:510
 msgid "Read private posts"
-msgstr "Leggere post privati"
+msgstr "Leggere messaggi privati"
 
 # @ ure
 #: ../ure-lib.php:511
@@ -707,12 +700,12 @@ msgstr "Leggere pagine private"
 # @ ure
 #: ../ure-lib.php:514
 msgid "Delete users"
-msgstr "Cancellare utenti"
+msgstr "Cancellare Utenti"
 
 # @ ure
 #: ../ure-lib.php:515
 msgid "Create users"
-msgstr "Creare utenti"
+msgstr "Creare Utenti"
 
 # @ ure
 #: ../ure-lib.php:516
@@ -757,22 +750,22 @@ msgstr "Aggiornare il core"
 # @ ure
 #: ../ure-lib.php:524
 msgid "List users"
-msgstr "Lista utenti"
+msgstr "Lista Utenti"
 
 # @ ure
 #: ../ure-lib.php:525
 msgid "Remove users"
-msgstr "Rimuovere utenti"
+msgstr "Rimuovere Utenti"
 
 # @ ure
 #: ../ure-lib.php:526
 msgid "Add users"
-msgstr "Aggiungere utenti"
+msgstr "Aggiungere Utenti"
 
 # @ ure
 #: ../ure-lib.php:527
 msgid "Promote users"
-msgstr "Promuovere utenti"
+msgstr "Promuovere Utenti"
 
 # @ ure
 #: ../ure-lib.php:528
@@ -791,29 +784,28 @@ msgstr "Esportare"
 
 # @ ure
 #: ../ure-lib.php:613
-#, fuzzy
 msgid "Error: Capability name must contain latin characters and digits only!"
-msgstr "Errore: il nome del ruolo deve contenere solo numeri e caratteri latini!"
+msgstr "Errore: il nome del permesso deve contenere solo numeri e caratteri latini!"
 
 # @ ure
 #: ../ure-lib.php:625
-#, fuzzy, php-format
+#, php-format
 msgid "Capability %s is added successfully"
-msgstr "Il ruolo %s è stato creato con successo."
+msgstr "Il permesso %s è stato creato con successo."
 
 #: ../ure-lib.php:627
 #, php-format
 msgid "Capability %s exists already"
-msgstr ""
+msgstr "Il permesso %s esiste già"
 
 #: ../ure-lib.php:791
 #, php-format
 msgid "Error! You do not have permission to delete this capability: %s!"
-msgstr ""
+msgstr "Errore! non hai l'autorizzazione di rimuovere questo permesso: %s!"
 
 # @ ure
 #: ../ure-lib.php:799
 #, php-format
 msgid "Capability %s is removed successfully"
-msgstr ""
+msgstr "Il permesso %s è stato rimosso"
 
