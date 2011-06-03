@@ -35,7 +35,10 @@ To update selected role globally for the Network you should turn on the "Apply t
 
 == Screenshots ==
 1. screenshot-1.png User Role Editor main form
-1. screenshot-2.png User Role Editor main form under multi-site environment
+2. screenshot-2.png User Role Editor main form under multi-site environment
+3. screenshot-3.png Add/Remove capabilities
+4. screenshot-4.png User Capabilities link
+5. screenshot-5.png User Capabilities Editor
 
 
 == Special Thanks to ==
