@@ -1,6 +1,6 @@
 <?php
 /* 
- * * User Role Editor plugin Lirary general staff
+ * * User Role Editor plugin Library for general staff
  * Author: Vladimir Garagulya vladimir@shinephp.com
  * 
  */
@@ -12,17 +12,7 @@ if (!defined("WPLANG")) {
 
 $ure_siteURL = get_option( 'siteurl' );
 
-// Pre-2.6 compatibility
-if ( !defined( 'WP_CONTENT_URL' ) )
-      define( 'WP_CONTENT_URL', $ure_siteURL . '/wp-content' );
-if ( ! defined( 'WP_CONTENT_DIR' ) )
-      define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
-if ( ! defined( 'WP_PLUGIN_URL' ) )
-      define( 'WP_PLUGIN_URL', WP_CONTENT_URL. '/plugins' );
-if ( ! defined( 'WP_PLUGIN_DIR' ) )
-      define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins' );
-
-$urePluginDirName = substr(dirname(__FILE__), strlen(WP_PLUGIN_DIR) + 1, strlen(__FILE__) - strlen(WP_PLUGIN_DIR)-1);
+$urePluginDirName = substr(strrchr(dirname(__FILE__), DIRECTORY_SEPARATOR), 1);
 
 define('URE_PLUGIN_URL', WP_PLUGIN_URL.'/'.$urePluginDirName);
 define('URE_PLUGIN_DIR', WP_PLUGIN_DIR.'/'.$urePluginDirName);
@@ -31,12 +21,14 @@ define('URE_ERROR', 'Error is encountered');
 define('URE_SPACE_REPLACER', '_URE-SR_');
 define('URE_PARENT', 'users.php');
 
-global $wpdb, $ure_roles, $ure_capabilitiesToSave, $ure_currentRole, $ure_toldAboutBackup, $ure_apply_to_all;
+global $wpdb, $ure_roles, $ure_capabilitiesToSave, $ure_currentRole, $ure_toldAboutBackup, $ure_apply_to_all, 
+       $ure_userToEdit, $fullCapabilities;
 
-$ure_roles = false; $ure_capabilitiesToSave = false; $ure_toldAboutBackup = false; $ure_apply_to_all = false;
+$ure_roles = false; $ure_capabilitiesToSave = false; $ure_toldAboutBackup = false; $ure_apply_to_all = false; 
+$ure_userToEdit = false; $fullCapabilities = false;
 
 // this array will be used to cash users checked for Administrator role
-$ure_userToEdit = array();
+$ure_userToCheck = array();
 
 function ure_logEvent($message, $showMessage = false) {
   include(ABSPATH .'wp-includes/version.php');
@@ -59,7 +51,7 @@ function ure_logEvent($message, $showMessage = false) {
 
 // returns true is user has Role "Administrator"
 function ure_has_administrator_role($user_id) {
-  global $wpdb, $ure_userToEdit;
+  global $wpdb, $ure_userToCheck;
 
   if (!isset($user_id) || !$user_id) {
     return false;
@@ -76,7 +68,7 @@ function ure_has_administrator_role($user_id) {
   } else {
     $result = false;
   }
-  $ure_userToEdit[$user_id] = $result;
+  $ure_userToCheck[$user_id] = $result;
 
   return $result;
 }
@@ -115,7 +107,7 @@ function ure_is_admin( $user_id = false ) {
 
 function ure_optionSelected($value, $etalon) {
   $selected = '';
-  if ($value==$etalon) {
+  if (strcasecmp($value,$etalon)==0) {
     $selected = 'selected="selected"';
   }
 
@@ -140,20 +132,24 @@ function ure_showMessage($message) {
 
 
 function ure_getUserRoles() {
-  global $wpdb;
+  global $wpdb, $wp_roles;
 
-  $ure_OptionsTable = $wpdb->prefix .'options';
-  $option_name = $wpdb->prefix.'user_roles';
-  $getRolesQuery = "select option_id, option_value
+  if (!isset($wp_roles)) {
+    $ure_OptionsTable = $wpdb->prefix . 'options';
+    $option_name = $wpdb->prefix . 'user_roles';
+    $getRolesQuery = "select option_id, option_value
                       from $ure_OptionsTable
                       where option_name='$option_name'
                       limit 0, 1";
-  $record = $wpdb->get_results($getRolesQuery);
-  if ($wpdb->last_error) {
-    ure_logEvent($wpdb->last_error);
-    return;
+    $record = $wpdb->get_results($getRolesQuery);
+    if ($wpdb->last_error) {
+      ure_logEvent($wpdb->last_error);
+      return;
+    }
+    $ure_roles = unserialize($record[0]->option_value);
+  } else {
+    $ure_roles = $wp_roles->roles;
   }
-  $ure_roles = unserialize($record[0]->option_value);
 
   return $ure_roles;
 }
@@ -304,6 +300,8 @@ function ure_updateRoles() {
 // process new role create request
 function ure_newRoleCreate(&$ure_currentRole) {
 
+  global $wp_roles;
+  
   $mess = '';
   $ure_currentRole = '';
   if (isset($_GET['user_role']) && $_GET['user_role']) {
@@ -311,14 +309,13 @@ function ure_newRoleCreate(&$ure_currentRole) {
     // sanitize user input for security
     if (!preg_match('/^[A-Za-z_][A-Za-z0-9_]*/', $user_role)) {
       return 'Error! '.__('Error: Role name must contain latin characters and digits only!', 'ure');;
-    }
-   
+    }  
     if ($user_role) {
-      $user_role = esc_html($user_role);
-      $user_role = mysql_real_escape_string($user_role);
-      $ure_roles = ure_getUserRoles();
-      if (!$ure_roles) {
-        return 'Error! '.__('Roles list reading error is encountered', 'ure');;
+      if (!isset($wp_roles)) {
+        $wp_roles = new WP_Roles();
+      }
+      if (isset($wp_roles->roles[$user_role])) {      
+        return sprintf('Error! '.__('Role %s exists already', 'ure'), $user_role);
       }
       // add new role to the roles array
       $ure_currentRole = strtolower($user_role);
@@ -582,4 +579,228 @@ class ure_TableSorter {
 // enf of ure_CapsSorter()
 
 
+function ure_updateUser($user) {
+  global $wpdb, $ure_capabilitiesToSave, $ure_currentRole;
+
+  $user->remove_all_caps();
+  if (count($user->roles)>0) {
+    $userRole = $user->roles[0];
+  } else {
+    $userRole = '';
+  }
+  $user->set_role($ure_currentRole);
+    
+  if (count($ure_capabilitiesToSave)>0) {
+    foreach ($ure_capabilitiesToSave as $key=>$value) {
+      $user->add_cap($key);
+    }
+  }
+  $user->update_user_level_from_caps();
+
+  return true;
+}
+// end of ure_updateUser()
+
+
+function ure_AddNewCapability() {
+  global $wp_roles;
+  
+  $mess = '';
+  if (isset($_GET['new_user_capability']) && $_GET['new_user_capability']) {
+    $user_capability = utf8_decode(urldecode($_GET['new_user_capability']));
+    // sanitize user input for security
+    if (!preg_match('/^[A-Za-z_][A-Za-z0-9_]*/', $user_capability)) {
+      return 'Error! '.__('Error: Capability name must contain latin characters and digits only!', 'ure');;
+    }
+   
+    if ($user_capability) {
+      $user_capability = strtolower($user_capability);
+      if (!isset($wp_roles)) {
+        $wp_roles = new WP_Roles();
+      }
+      $wp_roles->use_db = true;
+      $administrator = $wp_roles->get_role('administrator');
+      if (!$administrator->has_cap($user_capability)) {
+        $wp_roles->add_cap('administrator', $user_capability);
+        $mess = sprintf(__('Capability %s is added successfully', 'ure'), $user_capability);
+      } else {
+        $mess = sprintf('Error! '.__('Capability %s exists already', 'ure'), $user_capability);
+      }
+    }
+  }
+  
+  return $mess;
+  
+}
+// end of ure_AddNewCapability
+
+
+// returns array of built-in WP capabilities (WP 3.1 wp-admin/includes/schema.php) 
+function getBuiltInWPCaps() {
+  $caps = array();
+	$caps['switch_themes'] = 1;
+	$caps['edit_themes'] = 1;
+	$caps['activate_plugins'] = 1;
+	$caps['edit_plugins'] = 1;
+	$caps['edit_users'] = 1;
+	$caps['edit_files'] = 1;
+	$caps['manage_options'] = 1;
+	$caps['moderate_comments'] = 1;
+	$caps['manage_categories'] = 1;
+	$caps['manage_links'] = 1;
+	$caps['upload_files'] = 1;
+	$caps['import'] = 1;
+	$caps['unfiltered_html'] = 1;
+	$caps['edit_posts'] = 1;
+	$caps['edit_others_posts'] = 1;
+	$caps['edit_published_posts'] = 1;
+	$caps['publish_posts'] = 1;
+	$caps['edit_pages'] = 1;
+	$caps['read'] = 1;
+	$caps['level_10'] = 1;
+	$caps['level_9'] = 1;
+	$caps['level_8'] = 1;
+	$caps['level_7'] = 1;
+	$caps['level_6'] = 1;
+	$caps['level_5'] = 1;
+	$caps['level_4'] = 1;
+	$caps['level_3'] = 1;
+	$caps['level_2'] = 1;
+	$caps['level_1'] = 1;
+	$caps['level_0'] = 1;
+  $caps['edit_others_pages'] = 1;
+  $caps['edit_published_pages'] = 1;
+  $caps['publish_pages'] = 1;
+  $caps['delete_pages'] = 1;
+  $caps['delete_others_pages'] = 1;
+  $caps['delete_published_pages'] = 1;
+  $caps['delete_posts'] = 1;
+  $caps['delete_others_posts'] = 1;
+  $caps['delete_published_posts'] = 1;
+  $caps['delete_private_posts'] = 1;
+  $caps['edit_private_posts'] = 1;
+  $caps['read_private_posts'] = 1;
+  $caps['delete_private_pages'] = 1;
+  $caps['edit_private_pages'] = 1;
+  $caps['read_private_pages'] = 1;
+  $caps['unfiltered_upload'] = 1; 
+  $caps['edit_dashboard'] = 1;
+  $caps['update_plugins'] = 1;
+  $caps['delete_plugins'] = 1;
+  $caps['install_plugins'] = 1;
+  $caps['update_themes'] = 1;
+  $caps['install_themes'] = 1;
+  $caps['update_core'] = 1;
+  $caps['list_users'] = 1;
+  $caps['remove_users'] = 1;
+  $caps['add_users'] = 1;
+  $caps['promote_users'] = 1;
+  $caps['edit_theme_options'] = 1;
+  $caps['delete_themes'] = 1;
+  $caps['export'] = 1;
+  $caps['delete_users'] = 1;
+  $caps['create_users'] = 1;
+
+  return $caps;
+}
+//
+
+// return the array of unused capabilities
+function getCapsToRemove() {
+  global $wp_roles, $wpdb;
+
+  $fullCapsList = array();
+  foreach($wp_roles->roles as $role) {
+    foreach ($role['capabilities'] as $key=>$value) {
+      $fullCapsList[] = $key;
+    }
+  }
+  $fullCapsList = ure_ArrayUnique($fullCapsList);
+  sort($fullCapsList);
+  $capsToExclude = getBuiltInWPCaps();
+  
+  $capsToRemove = array();
+  foreach ($fullCapsList as $capability) {
+    if (!isset($capsToExclude[$capability])) {
+      // check roles
+      $capInUse = false;
+      foreach ($wp_roles->role_objects as $wp_role) {
+        if ($wp_role->name!='administrator') {
+          if ($wp_role->has_cap($capability)) {
+            $capInUse = true;
+            break;
+          }
+        }
+      }
+      if (!$capInUse) {
+      // check users
+        $usersId = $wpdb->get_col( $wpdb->prepare("SELECT $wpdb->users.ID FROM $wpdb->users"));
+        foreach ($usersId as $user_id) {
+          $user = get_user_to_edit($user_id);
+          if (isset($user->roles[0]) && $user->roles[0]=='administrator') {
+            continue;
+          }
+          if ($user->has_cap($capability)) {
+            $capInUse = true;
+            break;
+          }
+        }
+      }
+      if (!$capInUse) {
+        $capsToRemove[] = $capability;
+      }
+    }
+  }
+
+  return $capsToRemove;
+}
+// end of getCapsToRemove()
+
+
+function getCapsToRemoveHTML() {
+  $capsToRemove = getCapsToRemove();
+  if (count($capsToRemove)>0) {
+    $html = '<select id="remove_user_capability" name="remove_user_capability" width="200" style="width: 200px">';
+  foreach ($capsToRemove as $value) {
+    $html .= '<option value="'.$value.'">'.$value.'</option>';
+  }
+    $html .= '</select>';
+  } else {
+    $html = '';
+  }
+  
+  return $html;
+}
+// end of getCapsToRemoveHTML()
+
+
+function ure_removeCapability() {
+  global $wp_roles;
+
+  $mess = '';
+  if (isset($_GET['removeusercapability']) && $_GET['removeusercapability']) {
+    $capability = $_GET['removeusercapability'];
+    $capsToRemove = getCapsToRemove();    
+    $found = false;
+    foreach ($capsToRemove as $cap) {
+      if ($cap===$capability) {
+        $found = true;
+      }
+    }
+    if (!$found) {
+      return sprintf(__('Error! You do not have permission to delete this capability: %s!', 'ure'), $capability);
+    }
+
+    foreach ($wp_roles->role_objects as $wp_role) {
+      if ($wp_role->has_cap($capability)) {
+        $wp_role->remove_cap($capability);
+      }
+    }
+    $mess = sprintf(__('Capability %s is removed successfully', 'ure'), $capability);
+  }
+
+  return $mess;
+}
+
+// end of ure_removeCapability()
 ?>

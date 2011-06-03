@@ -3,17 +3,18 @@ Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 3.0.4
+Tested up to: 3.2
+Stable tag: 3.1
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
 == Description ==
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator) with a few clicks.
-Just turn on check boxes of capabilities you wish to add to the selected role and click "Update" button to save your changes. That's done. In case you made some unneccessary change you always have the "Reset" button to restore roles state from the automatically made backup copy.
+Just turn on check boxes of capabilities you wish to add to the selected role and click "Update" button to save your changes. That's done. In case you made some unneccessary change you always have the "Reset" button to restore roles state from the automatically make backup copy.
 Add new roles and customize its capabilities according to your needs. Unnecessary self-made role can be deleted if there are no users whome such role is assigned.
 Role assigned every new created user by default can be changed too.
+Capabilities could be assigned on per user basis. You can add new capabilities and remove unnecessary capabilities which could be left from uninstalled plugins.
 To read more about 'User Role Editor' visit this link at <a href="http://www.shinephp.com/user-role-editor-wordpress-plugin/" rel="nofollow">shinephp.com</a>
 
 
@@ -21,7 +22,6 @@ To read more about 'User Role Editor' visit this link at <a href="http://www.shi
 
 Installation procedure:
 
-Attention! Starting from version 2.2 plugin works with WordPress 3.0 and higher only. For earlier WordPress versions use plugin version 2.1.10 from http://downloads.wordpress.org/plugin/user-role-editor.2.1.10.zip
 1. Deactivate plugin if you have the previous version installed.
 2. Extract "user-role-editor.x.x.x.zip" archive content to the "/wp-content/plugins/user-role-editor" directory.
 3. Activate "User Role Editor" plugin via 'Plugins' menu in WordPress admin menu. 
@@ -43,22 +43,22 @@ To update selected role globally for the Network you should turn on the "Apply t
 * Marcin - For the code enhancement. This contribution allows to not lose new custom capability if it is added to other than 'Administrator' role.
 
 = Translations =
-* Belorussian: [Marsis G.](http://pc.de)
-* Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br)
-* Chinese: [Yackytsu](http://www.jackytsu.com)
-* Dutch: [Rémi Bruggeman](http://www.remisan.be)
-* Finnish: [Lauri Merisaari](http://www.viidakkorumpu.fi)
-* French: [Whiler](http://blogs.wittwer.fr/whiler)
-* German: [Peter](http://www.red-socks-reinbek.de)
-* Hungarian: [István](http://www.blacksnail.hu)
-* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org), [Tristano Ajmone ](http://www.zenfactor.org)
-* Japanese: [Technolog.jp](http://technolog.jp)
-* Persian: [Good Life](http://good-life.ir)
-* Polish: [TagSite](http://www.tagsite.eu)
+* Belorussian: [Marsis G.](http://pc.de) - needs update
+* Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br) - needs update
+* Chinese: [Yackytsu](http://www.jackytsu.com) - needs update
+* Dutch: [Rémi Bruggeman](http://www.remisan.be) - needs update
+* Finnish: [Lauri Merisaari](http://www.viidakkorumpu.fi) - needs update
+* French: [Whiler](http://blogs.wittwer.fr/whiler) - needs update
+* German: [Peter](http://www.red-socks-reinbek.de) - needs update
+* Hungarian: [István](http://www.blacksnail.hu) - needs update
+* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org), [Tristano Ajmone ](http://www.zenfactor.org) - needs update
+* Japanese: [Technolog.jp](http://technolog.jp) - needs update
+* Persian: [Good Life](http://good-life.ir) - needs update
+* Polish: [TagSite](http://www.tagsite.eu) - needs update
 * Russian: [Vladimir Garagulya](http://shinephp.com)
-* Spanish: [Dario Ferrer](http://www.darioferrer.com)
-* Swedish: [Christer Dahlbacka](www.startlinks.eu)
-* Turkish: [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com)
+* Spanish: [Dario Ferrer](http://www.darioferrer.com) - needs update
+* Swedish: [Christer Dahlbacka](www.startlinks.eu) - needs update
+* Turkish: [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com) - needs update
 
 Dear plugin User!
 If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
@@ -67,6 +67,13 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 3.1 =
+* 03.06.2011
+* Add/Remove capability boxes are added to the User Role Editor
+* Capabilities could be assigned directly to the user, additionally to the assigned role
+* PHP4 is not supported by this plugin anymore. Update your site to PHP5 in order to use this plugin and [near to release WordPress 3.2 :)](http://wordpress.org/about/requirements/) 
+* Minor compatibility issues with other plugins  were fixed
+
 = 3.0.4 =
 * 18.04.2011
 * minor update: PHP4 compatibility issue in code was discovered and fixed. PHP5 users could skip it. PHP4 users should think about update to PHP5, as WordPress 3.2 (planned to July 2011) will not provide PHP4 compatibility more.
