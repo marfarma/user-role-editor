@@ -15,7 +15,8 @@ Just turn on check boxes of capabilities you wish to add to the selected role an
 Add new roles and customize its capabilities according to your needs. Unnecessary self-made role can be deleted if there are no users whome such role is assigned.
 Role assigned every new created user by default can be changed too.
 Capabilities could be assigned on per user basis. You can add new capabilities and remove unnecessary capabilities which could be left from uninstalled plugins.
-To read more about 'User Role Editor' visit this link at <a href="http://www.shinephp.com/user-role-editor-wordpress-plugin/" rel="nofollow">shinephp.com</a>
+To read more about 'User Role Editor' visit this link at <a href="http://www.shinephp.com/user-role-editor-wordpress-plugin/" >shinephp.com</a>
+Русская версия этой статьи доступна по адресу <a href="http://ru.shinephp.com/user-role-editor-wordpress-plugin-rus/" >ru.shinephp.com</a>
 
 
 == Installation ==

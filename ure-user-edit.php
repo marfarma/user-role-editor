@@ -14,7 +14,11 @@ if (!isset($ure_currentRole) || !$ure_currentRole) {
   if (isset($_REQUEST['user_role']) && $_REQUEST['user_role']) {
     $ure_currentRole = $_REQUEST['user_role'];
   } else if (count($ure_userToEdit->roles)>0) {
-    $ure_currentRole = $ure_userToEdit->roles[0];
+    // just take the 1st element of array, as it could start from index not equal to 0
+    foreach ($ure_userToEdit->roles as $role) {
+      $ure_currentRole = $role;
+      break;
+    }
   } else {
    $ure_currentRole = '';
   }

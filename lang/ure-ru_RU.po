@@ -22,7 +22,7 @@ msgstr "Наименование не может быть пустым!"
 
 #: ../ure-role-edit.php:88
 msgid " Name must contain latin characters and digits only!"
-msgstr "Наименование должно содержать только латинские буквы и цифры."
+msgstr " Наименование должно содержать только латинские буквы и цифры."
 
 #: ../ure-role-edit.php:93
 #: ../ure-role-edit.php:246
@@ -40,7 +40,7 @@ msgstr "Восстановить Роли из резервной копии"
 
 #: ../ure-role-edit.php:99
 msgid "Warning! Be careful - removing critical capability could crash some plugin or other custom code"
-msgstr "Внимание! Будьте осторожны - удаление критичной способности может привести к прекращеню работы одного из плагинов или другого кода."
+msgstr "Внимание! Будьте осторожны - удаление критичной возможности может привести к прекращеню работы одного из плагинов или другого кода."
 
 #: ../ure-role-edit.php:101
 msgid "Please confirm to continue"
@@ -132,11 +132,11 @@ msgstr "Удалить Роль пользователя"
 #: ../ure-role-edit.php:256
 #: ../ure-role-edit.php:261
 msgid "Add New Capability"
-msgstr "Добавить новую Способность"
+msgstr "Добавить новую Возможность"
 
 #: ../ure-role-edit.php:266
 msgid "Remove Capability"
-msgstr "Удалить Способность"
+msgstr "Удалить Возможность"
 
 #: ../ure-role-edit.php:271
 msgid "Remove"
@@ -144,7 +144,7 @@ msgstr "Удалить"
 
 #: ../ure-role-edit.php:271
 msgid "Remove User Capability"
-msgstr "Удалить способность пользователя"
+msgstr "Удалить возможность пользователя"
 
 #: ../ure-user-edit.php:61
 #, php-format
@@ -153,7 +153,7 @@ msgstr "Изменение пользователя \"%s\": пожалуйста
 
 #: ../ure-user-edit.php:68
 msgid "Change capabilities for user"
-msgstr "Изменить способности для пользователя"
+msgstr "Изменить возможности для пользователя"
 
 #: ../ure-user-edit.php:71
 msgid "Role:"
@@ -161,7 +161,7 @@ msgstr "Роль:"
 
 #: ../ure-user-edit.php:84
 msgid "Add capabilities to this user:"
-msgstr "Добавить способности этому пользователю:"
+msgstr "Добавить возможности этому пользователю:"
 
 #: ../ure-options.php:128
 msgid "Role"
@@ -177,7 +177,7 @@ msgstr "Пользователь"
 
 #: ../ure-options.php:137
 msgid "capabilities are updated successfully"
-msgstr "способности изменены успешно"
+msgstr "возможности изменены успешно"
 
 #: ../ure-options.php:166
 msgid "About this Plugin:"
@@ -315,7 +315,7 @@ msgstr "Установки"
 
 #: ../user-role-editor.php:230
 msgid "Capabilities"
-msgstr "Способности"
+msgstr "Возможности"
 
 #: ../ure-lib.php:46
 msgid "Error is occur. Please check the log file."
@@ -644,22 +644,22 @@ msgstr "Ошибка: Имя должно содержать только лат
 #: ../ure-lib.php:625
 #, php-format
 msgid "Capability %s is added successfully"
-msgstr "Способность %s добавлена успешно"
+msgstr "Возможность %s добавлена успешно"
 
 #: ../ure-lib.php:627
 #, php-format
 msgid "Capability %s exists already"
-msgstr "Способность %s уже существует"
+msgstr "Возможность %s уже существует"
 
 #: ../ure-lib.php:791
 #, php-format
 msgid "Error! You do not have permission to delete this capability: %s!"
-msgstr "Ошибка! Вам запрещено удалять эту способность: %s!"
+msgstr "Ошибка! Вам запрещено удалять эту возможность: %s!"
 
 #: ../ure-lib.php:799
 #, php-format
 msgid "Capability %s is removed successfully"
-msgstr "Способность %s удалена успешно"
+msgstr "Возможность %s удалена успешно"
 
 #~ msgid "Roles list reading error is encountered"
 #~ msgstr "Ошибка чтения списка ролей!"
