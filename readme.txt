@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 3.1
+Stable tag: 3.1.1
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -16,6 +16,7 @@ Add new roles and customize its capabilities according to your needs. Unnecessar
 Role assigned every new created user by default can be changed too.
 Capabilities could be assigned on per user basis. You can add new capabilities and remove unnecessary capabilities which could be left from uninstalled plugins.
 To read more about 'User Role Editor' visit this link at <a href="http://www.shinephp.com/user-role-editor-wordpress-plugin/" >shinephp.com</a>
+
 Русская версия этой статьи доступна по адресу <a href="http://ru.shinephp.com/user-role-editor-wordpress-plugin-rus/" >ru.shinephp.com</a>
 
 
@@ -43,8 +44,9 @@ To update selected role globally for the Network you should turn on the "Apply t
 
 
 == Special Thanks to ==
-* [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
+* [Lorenzo Nicoletti](http://www.extera.com) - For the code enhancement. CUSTOM_USER_META_TABLE constant is used now for more compatibility with core WordPress API.
 * Marcin - For the code enhancement. This contribution allows to not lose new custom capability if it is added to other than 'Administrator' role.
+* [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 = Translations =
 * Belorussian: [Marsis G.](http://pc.de) - needs update
@@ -62,7 +64,7 @@ To update selected role globally for the Network you should turn on the "Apply t
 * Russian: [Vladimir Garagulya](http://shinephp.com)
 * Spanish: [Dario Ferrer](http://www.darioferrer.com) - needs update
 * Swedish: [Christer Dahlbacka](www.startlinks.eu) - needs update
-* Turkish: [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com) - needs update
+* Turkish: [Muhammed YILDIRIM](http://ben.muhammed.im/), [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com)
 
 Dear plugin User!
 If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
@@ -71,6 +73,10 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 3.1.1 =
+* CUSTOM_USER_META_TABLE constant is used now for more compatibility with core WordPress API. Thanks to [Lorenzo Nicoletti](http://www.extera.com) 
+* Turkish translation is updated. Thanks to Muhammed YILDIRIM. Other language translators are welcome!
+
 = 3.1 =
 * 03.06.2011
 * Add/Remove capability boxes are added to the User Role Editor

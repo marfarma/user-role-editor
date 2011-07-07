@@ -2,10 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: user-role-editor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-03 22:31+0700\n"
+"POT-Creation-Date: 2011-07-06 21:11+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
+"Last-Translator: Muhammed YILDIRIM <ben@muhammed.im>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,672 +14,654 @@ msgstr ""
 "X-Poedit-Country: TURKEY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: /home/cankaya/ortak/Gecici/cankaya/pukkalar/pukka/plugins/user-role-editor\n"
-"X-Poedit-SearchPath-0: /home/cankaya/ortak/Gecici/cankaya/pukkalar/pukka/plugins/user-role-editor\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: ..\n"
 
-#: ../ure-role-edit.php:84
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:38
+msgid "User Role Editor requires WordPress 3.0 or newer."
+msgstr "User Role Editor eklentisi en az WordPress 3.0 sürümüne ihtiyaç duymaktadır."
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:38
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:43
+msgid "Please update!"
+msgstr "Lütfen güncelleyin!"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:43
+msgid "User Role Editor requires PHP 5.0 or newer."
+msgstr "User Role Editor eklentisi PHP 5.0 veya daha yüksek bir sürüme ihtiyaç duymaktadır."
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:68
+msgid "Only"
+msgstr "Sadece"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:68
+msgid "is allowed to use"
+msgstr "kullanmak için yetkilidir"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:75
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:205
+msgid "User Role Editor"
+msgstr "Kullanıcı Rol Editörü"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:181
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:191
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:169
+msgid "Changelog"
+msgstr "Changelog"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/user-role-editor.php:230
+msgid "Capabilities"
+msgstr "Kabiliyetler"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:128
+msgid "Role"
+msgstr "Rol:"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:128
+msgid "is updated successfully"
+msgstr "başarıyla güncellendi"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:137
+msgid "User"
+msgstr "Kullanıcı"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:137
+msgid "capabilities are updated successfully"
+msgstr "başarıyla güncellendi"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:166
+msgid "About this Plugin:"
+msgstr "Bu eklenti hakkında:"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:167
+msgid "Author's website"
+msgstr "Hazırlayanın websitesi"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:168
+msgid "Plugin webpage"
+msgstr "Eklentinin websitesi"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:170
+msgid "FAQ"
+msgstr "SSS"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:171
+msgid "Donate"
+msgstr "Bağış Yapın"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:173
+msgid "Greetings:"
+msgstr "Teşekkürlerimle:"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:174
+msgid "It's me, the author"
+msgstr "Ben, hazırlayan"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:175
+msgid "For the help with Belorussian translation"
+msgstr "Beyaz Rusça tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:176
+msgid "For the help with Brasilian translation"
+msgstr "Brasilian tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:177
+msgid "For the help with Chinese translation"
+msgstr "Chinese tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:178
+msgid "For the help with Dutch translation"
+msgstr "Dutch tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:179
+msgid "For the help with Finnish translation"
+msgstr "Finnish tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:180
+msgid "For the help with French translation"
+msgstr "Fransızca tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:181
+msgid "For the help with German translation"
+msgstr "Almanca tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:182
+msgid "For the help with Hungarian translation"
+msgstr "Macarca tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:183
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:184
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:185
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:186
+msgid "For the help with Italian translation"
+msgstr "İtalyanca tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:187
+msgid "For the help with Japanese translation"
+msgstr "Japonca tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:188
+msgid "For the help with Persian translation"
+msgstr "Farsça tercümeye yardımları için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:189
+msgid "For the help with Polish translation"
+msgstr "Lehçe tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:190
+msgid "For the help with Spanish translation"
+msgstr "İspanyolca tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:191
+msgid "For the help with Swedish translation"
+msgstr "Swedish tercümesi için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:192
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:193
+msgid "For the help with Turkish translation"
+msgstr "Türkçe tercümeye yardımları için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:194
+msgid "For the code to hide administrator role"
+msgstr "Yönetici rolünü saklayan kod katkısı için"
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-options.php:195
+msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
+msgstr "İsminizi websitenize bir link ile birlikte burada görmek ister misiniz? Bu elbette mümkün! Tercüme yardımlarınız ve yeni fikirlerinize her zaman açığım."
+
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:84
 msgid " Name can not be empty!"
-msgstr "Rol Adı boş bırakılamaz!"
+msgstr "Ad boş bırakılamaz!"
 
-#: ../ure-role-edit.php:88
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:88
 msgid " Name must contain latin characters and digits only!"
-msgstr "Rol Adı, yalnızca latin karakterleri ve sayılardan oluşabilir!"
+msgstr "Ad, yalnızca latin karakterleri ve sayılardan oluşabilir!"
 
-#: ../ure-role-edit.php:93
-#: ../ure-role-edit.php:246
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:93
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:246
 msgid "Delete Role"
 msgstr "Rolü Sil"
 
-#: ../ure-role-edit.php:95
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:95
 msgid "Change Default Role"
 msgstr "Varsayılan Rolü Değiştir"
 
-#: ../ure-role-edit.php:97
-#: ../ure-role-edit.php:217
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:97
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:217
 msgid "Restore Roles from backup copy"
 msgstr "Rolleri yedekten geri yükle"
 
-#: ../ure-role-edit.php:99
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:99
 msgid "Warning! Be careful - removing critical capability could crash some plugin or other custom code"
-msgstr ""
+msgstr "Uyarı! Dikkatli olun - önemli kabiliyetleri kaldırmak bazı eklentileri veya başka özel kodların bozulmasına sebep olabilir"
 
-#: ../ure-role-edit.php:101
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:101
 msgid "Please confirm to continue"
 msgstr "Devam etmek için lütfen onaylayın"
 
-#: ../ure-role-edit.php:134
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:134
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
 msgstr "\"%s\" rolü güncellendi: Devam etmek için lütfen onaylayın"
 
-#: ../ure-role-edit.php:142
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:142
 msgid "Select Role and change its capabilities list"
 msgstr "Rolü seçin ve rolün yetki listesini değiştirin"
 
-#: ../ure-role-edit.php:144
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:144
 msgid "Select Role:"
 msgstr "Rolü Seçin:"
 
-#: ../ure-role-edit.php:153
-#: ../ure-user-edit.php:80
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:153
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:84
 msgid "Show capabilities in human readable form"
 msgstr "Yetkileri insan tarafından okunabilir biçimde göster"
 
-#: ../ure-role-edit.php:157
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:157
 msgid "If checked, then apply action to ALL sites of this Network"
-msgstr ""
+msgstr "Eğer seçilirse, bu ağdaki tüm siteler için uygulanır"
 
-#: ../ure-role-edit.php:167
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:167
 msgid "Apply to All Sites"
-msgstr ""
+msgstr "Tüm sitelere uygula"
 
-#: ../ure-role-edit.php:213
-#: ../ure-user-edit.php:129
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:213
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:133
 msgid "Update"
 msgstr "Güncelle"
 
-#: ../ure-role-edit.php:213
-#: ../ure-user-edit.php:129
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:213
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:133
 msgid "Save Changes"
 msgstr "Değişiklikleri Kaydet"
 
-#: ../ure-role-edit.php:214
-#: ../ure-user-edit.php:130
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:214
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:134
 msgid "Cancel"
 msgstr "İptal"
 
-#: ../ure-role-edit.php:214
-#: ../ure-user-edit.php:130
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:214
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:134
 msgid "Cancel not saved changes"
 msgstr "Kaydedilmemiş değişiklikleri iptal et"
 
-#: ../ure-role-edit.php:217
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:217
 msgid "Reset"
 msgstr "Geri al"
 
-#: ../ure-role-edit.php:227
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:227
 msgid "Add New Role"
 msgstr "Yeni Rol Ekle"
 
-#: ../ure-role-edit.php:232
-#: ../ure-role-edit.php:261
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:232
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:261
 msgid "Add"
 msgstr "Ekle"
 
-#: ../ure-role-edit.php:232
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:232
 msgid "Add New User Role"
 msgstr "Yeni Kullanıcı Rolü Ekle"
 
-#: ../ure-role-edit.php:236
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:236
 msgid "Default Role for New User"
 msgstr "Yeni Kullanıcılar için Varsayılan Rol"
 
-#: ../ure-role-edit.php:241
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:241
 msgid "Change"
 msgstr "Değiştir"
 
-#: ../ure-role-edit.php:241
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:241
 msgid "Set as Default User Role"
 msgstr "Varsayılan Kullanıcı Rolü olarak Seç"
 
-#: ../ure-role-edit.php:251
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:251
 msgid "Delete"
 msgstr "Sil"
 
-#: ../ure-role-edit.php:251
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:251
 msgid "Delete User Role"
 msgstr "Kullanıcı Rolünü Sil"
 
-#: ../ure-role-edit.php:256
-#: ../ure-role-edit.php:261
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:256
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:261
 msgid "Add New Capability"
-msgstr "Yeni Rol Ekle"
+msgstr "Yeni Kabiliyet Ekle"
 
-#: ../ure-role-edit.php:266
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:266
 msgid "Remove Capability"
-msgstr ""
+msgstr "Kabiliyeti kaldır"
 
-#: ../ure-role-edit.php:271
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:271
 msgid "Remove"
-msgstr "Kullanıcı silmek"
+msgstr "Kaldır"
 
-#: ../ure-role-edit.php:271
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-role-edit.php:271
 msgid "Remove User Capability"
-msgstr ""
+msgstr "Kullanıcının kabiliyetini kaldır"
 
-#: ../ure-user-edit.php:61
-#, fuzzy, php-format
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:65
+#, php-format
 msgid "User \"%s\" update: please confirm to continue"
-msgstr "\"%s\" rolü güncellendi: Devam etmek için lütfen onaylayın"
+msgstr "\"%s\" güncellendi: Devam etmek için lütfen onaylayın"
 
-#: ../ure-user-edit.php:68
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:72
 msgid "Change capabilities for user"
-msgstr ""
+msgstr "Kullanıcının kabiliyetlerini değiştir: "
 
-#: ../ure-user-edit.php:71
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:75
 msgid "Role:"
 msgstr "Rol:"
 
-#: ../ure-user-edit.php:84
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-user-edit.php:88
 msgid "Add capabilities to this user:"
-msgstr ""
+msgstr "Bu kullanıcıya kabiliyetler ekle:"
 
-#: ../ure-options.php:128
-msgid "Role"
-msgstr "Rol:"
-
-#: ../ure-options.php:128
-msgid "is updated successfully"
-msgstr "başarıyla güncellendi"
-
-#: ../ure-options.php:137
-msgid "User"
-msgstr ""
-
-#: ../ure-options.php:137
-#, fuzzy
-msgid "capabilities are updated successfully"
-msgstr "başarıyla güncellendi"
-
-#: ../ure-options.php:166
-msgid "About this Plugin:"
-msgstr "Bu eklenti hakkında:"
-
-#: ../ure-options.php:167
-msgid "Author's website"
-msgstr "Hazırlayanın websitesi"
-
-#: ../ure-options.php:168
-msgid "Plugin webpage"
-msgstr "Eklentinin websitesi"
-
-#: ../ure-options.php:169
-#: ../user-role-editor.php:191
-msgid "Changelog"
-msgstr "Changelog"
-
-#: ../ure-options.php:170
-msgid "FAQ"
-msgstr "SSS"
-
-#: ../ure-options.php:171
-msgid "Donate"
-msgstr "Bağış Yapın"
-
-#: ../ure-options.php:173
-msgid "Greetings:"
-msgstr "Teşekkürlerimle:"
-
-#: ../ure-options.php:174
-msgid "It's me, the author"
-msgstr "Ben, hazırlayan"
-
-#: ../ure-options.php:175
-msgid "For the help with Belorussian translation"
-msgstr "Beyaz Rusça tercümesi için"
-
-#: ../ure-options.php:176
-msgid "For the help with Brasilian translation"
-msgstr "Brasilian tercümesi için"
-
-#: ../ure-options.php:177
-msgid "For the help with Chinese translation"
-msgstr "Chinese tercümesi için"
-
-#: ../ure-options.php:178
-msgid "For the help with Dutch translation"
-msgstr "Dutch tercümesi için"
-
-#: ../ure-options.php:179
-msgid "For the help with Finnish translation"
-msgstr "Finnish tercümesi için"
-
-#: ../ure-options.php:180
-msgid "For the help with French translation"
-msgstr "Fransızca tercümesi için"
-
-#: ../ure-options.php:181
-msgid "For the help with German translation"
-msgstr "Almanca tercümesi için"
-
-#: ../ure-options.php:182
-msgid "For the help with Hungarian translation"
-msgstr "Macarca tercümesi için"
-
-#: ../ure-options.php:183
-#: ../ure-options.php:184
-#: ../ure-options.php:185
-msgid "For the help with Italian translation"
-msgstr "İtalyanca tercümesi için"
-
-#: ../ure-options.php:186
-msgid "For the help with Japanese translation"
-msgstr "Japonca tercümesi için"
-
-#: ../ure-options.php:187
-#, fuzzy
-msgid "For the help with Persian translation"
-msgstr "Almanca tercümesi için"
-
-#: ../ure-options.php:188
-msgid "For the help with Polish translation"
-msgstr "Lehçe tercümesi için"
-
-#: ../ure-options.php:189
-msgid "For the help with Spanish translation"
-msgstr "İspanyolca tercümesi için"
-
-#: ../ure-options.php:190
-msgid "For the help with Swedish translation"
-msgstr "Swedish tercümesi için"
-
-#: ../ure-options.php:191
-#: ../ure-options.php:192
-#, fuzzy
-msgid "For the help with Turkish translation"
-msgstr "Lehçe tercümesi için"
-
-#: ../ure-options.php:193
-msgid "For the code to hide administrator role"
-msgstr "Yönetici rolünü saklayan kod katkısı için"
-
-#: ../ure-options.php:194
-msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr "İsminizi websitenize bir link ile birlikte burada görmek ister misiniz? Bu elbette mümkün! Tercüme yardımlarınız ve yeni fikirlerinize her zaman açığım."
-
-#: ../user-role-editor.php:38
-msgid "User Role Editor requires WordPress 3.0 or newer."
-msgstr "User Role Editor eklentisi en az WordPress 3.0 sürümüne ihtiyaç duymaktadır."
-
-#: ../user-role-editor.php:38
-#: ../user-role-editor.php:43
-msgid "Please update!"
-msgstr "Lütfen güncelleyin!"
-
-#: ../user-role-editor.php:43
-#, fuzzy
-msgid "User Role Editor requires PHP 5.0 or newer."
-msgstr "User Role Editor eklentisi en az WordPress 3.0 sürümüne ihtiyaç duymaktadır."
-
-#: ../user-role-editor.php:68
-msgid "Only"
-msgstr ""
-
-#: ../user-role-editor.php:68
-msgid "is allowed to use"
-msgstr ""
-
-#: ../user-role-editor.php:75
-#: ../user-role-editor.php:205
-msgid "User Role Editor"
-msgstr "Kullanıcı Rol Editörü"
-
-#: ../user-role-editor.php:181
-msgid "Settings"
-msgstr "Ayarlar"
-
-#: ../user-role-editor.php:230
-msgid "Capabilities"
-msgstr ""
-
-#: ../ure-lib.php:46
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:46
 msgid "Error is occur. Please check the log file."
 msgstr "Bir hata oluştu. Lütfen günlük dosyasını kontrol edin."
 
-#: ../ure-lib.php:164
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:164
 msgid "Database operation error. Check log file."
 msgstr "Veritabanı operasyonu hatası. Günlük dosyasını kontrol edin."
 
-#: ../ure-lib.php:187
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:187
 msgid "Roles capabilities are restored from the backup data"
 msgstr "Rol yetkileri yedek verilerden geri yüklendi"
 
-#: ../ure-lib.php:189
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:189
 msgid "No backup data. It is created automatically before the first role data update."
 msgstr "Henüz yedekleme yapılmamış. İlk yedekleme, ilk rol verisi güncellemesi öncesi otomatik olarak yapılacaktır."
 
-#: ../ure-lib.php:228
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:228
 msgid "Backup record is created for the current role capabilities"
-msgstr "Güncel rol yeterlilikleri için yedek kayıt yaratıldı"
+msgstr "Güncel rol yeterlilikleri için yedek kayıt oluşturuldu"
 
-#: ../ure-lib.php:311
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:311
 msgid "Error: Role name must contain latin characters and digits only!"
 msgstr "Hata: Rol adı yalnızca latin karakterleri ve sayılardan oluşabilir."
 
-#: ../ure-lib.php:318
-#, fuzzy, php-format
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:318
+#, php-format
 msgid "Role %s exists already"
-msgstr "%s rolü başarıyla yaratıldı"
+msgstr "%s rolü zaten mevcut"
 
-#: ../ure-lib.php:324
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:324
 msgid "Error is encountered during new role create operation"
-msgstr "Yeni rol yaratma işlemi sırasında hata"
+msgstr "Yeni rol oluşturma işlemi sırasında hata"
 
-#: ../ure-lib.php:326
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:326
 #, php-format
 msgid "Role %s is created successfully"
-msgstr "%s rolü başarıyla yaratıldı"
+msgstr "%s rolü başarıyla oluşturuldu"
 
-#: ../ure-lib.php:410
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:410
 msgid "Error encountered during role delete operation"
 msgstr "Rol silme işlemi sırasında hata"
 
-#: ../ure-lib.php:412
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:412
 #, php-format
 msgid "Role %s is deleted successfully"
 msgstr "%s rolü başarıyla silindi"
 
-#: ../ure-lib.php:430
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:430
 msgid "Error encountered during default role change operation"
 msgstr "Varsayılan rolü değiştirme işlemi sırasında hata"
 
-#: ../ure-lib.php:436
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:436
 #, php-format
 msgid "Default role for new users is set to %s successfully"
 msgstr "Yeni kullanıcılar için varsayılan rol %s olarak başarıyla değiştirildi"
 
-#: ../ure-lib.php:464
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:464
 msgid "Editor"
 msgstr "Editör"
 
-#: ../ure-lib.php:465
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:465
 msgid "Author"
 msgstr "Yazar"
 
-#: ../ure-lib.php:466
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:466
 msgid "Contributor"
 msgstr "İçerik Sağlayıcı"
 
-#: ../ure-lib.php:467
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:467
 msgid "Subscriber"
 msgstr "Üye"
 
-#: ../ure-lib.php:469
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:469
 msgid "Switch themes"
 msgstr "Temaları değiştir"
 
-#: ../ure-lib.php:470
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:470
 msgid "Edit themes"
 msgstr "Temaları düzenle"
 
-#: ../ure-lib.php:471
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:471
 msgid "Activate plugins"
 msgstr "Eklentileri aktive et"
 
-#: ../ure-lib.php:472
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:472
 msgid "Edit plugins"
 msgstr "Eklentileri düzenlemek"
 
-#: ../ure-lib.php:473
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:473
 msgid "Edit users"
 msgstr "Kullanıcıları düzenlemek"
 
-#: ../ure-lib.php:474
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:474
 msgid "Edit files"
 msgstr "Dosyaları düzenlemek"
 
-#: ../ure-lib.php:475
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:475
 msgid "Manage options"
 msgstr "Seçenekleri yönetmek"
 
-#: ../ure-lib.php:476
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:476
 msgid "Moderate comments"
 msgstr "Yorumları yönetmek"
 
-#: ../ure-lib.php:477
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:477
 msgid "Manage categories"
 msgstr "Kategorileri yönetmek"
 
-#: ../ure-lib.php:478
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:478
 msgid "Manage links"
 msgstr "Linkleri yönetmek"
 
-#: ../ure-lib.php:479
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:479
 msgid "Upload files"
 msgstr "Dosya yüklemek"
 
-#: ../ure-lib.php:480
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:480
 msgid "Import"
 msgstr "İçeri aktarmak"
 
-#: ../ure-lib.php:481
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:481
 msgid "Unfiltered html"
 msgstr "Filtrelenmemiş HTML"
 
-#: ../ure-lib.php:482
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:482
 msgid "Edit posts"
 msgstr "Yazıları düzenlemek"
 
-#: ../ure-lib.php:483
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:483
 msgid "Edit others posts"
 msgstr "Başkalarının yazılarını düzenlemek"
 
-#: ../ure-lib.php:484
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:484
 msgid "Edit published posts"
 msgstr "Yayınlanmış yazıları düzenlemek"
 
-#: ../ure-lib.php:485
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:485
 msgid "Publish posts"
 msgstr "Yazıları yayınlamak"
 
-#: ../ure-lib.php:486
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:486
 msgid "Edit pages"
 msgstr "Sayfaları düzenlemek"
 
-#: ../ure-lib.php:487
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:487
 msgid "Read"
 msgstr "Okumak"
 
-#: ../ure-lib.php:488
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:488
 msgid "Level 10"
 msgstr "Seviye 10"
 
-#: ../ure-lib.php:489
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:489
 msgid "Level 9"
 msgstr "Seviye 9"
 
-#: ../ure-lib.php:490
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:490
 msgid "Level 8"
 msgstr "Seviye 8"
 
-#: ../ure-lib.php:491
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:491
 msgid "Level 7"
 msgstr "Seviye 7"
 
-#: ../ure-lib.php:492
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:492
 msgid "Level 6"
 msgstr "Seviye 6"
 
-#: ../ure-lib.php:493
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:493
 msgid "Level 5"
 msgstr "Seviye 5"
 
-#: ../ure-lib.php:494
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:494
 msgid "Level 4"
 msgstr "Seviye 4"
 
-#: ../ure-lib.php:495
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:495
 msgid "Level 3"
 msgstr "Seviye 3"
 
-#: ../ure-lib.php:496
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:496
 msgid "Level 2"
 msgstr "Seviye 2"
 
-#: ../ure-lib.php:497
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:497
 msgid "Level 1"
 msgstr "Seviye 1"
 
-#: ../ure-lib.php:498
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:498
 msgid "Level 0"
 msgstr "Seviye 0"
 
-#: ../ure-lib.php:499
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:499
 msgid "Edit others pages"
 msgstr "Başkalarının sayfalarını düzenlemek"
 
-#: ../ure-lib.php:500
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:500
 msgid "Edit published pages"
 msgstr "Yayınlanmış sayfaları düzenlemek"
 
-#: ../ure-lib.php:501
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:501
 msgid "Publish pages"
 msgstr "Sayfaları yayınlamak"
 
-#: ../ure-lib.php:502
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:502
 msgid "Delete pages"
 msgstr "Sayfaları silmek"
 
-#: ../ure-lib.php:503
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:503
 msgid "Delete others pages"
 msgstr "Başkalarının sayfalarını silmek"
 
-#: ../ure-lib.php:504
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:504
 msgid "Delete published pages"
 msgstr "Yayınlanmış sayfaları silmek"
 
-#: ../ure-lib.php:505
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:505
 msgid "Delete posts"
 msgstr "Yazıları silmek"
 
-#: ../ure-lib.php:506
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:506
 msgid "Delete others posts"
 msgstr "Başkalarının yazılarını silmek"
 
-#: ../ure-lib.php:507
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:507
 msgid "Delete published posts"
 msgstr "Yayınlanmış yazıları silmek"
 
-#: ../ure-lib.php:508
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:508
 msgid "Delete private posts"
 msgstr "Özel yazıları silmek"
 
-#: ../ure-lib.php:509
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:509
 msgid "Edit private posts"
 msgstr "Özel yazıları düzenlemek"
 
-#: ../ure-lib.php:510
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:510
 msgid "Read private posts"
 msgstr "Özel yazıları okumak"
 
-#: ../ure-lib.php:511
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:511
 msgid "Delete private pages"
 msgstr "Özel sayfaları silmek"
 
-#: ../ure-lib.php:512
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:512
 msgid "Edit private pages"
 msgstr "Özel sayfaları düzenlemek"
 
-#: ../ure-lib.php:513
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:513
 msgid "Read private pages"
 msgstr "Özel yazıları okumak"
 
-#: ../ure-lib.php:514
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:514
 msgid "Delete users"
 msgstr "Kullanıcı silmek"
 
-#: ../ure-lib.php:515
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:515
 msgid "Create users"
-msgstr "Kullanıcı yaratmak"
+msgstr "Kullanıcı oluşturmak"
 
-#: ../ure-lib.php:516
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:516
 msgid "Unfiltered upload"
 msgstr "Filtrelenmemiş dosya yüklemek"
 
-#: ../ure-lib.php:517
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:517
 msgid "Edit dashboard"
 msgstr "Paneli düzenlemek"
 
-#: ../ure-lib.php:518
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:518
 msgid "Update plugins"
 msgstr "Eklentileri güncellemek"
 
-#: ../ure-lib.php:519
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:519
 msgid "Delete plugins"
 msgstr "Eklenti silmek"
 
-#: ../ure-lib.php:520
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:520
 msgid "Install plugins"
 msgstr "Eklenti yüklemek"
 
-#: ../ure-lib.php:521
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:521
 msgid "Update themes"
 msgstr "Temaları güncellemek"
 
-#: ../ure-lib.php:522
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:522
 msgid "Install themes"
-msgstr "Temal yüklemek"
+msgstr "Tema yüklemek"
 
-#: ../ure-lib.php:523
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:523
 msgid "Update core"
 msgstr "Güncelle"
 
-#: ../ure-lib.php:524
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:524
 msgid "List users"
-msgstr "Kullanıcıları düzenlemek"
+msgstr "Kullanıcıları listelemek"
 
-#: ../ure-lib.php:525
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:525
 msgid "Remove users"
 msgstr "Kullanıcı silmek"
 
-#: ../ure-lib.php:526
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:526
 msgid "Add users"
-msgstr "Kullanıcıları düzenlemek"
+msgstr "Kullanıcıları eklemek"
 
-#: ../ure-lib.php:527
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:527
 msgid "Promote users"
-msgstr "Kullanıcı yaratmak"
+msgstr "Kullanıcı yükseltmek"
 
-#: ../ure-lib.php:528
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:528
 msgid "Edit theme options"
-msgstr "Temaları düzenle"
+msgstr "Tema ayarlarını düzenlemek"
 
-#: ../ure-lib.php:529
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:529
 msgid "Delete themes"
-msgstr "Başkalarının sayfalarını silmek"
+msgstr "Temaları silmek"
 
-#: ../ure-lib.php:530
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:530
 msgid "Export"
-msgstr "İçeri aktarmak"
+msgstr "Dışa aktarmak"
 
-#: ../ure-lib.php:613
-#, fuzzy
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:613
 msgid "Error: Capability name must contain latin characters and digits only!"
-msgstr "Hata: Rol adı yalnızca latin karakterleri ve sayılardan oluşabilir."
+msgstr "Hata: Kabiliyet adı yalnızca latin karakterleri ve sayılardan oluşabilir."
 
-#: ../ure-lib.php:625
-#, fuzzy, php-format
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:625
+#, php-format
 msgid "Capability %s is added successfully"
-msgstr "%s rolü başarıyla yaratıldı"
+msgstr "%s kabiliyeti başarıyla eklendi"
 
-#: ../ure-lib.php:627
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:627
 #, php-format
 msgid "Capability %s exists already"
-msgstr ""
+msgstr "%s kabiliyeti zaten mevcut"
 
-#: ../ure-lib.php:791
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:791
 #, php-format
 msgid "Error! You do not have permission to delete this capability: %s!"
-msgstr ""
+msgstr "Hata! Bu kabiliyeti değiştirmek için yetkiniz yok: %s!"
 
-#: ../ure-lib.php:799
-#, fuzzy, php-format
+#: /home/muhammed/DEPO/Webmaster/wordpress/deneme-sunucu/wp-content/plugins/user-role-editor/ure-lib.php:799
+#, php-format
 msgid "Capability %s is removed successfully"
-msgstr "%s rolü başarıyla yaratıldı"
+msgstr "%s kabiliyeti başarıyla oluşturuldu"
 
 #~ msgid "Roles list reading error is encountered"
 #~ msgstr "Rol listesi okunurken hata"
-

@@ -57,7 +57,7 @@ function ure_has_administrator_role($user_id) {
     return false;
   }
 
-  $tableName = $wpdb->prefix.'usermeta';
+  $tableName = defined('CUSTOM_USER_META_TABLE') ? CUSTOM_USER_META_TABLE : $wpdb->prefix.'usermeta';
   $metaKey = $wpdb->prefix.'capabilities';
   $query = "SELECT count(*)
                 FROM $tableName
@@ -335,8 +335,8 @@ function ure_newRoleCreate(&$ure_currentRole) {
 // define roles which we could delete, e.g self-created and not used with any blog user
 function getRolesCanDelete($ure_roles) {
   global $wpdb;
-
-  $tableName = $wpdb->prefix.'usermeta';
+  
+  $tableName = defined('CUSTOM_USER_META_TABLE') ? CUSTOM_USER_META_TABLE : $wpdb->prefix.'usermeta';
   $metaKey = $wpdb->prefix.'capabilities';
   $defaultRole = get_option('default_role');
   $standardRoles = array('administrator', 'editor', 'author', 'contributor', 'subscriber');

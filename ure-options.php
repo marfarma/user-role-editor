@@ -189,9 +189,13 @@ ure_showMessage($mess);
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/tagsite.png'; ?>)" target="_blank" title="<?php _e("For the help with Polish translation", 'ure'); ?>" href="http://www.tagsite.eu">TagSite</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/dario.png'; ?>)" target="_blank" title="<?php _e("For the help with Spanish translation", 'ure'); ?>" href="http://www.darioferrer.com">Dario  Ferrer</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/christer.png'; ?>)" target="_blank" title="<?php _e("For the help with Swedish translation", 'ure'); ?>" href="www.startlinks.eu">Christer Dahlbacka</a>
+                      <a class="ure_rsb_link" title="<?php _e("For the help with Turkish translation", 'ure'); ?>" href="http://ben.muhammed.im/">Muhammed YILDIRIM</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/sadri.png'; ?>)" target="_blank" title="<?php _e("For the help with Turkish translation", 'ure'); ?>" href="http://www.faydaliweb.com">Sadri Ercan</a>
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/cartaca.png'; ?>)" target="_blank" title="<?php _e("For the help with Turkish translation", 'ure'); ?>" href="http://www.kartaca.com">Can KAYA</a>
+                      <hr />
                       <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/fullthrottle.png'; ?>)" target="_blank" title="<?php _e("For the code to hide administrator role", 'ure'); ?>" href="http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen">FullThrottle</a>
+                      <a class="ure_rsb_link" style="background-image:url(<?php echo URE_PLUGIN_URL.'/images/lorenzo.png'; ?>)" target="_blank" title="<?php _e("For the code enhancement suggestion", 'ure'); ?>" href="http://www.extera.com">Lorenzo Nicoletti</a>
+                      <hr />
 											<?php _e('Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated.', 'ure'); ?>
 									<?php ure_displayBoxEnd(); ?>
 						</div>
