@@ -64,7 +64,7 @@ To update selected role globally for the Network you should turn on the "Apply t
 * Russian: [Vladimir Garagulya](http://shinephp.com)
 * Spanish: [Dario Ferrer](http://www.darioferrer.com) - needs update
 * Swedish: [Christer Dahlbacka](www.startlinks.eu) - needs update
-* Turkish: [Muhammed YILDIRIM](http://ben.muhammed.im/), [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com)
+* Turkish: [Muhammed YILDIRIM](http://ben.muhammed.im), [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com)
 
 Dear plugin User!
 If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
@@ -74,6 +74,7 @@ Share with me new ideas about plugin further development and link to your site w
 
 == Changelog ==
 = 3.1.1 =
+* 07.07.2011
 * CUSTOM_USER_META_TABLE constant is used now for more compatibility with core WordPress API. Thanks to [Lorenzo Nicoletti](http://www.extera.com) 
 * Turkish translation is updated. Thanks to Muhammed YILDIRIM. Other language translators are welcome!
 
