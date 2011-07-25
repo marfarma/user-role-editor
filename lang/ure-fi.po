@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-03 22:33+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
+"Last-Translator: Lauri Merisaari <lauri@merisaari.com>\n"
 "Language-Team: Lauri Merisaari <lauri@viidakkorumpu.fi>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,14 +17,12 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../ure-role-edit.php:84
-#, fuzzy
 msgid " Name can not be empty!"
-msgstr "Roolin nimi ei voi olla tyhjä!"
+msgstr " Roolin nimi ei voi olla tyhjä!"
 
 #: ../ure-role-edit.php:88
-#, fuzzy
 msgid " Name must contain latin characters and digits only!"
-msgstr "Roolin nimi saa sisältää vain latinalaisia aakkosia ja numeroita!"
+msgstr " Nimi saa sisältää vain latinalaisia aakkosia ja numeroita!"
 
 #: ../ure-role-edit.php:93
 #: ../ure-role-edit.php:246
@@ -42,7 +40,7 @@ msgstr "Palauta rooli varmuuskopiosta"
 
 #: ../ure-role-edit.php:99
 msgid "Warning! Be careful - removing critical capability could crash some plugin or other custom code"
-msgstr ""
+msgstr "Varoitus! Ole varovainen - kriittisen oikeuden poistaminen voi rikkoa jonkun lisäosan tai muun muokatun koodin"
 
 #: ../ure-role-edit.php:101
 msgid "Please confirm to continue"
@@ -133,40 +131,37 @@ msgstr "Poista käyttäjän rooli"
 
 #: ../ure-role-edit.php:256
 #: ../ure-role-edit.php:261
-#, fuzzy
 msgid "Add New Capability"
-msgstr "Lisää uusi rooli"
+msgstr "Lisää uusi oikeus"
 
 #: ../ure-role-edit.php:266
 msgid "Remove Capability"
-msgstr ""
+msgstr "Poista oikeus"
 
 #: ../ure-role-edit.php:271
-#, fuzzy
 msgid "Remove"
-msgstr "Poista käyttäjiä"
+msgstr "Poista"
 
 #: ../ure-role-edit.php:271
 msgid "Remove User Capability"
-msgstr ""
+msgstr "Poista käyttäjän oikeudet"
 
 #: ../ure-user-edit.php:61
-#, fuzzy, php-format
+#, php-format
 msgid "User \"%s\" update: please confirm to continue"
 msgstr "Roolin \"%s\" päivitys: varmista jatkaaksesi"
 
 #: ../ure-user-edit.php:68
 msgid "Change capabilities for user"
-msgstr ""
+msgstr "Muuta käyttäjän oikeuksia"
 
 #: ../ure-user-edit.php:71
-#, fuzzy
 msgid "Role:"
-msgstr "Rooli"
+msgstr "Rooli:"
 
 #: ../ure-user-edit.php:84
 msgid "Add capabilities to this user:"
-msgstr ""
+msgstr "Lisää oikeudet käyttäjälle:"
 
 #: ../ure-options.php:128
 msgid "Role"
@@ -178,12 +173,11 @@ msgstr "on päivitetty onnistuneesti"
 
 #: ../ure-options.php:137
 msgid "User"
-msgstr ""
+msgstr "Käyttäjä"
 
 #: ../ure-options.php:137
-#, fuzzy
 msgid "capabilities are updated successfully"
-msgstr "on päivitetty onnistuneesti"
+msgstr "Oikeudet on päivitetty onnistuneesti"
 
 #: ../ure-options.php:166
 msgid "About this Plugin:"
@@ -204,7 +198,7 @@ msgstr "Muutos loki"
 
 #: ../ure-options.php:170
 msgid "FAQ"
-msgstr "UKK"
+msgstr "Usein kysytyt kysymykset"
 
 #: ../ure-options.php:171
 msgid "Donate"
@@ -236,7 +230,7 @@ msgstr "Apua Hollannin kieliseen käännökseen"
 
 #: ../ure-options.php:179
 msgid "For the help with Finnish translation"
-msgstr "Apua Finnish kieliseen käännökseen"
+msgstr "Apua suomen kieliseen käännökseen"
 
 #: ../ure-options.php:180
 msgid "For the help with French translation"
@@ -287,7 +281,7 @@ msgstr "Koodi Pääkäyttäjän roolin piilottamiseen"
 
 #: ../ure-options.php:194
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr "Haluatko nähdä nimesi sekä linkin sivuillesi tässä? Olet tervetullut! Voit auttaa käännöksen kanssa ja kaikista uusista ideoista ollaan kiitollisia."
+msgstr "Haluatko nähdä nimesi sekä linkin sivuillesi tässä? Olet tervetullut auttamaan käännöksen kanssa. Myös kaikista uusista ideoista ollaan kiitollisia."
 
 #: ../user-role-editor.php:38
 msgid "User Role Editor requires WordPress 3.0 or newer."
@@ -299,22 +293,21 @@ msgid "Please update!"
 msgstr "Ole hyvä ja päivitä!"
 
 #: ../user-role-editor.php:43
-#, fuzzy
 msgid "User Role Editor requires PHP 5.0 or newer."
-msgstr "User Role Editor tarvitsee Wordpress 3.0 tai uudemman."
+msgstr "User Role Editor tarvitsee PHP 5.0:n tai uudemman."
 
 #: ../user-role-editor.php:68
 msgid "Only"
-msgstr ""
+msgstr "Vain"
 
 #: ../user-role-editor.php:68
 msgid "is allowed to use"
-msgstr ""
+msgstr "sallitaan käyttää"
 
 #: ../user-role-editor.php:75
 #: ../user-role-editor.php:205
 msgid "User Role Editor"
-msgstr "Käyttäjä roolien muokkain (User Role Editor)"
+msgstr "User Role Editor"
 
 #: ../user-role-editor.php:181
 msgid "Settings"
@@ -322,7 +315,7 @@ msgstr "Asetukset"
 
 #: ../user-role-editor.php:230
 msgid "Capabilities"
-msgstr ""
+msgstr "Oikeudet"
 
 #: ../ure-lib.php:46
 msgid "Error is occur. Please check the log file."
@@ -349,9 +342,9 @@ msgid "Error: Role name must contain latin characters and digits only!"
 msgstr "Virhe: Roolin nimi saa sisältää vain latinalaisia aakkosia ja numeroita!"
 
 #: ../ure-lib.php:318
-#, fuzzy, php-format
+#, php-format
 msgid "Role %s exists already"
-msgstr "Rooli %s luotiin onnistuneesti"
+msgstr "Rooli %s on jo olemassa"
 
 #: ../ure-lib.php:324
 msgid "Error is encountered during new role create operation"
@@ -614,7 +607,7 @@ msgstr "Asenna teemoja"
 
 #: ../ure-lib.php:523
 msgid "Update core"
-msgstr "Päivitä alusta"
+msgstr "Päivitä ydin"
 
 #: ../ure-lib.php:524
 msgid "List users"
@@ -630,7 +623,7 @@ msgstr "Lisää käyttäjiä"
 
 #: ../ure-lib.php:527
 msgid "Promote users"
-msgstr "Ylennä kättäjiä"
+msgstr "Ylennä käyttäjiä"
 
 #: ../ure-lib.php:528
 msgid "Edit theme options"
@@ -645,36 +638,37 @@ msgid "Export"
 msgstr "Vie"
 
 #: ../ure-lib.php:613
-#, fuzzy
 msgid "Error: Capability name must contain latin characters and digits only!"
-msgstr "Virhe: Roolin nimi saa sisältää vain latinalaisia aakkosia ja numeroita!"
+msgstr "Virhe: Oikeuden nimi saa sisältää vain latinalaisia aakkosia ja numeroita!"
 
 #: ../ure-lib.php:625
-#, fuzzy, php-format
+#, php-format
 msgid "Capability %s is added successfully"
 msgstr "Rooli %s luotiin onnistuneesti"
 
 #: ../ure-lib.php:627
 #, php-format
 msgid "Capability %s exists already"
-msgstr ""
+msgstr "Oikeus %s on jo määritelty"
 
 #: ../ure-lib.php:791
 #, php-format
 msgid "Error! You do not have permission to delete this capability: %s!"
-msgstr ""
+msgstr "Virhe! Sinulla ei ole lupaa poistaa tätä oikeutta: %s!"
 
 #: ../ure-lib.php:799
-#, fuzzy, php-format
+#, php-format
 msgid "Capability %s is removed successfully"
-msgstr "Rooli %s luotiin onnistuneesti"
+msgstr "Rooli %s poistettiin onnistuneesti"
 
 #~ msgid "Roles list reading error is encountered"
 #~ msgstr "Virhe: Rooleja ei pystytty lukemaan"
+
 #~ msgid "More plugins from"
 #~ msgstr "Lisää lisäosia tekijältä"
+
 #~ msgid "No items found."
 #~ msgstr "Osia ei löytynyt."
+
 #~ msgid "Recent Posts:"
 #~ msgstr "Uusimmat artikkelit:"
-

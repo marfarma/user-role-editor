@@ -1,670 +1,663 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: User Role Editor Plugin 2.0\n"
+"Project-Id-Version: User Role Editor 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-08 16:13+0700\n"
+"POT-Creation-Date: 2011-06-03 22:31+0700\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Vladimir <vladimir@shinephp.com>\n"
-"Language-Team: Whiler <webmaster@blogs.wittwer.fr>\n"
+"Last-Translator: שגיב SEO <Info@sagive.co.il>\n"
+"Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
 
 #: ../ure-role-edit.php:84
 msgid " Name can not be empty!"
-msgstr "Le nom ne peut pas être vide&nbsp;!"
+msgstr "שם לא יכול להשאר ריק!"
 
 #: ../ure-role-edit.php:88
 msgid " Name must contain latin characters and digits only!"
-msgstr "Le nom doit uniquement contenir que des caractères latins et des chiffres&nbsp;!"
+msgstr "שם חייב להכיל אותיות באנגלית וספרות בלבד!"
 
 #: ../ure-role-edit.php:93
 #: ../ure-role-edit.php:246
 msgid "Delete Role"
-msgstr "Supprimer le rôle"
+msgstr "מחיקת סוג משתמש"
 
 #: ../ure-role-edit.php:95
 msgid "Change Default Role"
-msgstr "Changer le rôle par défaut"
+msgstr "שנה את סוג משתמש המוגדר כברירת מחדל"
 
 #: ../ure-role-edit.php:97
 #: ../ure-role-edit.php:217
 msgid "Restore Roles from backup copy"
-msgstr "Restaurer les Rôles à partir de la copie de sauvegarde"
+msgstr "שחזר סוגי משתמשים מהעתק הגיבוי"
 
 #: ../ure-role-edit.php:99
 msgid "Warning! Be careful - removing critical capability could crash some plugin or other custom code"
-msgstr "Attention ! Soyez prudent - supprimer une capacité critique peut crasher des extensions ou du code personnalisé"
+msgstr "זהירות! הסרה של אפשרויות קריטיות עשוי לגרום לתוספים מסוים או קוד נסמך שלא לעבוד כשורה"
 
 #: ../ure-role-edit.php:101
 msgid "Please confirm to continue"
-msgstr "Confirmez pour continuer"
+msgstr "אשר את הפעולה והמשך"
 
 #: ../ure-role-edit.php:134
 #, php-format
 msgid "Role \"%s\" update: please confirm to continue"
-msgstr "Mise à jour du Rôle \"%s\" : Veuillez confirmer pour continuer"
+msgstr "סוג המשתמש  \"%s\" עודכן: אנא אשר והמשך"
 
 #: ../ure-role-edit.php:142
 msgid "Select Role and change its capabilities list"
-msgstr "Sélectionnez un Rôle et changez sa liste de capacités"
+msgstr "בחר סוג משתמש ושנה את היכולות שלו"
 
 #: ../ure-role-edit.php:144
 msgid "Select Role:"
-msgstr "Sélectionnez un rôle&nbsp;:"
+msgstr "בחר סוג משתמש"
 
 #: ../ure-role-edit.php:153
-#: ../ure-user-edit.php:84
+#: ../ure-user-edit.php:80
 msgid "Show capabilities in human readable form"
-msgstr "Afficher les capacités en langage humain"
+msgstr "הראה יכולות משתמשים בשפה קריאה"
 
 #: ../ure-role-edit.php:157
 msgid "If checked, then apply action to ALL sites of this Network"
-msgstr "Si coché, alors l'action affecte TOUS les sites de ce réseau"
+msgstr "אם סומן, החל פעולה על כל האתרים ברשת זאת"
 
 #: ../ure-role-edit.php:167
 msgid "Apply to All Sites"
-msgstr "Appliquer à tous les sites"
+msgstr "החל לכל האתרים"
 
 #: ../ure-role-edit.php:213
-#: ../ure-user-edit.php:133
+#: ../ure-user-edit.php:129
 msgid "Update"
-msgstr "Mettre à jour"
+msgstr "עדכן"
 
 #: ../ure-role-edit.php:213
-#: ../ure-user-edit.php:133
+#: ../ure-user-edit.php:129
 msgid "Save Changes"
-msgstr "Enregistrer les modifications"
+msgstr "שמור שינויים"
 
 #: ../ure-role-edit.php:214
-#: ../ure-user-edit.php:134
+#: ../ure-user-edit.php:130
 msgid "Cancel"
-msgstr "Annuler"
+msgstr "ביטול"
 
 #: ../ure-role-edit.php:214
-#: ../ure-user-edit.php:134
+#: ../ure-user-edit.php:130
 msgid "Cancel not saved changes"
-msgstr "Annuler les changements"
+msgstr "בטל שינויים שלא נשמרו"
 
 #: ../ure-role-edit.php:217
 msgid "Reset"
-msgstr "Réinitialiser"
+msgstr "איפוס"
 
 #: ../ure-role-edit.php:227
 msgid "Add New Role"
-msgstr "Ajouter un nouveau rôle"
+msgstr "הוסף סוג משתמש חדש"
 
 #: ../ure-role-edit.php:232
 #: ../ure-role-edit.php:261
 msgid "Add"
-msgstr "Ajouter"
+msgstr "הוסף"
 
 #: ../ure-role-edit.php:232
 msgid "Add New User Role"
-msgstr "Ajouter un nouveau rôle utilisateur"
+msgstr "הוסף סוג משתמש חדש"
 
 #: ../ure-role-edit.php:236
 msgid "Default Role for New User"
-msgstr "Rôle par défaut pour les nouveaux utilisateurs"
+msgstr "סוג משתמש ברירת מחדל למשתמשים חדשים"
 
 #: ../ure-role-edit.php:241
 msgid "Change"
-msgstr "Modifier"
+msgstr "שנה"
 
 #: ../ure-role-edit.php:241
 msgid "Set as Default User Role"
-msgstr "Définir comme rôle d'utilisateur par défaut"
+msgstr "קבע כסוג משתמש ברירת מחדל"
 
 #: ../ure-role-edit.php:251
 msgid "Delete"
-msgstr "Effacer"
+msgstr "למחוק"
 
 #: ../ure-role-edit.php:251
 msgid "Delete User Role"
-msgstr "Supprimer un rôle utilisateur"
+msgstr "מחק סוג משתמש"
 
 #: ../ure-role-edit.php:256
 #: ../ure-role-edit.php:261
 msgid "Add New Capability"
-msgstr "Ajouter une nouvelle capacité"
+msgstr "הוסף יכולת חדשה"
 
 #: ../ure-role-edit.php:266
 msgid "Remove Capability"
-msgstr "Supprimer Capacité"
+msgstr "הסר יכולת"
 
 #: ../ure-role-edit.php:271
 msgid "Remove"
-msgstr "Supprimer"
+msgstr "הסר"
 
 #: ../ure-role-edit.php:271
 msgid "Remove User Capability"
-msgstr "Supprimer Capacité de l'Utilisateur"
+msgstr "הסר יכולת משתמש"
 
-#: ../ure-user-edit.php:65
+#: ../ure-user-edit.php:61
 #, php-format
 msgid "User \"%s\" update: please confirm to continue"
-msgstr "Mise à jour de l'utilisateur \"%s\" : Veuillez confirmer pour continuer"
+msgstr "עדכון המשתמש \"%s\" : אנא אשר והמשך"
 
-#: ../ure-user-edit.php:72
+#: ../ure-user-edit.php:68
 msgid "Change capabilities for user"
-msgstr "Modifier les capacités de l'utilisateur"
+msgstr "שינוי יכולות המשתמש"
 
-#: ../ure-user-edit.php:75
+#: ../ure-user-edit.php:71
 msgid "Role:"
-msgstr "Rôle&nbsp;:"
+msgstr "סוג משתמש"
 
-#: ../ure-user-edit.php:88
+#: ../ure-user-edit.php:84
 msgid "Add capabilities to this user:"
-msgstr "Ajouter des capacités à cet utilisateur&nbsp;:"
+msgstr "הוסף יכולות למשתמש זה:"
 
 #: ../ure-options.php:128
 msgid "Role"
-msgstr "Rôle "
+msgstr "סוג משתמש:"
 
 #: ../ure-options.php:128
 msgid "is updated successfully"
-msgstr "a été correctement mis à jour"
+msgstr "עודכן בהצלחה"
 
 #: ../ure-options.php:137
 msgid "User"
-msgstr "Utilisateur"
+msgstr "משתמש"
 
 #: ../ure-options.php:137
 msgid "capabilities are updated successfully"
-msgstr "capacités ont été correctement mises à jour"
+msgstr "היכולות עודכנו בהצלחה"
 
 #: ../ure-options.php:166
 msgid "About this Plugin:"
-msgstr "A propos de cette extension&nbsp;:"
+msgstr "אודות תוסף זה:"
 
 #: ../ure-options.php:167
 msgid "Author's website"
-msgstr "Site Web de l'auteur"
+msgstr "אתר היוצר"
 
 #: ../ure-options.php:168
 msgid "Plugin webpage"
-msgstr "Page Web de l'extension"
+msgstr "דף התוסף"
 
 #: ../ure-options.php:169
 #: ../user-role-editor.php:191
 msgid "Changelog"
-msgstr "Changelog"
+msgstr "יומן שינויים"
 
 #: ../ure-options.php:170
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "שאלות נפוצות"
 
 #: ../ure-options.php:171
 msgid "Donate"
-msgstr "Faire un don"
+msgstr "תרום"
 
 #: ../ure-options.php:173
 msgid "Greetings:"
-msgstr "Remerciements&nbsp;:"
+msgstr "ברכות:"
 
 #: ../ure-options.php:174
 msgid "It's me, the author"
-msgstr "C'est moi, l'auteur"
+msgstr "זה אני, יוצר התוסף"
 
 #: ../ure-options.php:175
 msgid "For the help with Belorussian translation"
-msgstr "Pour l'aide avec la traduction biélorusse"
+msgstr "לעזרה עם תרגום לבלרוסית"
 
 #: ../ure-options.php:176
 msgid "For the help with Brasilian translation"
-msgstr "Pour l'aide avec la traduction brésilenne"
+msgstr "לעזרה עם תרגום לברזילאית"
 
 #: ../ure-options.php:177
 msgid "For the help with Chinese translation"
-msgstr "Pour l'aide avec la traduction chinese"
+msgstr "לעזרה עם תרגום לסינית"
 
 #: ../ure-options.php:178
 msgid "For the help with Dutch translation"
-msgstr "Pour l'aide avec la traduction Dutch"
+msgstr "לעזרה עם תרגום להולנדית"
 
 #: ../ure-options.php:179
 msgid "For the help with Finnish translation"
-msgstr "Pour l'aide avec la traduction finlandaise"
+msgstr "לעזרה עם תרגום לפינית"
 
 #: ../ure-options.php:180
 msgid "For the help with French translation"
-msgstr "Pour l'aide avec la traduction française"
+msgstr "לעזרה עם תרגום לצרפתית"
 
 #: ../ure-options.php:181
 msgid "For the help with German translation"
-msgstr "Pour l'aide avec la traduction allemande"
+msgstr "לעזרה עם תרגום לגרמנית"
 
 #: ../ure-options.php:182
 msgid "For the help with Hungarian translation"
-msgstr "Pour l'aide avec la traduction Hungarian"
+msgstr "לעזרה עם תרגום להונגרית"
 
 #: ../ure-options.php:183
 #: ../ure-options.php:184
 #: ../ure-options.php:185
-#: ../ure-options.php:186
 msgid "For the help with Italian translation"
-msgstr "Pour l'aide avec la traduction italien"
+msgstr "לעזרה עם תרגום לאילטקית"
+
+#: ../ure-options.php:186
+msgid "For the help with Japanese translation"
+msgstr "לעזרה עם תרגום ליפנית"
 
 #: ../ure-options.php:187
-msgid "For the help with Japanese translation"
-msgstr "Pour l'aide avec la traduction italien"
+msgid "For the help with Persian translation"
+msgstr "לעזרה עם תרגום לפרסית"
 
 #: ../ure-options.php:188
-msgid "For the help with Persian translation"
-msgstr "Pour l'aide avec la traduction perse"
+msgid "For the help with Polish translation"
+msgstr "לעזרה עם תרגום לפולנית"
 
 #: ../ure-options.php:189
-msgid "For the help with Polish translation"
-msgstr "Pour l'aide avec la traduction polonais"
+msgid "For the help with Spanish translation"
+msgstr "לעזרה עם תרגום לספרדית"
 
 #: ../ure-options.php:190
-msgid "For the help with Spanish translation"
-msgstr "Pour l'aide avec la traduction polonais"
+msgid "For the help with Swedish translation"
+msgstr "לעזרה עם תרגום לשוודית"
 
 #: ../ure-options.php:191
-msgid "For the help with Swedish translation"
-msgstr "Pour l'aide avec la traduction suédoise"
-
 #: ../ure-options.php:192
-#: ../ure-options.php:193
-#: ../ure-options.php:194
 msgid "For the help with Turkish translation"
-msgstr "Pour l'aide avec la traduction turque"
+msgstr "לעזרה עם תרגום לטורקית"
 
-#: ../ure-options.php:196
+#: ../ure-options.php:193
 msgid "For the code to hide administrator role"
-msgstr "Pour le code qui cache le rôle d'administrateur"
+msgstr "עבור קוד כדי להחביא את סוג משתמש מנהל"
 
-#: ../ure-options.php:197
-msgid "For the code enhancement suggestion"
-msgstr "Pour les suggestions d'évolution du code"
-
-#: ../ure-options.php:199
+#: ../ure-options.php:194
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
-msgstr "Vous souhaitez voir votre nom avec votre lien vers votre site Web ici ? Avec plaisir ! Votre aide avec la traduction ou de nouvelles idées seront très appréciées."
+msgstr "רוצה לראות את השם שלך עם קישור אל האתר שלך כאן? אתה מוזמן לעזור עם התרגום ועם רעיונות ושיפורים חדשים"
 
 #: ../user-role-editor.php:38
 msgid "User Role Editor requires WordPress 3.0 or newer."
-msgstr "User Role Editor nécessite WordPress 3.0 ou plus récent.."
+msgstr "התוסף User Role Editor מתאים לאתרי וורדפרס בגרסה 3.0 ומעלה"
 
 #: ../user-role-editor.php:38
 #: ../user-role-editor.php:43
 msgid "Please update!"
-msgstr "Veuillez mettre à jour&nbsp;!"
+msgstr "אנא עדכן!"
 
 #: ../user-role-editor.php:43
 msgid "User Role Editor requires PHP 5.0 or newer."
-msgstr "User Role Editor nécessite PHP 5.0 ou plus récent."
+msgstr "התוסף User Role Editor מחייב אחסון עם PHP 5.0 ומעלה"
 
 #: ../user-role-editor.php:68
 msgid "Only"
-msgstr "Seulement"
+msgstr "רק"
 
 #: ../user-role-editor.php:68
 msgid "is allowed to use"
-msgstr "est autorisé à utiliser"
+msgstr "מותר לשימוש"
 
 #: ../user-role-editor.php:75
 #: ../user-role-editor.php:205
 msgid "User Role Editor"
-msgstr "Extension \"User Role Editor\""
+msgstr "User Role Editor"
 
 #: ../user-role-editor.php:181
 msgid "Settings"
-msgstr "Réglages"
+msgstr "הגדרות"
 
 #: ../user-role-editor.php:230
 msgid "Capabilities"
-msgstr "Capacités"
+msgstr "יכולות"
 
 #: ../ure-lib.php:46
 msgid "Error is occur. Please check the log file."
-msgstr "Une erreur s'est produite. Vérifiez le fichier journal."
+msgstr "ארעה שגיאה, אנא בדוק את קובץ היומן."
 
 #: ../ure-lib.php:164
 msgid "Database operation error. Check log file."
-msgstr "Erreur d'opération de base de données. Vérifiez le fichier journal."
+msgstr "שגיאת מסד נתונים, אנא בדוק את קובץ היומן."
 
 #: ../ure-lib.php:187
 msgid "Roles capabilities are restored from the backup data"
-msgstr "Les capacités des rôles sont restaurées depuis les données de sauvegarde"
+msgstr "יכולות סוגי המשתמשים שוחזרו מקובץ הגיבוי"
 
 #: ../ure-lib.php:189
 msgid "No backup data. It is created automatically before the first role data update."
-msgstr "Aucune donnée sauvegardée. La sauvegarde est automatique avant la première mise à jour des rôles."
+msgstr "אין קובץ גיבוי. מידע זה נוצר באופן אוטומטי לפני השינוי הראשון שאתם עושים בהגדרות סוגי המשתמשים."
 
 #: ../ure-lib.php:228
 msgid "Backup record is created for the current role capabilities"
-msgstr "L'enregistrement de sauvegarde a été créé pour les capacités du rôle actuel"
+msgstr "גיבוי נוצר עבור יכולות סוגי המשתמשים הנוכחיים"
 
 #: ../ure-lib.php:311
 msgid "Error: Role name must contain latin characters and digits only!"
-msgstr "Erreur : le nom de rôle doit seulement contenir des caractères latins et chiffres !"
+msgstr "שגיאה! השם של סוג המשתמש חייב להיות מורכב מאותיות באנגלית וספרות בלבד"
 
 #: ../ure-lib.php:318
 #, php-format
 msgid "Role %s exists already"
-msgstr "Rôle %s existe déjà"
+msgstr "סוג המשתמש %s כבר קיים"
 
 #: ../ure-lib.php:324
 msgid "Error is encountered during new role create operation"
-msgstr "Une erreur s'est produite lors de la création du nouveau rôle"
+msgstr "ארעה שגיאה בעת יצירת סוג המשתמש החדש"
 
 #: ../ure-lib.php:326
 #, php-format
 msgid "Role %s is created successfully"
-msgstr "Rôle %s a été créé avec succès"
+msgstr "סוג המשתמש %s נוצר בהצלחה"
 
 #: ../ure-lib.php:410
 msgid "Error encountered during role delete operation"
-msgstr "Une erreur s'est produite lors de la suppression du rôle"
+msgstr "ארעה שגיאה במהלך נסיון המחיקה של סוג המשתמש"
 
 #: ../ure-lib.php:412
 #, php-format
 msgid "Role %s is deleted successfully"
-msgstr "Rôle %s supprimé avec succès"
+msgstr "סוג המשתמש %s נמחק בהצלחה"
 
 #: ../ure-lib.php:430
 msgid "Error encountered during default role change operation"
-msgstr "Une erreur s'est produite pendant le changement du rôle par défaut"
+msgstr "ארעה שגיאה בעת הנסיון לשנות את סוג משתמש ברירת מחדל"
 
 #: ../ure-lib.php:436
 #, php-format
 msgid "Default role for new users is set to %s successfully"
-msgstr "Rôle par défaut pour les nouveaux utilisateurs fixé à %s avec succès"
+msgstr "סוג המשתמש %s נקבע כברירת מחדל"
 
 #: ../ure-lib.php:464
 msgid "Editor"
-msgstr "Editeur"
+msgstr "עורך"
 
 #: ../ure-lib.php:465
 msgid "Author"
-msgstr "Auteur"
+msgstr "כותב"
 
 #: ../ure-lib.php:466
 msgid "Contributor"
-msgstr "Contributeur"
+msgstr "תורם"
 
 #: ../ure-lib.php:467
 msgid "Subscriber"
-msgstr "Abonné"
+msgstr "מנוי"
 
 #: ../ure-lib.php:469
 msgid "Switch themes"
-msgstr "Changer de thème"
+msgstr "החלפת תבניות"
 
 #: ../ure-lib.php:470
 msgid "Edit themes"
-msgstr "Editer les thèmes"
+msgstr "עריכת תבניות"
 
 #: ../ure-lib.php:471
 msgid "Activate plugins"
-msgstr "Activer les extensions"
+msgstr "הפעלת תוספים"
 
 #: ../ure-lib.php:472
 msgid "Edit plugins"
-msgstr "Editer les extensions"
+msgstr "עריכת תוספים"
 
 #: ../ure-lib.php:473
 msgid "Edit users"
-msgstr "Editer les utilisateurs"
+msgstr "עריכת משתמשים"
 
 #: ../ure-lib.php:474
 msgid "Edit files"
-msgstr "Editer les fichiers"
+msgstr "עריכת קבצים"
 
 #: ../ure-lib.php:475
 msgid "Manage options"
-msgstr "Gérer les options"
+msgstr "ניהול אפשרויות אתר"
 
 #: ../ure-lib.php:476
 msgid "Moderate comments"
-msgstr "Modérer les commentaires"
+msgstr "ניהול תגובות"
 
 #: ../ure-lib.php:477
 msgid "Manage categories"
-msgstr "Gérer les catégories"
+msgstr "ניהול קטגוריות"
 
 #: ../ure-lib.php:478
 msgid "Manage links"
-msgstr "Gérer les liens"
+msgstr "ניהול קישורים"
 
 #: ../ure-lib.php:479
 msgid "Upload files"
-msgstr "Transmettre des fichiers"
+msgstr "העלאת קבצים"
 
 #: ../ure-lib.php:480
 msgid "Import"
-msgstr "Importer"
+msgstr "יבוא"
 
 #: ../ure-lib.php:481
 msgid "Unfiltered html"
-msgstr "HTML non filtré"
+msgstr "עריכת HTML"
 
 #: ../ure-lib.php:482
 msgid "Edit posts"
-msgstr "Editer les articles"
+msgstr "עריכת פוסטים"
 
 #: ../ure-lib.php:483
 msgid "Edit others posts"
-msgstr "Editer les articles des autres"
+msgstr "עריכת פוסטים של אחרים"
 
 #: ../ure-lib.php:484
 msgid "Edit published posts"
-msgstr "Editer les articles publiés"
+msgstr "עריכת פוסטים שפורסמו"
 
 #: ../ure-lib.php:485
 msgid "Publish posts"
-msgstr "Editer les articles"
+msgstr "פוסטים שפורסמו"
 
 #: ../ure-lib.php:486
 msgid "Edit pages"
-msgstr "Editer les pages"
+msgstr "עריכת עמודים"
 
 #: ../ure-lib.php:487
 msgid "Read"
-msgstr "Lire"
+msgstr "קורא"
 
 #: ../ure-lib.php:488
 msgid "Level 10"
-msgstr "Niveau 10"
+msgstr "דרגה 10"
 
 #: ../ure-lib.php:489
 msgid "Level 9"
-msgstr "Niveau 9"
+msgstr "דרגה 9"
 
 #: ../ure-lib.php:490
 msgid "Level 8"
-msgstr "Niveau 8"
+msgstr "דרגה 8"
 
 #: ../ure-lib.php:491
 msgid "Level 7"
-msgstr "Niveau 7"
+msgstr "דרגה 7"
 
 #: ../ure-lib.php:492
 msgid "Level 6"
-msgstr "Niveau 6"
+msgstr "דרגה 6"
 
 #: ../ure-lib.php:493
 msgid "Level 5"
-msgstr "Niveau 5"
+msgstr "דרגה 5"
 
 #: ../ure-lib.php:494
 msgid "Level 4"
-msgstr "Niveau 4"
+msgstr "דרגה 4"
 
 #: ../ure-lib.php:495
 msgid "Level 3"
-msgstr "Niveau 3"
+msgstr "דרגה 3"
 
 #: ../ure-lib.php:496
 msgid "Level 2"
-msgstr "Niveau 2"
+msgstr "דרגה 2"
 
 #: ../ure-lib.php:497
 msgid "Level 1"
-msgstr "Niveau 1"
+msgstr "דרגה 1"
 
 #: ../ure-lib.php:498
 msgid "Level 0"
-msgstr "Niveau 0"
+msgstr "דרגה 0"
 
 #: ../ure-lib.php:499
 msgid "Edit others pages"
-msgstr "Editer les pages des autres"
+msgstr "עריכת דפים של אחרים"
 
 #: ../ure-lib.php:500
 msgid "Edit published pages"
-msgstr "Editer les pages publiées"
+msgstr "עריכת דפים שפורסמו"
 
 #: ../ure-lib.php:501
 msgid "Publish pages"
-msgstr "Publier des pages"
+msgstr "פרסום דפים"
 
 #: ../ure-lib.php:502
 msgid "Delete pages"
-msgstr "Supprimer des pages"
+msgstr "מחיקת דפים"
 
 #: ../ure-lib.php:503
 msgid "Delete others pages"
-msgstr "Supprimer des pages des autres"
+msgstr "מחיקת דפים של אחרים"
 
 #: ../ure-lib.php:504
 msgid "Delete published pages"
-msgstr "Supprimer des pages publiées"
+msgstr "מחיקת דפים שפורסמו"
 
 #: ../ure-lib.php:505
 msgid "Delete posts"
-msgstr "Supprimer des articles"
+msgstr "מחיקת פוסטים"
 
 #: ../ure-lib.php:506
 msgid "Delete others posts"
-msgstr "Supprimer des articles des autres"
+msgstr "מחיקת פוסטים של אחרים"
 
 #: ../ure-lib.php:507
 msgid "Delete published posts"
-msgstr "Supprimer des articles publiés"
+msgstr "מחיקת פוסטים שפורסמו"
 
 #: ../ure-lib.php:508
 msgid "Delete private posts"
-msgstr "Supprimer des articles privés"
+msgstr "מחיקת פוסטים פרטיים"
 
 #: ../ure-lib.php:509
 msgid "Edit private posts"
-msgstr "Editer des articles privés"
+msgstr "עריכת פוסטים פרטיים"
 
 #: ../ure-lib.php:510
 msgid "Read private posts"
-msgstr "Lire des articles privés"
+msgstr "קריאת פוסטים פרטיים"
 
 #: ../ure-lib.php:511
 msgid "Delete private pages"
-msgstr "Supprimer des pages privées"
+msgstr "מחיקת עמודים פרטיים"
 
 #: ../ure-lib.php:512
 msgid "Edit private pages"
-msgstr "Editer des pages privées"
+msgstr "מחיקת עמודים פרטיים"
 
 #: ../ure-lib.php:513
 msgid "Read private pages"
-msgstr "Lire des pages privées"
+msgstr "קריאת עמודים פרטיים"
 
 #: ../ure-lib.php:514
 msgid "Delete users"
-msgstr "Supprimer des utilisateurs"
+msgstr "מחיקת משתמשים"
 
 #: ../ure-lib.php:515
 msgid "Create users"
-msgstr "Créer des utilisateurs"
+msgstr "יצירת משתמשים"
 
 #: ../ure-lib.php:516
 msgid "Unfiltered upload"
-msgstr "Transmissions non filtrées"
+msgstr "העלאת קבצים חופשית"
 
 #: ../ure-lib.php:517
 msgid "Edit dashboard"
-msgstr "Editer le tableau de bord"
+msgstr "שינוי לוח הבקרה"
 
 #: ../ure-lib.php:518
 msgid "Update plugins"
-msgstr "Mettre à jour les extensions"
+msgstr "עדכון תוספים"
 
 #: ../ure-lib.php:519
 msgid "Delete plugins"
-msgstr "Supprimer des extensions"
+msgstr "מחיקת תוספים"
 
 #: ../ure-lib.php:520
 msgid "Install plugins"
-msgstr "Installer des extensions"
+msgstr "התקנת תוספים"
 
 #: ../ure-lib.php:521
 msgid "Update themes"
-msgstr "Mettre à jour les thèmes"
+msgstr "עדכון תבניות"
 
 #: ../ure-lib.php:522
 msgid "Install themes"
-msgstr "Installer des thèmes"
+msgstr "התקנת תבניות חדשות"
 
 #: ../ure-lib.php:523
 msgid "Update core"
-msgstr "Mettre à jour le noyau"
+msgstr "עדכון וורדפרס"
 
 #: ../ure-lib.php:524
 msgid "List users"
-msgstr "Lister les utilisateurs"
+msgstr "בצפייה במשתמשים"
 
 #: ../ure-lib.php:525
 msgid "Remove users"
-msgstr "Supprimer des utilisateurs"
+msgstr "הסרת משתמשים"
 
 #: ../ure-lib.php:526
 msgid "Add users"
-msgstr "Ajouter des utilisateurs"
+msgstr "הוספת משתמשים"
 
 #: ../ure-lib.php:527
 msgid "Promote users"
-msgstr "Promouvoir des utilisateurs"
+msgstr "שינוי משתמשים"
 
 #: ../ure-lib.php:528
 msgid "Edit theme options"
-msgstr "Editer les options du thème"
+msgstr "עריכת אפשרויות התבנית"
 
 #: ../ure-lib.php:529
 msgid "Delete themes"
-msgstr "Supprimer des thèmes"
+msgstr "מחיקת תבניות"
 
 #: ../ure-lib.php:530
 msgid "Export"
-msgstr "Exporter"
+msgstr "ייצוא תוכן"
 
 #: ../ure-lib.php:613
 msgid "Error: Capability name must contain latin characters and digits only!"
-msgstr "Erreur&nbsp;: le nom de la capacité doit seulement contenir des caractères latins et chiffres&nbsp;!"
+msgstr "שגיאה! שם יכולת חייב להכיל אותיות באנגלית וספרות בלבד"
 
 #: ../ure-lib.php:625
 #, php-format
 msgid "Capability %s is added successfully"
-msgstr "Capacité %s a été ajoutée avec succès"
+msgstr "היכולת %s נוספה בהצלחה"
 
 #: ../ure-lib.php:627
 #, php-format
 msgid "Capability %s exists already"
-msgstr "La capacité %s existe déjà"
+msgstr "כבר קיימת יכולת בשם %s"
 
 #: ../ure-lib.php:791
 #, php-format
 msgid "Error! You do not have permission to delete this capability: %s!"
-msgstr "Erreur&nbsp;! Vous n'avez pas la permission de supprimer cette capacité&nbsp;: %s&nbsp;!"
+msgstr "שגיאה! אין לך הרשאה למחוק את היכולת %s"
 
 #: ../ure-lib.php:799
 #, php-format
 msgid "Capability %s is removed successfully"
-msgstr "Capacité %s a été supprimée avec succès"
-
-#~ msgid "Roles list reading error is encountered"
-#~ msgstr "Erreur lors de la lecture des rôles"
-#~ msgid "Return to default WordPress user role capabilities"
-#~ msgstr "Remettre les capacités des utilisateurs par défaut de WordPress"
+msgstr "היכולת %s הוסרה בהצלחה"
 

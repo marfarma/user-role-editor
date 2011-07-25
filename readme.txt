@@ -3,8 +3,8 @@ Contributors: shinephp
 Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
-Tested up to: 3.2
-Stable tag: 3.1.1
+Tested up to: 3.2.1
+Stable tag: 3.2
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -49,22 +49,26 @@ To update selected role globally for the Network you should turn on the "Apply t
 * [FullThrottle](http://fullthrottledevelopment.com/how-to-hide-the-adminstrator-on-the-wordpress-users-screen) - For the code to hide administrator role at admin backend.
 
 = Translations =
+* French: [Whiler](http://blogs.wittwer.fr/whiler)
+* Finnish: [Lauri Merisaari](http://www.viidakkorumpu.fi)
+* Japanese: Kaz, [Technolog.jp](http://technolog.jp)
+* Hebrew: [Sagive](http://www.sagive.co.il)
+* Italian: [Umberto Sartori](http://venezialog.net), [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org), [Tristano Ajmone ](http://www.zenfactor.org)
+* Russian: [Vladimir Garagulya](http://shinephp.com)
+* Spanish: [Dario Ferrer](http://www.darioferrer.com)
+* Turkish: [Muhammed YILDIRIM](http://ben.muhammed.im), [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com)
+* -----------------------------------------------------
+* translations below are included to the package, but all of them are outdated and every file needs to be updated.
 * Belorussian: [Marsis G.](http://pc.de) - needs update
 * Brasilian Portuguese: [Rafael Galdencio](http://www.arquiteturailustrada.com.br) - needs update
 * Chinese: [Yackytsu](http://www.jackytsu.com) - needs update
 * Dutch: [Rémi Bruggeman](http://www.remisan.be) - needs update
-* Finnish: [Lauri Merisaari](http://www.viidakkorumpu.fi) - needs update
-* French: [Whiler](http://blogs.wittwer.fr/whiler) - needs update
 * German: [Peter](http://www.red-socks-reinbek.de) - needs update
 * Hungarian: [István](http://www.blacksnail.hu) - needs update
-* Italian: [Talksina](http://www.iadkiller.org), [Alessandro Mariani](http://technodin.org), [Tristano Ajmone ](http://www.zenfactor.org), [Umberto Sartori](http://venezialog.net)
-* Japanese: [Technolog.jp](http://technolog.jp) - needs update
 * Persian: [Good Life](http://good-life.ir) - needs update
 * Polish: [TagSite](http://www.tagsite.eu) - needs update
-* Russian: [Vladimir Garagulya](http://shinephp.com)
-* Spanish: [Dario Ferrer](http://www.darioferrer.com) - needs update
 * Swedish: [Christer Dahlbacka](www.startlinks.eu) - needs update
-* Turkish: [Muhammed YILDIRIM](http://ben.muhammed.im), [Sadri Ercan](http://www.faydaliweb.com), [Can KAYA](http://www.kartaca.com)
+
 
 Dear plugin User!
 If you wish to help me with this plugin translation I very appreciate it. Please send your language .po and .mo files to vladimir[at-sign]shinephp.com email. Do not forget include you site link in order I can show it with greetings for the translation help at shinephp.com, plugin settings page and in this readme.txt file.
@@ -73,6 +77,15 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 3.2 =
+* If you run multi-site WordPress network, User Role Editor will automatically duplicate all roles from the main blog (blog with mininal ID) to every new created blog.
+* Some fixes, refactoring and logic change were applied to code to enhance its productivity. There were some complaints for PHP timeout error after trying to open plugin Settings page. 
+* Thanks to Grant Norwood for code fix to hide PHP warnings he met during plugin usage. 
+* Hebrew translation is added. Thanks to Sagive.
+* French translation is updated. Thanks to Whiler.
+* Japan translation is updated. Thanks to Kaz.
+* Spanish translation is updated. Thanks to Dario.
+
 = 3.1.1 =
 * 07.07.2011
 * CUSTOM_USER_META_TABLE constant is used now for more compatibility with core WordPress API. Thanks to [Lorenzo Nicoletti](http://www.extera.com) 

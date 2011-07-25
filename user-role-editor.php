@@ -3,7 +3,7 @@
 Plugin Name: User Role Editor
 Plugin URI: http://www.shinephp.com/user-role-editor-wordpress-plugin/
 Description: It allows you to change any standard WordPress user roles (except administrator) capabilities list with a few clicks.
-Version: 3.1.1
+Version: 3.2
 Author: Vladimir Garagulya
 Author URI: http://www.shinephp.com
 Text Domain: ure
@@ -52,7 +52,7 @@ load_plugin_textdomain('ure','', $urePluginDirName.'/lang');
 function ure_optionsPage() {
   
   global $wpdb, $current_user, $ure_OptionsTable, $ure_roles, $ure_capabilitiesToSave, $ure_toldAboutBackup, 
-         $ure_currentRole, $ure_apply_to_all, $fullCapabilities;
+         $ure_currentRole, $ure_currentRoleName, $ure_apply_to_all, $ure_fullCapabilities;
 
   if (!empty($current_user)) {
     $user_id = $current_user->ID;
@@ -237,6 +237,32 @@ function ure_user_row($actions, $user) {
 }
 // end of ure_user_row()
 
+
+if (function_exists('is_multisite') && is_multisite()) {
+
+// every time when new blog created - duplicate to it roles from the main blog (1) 
+  function duplicate_roles_for_new_blog($blog_id, $user_id) {
+    global $wpdb, $global, $wp_roles;
+    
+    // get Id of 1st (main) blog
+    $blogIds = $wpdb->get_col($wpdb->prepare("SELECT blog_id FROM $wpdb->blogs order by blog_id asc"));
+    if (!isset($blogIds[0])) {
+      return;
+    }
+    $current_blog = $wpdb->blogid;
+    switch_to_blog($blogIds[0]);
+    $main_roles = new WP_Roles();  // get roles from primary blog
+    switch_to_blog($blog_id);  // switch to the new created blog
+    $main_roles->use_db = false;  // do not touch DB
+    $main_roles->add_cap('administrator', 'dummy_123456');   // just to save current roles into new blog
+    $main_roles->role_key = $wp_roles->role_key;
+    $main_roles->use_db = true;  // saved roles into new blog DB
+    $main_roles->remove_cap('administrator', 'dummy_123456');  // remove unneeded dummy capability
+    switch_to_blog($current_blog);  // return to blog where we were at the begin
+  }
+
+  add_action( 'wpmu_new_blog', 'duplicate_roles_for_new_blog', 10, 2 );
+}
 
 
 if (is_admin()) {

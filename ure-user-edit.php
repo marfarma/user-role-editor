@@ -27,8 +27,10 @@ if (!isset($ure_currentRole) || !$ure_currentRole) {
 
 $roleSelectHTML = '<select id="user_role" name="user_role" onchange="ure_Actions(\'role-change\', this.value);">';
 foreach ($ure_roles as $key=>$value) {
-  $selected = ure_optionSelected($key, $ure_currentRole);
-  $roleSelectHTML .= '<option value="'.$key.'" '.$selected.'>'.__($value['name'], 'ure').'</option>';
+  if ($key!='administrator') {
+    $selected = ure_optionSelected($key, $ure_currentRole);
+    $roleSelectHTML .= '<option value="'.$key.'" '.$selected.'>'.__($value['name'], 'ure').'</option>';
+  }
 }
 if ($ure_currentRole==-1) {
   $selected = 'selected="selected"';
@@ -90,10 +92,10 @@ $roleSelectHTML .= '</select>';
     <tr>
       <td style="vertical-align:top;">
         <?php
-        $quant = count($fullCapabilities);
+        $quant = count($ure_fullCapabilities);
         $quantInColumn = (int) $quant / 3;
         $quantInCell = 0;
-        foreach ($fullCapabilities as $capability) {
+        foreach ($ure_fullCapabilities as $capability) {
           $checked = ''; $disabled = '';
           if (isset($ure_roles[$ure_currentRole]['capabilities'][$capability['inner']])) {
             $checked = 'checked="checked"';

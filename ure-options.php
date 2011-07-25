@@ -71,23 +71,28 @@ foreach ($ure_roles as $key=>$value) {
 }
 
 
-$fullCapabilities = array();
+$ure_fullCapabilities = array();
 foreach($ure_roles as $role) {
+  // validate if capabilities is an array
+  if (isset($role['capabilities']) && is_array($role['capabilities'])) {
     foreach ($role['capabilities'] as $key=>$value) {
       $cap = array();
       $cap['inner'] = $key;
       $cap['human'] = __(ure_ConvertCapsToReadable($key),'ure');
-      $fullCapabilities[] = $cap;
+      if (!isset($ure_fullCapabilities[$key])) {
+        $ure_fullCapabilities[$key] = $cap;
+      }
     }
+  }
 }
-$fullCapabilities = ure_ArrayUnique($fullCapabilities);
+//$fullCapabilities = ure_ArrayUnique($fullCapabilities);
 if ($ure_caps_readable) {
   $column = 'human';  // sort by human readable form
 } else {
   $column = 'inner';  // sort by inner capability name
 }
-$sorter = new ure_TableSorter($column); 
-$fullCapabilities = $sorter->sort($fullCapabilities);
+
+asort($ure_fullCapabilities);
 
 
 if ($ure_object=='user') {
@@ -110,31 +115,36 @@ if ($ure_object=='user') {
 
 if (isset($_POST['action']) && $_POST['action'] == 'update' && isset($_POST['user_role'])) {
   $ure_currentRole = $_POST['user_role'];
-  $ure_capabilitiesToSave = array();
-  foreach ($fullCapabilities as $availableCapability) {
-    $cap_id = str_replace(' ', URE_SPACE_REPLACER, $availableCapability['inner']);
-    if (isset($_POST[$cap_id])) {
-      $ure_capabilitiesToSave[$availableCapability['inner']] = 1;
+  if (!isset($ure_roles[$ure_currentRole])) {
+    $mess = __('Error: ', 'ure') . __('Role', 'ure') . ' <em>' . $ure_currentRole . '</em> ' . __('does not exist', 'ure');
+  } else {
+    $ure_currentRoleName = $ure_roles[$ure_currentRole]['name'];
+    $ure_capabilitiesToSave = array();
+    foreach ($ure_fullCapabilities as $availableCapability) {
+      $cap_id = str_replace(' ', URE_SPACE_REPLACER, $availableCapability['inner']);
+      if (isset($_POST[$cap_id])) {
+        $ure_capabilitiesToSave[$availableCapability['inner']] = 1;
+      }
     }
-  }
-  if ($ure_object == 'role') {  // save role changes to database
-    if (count($ure_capabilitiesToSave) > 0) {
-      if (!ure_updateRoles()) {
+    if ($ure_object == 'role') {  // save role changes to database
+      if (count($ure_capabilitiesToSave) > 0) {
+        if (!ure_updateRoles()) {
+          return;
+        }
+        if ($mess) {
+          $mess .= '<br/>';
+        }
+        $mess = __('Role', 'ure') . ' <em>' . __($ure_roles[$ure_currentRole]['name'], 'ure') . '</em> ' . __('is updated successfully', 'ure');
+      }
+    } else {
+      if (!ure_updateUser($ure_userToEdit)) {
         return;
       }
       if ($mess) {
         $mess .= '<br/>';
       }
-      $mess = __('Role', 'ure').' <em>'.__($ure_roles[$ure_currentRole]['name'], 'ure').'</em> '.__('is updated successfully', 'ure');
+      $mess = __('User', 'ure') . ' &lt;<em>' . $ure_userToEdit->display_name . '</em>&gt; ' . __('capabilities are updated successfully', 'ure');
     }
-  } else {
-    if (!ure_updateUser($ure_userToEdit)) {
-      return;
-    }
-    if ($mess) {
-      $mess .= '<br/>';
-    }
-    $mess = __('User', 'ure').' &lt;<em>'.$ure_userToEdit->display_name.'</em>&gt; '.__('capabilities are updated successfully', 'ure');
   }
 }
 

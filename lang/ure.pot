@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: User Role Editor 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-03 22:31+0700\n"
+"POT-Creation-Date: 2011-07-08 16:13+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vladimir <vladimir@shinephp.com>\n"
 "Language-Team: ShinePHP.com <vladimir@shinephp.com>\n"
@@ -60,7 +60,7 @@ msgid "Select Role:"
 msgstr ""
 
 #: ../ure-role-edit.php:153
-#: ../ure-user-edit.php:80
+#: ../ure-user-edit.php:84
 msgid "Show capabilities in human readable form"
 msgstr ""
 
@@ -73,22 +73,22 @@ msgid "Apply to All Sites"
 msgstr ""
 
 #: ../ure-role-edit.php:213
-#: ../ure-user-edit.php:129
+#: ../ure-user-edit.php:133
 msgid "Update"
 msgstr ""
 
 #: ../ure-role-edit.php:213
-#: ../ure-user-edit.php:129
+#: ../ure-user-edit.php:133
 msgid "Save Changes"
 msgstr ""
 
 #: ../ure-role-edit.php:214
-#: ../ure-user-edit.php:130
+#: ../ure-user-edit.php:134
 msgid "Cancel"
 msgstr ""
 
 #: ../ure-role-edit.php:214
-#: ../ure-user-edit.php:130
+#: ../ure-user-edit.php:134
 msgid "Cancel not saved changes"
 msgstr ""
 
@@ -146,20 +146,20 @@ msgstr ""
 msgid "Remove User Capability"
 msgstr ""
 
-#: ../ure-user-edit.php:61
+#: ../ure-user-edit.php:65
 #, php-format
 msgid "User \"%s\" update: please confirm to continue"
 msgstr ""
 
-#: ../ure-user-edit.php:68
+#: ../ure-user-edit.php:72
 msgid "Change capabilities for user"
 msgstr ""
 
-#: ../ure-user-edit.php:71
+#: ../ure-user-edit.php:75
 msgid "Role:"
 msgstr ""
 
-#: ../ure-user-edit.php:84
+#: ../ure-user-edit.php:88
 msgid "Add capabilities to this user:"
 msgstr ""
 
@@ -247,39 +247,45 @@ msgstr ""
 #: ../ure-options.php:183
 #: ../ure-options.php:184
 #: ../ure-options.php:185
+#: ../ure-options.php:186
 msgid "For the help with Italian translation"
 msgstr ""
 
-#: ../ure-options.php:186
+#: ../ure-options.php:187
 msgid "For the help with Japanese translation"
 msgstr ""
 
-#: ../ure-options.php:187
+#: ../ure-options.php:188
 msgid "For the help with Persian translation"
 msgstr ""
 
-#: ../ure-options.php:188
+#: ../ure-options.php:189
 msgid "For the help with Polish translation"
 msgstr ""
 
-#: ../ure-options.php:189
+#: ../ure-options.php:190
 msgid "For the help with Spanish translation"
 msgstr ""
 
-#: ../ure-options.php:190
+#: ../ure-options.php:191
 msgid "For the help with Swedish translation"
 msgstr ""
 
-#: ../ure-options.php:191
 #: ../ure-options.php:192
+#: ../ure-options.php:193
+#: ../ure-options.php:194
 msgid "For the help with Turkish translation"
 msgstr ""
 
-#: ../ure-options.php:193
+#: ../ure-options.php:196
 msgid "For the code to hide administrator role"
 msgstr ""
 
-#: ../ure-options.php:194
+#: ../ure-options.php:197
+msgid "For the code enhancement suggestion"
+msgstr ""
+
+#: ../ure-options.php:199
 msgid "Do you wish to see your name with link to your site here? You are welcome! Your help with translation and new ideas are very appreciated."
 msgstr ""
 

@@ -21,11 +21,15 @@ define('URE_ERROR', 'Error is encountered');
 define('URE_SPACE_REPLACER', '_URE-SR_');
 define('URE_PARENT', 'users.php');
 
-global $wpdb, $ure_roles, $ure_capabilitiesToSave, $ure_currentRole, $ure_toldAboutBackup, $ure_apply_to_all, 
+/*
+global $wpdb, $ure_roles, $ure_capabilitiesToSave, $ure_currentRole, $ure_currentRoleName, $ure_toldAboutBackup, $ure_apply_to_all, 
        $ure_userToEdit, $fullCapabilities;
+*/
 
-$ure_roles = false; $ure_capabilitiesToSave = false; $ure_toldAboutBackup = false; $ure_apply_to_all = false; 
-$ure_userToEdit = false; $fullCapabilities = false;
+$ure_roles = false; $ure_capabilitiesToSave = false; 
+$ure_currentRole = false; $ure_currentRoleName = false;
+$ure_toldAboutBackup = false; $ure_apply_to_all = false; 
+$ure_userToEdit = false; $ure_fullCapabilities = false;
 
 // this array will be used to cash users checked for Administrator role
 $ure_userToCheck = array();
@@ -138,8 +142,8 @@ function ure_getUserRoles() {
     $ure_OptionsTable = $wpdb->prefix . 'options';
     $option_name = $wpdb->prefix . 'user_roles';
     $getRolesQuery = "select option_id, option_value
-                      from $ure_OptionsTable
-                      where option_name='$option_name'
+                        from $ure_OptionsTable
+                        where option_name='$option_name'
                       limit 0, 1";
     $record = $wpdb->get_results($getRolesQuery);
     if ($wpdb->last_error) {
@@ -151,6 +155,8 @@ function ure_getUserRoles() {
     $ure_roles = $wp_roles->roles;
   }
 
+  asort($ure_roles);
+  
   return $ure_roles;
 }
 // end of getUserRoles()
@@ -236,11 +242,11 @@ function ure_makeRolesBackup() {
 
 // Save Roles to database
 function ure_saveRolesToDb() {
-  global $wpdb, $ure_roles, $ure_capabilitiesToSave, $ure_currentRole;
+  global $wpdb, $ure_roles, $ure_capabilitiesToSave, $ure_currentRole, $ure_currentRoleName;
 
   $ure_OptionsTable = $wpdb->prefix .'options';
   if (!isset($ure_roles[$ure_currentRole])) {
-    $ure_roles[$ure_currentRole]['name'] = $ure_currentRole;
+    $ure_roles[$ure_currentRole]['name'] = $ure_currentRoleName;
   }
   $ure_roles[$ure_currentRole]['capabilities'] = $ure_capabilitiesToSave;
   $option_name = $wpdb->prefix.'user_roles';
@@ -261,7 +267,7 @@ function ure_saveRolesToDb() {
 
 
 function ure_updateRoles() {
-  global $wpdb, $ure_apply_to_all, $ure_roles;
+  global $wpdb, $ure_apply_to_all, $ure_roles, $ure_toldAboutBackup;
 
   $ure_toldAboutBackup = false;
   if (is_multisite() && $ure_apply_to_all) {  // update Role for the all blogs/sites in the network
@@ -709,18 +715,23 @@ function getBuiltInWPCaps() {
 function getCapsToRemove() {
   global $wp_roles, $wpdb;
 
-  $fullCapsList = array();
-  foreach($wp_roles->roles as $role) {
-    foreach ($role['capabilities'] as $key=>$value) {
-      $fullCapsList[] = $key;
+  // build full capabilities list from all roles except Administrator 
+  $fullCapsList = array();  
+  foreach($wp_roles->roles as $role) {    
+    // validate if capabilities is an array
+    if (isset($role['capabilities']) && is_array($role['capabilities'])) {
+      foreach ($role['capabilities'] as $capability=>$value) {
+        if (!isset($fullCapsList[$capability])) {
+          $fullCapsList[$capability] = 1;
+        }
+      }
     }
   }
-  $fullCapsList = ure_ArrayUnique($fullCapsList);
-  sort($fullCapsList);
+
   $capsToExclude = getBuiltInWPCaps();
   
   $capsToRemove = array();
-  foreach ($fullCapsList as $capability) {
+  foreach ($fullCapsList as $capability=>$value) {
     if (!isset($capsToExclude[$capability])) {
       // check roles
       $capInUse = false;
@@ -731,27 +742,13 @@ function getCapsToRemove() {
             break;
           }
         }
-      }
+      }      
       if (!$capInUse) {
-      // check users
-        $usersId = $wpdb->get_col( $wpdb->prepare("SELECT $wpdb->users.ID FROM $wpdb->users"));
-        foreach ($usersId as $user_id) {
-          $user = get_user_to_edit($user_id);
-          if (isset($user->roles[0]) && $user->roles[0]=='administrator') {
-            continue;
-          }
-          if ($user->has_cap($capability)) {
-            $capInUse = true;
-            break;
-          }
-        }
-      }
-      if (!$capInUse) {
-        $capsToRemove[] = $capability;
+        $capsToRemove[$capability] = 1;
       }
     }
-  }
-
+  } 
+  
   return $capsToRemove;
 }
 // end of getCapsToRemove()
@@ -759,10 +756,10 @@ function getCapsToRemove() {
 
 function getCapsToRemoveHTML() {
   $capsToRemove = getCapsToRemove();
-  if (count($capsToRemove)>0) {
+  if (!empty($capsToRemove) && is_array($capsToRemove) && count($capsToRemove)>0) {
     $html = '<select id="remove_user_capability" name="remove_user_capability" width="200" style="width: 200px">';
-  foreach ($capsToRemove as $value) {
-    $html .= '<option value="'.$value.'">'.$value.'</option>';
+  foreach ($capsToRemove as $key=>$value) {
+    $html .= '<option value="'.$key.'">'.$key.'</option>';
   }
     $html .= '</select>';
   } else {
@@ -775,27 +772,35 @@ function getCapsToRemoveHTML() {
 
 
 function ure_removeCapability() {
-  global $wp_roles;
+  global $wpdb, $wp_roles;
 
   $mess = '';
   if (isset($_GET['removeusercapability']) && $_GET['removeusercapability']) {
     $capability = $_GET['removeusercapability'];
     $capsToRemove = getCapsToRemove();    
-    $found = false;
-    foreach ($capsToRemove as $cap) {
-      if ($cap===$capability) {
-        $found = true;
-      }
-    }
-    if (!$found) {
+    if (!is_array($capsToRemove) || count($capsToRemove)==0 || !isset($capsToRemove[$capability])) {
       return sprintf(__('Error! You do not have permission to delete this capability: %s!', 'ure'), $capability);
     }
+        
+    // process users
+    $usersId = $wpdb->get_col($wpdb->prepare("SELECT $wpdb->users.ID FROM $wpdb->users"));
+    foreach ($usersId as $user_id) {
+      $user = get_user_to_edit($user_id);
+      if (isset($user->roles[0]) && $user->roles[0] == 'administrator') {
+        continue;
+      }
+      if ($user->has_cap($capability)) {
+        $user->remove_cap($capability);
+      }
+    }
 
+    // process roles
     foreach ($wp_roles->role_objects as $wp_role) {
       if ($wp_role->has_cap($capability)) {
         $wp_role->remove_cap($capability);
       }
     }
+    
     $mess = sprintf(__('Capability %s is removed successfully', 'ure'), $capability);
   }
 

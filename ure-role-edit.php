@@ -16,6 +16,7 @@ if (!isset($ure_currentRole) || !$ure_currentRole) {
   } else {
     $ure_currentRole = $ure_rolesId[count($ure_rolesId) - 1];
   }
+  $ure_currentRoleName = $ure_roles[$ure_currentRole]['name'];
 }
 
 $roleDefaultHTML = '<select id="default_user_role" name="default_user_role" width="200" style="width: 200px">';
@@ -163,7 +164,7 @@ if (is_multisite()) {
     $fontColor = '';
   }
 ?>
-              <div style="float: right; margin-right: 20px; <?php echo $fontColor;?>" id="ure_apply_to_all_div"><input type="checkbox" name="ure_apply_to_all" id="ure_apply_to_all" value="1" <?php echo $checked; ?> title="<?php echo $hint;?>" onclick="ure_applyToAllOnClick(this)"/>
+              <div style="float: right; margin-left:10px; margin-right: 20px; <?php echo $fontColor;?>" id="ure_apply_to_all_div"><input type="checkbox" name="ure_apply_to_all" id="ure_apply_to_all" value="1" <?php echo $checked; ?> title="<?php echo $hint;?>" onclick="ure_applyToAllOnClick(this)"/>
                 <label for="ure_apply_to_all" title="<?php echo $hint;?>"><?php _e('Apply to All Sites', 'ure');?></label>
               </div>
 <?php
@@ -174,10 +175,10 @@ if (is_multisite()) {
           <tr>
             <td style="vertical-align:top;">
 <?php
-  $quant = count($fullCapabilities);
+  $quant = count($ure_fullCapabilities);
   $quantInColumn = (int) $quant/3;
   $quantInCell = 0;
-  foreach( $fullCapabilities as $capability) {
+  foreach( $ure_fullCapabilities as $capability) {
     $checked = '';
     if (isset($ure_roles[$ure_currentRole]['capabilities'][$capability['inner']])) {
       $checked = 'checked="checked"';
