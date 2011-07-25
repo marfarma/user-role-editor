@@ -78,6 +78,7 @@ Share with me new ideas about plugin further development and link to your site w
 
 == Changelog ==
 = 3.2 =
+* 25.07.2011
 * If you run multi-site WordPress network, User Role Editor will automatically duplicate all roles from the main blog (blog with mininal ID) to every new created blog.
 * Some fixes, refactoring and logic change were applied to code to enhance its productivity. There were some complaints for PHP timeout error after trying to open plugin Settings page. 
 * Thanks to Grant Norwood for code fix to hide PHP warnings he met during plugin usage. 
