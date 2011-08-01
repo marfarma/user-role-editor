@@ -79,7 +79,7 @@ Share with me new ideas about plugin further development and link to your site w
 == Changelog ==
 = 3.2.1 =
 * 01.08.2011
-* This is minor bug-fix update. If you didn't met this bug you can skip this update. "usermeta" table doesn't exist bug appearing on some multi-site blogs is fixed. Read [this post](http://wordpress.org/support/topic/multisite-setup-gives-usermeta-table-error) for more information. Thanks to harpinder for discovering this bug and for the help with testing updated code. "usermeta" Db table name is define by more universal way now.
+* This is minor bug-fix update. If you didn't meet this bug you can skip this update. "usermeta" table doesn't exist bug appearing on some multi-site blogs is fixed. Read [this post](http://wordpress.org/support/topic/multisite-setup-gives-usermeta-table-error) for more information. Thanks to harpinder for discovering this bug and for the help with testing updated code. "usermeta" Db table name is define by more universal way now.
 
 = 3.2 =
 * 25.07.2011
