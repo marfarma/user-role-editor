@@ -21,11 +21,6 @@ define('URE_ERROR', 'Error is encountered');
 define('URE_SPACE_REPLACER', '_URE-SR_');
 define('URE_PARENT', 'users.php');
 
-/*
-global $wpdb, $ure_roles, $ure_capabilitiesToSave, $ure_currentRole, $ure_currentRoleName, $ure_toldAboutBackup, $ure_apply_to_all, 
-       $ure_userToEdit, $fullCapabilities;
-*/
-
 $ure_roles = false; $ure_capabilitiesToSave = false; 
 $ure_currentRole = false; $ure_currentRoleName = false;
 $ure_toldAboutBackup = false; $ure_apply_to_all = false; 
@@ -61,8 +56,8 @@ function ure_has_administrator_role($user_id) {
     return false;
   }
 
-  $tableName = defined('CUSTOM_USER_META_TABLE') ? CUSTOM_USER_META_TABLE : $wpdb->prefix.'usermeta';
-  $metaKey = $wpdb->prefix.'capabilities';
+  $tableName = defined('CUSTOM_USER_META_TABLE') ? CUSTOM_USER_META_TABLE : $wpdb->usermeta;
+  $metaKey = $wpdb->base_prefix.'capabilities';
   $query = "SELECT count(*)
                 FROM $tableName
                 WHERE user_id=$user_id AND meta_key='$metaKey' AND meta_value like '%administrator%'";
@@ -73,7 +68,7 @@ function ure_has_administrator_role($user_id) {
     $result = false;
   }
   $ure_userToCheck[$user_id] = $result;
-
+  
   return $result;
 }
 // end of ure_has_administrator_role()
@@ -342,8 +337,8 @@ function ure_newRoleCreate(&$ure_currentRole) {
 function getRolesCanDelete($ure_roles) {
   global $wpdb;
   
-  $tableName = defined('CUSTOM_USER_META_TABLE') ? CUSTOM_USER_META_TABLE : $wpdb->prefix.'usermeta';
-  $metaKey = $wpdb->prefix.'capabilities';
+  $tableName = defined('CUSTOM_USER_META_TABLE') ? CUSTOM_USER_META_TABLE : $wpdb->usermeta;
+  $metaKey = $wpdb->base_prefix.'capabilities';
   $defaultRole = get_option('default_role');
   $standardRoles = array('administrator', 'editor', 'author', 'contributor', 'subscriber');
   $ure_rolesCanDelete = array();

@@ -4,7 +4,7 @@ Donate link: http://www.shinephp.com/donate/
 Tags: user, role, editor, security, access, permission, capability
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 3.2
+Stable tag: 3.2.1
 
 User Role Editor WordPress plugin makes the role capabilities changing easy. You can change any standard WordPress user role (except administrator).
 
@@ -77,6 +77,10 @@ Share with me new ideas about plugin further development and link to your site w
 
 
 == Changelog ==
+= 3.2.1 =
+* 01.08.2011
+* This is a bug-fix update. If you didn't met this bug you can skip this update. "usermeta" table doesn't exist bug appearing on some multi-site blogs is fixed. Read [this post](http://wordpress.org/support/topic/multisite-setup-gives-usermeta-table-error) for more information. Thanks to harpinder for discovering this bug and for the help with testing updated code. "usermeta" Db table name is define by more universal way now.
+
 = 3.2 =
 * 25.07.2011
 * If you run multi-site WordPress network, User Role Editor will automatically duplicate all roles from the main blog (blog with mininal ID) to every new created blog.
